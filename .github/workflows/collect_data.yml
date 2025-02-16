@@ -49,10 +49,9 @@ jobs:
             "RSQLite",
             "cli",
             "xml2",
-            "remotes"
+            "devtools"
           ), repos = "https://cloud.r-project.org/")
-          remotes::install_github("BillPetti/baseballr")
-          remotes::install_github("sportsdataverse/collegebaseball")
+          devtools::install_github(repo = "robert-frey/collegebaseball")
         shell: Rscript {0}
 
       - name: Run data collection scripts

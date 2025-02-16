@@ -1,4 +1,3 @@
-library(baseballr)
 library(collegebaseball)
 library(dplyr)
 
