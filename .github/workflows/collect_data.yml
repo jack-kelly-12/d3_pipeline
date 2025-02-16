@@ -56,8 +56,6 @@ jobs:
 
       - name: Run data collection scripts
         run: |
-          mkdir -p data
-
           source("scrapers/collect_schedules.R")
           main(
             working_dir = getwd(),
