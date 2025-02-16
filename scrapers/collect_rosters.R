@@ -176,7 +176,7 @@ main <- function(working_dir, output_dir, db_path) {
   con <- dbConnect(SQLite(), db_path)
   
   if (dbExistsTable(con, "rosters")) {
-    dbExecute(con, "DELETE FROM rosters WHERE Year = 2025")
+    dbExecute(con, "DELETE FROM rosters WHERE year = 2025")
     cli::cli_alert_success("Deleted existing 2025 data from rosters table")
   }
   
@@ -186,8 +186,8 @@ main <- function(working_dir, output_dir, db_path) {
     cli::cli_alert_info(paste("Processing division:", division))
     
     rosters <- ncaa_roster_bulk(year = year, divisions = division)
-    rosters$Year = year
-    rosters$Division = division
+    rosters$year = year
+    rosters$division = division
     all_rosters[[division]] <- rosters
     
     div_name <- switch(division,
@@ -207,9 +207,8 @@ main <- function(working_dir, output_dir, db_path) {
   cli::cli_alert_success("Process completed successfully!")
 }
 
-# Example usage:
-# main(
-#   working_dir = "path/to/working/dir",
-#   output_dir = "path/to/output/dir",
-#   db_path = "path/to/database.db"
-# )
+main(
+ working_dir = "C:/Users/kellyjc/Desktop/d3_pipeline",
+ output_dir = "C:/Users/kellyjc/Desktop/d3_pipeline/data/rosters",
+ db_path = "../d3_app_improved/backend/ncaa.db"
+)

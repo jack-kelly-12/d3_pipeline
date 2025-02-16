@@ -2,13 +2,13 @@ library(baseballr)
 library(collegebaseball)
 library(dplyr)
 
-get_schedules <- function(year = 2024, division = 1) {
+get_schedules <- function(year = 2025, division = 1) {
   teams_df <- baseballr:::rds_from_url(
     "https://raw.githubusercontent.com/robert-frey/college-baseball/main/ncaa_team_lookup.rds"
   ) %>%
     dplyr::filter(year == !!year,
-                  division %in% !!division) %>%
-    distinct(team_name, .keep_all = TRUE)
+                  division == !!division) %>%
+    distinct(team_id, .keep_all = TRUE)
   
   team_names <- teams_df$team_name
   team_ids <- data.frame(team_name = character(), team_id = numeric(), stringsAsFactors = FALSE)
@@ -32,8 +32,8 @@ get_schedules <- function(year = 2024, division = 1) {
     tryCatch({
       schedule <- ncaa_schedule(team_id = id, year = year)
       if (!is.null(schedule) && nrow(schedule) > 0) {
-        schedule$year <- year  # Add year column
-        schedule$division <- division  # Add division column
+        schedule$year <- year
+        schedule$division <- division
         all_schedules <- rbind(all_schedules, schedule)
         message(sprintf("Got schedule for team ID %s with %d games", id, nrow(schedule)))
       }
@@ -45,20 +45,35 @@ get_schedules <- function(year = 2024, division = 1) {
   return(all_schedules)
 }
 
-main <- function() {
+safe_dbWriteTable <- function(conn, table_name, data, append = FALSE) {
+  data <- data %>%
+    mutate(across(where(is.character), as.character),
+           across(where(is.numeric), as.numeric),
+           across(where(is.integer), as.integer))
+  
+  if (append) {
+    if (!dbExistsTable(conn, table_name)) {
+      dbWriteTable(conn, table_name, data)
+    } else {
+      dbWriteTable(conn, table_name, data, append = TRUE)
+    }
+  } else {
+    dbWriteTable(conn, table_name, data, overwrite = TRUE)
+  }
+}
+
+main <- function(working_dir, output_dir) {
+  year <- 2025
+  setwd(working_dir)
   for (division in c(1, 2, 3)) {
     division_schedules <- data.frame()
-    dir.create("C:/Users/kellyjc/Desktop/d3_pipeline/data/schedules", showWarnings = FALSE)
+    dir.create(output_dir, showWarnings = FALSE)
 
-    
-    year <- 2025
-    file_path <- sprintf("C:/Users/kellyjc/Desktop/d3_pipeline/data/schedules/d%d_%d_schedules.csv", division, year)
-    if (file.exists(file_path)) {
-      next
-    } 
+    file_path <- file.path(output_dir, paste0(div_name, "_schedules_", year, ".csv"))
+  
     message(sprintf("Processing Division %d, Year %d", division, year))
-    year_schedules <- get_schedules(year = year, division = division)
-    
+    year_schedules <- get_schedules(year = year, division = division) 
+      
     if (nrow(year_schedules) > 0) {
       if ("contest_id" %in% names(year_schedules)) {
         year_schedules <- year_schedules %>% distinct(contest_id, .keep_all = TRUE)
@@ -79,4 +94,7 @@ main <- function() {
   }
 }
 
-main()
+main(
+ working_dir = "C:/Users/kellyjc/Desktop/d3_pipeline",
+ output_dir = "C:/Users/kellyjc/Desktop/d3_pipeline/data/schedules",
+)

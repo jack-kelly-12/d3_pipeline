@@ -1,15 +1,11 @@
 import pandas as pd
-import sqlite3
 from pathlib import Path
 
 
 def calculate_woba_constants(lw_df, batting_df):
-    """Calculate wOBA constants from linear weights and batting data"""
-    # Get wOBA scale
     woba_scale = lw_df[lw_df['events'] ==
                        'wOBA scale']['normalized_weight'].iloc[0]
 
-    # Get weights for each event
     weights = {
         'wBB': lw_df[lw_df['events'] == 'walk']['normalized_weight'].iloc[0],
         'wHBP': lw_df[lw_df['events'] == 'hit_by_pitch']['normalized_weight'].iloc[0],
@@ -19,7 +15,6 @@ def calculate_woba_constants(lw_df, batting_df):
         'wHR': lw_df[lw_df['events'] == 'home_run']['normalized_weight'].iloc[0]
     }
 
-    # Calculate wOBA
     woba_numerator = (
         batting_df['BB'].sum() * weights['wBB'] +
         batting_df['HBP'].sum() * weights['wHBP'] +
@@ -37,7 +32,6 @@ def calculate_woba_constants(lw_df, batting_df):
 
 
 def calculate_baserunning_constants(pbp_df):
-    """Calculate baserunning constants from play-by-play data"""
     runsOut = pbp_df['runs_on_play'].sum() / pbp_df['outs_on_play'].sum()
     runSB = 0.2
     runCS = -(2 * runsOut + 0.075)
@@ -55,7 +49,6 @@ def calculate_baserunning_constants(pbp_df):
 
 
 def calculate_run_constants(pbp_df):
-    """Calculate running-related constants from play-by-play data"""
     runsPA = pbp_df['runs_on_play'].sum(
     ) / len(pbp_df[~pbp_df['bat_order'].isna()])
     runsOut = pbp_df['runs_on_play'].sum() / pbp_df['outs_on_play'].sum()
@@ -69,7 +62,6 @@ def calculate_run_constants(pbp_df):
 
 
 def calculate_fip_constant(pitching_df):
-    """Calculate FIP constant from pitching data"""
     lgERA = (pitching_df['ER'].sum() * 9) / pitching_df['IP'].sum()
     fip_components = (13 * pitching_df['HR-A'].sum() +
                       3 * (pitching_df['BB'].sum() + pitching_df['HB'].sum()) -
@@ -78,9 +70,7 @@ def calculate_fip_constant(pitching_df):
 
 
 def calculate_guts_constants(division, year, db_path, data_dir):
-    """Calculate all GUTS constants for a given division and year"""
     try:
-        # Load data
         pbp_df = pd.read_csv(
             data_dir / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv')
         lw_df = pd.read_csv(
@@ -91,11 +81,9 @@ def calculate_guts_constants(division, year, db_path, data_dir):
         batting_df = pd.read_csv(data_dir /
                                  f'stats/d{division}_batting_{year}.csv')
 
-        # Calculate singles
         batting_df['1B'] = batting_df['H'] - batting_df['2B'] - \
             batting_df['3B'] - batting_df['HR']
 
-        # Calculate all constants
         constants = {
             'Year': year,
             'Division': division,
@@ -113,7 +101,6 @@ def calculate_guts_constants(division, year, db_path, data_dir):
 
 
 def main():
-    db_path = 'C:/Users/kellyjc/Desktop/d3_app_improved/backend/ncaa.db'
     data_dir = Path('C:/Users/kellyjc/Desktop/d3_pipeline/data')
     divisions = [1, 2, 3]
     year = 2025
@@ -122,18 +109,12 @@ def main():
 
     for division in divisions:
         constants = calculate_guts_constants(
-            division, year, db_path, data_dir)
+            division, year, data_dir)
         if constants:
             all_constants.append(constants)
 
-    # Create DataFrame and save
     guts_df = pd.DataFrame(all_constants).sort_values(
         ['Division', 'Year'], ascending=[True, False])
-
-    # Save to database and CSV
-    with sqlite3.connect(db_path) as conn:
-        guts_df.to_sql('guts_constants', conn,
-                       if_exists='replace', index=False)
 
     guts_df.to_csv(data_dir / 'guts/guts_constants.csv', index=False)
     print(f"Saved {len(guts_df)} rows of Guts constants")

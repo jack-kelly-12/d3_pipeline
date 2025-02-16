@@ -1,6 +1,6 @@
 import pandas as pd
-import sqlite3
 import numpy as np
+import os
 
 
 class BaseballAnalytics:
@@ -123,7 +123,6 @@ class BaseballAnalytics:
         descriptions = self.df['description'].str.lower()
         batter_hands = self.df['batter_hand']
 
-        # Direction classification
         self.df['is_pull'] = False
         self.df['is_oppo'] = False
         self.df['is_middle'] = False
@@ -146,7 +145,6 @@ class BaseballAnalytics:
             int) + self.df['is_middle'].astype(int) + self.df['is_oppo'].astype(int)
         self.df = self.df[self.df['direction_sum'] == 1]
 
-        # Hit type classification
         self.df['is_ground'] = False
         self.df['is_fly'] = False
         self.df['is_lined'] = False
@@ -155,7 +153,6 @@ class BaseballAnalytics:
         for hit_type, patterns in hit_type_patterns.items():
             mask = descriptions.str.contains(
                 '|'.join(patterns), regex=True, na=False)
-            # Only set True for rows that haven't been classified yet
             unclassified = ~(self.df['is_ground'] | self.df['is_fly']
                              | self.df['is_lined'] | self.df['is_popped'])
             if hit_type == 'ground':
@@ -171,7 +168,6 @@ class BaseballAnalytics:
         if self.weights is None:
             self.load_weights()
 
-        # Count events
         events = {
             event: (group['event_cd'] == code).sum()
             if not isinstance(code, list)
@@ -179,7 +175,6 @@ class BaseballAnalytics:
             for event, code in self.EVENT_CODES.items()
         }
 
-        # Calculate plate appearances
         sf = (group['sf_fl'] == 1).sum()
         ab = (events['SINGLE'] + events['DOUBLE'] + events['TRIPLE'] +
               events['HOME_RUN'] + events['OUT'] + events['ERROR'])
@@ -195,15 +190,12 @@ class BaseballAnalytics:
                 'OBP': np.nan
             })
 
-        # Calculate batting average
         hits = (events['SINGLE'] + events['DOUBLE'] +
                 events['TRIPLE'] + events['HOME_RUN'])
         ba = hits / ab if ab > 0 else np.nan
 
-        # Calculate run expectancy delta
         rea = group['rea'].sum()
 
-        # Calculate wOBA using raw events
         woba_numerator = (
             self.weights.get('walk', 0) * events['WALK'] +
             self.weights.get('hit_by_pitch', 0) * events['HBP'] +
@@ -230,7 +222,6 @@ class BaseballAnalytics:
         })
 
     def analyze_situations(self):
-        """Analyze performance across different situations"""
         if self.situations is None:
             self.prepare_situations()
 
@@ -254,7 +245,6 @@ class BaseballAnalytics:
         return pd.concat(results, axis=0).reset_index(drop=True)
 
     def get_pivot_results(self):
-        """Generate pivoted results for easy comparison"""
         final_df = self.analyze_situations()
 
         pivot = final_df.pivot(
@@ -263,7 +253,6 @@ class BaseballAnalytics:
             values=['wOBA', 'BA', 'PA', 'RE24', 'OBP', 'SLG']
         )
 
-        # Clean up column names
         pivot.columns = [f"{stat}_{sit}" for stat, sit in pivot.columns]
         return pivot.reset_index()
 
@@ -285,7 +274,6 @@ class BaseballAnalytics:
 
         total = stats['description']
 
-        # Calculate metrics
         stats['pull_pct'] = (stats['is_pull'] / total) * 100
         stats['oppo_pct'] = (stats['is_oppo'] / total) * 100
         stats['middle_pct'] = (stats['is_middle'] / total) * 100
@@ -310,7 +298,6 @@ class BaseballAnalytics:
         ]].rename(columns={'description': 'count'}).sort_values('count', ascending=False).fillna(0)
 
     def analyze_splits(self):
-        """Analyze performance splits vs LHP and RHP"""
         splits_list = [
             ('vs LHP',
              self.original_df[self.original_df['pitcher_hand'] == 'L']),
@@ -335,11 +322,9 @@ class BaseballAnalytics:
         return pd.concat(results, axis=0).reset_index(drop=True)
 
     def get_splits_results(self):
-        """Generate pivoted results for platoon splits"""
         final_df = self.analyze_splits()
 
         if final_df.empty:
-            # Return empty DataFrame with expected columns
             cols = ['batter_id', 'batter_standardized', 'bat_team']
             cols.extend([f"{stat}_vs {hand}" for stat in ['wOBA', 'BA', 'PA', 'RE24', 'OBP', 'SLG']
                         for hand in ['LHP', 'RHP']])
@@ -351,7 +336,6 @@ class BaseballAnalytics:
             values=['wOBA', 'BA', 'PA', 'RE24', 'OBP', 'SLG']
         )
 
-        # Clean up column names
         pivot.columns = [f"{stat}_{sit}" for stat, sit in pivot.columns]
         return pivot.reset_index()
 
@@ -368,15 +352,15 @@ def run_analysis(pbp_df, year, division):
         return None, None, None
 
 
-def get_data(year, division):
+def get_data(year, division, output_dir):
     pbp_df = pd.read_csv(
-        f'C:/Users/kellyjc/Desktop/d3_pipeline/data/play_by_play/d{division}_parsed_pbp_new_{year}.csv')
+        os.path.join(output_dir, 'play_by_play', f'd{division}_parsed_pbp_{year}.csv'))
     bat_war = pd.read_csv(
-        f'C:/Users/kellyjc/Desktop/d3_pipeline/data/war/d{division}_batting_war_{year}.csv').rename(columns={'WAR': 'bWAR'})
+        os.path.join(output_dir, 'war', f'd{division}_batting_war_{year}.csv')).rename(columns={'WAR': 'bWAR'})
     rosters = pd.read_csv(
-        f'C:/Users/kellyjc/Desktop/d3_pipeline/data/rosters/d{division}_rosters_{year}.csv')
+        os.path.join(output_dir, 'rosters', f'd{division}_rosters_{year}.csv'))
     pitch_war = pd.read_csv(
-        f'C:/Users/kellyjc/Desktop/d3_pipeline/data/war/d{division}_pitching_war_{year}.csv')
+        os.path.join(output_dir, 'war', f'd{division}_pitching_war_{year}.csv'))
 
     bat_war['B/T'] = bat_war['B/T'].replace('0', np.nan).astype(str)
     pitch_war['B/T'] = pitch_war['B/T'].replace('0', np.nan).astype(str)
@@ -417,25 +401,25 @@ def standardize_hand(x):
     return np.nan
 
 
-def main():
-    db_file = '../ncaa.db'
-    conn = sqlite3.connect(db_file)
+def main(working_dir, output_dir):
+    year = 2025
+
+    if not os.path.exists(os.path.join(output_dir, 'leaderboards')):
+        os.makedirs(os.path.join(output_dir, 'leaderboards'))
 
     all_situational = []
     all_baserunning = []
     all_batted_ball = []
     all_splits = []
-    year = 2025
 
     for division in range(1, 4):
         print(f'Processing data for {year} D{division}')
         try:
-            pbp_df, bat_war = get_data(year, division)
+            pbp_df, bat_war = get_data(year, division, output_dir)
             situational, batted_ball, splits = run_analysis(
                 pbp_df, year, division)
 
             if all(result is not None for result in [situational, batted_ball, splits]):
-                # Add year and division to each dataset
                 for df, lst in [(situational, all_situational),
                                 (batted_ball, all_batted_ball),
                                 (splits, all_splits)]:
@@ -443,7 +427,6 @@ def main():
                     df['Division'] = division
                     lst.append(df)
 
-                # Get baserunning data
                 baserun = bat_war[['Player', 'player_id', 'Team', 'Conference', 'SB%', 'wSB',
                                    'wGDP', 'wTEB', 'Baserunning', 'EBT', 'OutsOB', 'Opportunities',
                                    'CS', 'SB', 'Picked']].sort_values('Baserunning')
@@ -466,14 +449,16 @@ def main():
         if data_list:
             combined_df = pd.concat(data_list, ignore_index=True)
             combined_df = combined_df.drop_duplicates(subset=dedup_cols)
-
-            combined_df.to_sql(name, conn, if_exists='replace', index=False)
             combined_df.to_csv(
-                f'C:/Users/kellyjc/Desktop/d3_pipeline/data/leaderboards/{name}.csv', index=False)
-
-    conn.close()
+                os.path.join(output_dir, 'leaderboards', f'{name}.csv'), index=False)
     print("Processing complete!")
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--working_dir', required=True)
+    parser.add_argument('--output_dir', required=True)
+    args = parser.parse_args()
+
+    main(args.working_dir, args.output_dir)

@@ -2,7 +2,6 @@ library(tidyverse)
 library(stringr)
 library(parallel)
 
-# Helper functions
 stripwhite <- function(x) gsub("\\s*$", "", gsub("^\\s*", "", x))
 
 strip_punc <- function(x){ 
@@ -544,24 +543,43 @@ ncaa_parse_parallel <- function(pbp_data_frame, num_cores = detectCores() - 1) {
   do.call(rbind, results)
 }
 
-for (division in c(1, 2, 3)) {
+main <- function(working_dir, output_dir) {
   year <- 2025
-  file_path <- sprintf("C:/Users/kellyjc/Desktop/d3_pipelinedata/play_by_play/d%d_pbp_%d.csv", division, year)
-  message(sprintf("Processing Division %d, Year %d", division, year))
+  setwd(working_dir)
   
-  df = read.csv(file_path)
-  df$play_id <- seq_len(nrow(df))
-  
-  pbp_data <- ncaa_parse_parallel(df)
-  
-  if (nrow(pbp_data) == 0) {
-    message(sprintf("No play-by-play data processed for Division %d, Year %d - skipping file write", division, year))
-    next
+  if (!dir.exists(output_dir)) {
+    dir.create(output_dir, recursive = TRUE)
   }
   
-  file_path <- sprintf("C:/Users/kellyjc/Desktop/d3_pipeline/data/play_by_play/d%d_parsed_pbp_%d.csv", division, year)
-  output_file <- sprintf(file_path, division, year)
-  write_csv(pbp_data, output_file)
+  for (division in 1:3) {
+    cli::cli_alert_info(paste("Processing division:", division))
+    div_name <- switch(division,
+                      "1" = "d1",
+                      "2" = "d2",
+                      "3" = "d3")
+    
+    input_path <- file.path(output_dir, paste0(div_name, "_pbp_", year, ".csv"))
+    
+    if (!file.exists(input_path)) {
+      cli::cli_alert_warning(sprintf("PBP file not found: %s - skipping division", input_path))
+      next
+    }
+    
+    df <- read.csv(input_path)
+    df$play_id <- seq_len(nrow(df))
+    
+    cli::cli_alert_info(sprintf("Parsing PBP data for Division %d", division))
+    pbp_data <- ncaa_parse_parallel(df)
+    
+    if (nrow(pbp_data) == 0) {
+      cli::cli_alert_warning(sprintf("No play-by-play data processed for Division %d - skipping file write", division))
+      next
+    }
+    
+    output_path <- file.path(output_dir, paste0(div_name, "_parsed_pbp_", year, ".csv"))
+    write_csv(pbp_data, output_path)
+    cli::cli_alert_success(sprintf("Saved parsed PBP data to: %s", output_path))
+  }
   
-  message(sprintf("Saved data to %s", output_file))
+  cli::cli_alert_success("PBP parsing completed successfully!")
 }
