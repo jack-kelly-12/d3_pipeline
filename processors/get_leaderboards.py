@@ -15,10 +15,11 @@ class BaseballAnalytics:
         'ERROR': 18
     }
 
-    def __init__(self, pbp_df, year, division, weights_path='C:/Users/kellyjc/Desktop/d3_pipeline/data/miscellaneous/d{}_linear_weights_{}.csv'):
+    def __init__(self, pbp_df, year, division, output_path):
         self.original_df = pbp_df.copy()
         self.year = year
-        self.weights_path = weights_path
+        self.weights_path = os.path.join(
+            output_path, 'miscellaneous', f'd{division}_linear_weights_{year}.csv')
         self.situations = None
         self.weights = None
         self.division = division
@@ -352,15 +353,15 @@ def run_analysis(pbp_df, year, division):
         return None, None, None
 
 
-def get_data(year, division, output_dir):
+def get_data(year, division, data_dir):
     pbp_df = pd.read_csv(
-        os.path.join(output_dir, 'play_by_play', f'd{division}_parsed_pbp_{year}.csv'))
+        os.path.join(data_dir, 'play_by_play', f'd{division}_parsed_pbp_{year}.csv'))
     bat_war = pd.read_csv(
-        os.path.join(output_dir, 'war', f'd{division}_batting_war_{year}.csv')).rename(columns={'WAR': 'bWAR'})
+        os.path.join(data_dir, 'war', f'd{division}_batting_war_{year}.csv')).rename(columns={'WAR': 'bWAR'})
     rosters = pd.read_csv(
-        os.path.join(output_dir, 'rosters', f'd{division}_rosters_{year}.csv'))
+        os.path.join(data_dir, 'rosters', f'd{division}_rosters_{year}.csv'))
     pitch_war = pd.read_csv(
-        os.path.join(output_dir, 'war', f'd{division}_pitching_war_{year}.csv'))
+        os.path.join(data_dir, 'war', f'd{division}_pitching_war_{year}.csv'))
 
     bat_war['B/T'] = bat_war['B/T'].replace('0', np.nan).astype(str)
     pitch_war['B/T'] = pitch_war['B/T'].replace('0', np.nan).astype(str)
@@ -401,11 +402,11 @@ def standardize_hand(x):
     return np.nan
 
 
-def main(working_dir, output_dir):
+def main(data_dir):
     year = 2025
 
-    if not os.path.exists(os.path.join(output_dir, 'leaderboards')):
-        os.makedirs(os.path.join(output_dir, 'leaderboards'))
+    if not os.path.exists(os.path.join(data_dir, 'leaderboards')):
+        os.makedirs(os.path.join(data_dir, 'leaderboards'))
 
     all_situational = []
     all_baserunning = []
@@ -415,7 +416,7 @@ def main(working_dir, output_dir):
     for division in range(1, 4):
         print(f'Processing data for {year} D{division}')
         try:
-            pbp_df, bat_war = get_data(year, division, output_dir)
+            pbp_df, bat_war = get_data(year, division, data_dir)
             situational, batted_ball, splits = run_analysis(
                 pbp_df, year, division)
 
@@ -450,15 +451,14 @@ def main(working_dir, output_dir):
             combined_df = pd.concat(data_list, ignore_index=True)
             combined_df = combined_df.drop_duplicates(subset=dedup_cols)
             combined_df.to_csv(
-                os.path.join(output_dir, 'leaderboards', f'{name}.csv'), index=False)
+                os.path.join(data_dir, 'leaderboards', f'{name}.csv'), index=False)
     print("Processing complete!")
 
 
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--working_dir', required=True)
-    parser.add_argument('--output_dir', required=True)
+    parser.add_argument('--data_dir', required=True)
     args = parser.parse_args()
 
-    main(args.working_dir, args.output_dir)
+    main(args.data_dir)

@@ -1,5 +1,5 @@
 import pandas as pd
-from pathlib import Path
+import os
 
 
 def calculate_woba_constants(lw_df, batting_df):
@@ -69,16 +69,16 @@ def calculate_fip_constant(pitching_df):
     return lgERA - fip_components
 
 
-def calculate_guts_constants(division, year, db_path, data_dir):
+def calculate_guts_constants(division, year, output_path):
     try:
         pbp_df = pd.read_csv(
-            data_dir / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv')
+            output_path / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv')
         lw_df = pd.read_csv(
-            data_dir / f'miscellaneous/d{division}_linear_weights_{year}.csv')
+            output_path / f'miscellaneous/d{division}_linear_weights_{year}.csv')
 
-        pitching_df = pd.read_csv(data_dir /
+        pitching_df = pd.read_csv(output_path /
                                   f'stats/d{division}_pitching_{year}.csv')
-        batting_df = pd.read_csv(data_dir /
+        batting_df = pd.read_csv(output_path /
                                  f'stats/d{division}_batting_{year}.csv')
 
         batting_df['1B'] = batting_df['H'] - batting_df['2B'] - \
@@ -100,8 +100,9 @@ def calculate_guts_constants(division, year, db_path, data_dir):
         return None
 
 
-def main():
-    data_dir = Path('C:/Users/kellyjc/Desktop/d3_pipeline/data')
+def main(data_dir):
+    if not os.path.exists(os.path.join(data_dir, 'guts')):
+        os.makedirs(os.path.join(data_dir, 'guts'))
     divisions = [1, 2, 3]
     year = 2025
 
@@ -116,11 +117,14 @@ def main():
     guts_df = pd.DataFrame(all_constants).sort_values(
         ['Division', 'Year'], ascending=[True, False])
 
-    guts_df.to_csv(data_dir / 'guts/guts_constants.csv', index=False)
+    guts_df.to_csv(f'{data_dir}/guts/guts_constants.csv', index=False)
     print(f"Saved {len(guts_df)} rows of Guts constants")
-
-    return guts_df
 
 
 if __name__ == '__main__':
-    guts_constants = main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--data_dir', required=True)
+    args = parser.parse_args()
+
+    main(args.data_dir)

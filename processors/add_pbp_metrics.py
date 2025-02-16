@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import os
 import argparse
-import sqlite3
 
 
 def get_data(year, division, base_path):
@@ -12,7 +11,6 @@ def get_data(year, division, base_path):
     roster = pd.read_csv(os.path.join(
         base_path, 'data', 'rosters', f'd{division}_rosters_{year}.csv'))
 
-    # Load miscellaneous data
     le = pd.read_csv(os.path.join(base_path, 'data',
                      'miscellaneous', 'leverage_index.csv'))
     we = pd.read_csv(os.path.join(base_path, 'data', 'miscellaneous',
@@ -131,28 +129,17 @@ def extract_player_from_description(row):
 
 
 def process_pitchers(df):
-    """
-    Process pitchers with backfill when "to p for" appears in description.
-    Vectorized version for improved performance.
-    """
     df = df.copy()
 
-    # Create pitcher changes mask
     pitcher_changes = df['description'].str.contains('to p for', na=False)
 
-    # Create initial pitcher column
     df['pitcher'] = pd.Series(dtype='string')
-
-    # Set pitcher values at change points
     df.loc[pitcher_changes, 'pitcher'] = df.loc[pitcher_changes,
                                                 'sub_in'].astype(str)
 
-    # Group by game and pitch team
     grouped = df.groupby(['game_id', 'pitch_team'])
 
-    # Process each group vectorized
     def process_group(group):
-        # Get indices of pitcher changes
         change_idx = group.index[pitcher_changes[group.index]]
 
         if len(change_idx) > 0:
@@ -630,14 +617,12 @@ def process_single_year(args):
             pbp_df.away_team == pbp_df.bat_team, 'Top', 'Bottom')
     except FileNotFoundError as e:
         print(f"Error loading data for {year}: {e}")
-        return None  # Return None if data loading fails
+        return None
 
-    # Initial processing
     pbp_processed = process_pitchers(pbp_df)
     pbp_processed = standardize_names(pbp_processed, roster)
     pbp_processed = calculate_woba(pbp_processed, year, division)
 
-    # Base states and scoring
     pbp_processed['base_cd_after'] = pbp_processed.groupby(
         'game_id')['base_cd_before'].shift(-1)
     pbp_processed['base_cd_after'] = pbp_processed['base_cd_after'].fillna(0)
@@ -651,10 +636,8 @@ def process_single_year(args):
     pbp_processed['outs_before'] = pbp_processed['outs_after'] - \
         pbp_processed['outs_on_play']
 
-    # Process expectancy matrices
     re_melted = melt_run_expectancy(re)
 
-    # Map base states
     leverage_melted['Runners'] = pd.to_numeric(
         leverage_melted['Runners'].replace(base_state_map), errors='ignore')
     win_expectancy['Runners'] = pd.to_numeric(
@@ -683,7 +666,6 @@ def process_single_year(args):
         'hit_type'
     ]
 
-    # Add year and division columns for combined table
     final_df = merged_df[columns].copy()
     final_df['year'] = year
     final_df['division'] = division
@@ -691,59 +673,22 @@ def process_single_year(args):
     return final_df
 
 
-def main():
-    parser = argparse.ArgumentParser(
-        description='Process baseball statistics data.')
-    parser.add_argument('--base-path', required=True,
-                        help='Base path to the data directory structure')
-    parser.add_argument('--db-path', required=True,
-                        help='Path to the SQLite database')
-    parser.add_argument('--year', type=int, default=2025,
-                        help='Year to process (default: 2025)')
-    args = parser.parse_args()
-
+def main(base_path):
     divisions = range(1, 4)
     all_pbp_data = []
 
     for division in divisions:
         processed_data = process_single_year(
-            (args.year, division, args.base_path))
+            (args.year, division, base_path))
         if processed_data is not None:
             all_pbp_data.append(processed_data)
             print(f"Successfully processed data for D{division} {args.year}")
 
-    if all_pbp_data:
-        combined_pbp = pd.concat(all_pbp_data, ignore_index=True)
-
-        # Connect to database
-        conn = sqlite3.connect(args.db_path)
-
-        try:
-            # Delete existing data for the specified year
-            cursor = conn.cursor()
-            cursor.execute("DELETE FROM pbp WHERE year = ?", (args.year,))
-            conn.commit()
-            print(f"Deleted existing data for year {args.year}")
-
-            # Append new data
-            combined_pbp.to_sql('pbp', conn, if_exists='append', index=False)
-            print(f"Successfully appended new data for year {args.year}")
-
-        except sqlite3.OperationalError as e:
-            if "no such table" in str(e):
-                # If table doesn't exist, create it
-                combined_pbp.to_sql(
-                    'pbp', conn, if_exists='replace', index=False)
-                print("Created new pbp table in database")
-            else:
-                raise e
-        finally:
-            conn.close()
-
-        print("Processing completed successfully!")
-    else:
-        print("No data to process!")
-
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--base_dir', required=True)
+    args = parser.parse_args()
+
+    main(args.output_dir)

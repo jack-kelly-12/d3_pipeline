@@ -50,15 +50,39 @@ jobs:
           source("processors/parse_pbp.R")
           main(
             working_dir = getwd(),
-            output_dir = file.path(getwd(), "data")
+            data_dir = file.path(getwd(), "data")
           )
         shell: Rscript {0}
+
+      - name: Guts constants
+        run: |
+          python processors/get_guts.py \
+            --data_dir ${{ github.workspace }}/data
 
       - name: Generate leaderboards
         run: |
           python processors/get_leaderboards.py \
-            --working_dir ${{ github.workspace }} \
-            --output_dir ${{ github.workspace }}/data
+            --data_dir ${{ github.workspace }}/data
+
+      - name: Get expected runs matrix
+        run: |
+          python processors/get_er_matrix.py \
+            --data_dir ${{ github.workspace }}/data
+
+      - name: Get linear weights
+        run: |
+          python processors/get_linear_weights.py \
+            --data_dir ${{ github.workspace }}/data
+
+      - name: New parsed pbp with leverage, win exp
+        run: |
+          python processors/add_pbp_metrics.py \
+            --data_dir ${{ github.workspace }}/data
+
+      - name: Calculate WAR
+        run: |
+          python processors/add_war.py \
+            --data_dir ${{ github.workspace }}/data
 
       - name: Commit and push changes
         run: |

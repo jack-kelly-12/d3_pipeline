@@ -5,43 +5,34 @@ import numpy as np
 
 
 def get_expected_runs_matrix_2(base_cd, outs, runs_rest_of_inn):
-    # Create a data frame and remove any NA values
     ER = pd.DataFrame({
         'base_cd': base_cd,
         'outs': outs,
         'runs_rest_of_inn': runs_rest_of_inn
     }).dropna()
 
-    # Ensure values are within expected ranges
     ER = ER[
         (ER['base_cd'].between(0, 7)) &
         (ER['outs'].between(0, 2))
     ]
 
-    # Calculate ERV
     ER = (ER.groupby(['base_cd', 'outs'])
           .agg({
               'runs_rest_of_inn': ['mean', 'size']
           })
           .reset_index())
 
-    # Flatten multi-level columns
     ER.columns = ['base_cd', 'outs', 'ERV', 'count']
 
-    # Round ERV and add state column
     ER['ERV'] = ER['ERV'].round(3)
     ER['state'] = ER['base_cd'].astype(str) + ' ' + ER['outs'].astype(str)
 
-    # Create the matrix
     ER_matrix = np.zeros((8, 3))
     for i in range(len(ER)):
-        # Remove +1 since we want 0-based indexing
         row = int(ER['base_cd'].iloc[i])
-        # Remove +1 since we want 0-based indexing
         col = int(ER['outs'].iloc[i])
         ER_matrix[row, col] = ER['ERV'].iloc[i]
 
-    # Create DataFrame with row and column names
     ER_matrix = pd.DataFrame(
         ER_matrix,
         index=['_ _ _', '1B _ _', '_ 2B _', '1B 2B _',
@@ -52,16 +43,14 @@ def get_expected_runs_matrix_2(base_cd, outs, runs_rest_of_inn):
     return ER_matrix
 
 
-def main():
-    data_dir = Path("C:/Users/kellyjc/Desktop/d3_pipeline/data")
+def main(data_dir):
     year = 2025
     divisions = range(1, 4)
     all_matrices = {}
 
     for division in divisions:
         try:
-            pbp_file = data_dir / "play_by_play" / \
-                f"d{division}_parsed_pbp_{year}.csv"
+            pbp_file = f'{data_dir}/play_by_play/d{division}_parsed_pbp_{year}.csv'
 
             if not pbp_file.exists():
                 print(f"No PBP data for D{division} {year}")
@@ -70,16 +59,10 @@ def main():
             pbp_df = pd.read_csv(pbp_file)
             print(f"Loaded {len(pbp_df)} rows for D{division} {year}")
 
-            # Get base state
             base_cd = pbp_df['base_cd_before']
-
-            # Get outs
             outs = pbp_df['outs_before']
-
-            # Calculate runs for rest of inning
             runs_rest_of_inn = pbp_df['runs_roi']
 
-            # Calculate matrix
             matrix = get_expected_runs_matrix_2(
                 base_cd, outs, runs_rest_of_inn)
             all_matrices[f"D{division}_{year}"] = matrix
@@ -108,19 +91,19 @@ def main():
         print("No matrices were generated!")
         return None
 
-    # Combine and sort
     final_df = pd.concat(final_dfs, ignore_index=True)
     final_df = final_df.sort_values(['Division', 'Year', 'Bases'])
 
-    # Save to database
-    with sqlite3.connect("C:/Users/kellyjc/Desktop/d3_app_improved/ncaa.db") as conn:
-        final_df.to_sql('expected_runs', conn,
-                        if_exists='replace', index=False)
-
     print(f"Saved {len(final_df)} rows of expected runs matrices")
 
-    return final_df
+    final_df.to_csv(
+        f'{data_dir}/miscellaneous/d{division}_expected_runs_{year}.csv')
 
 
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--data_dir', required=True)
+    args = parser.parse_args()
+
+    main(args.data_dir)

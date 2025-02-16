@@ -193,13 +193,13 @@ class PlayerMatcher:
         return result_df[columns_to_keep]
 
 
-if __name__ == '__main__':
+def main(data_dir):
     batting_files = sorted(
-        glob.glob('C:/Users/kellyjc/Desktop/d3_pipeline/data/stats/d3_batting_2*.csv'))
+        glob.glob(f'{data_dir}/stats/d3_batting_2*.csv'))
     pitching_files = sorted(glob.glob(
-        'C:/Users/kellyjc/Desktop/d3_pipeline/data/stats/d3_pitching_2*.csv'))
+        f'{data_dir}/stats/d3_pitching_2*.csv'))
     roster_files = sorted(glob.glob(
-        'C:/Users/kellyjc/Desktop/d3_pipeline/data/rosters/d3_rosters_2*.csv'))
+        f'{data_dir}/rosters/d3_rosters_2*.csv'))
 
     matcher = PlayerMatcher()
     mapped_batting, mapped_pitching, mapped_rosters = matcher.process_files(
@@ -213,8 +213,17 @@ if __name__ == '__main__':
         df_roster = mapped_rosters.query(f'year == {year}')
 
         df_batting.to_csv(
-            f'C:/Users/kellyjc/Desktop/d3_pipeline/data/stats/d3_batting_{year}.csv', index=False)
+            f'{data_dir}/stats/d3_batting_{year}.csv', index=False)
         df_pitching.to_csv(
-            f'C:/Users/kellyjc/Desktop/d3_pipeline/data/stats/d3_pitching_{year}.csv', index=False)
+            f'{data_dir}/stats/d3_pitching_{year}.csv', index=False)
         df_roster.to_csv(
-            f'C:/Users/kellyjc/Desktop/d3_pipeline/data/rosters/d3_rosters_{year}.csv', index=False)
+            f'{data_dir}/rosters/d3_rosters_{year}.csv', index=False)
+
+
+if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--data_dir', required=True)
+    args = parser.parse_args()
+
+    main(args.data_dir)

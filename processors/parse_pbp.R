@@ -315,7 +315,6 @@ ncaa_parse_parallel <- function(pbp_data_frame, num_cores = detectCores() - 1) {
     library(stringr)
   })
   
-  # Process each chunk in parallel
   results <- parLapply(cl, chunks, function(chunk) {
     chunk %>%
       mutate(
@@ -543,12 +542,12 @@ ncaa_parse_parallel <- function(pbp_data_frame, num_cores = detectCores() - 1) {
   do.call(rbind, results)
 }
 
-main <- function(working_dir, output_dir) {
+main <- function(working_dir, data_dir) {
   year <- 2025
   setwd(working_dir)
   
-  if (!dir.exists(output_dir)) {
-    dir.create(output_dir, recursive = TRUE)
+  if (!dir.exists(data_dir)) {
+    dir.create(data_dir, recursive = TRUE)
   }
   
   for (division in 1:3) {
@@ -558,7 +557,7 @@ main <- function(working_dir, output_dir) {
                       "2" = "d2",
                       "3" = "d3")
     
-    input_path <- file.path(output_dir, paste0(div_name, "_pbp_", year, ".csv"))
+    input_path <- file.path(data_dir, paste0(div_name, "_pbp_", year, ".csv"))
     
     if (!file.exists(input_path)) {
       cli::cli_alert_warning(sprintf("PBP file not found: %s - skipping division", input_path))
@@ -576,7 +575,7 @@ main <- function(working_dir, output_dir) {
       next
     }
     
-    output_path <- file.path(output_dir, paste0(div_name, "_parsed_pbp_", year, ".csv"))
+    output_path <- file.path(data_dir, paste0(div_name, "_parsed_pbp_", year, ".csv"))
     write_csv(pbp_data, output_path)
     cli::cli_alert_success(sprintf("Saved parsed PBP data to: %s", output_path))
   }
