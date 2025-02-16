@@ -67,7 +67,8 @@ main <- function(working_dir, output_dir) {
   for (division in c(1, 2, 3)) {
     division_schedules <- data.frame()
     dir.create(output_dir, showWarnings = FALSE)
-
+    # Fix: Add div_name definition
+    div_name <- paste0("d", division)  # This creates "d1", "d2", "d3"
     file_path <- file.path(output_dir, paste0(div_name, "_schedules_", year, ".csv"))
   
     message(sprintf("Processing Division %d, Year %d", division, year))
@@ -92,8 +93,3 @@ main <- function(working_dir, output_dir) {
     }
   }
 }
-
-main(
- working_dir = "C:/Users/kellyjc/Desktop/d3_pipeline",
- output_dir = "C:/Users/kellyjc/Desktop/d3_pipeline/data/schedules",
-)

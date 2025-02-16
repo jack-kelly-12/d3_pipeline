@@ -206,9 +206,3 @@ main <- function(working_dir, output_dir, db_path) {
   dbDisconnect(con)
   cli::cli_alert_success("Process completed successfully!")
 }
-
-main(
- working_dir = "C:/Users/kellyjc/Desktop/d3_pipeline",
- output_dir = "C:/Users/kellyjc/Desktop/d3_pipeline/data/rosters",
- db_path = "../d3_app_improved/backend/ncaa.db"
-)
