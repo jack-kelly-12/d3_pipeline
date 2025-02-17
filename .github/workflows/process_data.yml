@@ -84,6 +84,11 @@ jobs:
           main(working_dir = root_dir, data_dir = file.path(root_dir, '${{ env.PBP_DIR }}'))
         shell: Rscript {0}
 
+      - name: Get expected runs matrix
+        shell: bash
+        run: |
+          python processors/get_er_matrix.py --data_dir ${{ env.DATA_DIR }}
+
       - name: Get linear weights
         shell: bash
         run: |
@@ -98,11 +103,6 @@ jobs:
         shell: bash
         run: |
           python processors/get_leaderboards.py --data_dir ${{ env.DATA_DIR }}
-
-      - name: Get expected runs matrix
-        shell: bash
-        run: |
-          python processors/get_er_matrix.py --data_dir ${{ env.DATA_DIR }}
 
       - name: New parsed pbp with leverage, win exp
         shell: bash
