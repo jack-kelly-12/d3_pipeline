@@ -12,6 +12,10 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.PAT }}
       R_LIBS_USER: ${{ github.workspace }}/R/library
+      DATA_DIR: data
+      SCHEDULES_DIR: data/schedules
+      PBP_DIR: data/play_by_play
+      STATS_DIR: data/stats
 
     steps:
       - name: Checkout repository
@@ -48,7 +52,8 @@ jobs:
       - name: Install R dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          install.packages(c(
+          install.packages("remotes")
+          remotes::install_cran(c(
             "dplyr",
             "purrr",
             "tidyverse",
@@ -60,32 +65,35 @@ jobs:
             "xml2",
             "devtools",
             "pacman"
-          ), repos = "https://cloud.r-project.org/")
-          devtools::install_github(repo = "robert-frey/collegebaseball")
-          pacman::p_load_current_gh("billpetti/baseballr")
+          ), dependencies = TRUE)
+          remotes::install_github(repo = "robert-frey/collegebaseball")
+          remotes::install_github(repo = "billpetti/baseballr")
         shell: Rscript {0}
 
       - name: Run data collection scripts
+        shell: Rscript {0}
         run: |
+          # Set working directory to repository root
           root_dir <- getwd()
 
-          setwd(root_dir)
+          # Collect schedules
           source('scrapers/collect_schedules.R')
-          main(working_dir = root_dir, output_dir = file.path(root_dir, 'data/schedules'))
+          main(working_dir = root_dir, output_dir = file.path(root_dir, '${{ env.SCHEDULES_DIR }}'))
 
-          setwd(root_dir)
+          # Collect play-by-play data
           source('scrapers/collect_pbp.R')
-          main(working_dir = file.path(root_dir, 'data/schedules'), output_dir = file.path(root_dir, 'data/play_by_play'))
+          main(working_dir = file.path(root_dir, '${{ env.SCHEDULES_DIR }}'), 
+               output_dir = file.path(root_dir, '${{ env.PBP_DIR }}'))
 
-          setwd(root_dir)
+          # Collect stats
           source('scrapers/collect_stats.R')
-          main(working_dir = root_dir, output_dir = file.path(root_dir, 'data/stats'))
-        shell: Rscript {0}
+          main(working_dir = root_dir, 
+               output_dir = file.path(root_dir, '${{ env.STATS_DIR }}'))
 
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/
+          git add ${{ env.DATA_DIR }}/
           git commit -m "Update pbp, stats" || echo "No changes to commit"
           git push "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"

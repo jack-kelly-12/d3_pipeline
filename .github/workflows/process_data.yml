@@ -15,6 +15,7 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_LIBS_USER: ${{ github.workspace }}/R/library
+      DATA_DIR: data
 
     steps:
       - name: Checkout repository
@@ -69,39 +70,37 @@ jobs:
           root_dir <- getwd()
           setwd(root_dir)
           source("processors/parse_pbp.R")
-          main(working_dir = root_dir, data_dir = file.path(root_dir, "data"))
+          main(working_dir = root_dir, data_dir = file.path(getwd(), "data"))
         shell: Rscript {0}
-
-      - name: Linear weights
-        run: |
-          python processors/get_linear_weights.py \
-            --data_dir ${{ github.workspace }}/data
-        shell: Rscript {0}
-
-      - name: Get expected runs matrix
-        run: |
-          python processors/get_er_matrix.py \
-            --data_dir ${{ github.workspace }}/data
 
       - name: Guts constants
         run: |
-          python processors/get_guts.py \
-            --data_dir ${{ github.workspace }}/data
+          python processors/get_guts.py --data_dir ${{ env.DATA_DIR }}
 
       - name: Generate leaderboards
+        shell: bash
         run: |
-          python processors/get_leaderboards.py \
-            --data_dir ${{ github.workspace }}/data
+          python processors/get_leaderboards.py --data_dir ${{ env.DATA_DIR }}
+
+      - name: Get expected runs matrix
+        shell: bash
+        run: |
+          python processors/get_er_matrix.py --data_dir ${{ env.DATA_DIR }}
+
+      - name: Get linear weights
+        shell: bash
+        run: |
+          python processors/get_linear_weights.py --data_dir ${{ env.DATA_DIR }}
 
       - name: New parsed pbp with leverage, win exp
+        shell: bash
         run: |
-          python processors/add_pbp_metrics.py \
-            --data_dir ${{ github.workspace }}/data
+          python processors/add_pbp_metrics.py --data_dir ${{ env.DATA_DIR }}
 
       - name: Calculate WAR
+        shell: bash
         run: |
-          python processors/add_war.py \
-            --data_dir ${{ github.workspace }}/data
+          python processors/add_war.py --data_dir ${{ env.DATA_DIR }}
 
       - name: Commit and push changes
         run: |
