@@ -58,14 +58,23 @@ jobs:
 
       - name: Run data collection scripts
         run: |
+          # Set root working directory
+          root_dir <- getwd()
+
+          # Run schedules collection
+          setwd(root_dir)
           source('scrapers/collect_schedules.R')
-          main(working_dir = getwd(), output_dir = file.path(getwd(), 'data/schedules'))
+          main(working_dir = root_dir, output_dir = file.path(root_dir, 'data/schedules'))
 
+          # Run play-by-play collection
+          setwd(root_dir)
           source('scrapers/collect_pbp.R')
-          main(working_dir = file.path(getwd(), 'data/schedules'), output_dir = file.path(getwd(), 'data/play_by_play'))
+          main(working_dir = file.path(root_dir, 'data/schedules'), output_dir = file.path(root_dir, 'data/play_by_play'))
 
+          # Run stats collection
+          setwd(root_dir)
           source('scrapers/collect_stats.R')
-          main(working_dir = getwd(), output_dir = file.path(getwd(), 'data/stats'))
+          main(working_dir = root_dir, output_dir = file.path(root_dir, 'data/stats'))
         shell: Rscript {0}
 
       - name: Commit and push changes
