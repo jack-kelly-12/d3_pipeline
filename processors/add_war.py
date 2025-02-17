@@ -537,34 +537,30 @@ class BaseballStats:
         return df.dropna(subset=['WAR'])
 
     def get_data(self):
-        conn = self.get_connection()
         pitching, batting, pbp, rosters = [], [], [], []
 
-        try:
-            year = 2025
-            for division in range(1, 4):
-                pitching_df = pd.read_csv(
-                    f'{self.data_dir}/stats/d{division}_pitching_{year}.csv')
-                pitching.append(pitching_df)
+        year = 2025
+        for division in range(1, 4):
+            pitching_df = pd.read_csv(
+                f'{self.data_dir}/stats/d{division}_pitching_{year}.csv')
+            pitching.append(pitching_df)
 
-                batting_df = pd.read_csv(
-                    f'{self.data_dir}/stats/d{division}_batting_{year}.csv')
-                batting.append(batting_df)
+            batting_df = pd.read_csv(
+                f'{self.data_dir}/stats/d{division}_batting_{year}.csv')
+            batting.append(batting_df)
 
-                roster_df = pd.read_csv(f'{self.data_dir}/stats/d{division}_rosters_{year}.csv').query(
-                    f'year == {year}').query(f'division == {division}')
-                rosters.append(roster_df)
+            roster_df = pd.read_csv(f'{self.data_dir}/stats/d{division}_rosters_{year}.csv').query(
+                f'year == {year}').query(f'division == {division}')
+            rosters.append(roster_df)
 
-                pbp_df = pd.read_csv(
-                    f'{self.data_dir}/play_by_play/d{division}_parsed_pbp_new_{year}.csv')
-                pbp.append(pbp_df)
+            pbp_df = pd.read_csv(
+                f'{self.data_dir}/play_by_play/d{division}_parsed_pbp_new_{year}.csv')
+            pbp.append(pbp_df)
 
-                park_factors = pd.read_csv(
-                    f'{self.data_dir}/park_factors/d{division}_park_factors.csv')
-                guts = pd.read_csv(f'{self.data_dir}/guts/guts_constants.csv')
-            return batting, pitching, pbp, guts, park_factors, rosters
-        finally:
-            conn.close()
+            park_factors = pd.read_csv(
+                f'{self.data_dir}/park_factors/d{division}_park_factors.csv')
+            guts = pd.read_csv(f'{self.data_dir}/guts/guts_constants.csv')
+        return batting, pitching, pbp, guts, park_factors, rosters
 
     def create_team_war_table(self, df, year, agg_dict):
         team_war = df.groupby('Team').agg(agg_dict).reset_index()
