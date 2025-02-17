@@ -185,7 +185,7 @@ main <- function(working_dir, output_dir) {
                       "2" = "d2",
                       "3" = "d3")
     
-    schedule_path <- file.path(output_dir, paste0(div_name, "_schedules_", year, ".csv"))
+    schedule_path <- file.path(working_dir, paste0(div_name, "_schedules_", year, ".csv"))
     
     if (!file.exists(schedule_path)) {
       cli::cli_alert_warning(sprintf("Schedule file not found: %s - skipping division", schedule_path))

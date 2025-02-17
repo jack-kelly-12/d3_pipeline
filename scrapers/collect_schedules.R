@@ -1,6 +1,5 @@
 library(collegebaseball)
 library(dplyr)
-library(baseballr)
 
 get_schedules <- function(year = 2025, division = 1) {
   teams_df <- baseballr:::rds_from_url(
