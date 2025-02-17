@@ -73,19 +73,18 @@ jobs:
       - name: Run data collection scripts
         shell: Rscript {0}
         run: |
-          # Set working directory to repository root
           root_dir <- getwd()
 
-          # Collect schedules
+          setwd(root_dir)
           source('scrapers/collect_schedules.R')
           main(working_dir = root_dir, output_dir = file.path(root_dir, '${{ env.SCHEDULES_DIR }}'))
 
-          # Collect play-by-play data
+          setwd(root_dir)
           source('scrapers/collect_pbp.R')
           main(working_dir = file.path(root_dir, '${{ env.SCHEDULES_DIR }}'), 
                output_dir = file.path(root_dir, '${{ env.PBP_DIR }}'))
 
-          # Collect stats
+          setwd(root_dir)
           source('scrapers/collect_stats.R')
           main(working_dir = root_dir, 
                output_dir = file.path(root_dir, '${{ env.STATS_DIR }}'))
