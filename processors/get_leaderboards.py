@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
+from pathlib import Path
 
 
 class BaseballAnalytics:
@@ -404,6 +405,7 @@ def standardize_hand(x):
 
 def main(data_dir):
     year = 2025
+    data_dir = Path(data_dir)
 
     if not os.path.exists(os.path.join(data_dir, 'leaderboards')):
         os.makedirs(os.path.join(data_dir, 'leaderboards'))

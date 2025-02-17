@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+from pathlib import Path
 
 
 def calculate_woba_constants(lw_df, batting_df):
@@ -105,6 +106,7 @@ def main(data_dir):
         os.makedirs(os.path.join(data_dir, 'guts'))
     divisions = [1, 2, 3]
     year = 2025
+    data_dir = Path(data_dir)
 
     all_constants = []
 

@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import argparse
+from pathlib import Path
 
 
 class LinearWeightsCalculator:
@@ -115,6 +116,7 @@ class LinearWeightsCalculator:
 
 def main(data_dir):
     year = 2025
+    data_dir = Path(data_dir)
 
     for division in range(1, 4):
         re24_matrix = pd.read_csv(data_dir /

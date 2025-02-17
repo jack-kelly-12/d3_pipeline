@@ -858,8 +858,8 @@ class BaseballStats:
 
 
 def main(data_dir):
-    if not os.path.exists(args.data_dir):
-        raise FileNotFoundError(f"Data directory not found: {args.data_dir}")
+    if not os.path.exists(data_dir):
+        raise FileNotFoundError(f"Data directory not found: {data_dir}")
 
     stats = BaseballStats(data_dir=data_dir)
 

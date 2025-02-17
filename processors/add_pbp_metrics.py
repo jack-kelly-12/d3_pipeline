@@ -4,17 +4,17 @@ import numpy as np
 import os
 
 
-def get_data(year, division, base_path):
+def get_data(year, division, data_dir):
     pbp_df = pd.read_csv(os.path.join(
-        base_path, 'data', 'play_by_play', f'd{division}_parsed_pbp_{year}.csv'))
+        data_dir, 'play_by_play', f'd{division}_parsed_pbp_{year}.csv'))
     roster = pd.read_csv(os.path.join(
-        base_path, 'data', 'rosters', f'd{division}_rosters_{year}.csv'))
+        data_dir, 'rosters', f'd{division}_rosters_{year}.csv'))
 
-    le = pd.read_csv(os.path.join(base_path, 'data',
+    le = pd.read_csv(os.path.join(data_dir,
                      'miscellaneous', 'leverage_index.csv'))
-    we = pd.read_csv(os.path.join(base_path, 'data', 'miscellaneous',
+    we = pd.read_csv(os.path.join(data_dir, 'miscellaneous',
                      'win_expectancy.csv')).rename(columns={'Tie': '0'})
-    re = pd.read_csv(os.path.join(base_path, 'data',
+    re = pd.read_csv(os.path.join(data_dir,
                      'miscellaneous', f'd{division}_er_matrix_{year}.csv'))
 
     pbp_df['top_inning'] = pbp_df.top_inning.replace({0: 'Bottom', 1: 'Top'})
@@ -607,10 +607,10 @@ def run_analysis(pbp_df, year, division):
 
 
 def process_single_year(args):
-    year, division, base_path = args
+    year, division, data_dir = args
     try:
         pbp_df, leverage_melted, win_expectancy, re, roster = get_data(
-            year, division, base_path)
+            year, division, data_dir)
 
         pbp_df['top_inning'] = np.where(
             pbp_df.away_team == pbp_df.bat_team, 'Top', 'Bottom')
@@ -653,7 +653,7 @@ def process_single_year(args):
     merged_df = calculate_dre_and_dwe(merged_df)
 
     output_path = os.path.join(
-        base_path, 'data', 'play_by_play', f'd{division}_parsed_pbp_new_{year}.csv')
+        data_dir, 'play_by_play', f'd{division}_parsed_pbp_new_{year}.csv')
     merged_df.to_csv(output_path, index=False)
 
     columns = [
@@ -672,13 +672,13 @@ def process_single_year(args):
     return final_df
 
 
-def main(base_path):
+def main(data_dir):
     divisions = range(1, 4)
     all_pbp_data = []
 
     for division in divisions:
         processed_data = process_single_year(
-            (args.year, division, base_path))
+            (args.year, division, data_dir))
         if processed_data is not None:
             all_pbp_data.append(processed_data)
             print(f"Successfully processed data for D{division} {args.year}")
@@ -687,7 +687,7 @@ def main(base_path):
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--base_dir', required=True)
+    parser.add_argument('--data_dir', required=True)
     args = parser.parse_args()
 
-    main(args.output_dir)
+    main(args.data_dir)
