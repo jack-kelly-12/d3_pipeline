@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PAT: ${{ secrets.PAT }}
       R_LIBS_USER: ${{ github.workspace }}/R/library
 
     steps:
@@ -37,7 +37,16 @@ jobs:
             libtiff5-dev \
             libjpeg-dev
 
+      - name: Cache R packages
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-r-${{ hashFiles('**/DESCRIPTION') }}
+          restore-keys: |
+            ${{ runner.os }}-r-
+
       - name: Install R dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           install.packages(c(
             "dplyr",
@@ -83,4 +92,4 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/
           git commit -m "Update pbp, stats" || echo "No changes to commit"
-          git push
+          git push "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
