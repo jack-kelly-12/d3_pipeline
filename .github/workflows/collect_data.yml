@@ -65,20 +65,19 @@ jobs:
           "
 
           Rscript -e "
-          source('scrapers/collect_pbp.R')
-          main(
-            working_dir = file.path(getwd(), 'data/schedules'),
-            output_dir = file.path(getwd(), 'data/play_by_play')
-          )
-          )
+            source('scrapers/collect_pbp.R')
+            main(
+              working_dir = file.path(getwd(), 'data/schedules'),
+              output_dir = file.path(getwd(), 'data/play_by_play')
+            )
           "
 
           Rscript -e "
-          source('scrapers/collect_stats.R')
-          main(
-            working_dir = getwd(),
-            output_dir = file.path(getwd(), 'data/stats')
-          )
+            source('scrapers/collect_stats.R')
+            main(
+              working_dir = getwd(),
+              output_dir = file.path(getwd(), 'data/stats')
+            )
           "
         shell: Rscript {0}
 
