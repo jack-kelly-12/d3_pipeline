@@ -120,7 +120,7 @@ def main(data_dir):
 
     for division in range(1, 4):
         re24_matrix = pd.read_csv(data_dir /
-                                  'miscellaneous' / 'd{division}_expected_runs_{year}.csv')
+                                  'miscellaneous' / f'd{division}_expected_runs_{year}.csv')
         calculator = LinearWeightsCalculator(re24_matrix)
         print(f'Processing Division {division}')
 
