@@ -452,6 +452,8 @@ def main(data_dir):
         if data_list:
             combined_df = pd.concat(data_list, ignore_index=True)
             combined_df = combined_df.drop_duplicates(subset=dedup_cols)
+            if not os.path.exists(os.path.join(data_dir, 'leaderboards')):
+                os.makedirs(os.path.join(data_dir, 'leaderboards'))
             combined_df.to_csv(
                 os.path.join(data_dir, 'leaderboards', f'{name}.csv'), index=False)
     print("Processing complete!")

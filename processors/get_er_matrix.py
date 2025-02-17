@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import os
 
 
 def get_expected_runs_matrix_2(base_cd, outs, runs_rest_of_inn):
@@ -88,6 +89,9 @@ def main(data_dir):
     final_df = final_df.sort_values(['Division', 'Year', 'Bases'])
 
     print(f"Saved {len(final_df)} rows of expected runs matrices")
+
+    if not os.path.exists(os.path.join(data_dir, 'miscellaneous')):
+        os.makedirs(os.path.join(data_dir, 'miscellaneous'))
 
     final_df.to_csv(
         f'{data_dir}/miscellaneous/d{division}_expected_runs_{year}.csv')

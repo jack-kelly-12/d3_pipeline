@@ -788,6 +788,9 @@ class BaseballStats:
 
             bat_war = bat_war[self.batting_columns]
 
+            if not os.path.exists(os.path.join(self.data_dir, 'war')):
+                os.makedirs(os.path.join(self.data_dir, 'war'))
+
             bat_war.to_csv(
                 f'{self.data_dir}/war/d{division}_batting_war_{year}.csv', index=False)
 
