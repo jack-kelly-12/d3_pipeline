@@ -13,13 +13,16 @@ def get_data(year, division, data_dir):
     we_file = data_dir / 'miscellaneous' / 'win_expectancy.csv'
     re_file = data_dir / 'miscellaneous' / \
         f'd{division}_expected_runs_{year}.csv'
+    lw_file = data_dir / 'miscellaneous' / \
+        f'd{division}_linear_weights_{year}.csv'
 
     required_files = {
         'Play-by-play': pbp_file,
         'Roster': roster_file,
         'Leverage index': le_file,
         'Win expectancy': we_file,
-        'Run expectancy': re_file
+        'Run expectancy': re_file,
+        'Linear weights': lw_file
     }
 
     for name, file_path in required_files.items():
@@ -32,6 +35,7 @@ def get_data(year, division, data_dir):
     le = pd.read_csv(le_file)
     we = pd.read_csv(we_file).rename(columns={'Tie': '0'})
     re = pd.read_csv(re_file)
+    lw = pd.read_csv(lw_file)
 
     # Process play-by-play data
     pbp_df['top_inning'] = pbp_df.top_inning.replace({0: 'Bottom', 1: 'Top'})
@@ -51,7 +55,7 @@ def get_data(year, division, data_dir):
         pbp_df['away_team']
     )
 
-    return pbp_df.dropna(subset=['description']), le, we, re, roster
+    return pbp_df.dropna(subset=['description']), le, we, re, roster, lw
 
 
 def standardize_names(pbp_df, roster, threshold=30):
@@ -189,9 +193,7 @@ def process_pitchers(df):
     return df
 
 
-def calculate_woba(df, year, division):
-    lw = pd.read_csv(
-        f'../data/miscellaneous/d{division}_linear_weights_{year}.csv')
+def calculate_woba(df, lw):
     weights = lw.set_index('events')['normalized_weight'].to_dict()
 
     df = df.copy()
@@ -635,7 +637,7 @@ def run_analysis(pbp_df, year, division):
 def process_single_year(args):
     year, division, data_dir = args
     try:
-        pbp_df, leverage_melted, win_expectancy, re, roster = get_data(
+        pbp_df, leverage_melted, win_expectancy, re, roster, lw = get_data(
             year, division, data_dir)
 
         pbp_df['top_inning'] = np.where(
@@ -646,7 +648,7 @@ def process_single_year(args):
 
     pbp_processed = process_pitchers(pbp_df)
     pbp_processed = standardize_names(pbp_processed, roster)
-    pbp_processed = calculate_woba(pbp_processed, year, division)
+    pbp_processed = calculate_woba(pbp_processed, lw)
 
     pbp_processed['base_cd_after'] = pbp_processed.groupby(
         'game_id')['base_cd_before'].shift(-1)
