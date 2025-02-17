@@ -81,7 +81,7 @@ jobs:
           root_dir <- getwd()
           setwd(root_dir)
           source("processors/parse_pbp.R")
-          main(working_dir = root_dir, output_dir = file.path(root_dir, '${{ env.PBP_DIR }}'))
+          main(working_dir = root_dir, data_dir = file.path(root_dir, '${{ env.PBP_DIR }}'))
         shell: Rscript {0}
 
       - name: Get linear weights
