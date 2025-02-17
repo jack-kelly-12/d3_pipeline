@@ -94,16 +94,6 @@ jobs:
         run: |
           python processors/get_linear_weights.py --data_dir ${{ env.DATA_DIR }}
 
-      - name: Guts constants
-        shell: bash
-        run: |
-          python processors/get_guts.py --data_dir ${{ env.DATA_DIR }}
-
-      - name: Generate leaderboards
-        shell: bash
-        run: |
-          python processors/get_leaderboards.py --data_dir ${{ env.DATA_DIR }}
-
       - name: New parsed pbp with leverage, win exp
         shell: bash
         run: |
@@ -113,6 +103,16 @@ jobs:
         shell: bash
         run: |
           python processors/add_war.py --data_dir ${{ env.DATA_DIR }}
+
+      - name: Guts constants
+        shell: bash
+        run: |
+          python processors/get_guts.py --data_dir ${{ env.DATA_DIR }}
+
+      - name: Generate leaderboards
+        shell: bash
+        run: |
+          python processors/get_leaderboards.py --data_dir ${{ env.DATA_DIR }}
 
       - name: Commit and push changes
         run: |
