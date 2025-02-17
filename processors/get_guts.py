@@ -102,11 +102,12 @@ def calculate_guts_constants(division, year, output_path):
 
 
 def main(data_dir):
-    if not os.path.exists(os.path.join(data_dir, 'guts')):
-        os.makedirs(os.path.join(data_dir, 'guts'))
+    data_dir = Path(data_dir)
+    guts_dir = data_dir / 'guts'
+    guts_dir.mkdir(exist_ok=True)
+
     divisions = [1, 2, 3]
     year = 2025
-    data_dir = Path(data_dir)
 
     all_constants = []
 

@@ -1,29 +1,56 @@
 from fuzzywuzzy import fuzz, process
 import pandas as pd
 import numpy as np
-import os
+from pathlib import Path
 
 
 def get_data(year, division, data_dir):
-    pbp_df = pd.read_csv(os.path.join(
-        data_dir, 'play_by_play', f'd{division}_parsed_pbp_{year}.csv'))
-    roster = pd.read_csv(os.path.join(
-        data_dir, 'rosters', f'd{division}_rosters_{year}.csv'))
+    data_dir = Path(data_dir)
 
-    le = pd.read_csv(os.path.join(data_dir,
-                     'miscellaneous', 'leverage_index.csv'))
-    we = pd.read_csv(os.path.join(data_dir, 'miscellaneous',
-                     'win_expectancy.csv')).rename(columns={'Tie': '0'})
-    re = pd.read_csv(os.path.join(data_dir,
-                     'miscellaneous', f'd{division}_er_matrix_{year}.csv'))
+    # Define file paths
+    pbp_file = data_dir / 'play_by_play' / f'd{division}_parsed_pbp_{year}.csv'
+    roster_file = data_dir / 'rosters' / f'd{division}_rosters_{year}.csv'
+    le_file = data_dir / 'miscellaneous' / 'leverage_index.csv'
+    we_file = data_dir / 'miscellaneous' / 'win_expectancy.csv'
+    re_file = data_dir / 'miscellaneous' / f'd{division}_er_matrix_{year}.csv'
 
+    # Check if all required files exist
+    required_files = {
+        'Play-by-play': pbp_file,
+        'Roster': roster_file,
+        'Leverage index': le_file,
+        'Win expectancy': we_file,
+        'Run expectancy': re_file
+    }
+
+    for name, file_path in required_files.items():
+        if not file_path.exists():
+            raise FileNotFoundError(f"{name} file not found: {file_path}")
+
+    # Read data files
+    pbp_df = pd.read_csv(pbp_file)
+    roster = pd.read_csv(roster_file)
+    le = pd.read_csv(le_file)
+    we = pd.read_csv(we_file).rename(columns={'Tie': '0'})
+    re = pd.read_csv(re_file)
+
+    # Process play-by-play data
     pbp_df['top_inning'] = pbp_df.top_inning.replace({0: 'Bottom', 1: 'Top'})
     pbp_df['description'] = np.where(
-        pbp_df['away_text'].isna(), pbp_df['home_text'], pbp_df['away_text'])
+        pbp_df['away_text'].isna(),
+        pbp_df['home_text'],
+        pbp_df['away_text']
+    )
     pbp_df['bat_team'] = np.where(
-        pbp_df['top_inning'] == 'Top', pbp_df['away_team'], pbp_df['home_team'])
+        pbp_df['top_inning'] == 'Top',
+        pbp_df['away_team'],
+        pbp_df['home_team']
+    )
     pbp_df['pitch_team'] = np.where(
-        pbp_df['top_inning'] == 'Top', pbp_df['home_team'], pbp_df['away_team'])
+        pbp_df['top_inning'] == 'Top',
+        pbp_df['home_team'],
+        pbp_df['away_team']
+    )
 
     return pbp_df.dropna(subset=['description']), le, we, re, roster
 
@@ -673,21 +700,25 @@ def process_single_year(args):
 
 
 def main(data_dir):
+    data_dir = Path(data_dir)
     divisions = range(1, 4)
+    year = 2025
     all_pbp_data = []
 
     for division in divisions:
-        processed_data = process_single_year(
-            (args.year, division, data_dir))
+        processed_data = process_single_year((year, division, data_dir))
         if processed_data is not None:
             all_pbp_data.append(processed_data)
-            print(f"Successfully processed data for D{division} {args.year}")
+            print(f"Successfully processed data for D{division} {year}")
+        else:
+            print(f"Failed to process data for D{division} {year}")
 
 
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', required=True)
+    parser.add_argument('--data_dir', required=True,
+                        help='Root directory containing the data folders')
     args = parser.parse_args()
 
     main(args.data_dir)

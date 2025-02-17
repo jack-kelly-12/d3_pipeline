@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import os
+from pathlib import Path
 
 
 def get_expected_runs_matrix_2(base_cd, outs, runs_rest_of_inn):
@@ -43,13 +43,24 @@ def get_expected_runs_matrix_2(base_cd, outs, runs_rest_of_inn):
 
 
 def main(data_dir):
+    data_dir = Path(data_dir)
     year = 2025
     divisions = range(1, 4)
     all_matrices = {}
 
+    # Create miscellaneous directory if it doesn't exist
+    misc_dir = data_dir / 'miscellaneous'
+    misc_dir.mkdir(exist_ok=True)
+
     for division in divisions:
         try:
-            pbp_file = f'{data_dir}/play_by_play/d{division}_parsed_pbp_{year}.csv'
+            pbp_file = data_dir / 'play_by_play' / \
+                f'd{division}_parsed_pbp_{year}.csv'
+
+            if not pbp_file.exists():
+                print(f"PBP file not found: {pbp_file}")
+                continue
+
             pbp_df = pd.read_csv(pbp_file)
             print(f"Loaded {len(pbp_df)} rows for D{division} {year}")
 
@@ -88,19 +99,19 @@ def main(data_dir):
     final_df = pd.concat(final_dfs, ignore_index=True)
     final_df = final_df.sort_values(['Division', 'Year', 'Bases'])
 
-    print(f"Saved {len(final_df)} rows of expected runs matrices")
-
-    if not os.path.exists(os.path.join(data_dir, 'miscellaneous')):
-        os.makedirs(os.path.join(data_dir, 'miscellaneous'))
-
-    final_df.to_csv(
-        f'{data_dir}/miscellaneous/d{division}_expected_runs_{year}.csv')
+    # Save the matrix for each division
+    for division in divisions:
+        output_file = misc_dir / f'd{division}_expected_runs_{year}.csv'
+        division_df = final_df[final_df['Division'] == division]
+        division_df.to_csv(output_file, index=False)
+        print(f"Saved expected runs matrix for D{division} to {output_file}")
 
 
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', required=True)
+    parser.add_argument('--data_dir', required=True,
+                        help='Root directory containing the data folders')
     args = parser.parse_args()
 
     main(args.data_dir)

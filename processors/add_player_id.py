@@ -1,7 +1,7 @@
 import pandas as pd
 from typing import List, Tuple
 from collections import defaultdict
-import glob
+from pathlib import Path
 
 
 class PlayerMatcher:
@@ -194,36 +194,50 @@ class PlayerMatcher:
 
 
 def main(data_dir):
-    batting_files = sorted(
-        glob.glob(f'{data_dir}/stats/d3_batting_2*.csv'))
-    pitching_files = sorted(glob.glob(
-        f'{data_dir}/stats/d3_pitching_2*.csv'))
-    roster_files = sorted(glob.glob(
-        f'{data_dir}/rosters/d3_rosters_2*.csv'))
+    data_dir = Path(data_dir)
+    stats_dir = data_dir / 'stats'
+    rosters_dir = data_dir / 'rosters'
+
+    # Ensure directories exist
+    stats_dir.mkdir(exist_ok=True)
+    rosters_dir.mkdir(exist_ok=True)
+
+    # Get file lists using pathlib
+    batting_files = sorted(list(stats_dir.glob('d3_batting_2*.csv')))
+    pitching_files = sorted(list(stats_dir.glob('d3_pitching_2*.csv')))
+    roster_files = sorted(list(rosters_dir.glob('d3_rosters_2*.csv')))
 
     matcher = PlayerMatcher()
     mapped_batting, mapped_pitching, mapped_rosters = matcher.process_files(
         batting_files, pitching_files, roster_files)
 
     for year in range(2021, 2025):
+        # Process batting data
         df_batting = mapped_batting.query(
             f'year == {year}').rename(columns={'class': 'Yr'})
+
+        # Process pitching data
         df_pitching = mapped_pitching.query(
             f'year == {year}').rename(columns={'class': 'Yr'})
+
+        # Process roster data
         df_roster = mapped_rosters.query(f'year == {year}')
 
-        df_batting.to_csv(
-            f'{data_dir}/stats/d3_batting_{year}.csv', index=False)
-        df_pitching.to_csv(
-            f'{data_dir}/stats/d3_pitching_{year}.csv', index=False)
-        df_roster.to_csv(
-            f'{data_dir}/rosters/d3_rosters_{year}.csv', index=False)
+        # Save processed files using pathlib
+        batting_output = stats_dir / f'd3_batting_{year}.csv'
+        pitching_output = stats_dir / f'd3_pitching_{year}.csv'
+        roster_output = rosters_dir / f'd3_rosters_{year}.csv'
+
+        df_batting.to_csv(batting_output, index=False)
+        df_pitching.to_csv(pitching_output, index=False)
+        df_roster.to_csv(roster_output, index=False)
 
 
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', required=True)
+    parser.add_argument('--data_dir', required=True,
+                        help='Root directory containing the data folders')
     args = parser.parse_args()
 
     main(args.data_dir)

@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from fuzzywuzzy import fuzz, process
-import os
+from pathlib import Path
 
 
 class BaseballStats:
@@ -733,135 +733,140 @@ class BaseballStats:
 
         return pitcher_stats, team_stats
 
-    def process_and_save_stats(self, year):
-        batting, pitching, pbp, self.guts, self.park_factors, rosters = self.get_data()
-        self.guts = self.guts.reset_index(drop=True)
 
-        all_batting_war = []
-        all_pitching_war = []
-        all_batting_team_war = []
-        all_pitching_team_war = []
+def process_and_save_stats(self, year):
+    batting, pitching, pbp, self.guts, self.park_factors, rosters = self.get_data()
+    self.guts = self.guts.reset_index(drop=True)
 
-        for division in [1, 2, 3]:
-            print(f"Processing Division {division}, Year {year}")
+    # Create war directory if it doesn't exist
+    war_dir = Path(self.data_dir) / 'war'
+    war_dir.mkdir(exist_ok=True)
 
-            div_guts = self.guts.query(f'Division == {division}')
-            year_guts = div_guts[div_guts['Year'] == year]
-            if len(year_guts) == 0:
-                continue
-            year_guts = year_guts.iloc[0]
+    for division in [1, 2, 3]:
+        print(f"Processing Division {division}, Year {year}")
 
-            bat_war = self.process_batting_stats(
-                batting[0],
-                year_guts,
-                self.park_factors,
-                pbp[0],
-                rosters[0],
-                division
-            )
-            batting_war_total = bat_war.WAR.sum()
+        div_guts = self.guts.query(f'Division == {division}')
+        year_guts = div_guts[div_guts['Year'] == year]
+        if len(year_guts) == 0:
+            continue
+        year_guts = year_guts.iloc[0]
 
-            bat_war = bat_war.rename(columns={
-                'player_name': 'Player',
-                'team_name': 'Team',
-                'SH': 'Sac',
-                'batting_runs': 'Batting',
-                'baserunning': 'Baserunning',
-                'conference': 'Conference'
-            })
+        # Process batting stats
+        bat_war = self.process_batting_stats(
+            batting[0],
+            year_guts,
+            self.park_factors,
+            pbp[0],
+            rosters[0],
+            division
+        )
+        batting_war_total = bat_war.WAR.sum()
 
-            player_stats, team_stats = self.get_clutch_stats(
-                pbp[0])
-            bat_war = bat_war.merge(
-                player_stats,
-                left_on=['player_id'],
-                right_on=['player_id'],
-                how='left'
-            )
+        bat_war = bat_war.rename(columns={
+            'player_name': 'Player',
+            'team_name': 'Team',
+            'SH': 'Sac',
+            'batting_runs': 'Batting',
+            'baserunning': 'Baserunning',
+            'conference': 'Conference'
+        })
 
-            bat_war['Season'] = year
-            bat_war['Division'] = division
+        player_stats, team_stats = self.get_clutch_stats(pbp[0])
+        bat_war = bat_war.merge(
+            player_stats,
+            left_on=['player_id'],
+            right_on=['player_id'],
+            how='left'
+        )
 
-            bat_war[['Player', 'Team', 'Conference', 'Yr']] = bat_war[
-                ['Player', 'Team', 'Conference', 'Yr']].fillna('-')
-            bat_war = bat_war.fillna(0)
+        bat_war['Season'] = year
+        bat_war['Division'] = division
 
-            bat_war = bat_war[self.batting_columns]
+        bat_war[['Player', 'Team', 'Conference', 'Yr']] = bat_war[
+            ['Player', 'Team', 'Conference', 'Yr']].fillna('-')
+        bat_war = bat_war.fillna(0)
 
-            if not os.path.exists(os.path.join(self.data_dir, 'war')):
-                os.makedirs(os.path.join(self.data_dir, 'war'))
+        bat_war = bat_war[self.batting_columns]
 
-            bat_war.to_csv(
-                f'{self.data_dir}/war/d{division}_batting_war_{year}.csv', index=False)
+        # Save batting WAR
+        bat_war_file = war_dir / f'd{division}_batting_war_{year}.csv'
+        bat_war.to_csv(bat_war_file, index=False)
 
-            bat_team_war = self.create_batting_team_war_table(
-                bat_war, year)
-            bat_team_war = bat_team_war.merge(
-                team_stats,
-                left_on='Team',
-                right_on='bat_team',
-                how='left'
-            )
-            bat_team_war['Division'] = division
-            bat_team_war['Season'] = year
+        # Process team batting WAR
+        bat_team_war = self.create_batting_team_war_table(bat_war, year)
+        bat_team_war = bat_team_war.merge(
+            team_stats,
+            left_on='Team',
+            right_on='bat_team',
+            how='left'
+        )
+        bat_team_war['Division'] = division
+        bat_team_war['Season'] = year
 
-            bat_team_war.to_csv(
-                f'{self.data_dir}/war/d{division}_batting_team_war_{year}.csv', index=False)
+        # Save team batting WAR
+        bat_team_war_file = war_dir / \
+            f'd{division}_batting_team_war_{year}.csv'
+        bat_team_war.to_csv(bat_team_war_file, index=False)
 
-            pitch_war = self.process_pitching_stats(
-                pitching[0],
-                pbp[0],
-                self.park_factors,
-                batting_war_total
-            )
+        # Process pitching stats
+        pitch_war = self.process_pitching_stats(
+            pitching[0],
+            pbp[0],
+            self.park_factors,
+            batting_war_total
+        )
 
-            if 'Team' in pitch_war.columns and 'team_name' in pitch_war.columns:
-                pitch_war = pitch_war.drop('Team', axis=1)
+        if 'Team' in pitch_war.columns and 'team_name' in pitch_war.columns:
+            pitch_war = pitch_war.drop('Team', axis=1)
 
-            pitch_war = pitch_war.rename(columns={
-                'player_name': 'Player',
-                'conference': 'Conference',
-                'team_name': 'Team'
-            })
+        pitch_war = pitch_war.rename(columns={
+            'player_name': 'Player',
+            'conference': 'Conference',
+            'team_name': 'Team'
+        })
 
-            pitch_war['Season'] = year
-            pitch_war['Division'] = division
+        pitch_war['Season'] = year
+        pitch_war['Division'] = division
 
-            pitch_war[['Player', 'Team', 'Conference', 'Yr']] = pitch_war[
-                ['Player', 'Team', 'Conference', 'Yr']].fillna('-')
-            pitch_war = pitch_war.fillna(0)
-            pitch_war = pitch_war.replace({np.inf: 0, -np.inf: 0})
+        pitch_war[['Player', 'Team', 'Conference', 'Yr']] = pitch_war[
+            ['Player', 'Team', 'Conference', 'Yr']].fillna('-')
+        pitch_war = pitch_war.fillna(0)
+        pitch_war = pitch_war.replace({np.inf: 0, -np.inf: 0})
 
-            pitcher_stats, team_stats = self.get_pitcher_clutch_stats(
-                pbp[0])
-            pitch_war = pitch_war.merge(
-                pitcher_stats,
-                left_on=['player_id'],
-                right_on=['pitcher_id'],
-                how='left'
-            )
+        pitcher_stats, team_stats = self.get_pitcher_clutch_stats(pbp[0])
+        pitch_war = pitch_war.merge(
+            pitcher_stats,
+            left_on=['player_id'],
+            right_on=['pitcher_id'],
+            how='left'
+        )
 
-            pitch_war = pitch_war[self.pitching_columns]
-            pitch_war.to_csv(
-                f'{self.data_dir}/war/d{division}_pitching_war_{year}.csv', index=False)
+        pitch_war = pitch_war[self.pitching_columns]
 
-            pitch_team_war = self.create_pitching_team_war_table(
-                pitch_war, year)
-            pitch_team_war = pitch_team_war.merge(
-                team_stats,
-                left_on='Team',
-                right_on='pitch_team',
-                how='left'
-            )
-            pitch_team_war['Division'] = division
-            pitch_team_war['Season'] = year
+        # Save pitching WAR
+        pitch_war_file = war_dir / f'd{division}_pitching_war_{year}.csv'
+        pitch_war.to_csv(pitch_war_file, index=False)
 
-            pitch_team_war.to_csv(
-                f'{self.data_dir}/war/d{division}_pitching_team_war_{year}.csv', index=False)
+        # Process team pitching WAR
+        pitch_team_war = self.create_pitching_team_war_table(pitch_war, year)
+        pitch_team_war = pitch_team_war.merge(
+            team_stats,
+            left_on='Team',
+            right_on='pitch_team',
+            how='left'
+        )
+        pitch_team_war['Division'] = division
+        pitch_team_war['Season'] = year
+
+        # Save team pitching WAR
+        pitch_team_war_file = war_dir / \
+            f'd{division}_pitching_team_war_{year}.csv'
+        pitch_team_war.to_csv(pitch_team_war_file, index=False)
 
 
 def main(data_dir):
-    if not os.path.exists(data_dir):
+    data_dir = Path(data_dir)
+    if not data_dir.exists():
         raise FileNotFoundError(f"Data directory not found: {data_dir}")
 
     stats = BaseballStats(data_dir=data_dir)
@@ -869,8 +874,7 @@ def main(data_dir):
     year = 2025
     for division in range(1, 4):
         try:
-            stats.process_and_save_stats(
-                start_year=year)
+            stats.process_and_save_stats(year)
             print("Successfully processed all statistics!")
         except Exception as e:
             print(f"Error processing statistics: {str(e)}")
@@ -880,7 +884,8 @@ def main(data_dir):
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', required=True)
+    parser.add_argument('--data_dir', required=True,
+                        help='Root directory containing the data folders')
     args = parser.parse_args()
 
     main(args.data_dir)

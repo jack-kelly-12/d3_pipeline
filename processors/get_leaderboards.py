@@ -404,11 +404,11 @@ def standardize_hand(x):
 
 
 def main(data_dir):
-    year = 2025
     data_dir = Path(data_dir)
+    leaderboards_dir = data_dir / 'leaderboards'
+    leaderboards_dir.mkdir(exist_ok=True)
 
-    if not os.path.exists(os.path.join(data_dir, 'leaderboards')):
-        os.makedirs(os.path.join(data_dir, 'leaderboards'))
+    year = 2025
 
     all_situational = []
     all_baserunning = []
@@ -452,8 +452,6 @@ def main(data_dir):
         if data_list:
             combined_df = pd.concat(data_list, ignore_index=True)
             combined_df = combined_df.drop_duplicates(subset=dedup_cols)
-            if not os.path.exists(os.path.join(data_dir, 'leaderboards')):
-                os.makedirs(os.path.join(data_dir, 'leaderboards'))
             combined_df.to_csv(
                 os.path.join(data_dir, 'leaderboards', f'{name}.csv'), index=False)
     print("Processing complete!")
