@@ -3,6 +3,7 @@ library(purrr)
 library(collegebaseball)
 library(DBI)
 library(RSQLite)
+library(baseballr)
 
 ncaa_roster <- function(team_id = NULL, year, ...){
   if (is.null(team_id)) {

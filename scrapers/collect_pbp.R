@@ -3,6 +3,7 @@ library(tidyverse)
 library(httr)
 library(rvest)
 library(DBI)
+library(baseballr)
 library(RSQLite)
 
 get_pbp_data <- function(schedules) {

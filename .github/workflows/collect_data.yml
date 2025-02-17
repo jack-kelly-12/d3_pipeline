@@ -49,9 +49,11 @@ jobs:
             "RSQLite",
             "cli",
             "xml2",
-            "devtools"
+            "devtools",
+            "pacman"
           ), repos = "https://cloud.r-project.org/")
           devtools::install_github(repo = "robert-frey/collegebaseball")
+          pacman::p_load_current_gh("billpetti/baseballr")
         shell: Rscript {0}
 
       - name: Run data collection scripts

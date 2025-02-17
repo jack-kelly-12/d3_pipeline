@@ -2,6 +2,7 @@ library(dplyr)
 library(purrr)
 library(collegebaseball)
 library(DBI)
+library(baseballr)
 
 ncaa_stats_bulk <- function(year, 
                           type = 'batting', 
