@@ -549,7 +549,7 @@ class BaseballStats:
                 f'{self.data_dir}/stats/d{division}_batting_{year}.csv')
             batting.append(batting_df)
 
-            roster_df = pd.read_csv(f'{self.data_dir}/stats/d{division}_rosters_{year}.csv').query(
+            roster_df = pd.read_csv(f'{self.data_dir}/rosters/d{division}_rosters_{year}.csv').query(
                 f'year == {year}').query(f'division == {division}')
             rosters.append(roster_df)
 

@@ -7,14 +7,13 @@ from pathlib import Path
 def get_data(year, division, data_dir):
     data_dir = Path(data_dir)
 
-    # Define file paths
     pbp_file = data_dir / 'play_by_play' / f'd{division}_parsed_pbp_{year}.csv'
     roster_file = data_dir / 'rosters' / f'd{division}_rosters_{year}.csv'
     le_file = data_dir / 'miscellaneous' / 'leverage_index.csv'
     we_file = data_dir / 'miscellaneous' / 'win_expectancy.csv'
-    re_file = data_dir / 'miscellaneous' / f'd{division}_er_matrix_{year}.csv'
+    re_file = data_dir / 'miscellaneous' / \
+        f'd{division}_expected_runs_{year}.csv'
 
-    # Check if all required files exist
     required_files = {
         'Play-by-play': pbp_file,
         'Roster': roster_file,
