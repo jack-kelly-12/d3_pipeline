@@ -49,11 +49,6 @@ def main(data_dir):
     for division in divisions:
         try:
             pbp_file = f'{data_dir}/play_by_play/d{division}_parsed_pbp_{year}.csv'
-
-            if not pbp_file.exists():
-                print(f"No PBP data for D{division} {year}")
-                continue
-
             pbp_df = pd.read_csv(pbp_file)
             print(f"Loaded {len(pbp_df)} rows for D{division} {year}")
 
