@@ -2,7 +2,6 @@ from fuzzywuzzy import fuzz, process
 import pandas as pd
 import numpy as np
 import os
-import argparse
 
 
 def get_data(year, division, base_path):
