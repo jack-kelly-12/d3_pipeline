@@ -13,9 +13,12 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
     env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PAT: ${{ secrets.PAT }}
       R_LIBS_USER: ${{ github.workspace }}/R/library
       DATA_DIR: data
+      SCHEDULES_DIR: data/schedules
+      PBP_DIR: data/play_by_play
+      STATS_DIR: data/stats
 
     steps:
       - name: Checkout repository
@@ -46,6 +49,14 @@ jobs:
         with:
           python-version: "3.10"
 
+      - name: Cache R packages
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-r-${{ hashFiles('**/DESCRIPTION') }}
+          restore-keys: |
+            ${{ runner.os }}-r-
+
       - name: Install R dependencies
         run: |
           install.packages("remotes")
@@ -65,13 +76,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas numpy fuzzywuzzy python-Levenshtein
 
-      - name: Parse PBP data
+      - name: Parse pbp data
         run: |
           root_dir <- getwd()
           setwd(root_dir)
           source("processors/parse_pbp.R")
-          main(working_dir = root_dir, data_dir = file.path(getwd(), "data"))
+          main(working_dir = root_dir, output_dir = file.path(root_dir, '${{ env.PBP_DIR }}'))
         shell: Rscript {0}
+
+      - name: Get linear weights
+        shell: bash
+        run: |
+          python processors/get_linear_weights.py --data_dir ${{ env.DATA_DIR }}
 
       - name: Guts constants
         shell: bash
@@ -88,17 +104,12 @@ jobs:
         run: |
           python processors/get_er_matrix.py --data_dir ${{ env.DATA_DIR }}
 
-      - name: Get linear weights
-        shell: bash
-        run: |
-          python processors/get_linear_weights.py --data_dir ${{ env.DATA_DIR }}
-
       - name: New parsed pbp with leverage, win exp
         shell: bash
         run: |
           python processors/add_pbp_metrics.py --data_dir ${{ env.DATA_DIR }}
 
-      - name: Calculate WAR
+      - name: Calculate wins above replacement
         shell: bash
         run: |
           python processors/add_war.py --data_dir ${{ env.DATA_DIR }}

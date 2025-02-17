@@ -75,19 +75,19 @@ jobs:
         run: |
           root_dir <- getwd()
 
-          # setwd(root_dir)
-          # source('scrapers/collect_schedules.R')
-          # main(working_dir = root_dir, output_dir = file.path(root_dir, '${{ env.SCHEDULES_DIR }}'))
+          setwd(root_dir)
+          source('scrapers/collect_schedules.R')
+          main(working_dir = root_dir, output_dir = file.path(root_dir, '${{ env.SCHEDULES_DIR }}'))
 
           setwd(root_dir)
           source('scrapers/collect_pbp.R')
           main(working_dir = file.path(root_dir, '${{ env.SCHEDULES_DIR }}'), 
                output_dir = file.path(root_dir, '${{ env.PBP_DIR }}'))
 
-          # setwd(root_dir)
-          # source('scrapers/collect_stats.R')
-          # main(working_dir = root_dir, 
-          #      output_dir = file.path(root_dir, '${{ env.STATS_DIR }}'))
+          setwd(root_dir)
+          source('scrapers/collect_stats.R')
+          main(working_dir = root_dir, 
+               output_dir = file.path(root_dir, '${{ env.STATS_DIR }}'))
 
       - name: Commit and push changes
         run: |
