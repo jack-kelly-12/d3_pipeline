@@ -1,4 +1,3 @@
-import os
 import sqlite3
 import pandas as pd
 import argparse
@@ -9,9 +8,9 @@ def parse_args():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(
         description='Update NCAA baseball statistics database.')
-    parser.add_argument('--db-path', type=str, required=True,
+    parser.add_argument('--db_path', type=str, required=True,
                         help='Path to the SQLite database file')
-    parser.add_argument('--data-dir', type=str, default='data',
+    parser.add_argument('--data_dir', type=str, default='data',
                         help='Base directory containing the data folders (default: data)')
     return parser.parse_args()
 
@@ -208,3 +207,7 @@ def main():
         print("Database update process completed")
     finally:
         conn.close()
+
+
+if __name__ == '__main__':
+    main()
