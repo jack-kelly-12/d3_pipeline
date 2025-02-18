@@ -95,10 +95,8 @@ def update_expected_runs(conn, data_dir):
             file_name = f'{division}_expected_runs_2025.csv'
             try:
                 df = pd.read_csv(Path(data_dir) / 'miscellaneous' / file_name)
-                df = df.reset_index()
                 df.index = ['_ _ _', '1B _ _', '_ 2B _', '1B 2B _',
                             '_ _ 3B', '1B _ 3B', '_ 2B 3B', '1B 2B 3B']
-                df = df.reset_index()
                 df = df.rename(columns={'index': 'Bases'})
 
                 df['Year'] = 2025
@@ -199,12 +197,12 @@ def main():
 
     conn = connect_db(args.db_path)
     try:
+        update_expected_runs(conn, args.data_dir)
         update_guts_constants(conn, args.data_dir)
         update_war(conn, args.data_dir)
         update_pbp(conn, args.data_dir)
         update_leaderboards(conn, args.data_dir)
         update_rosters(conn, args.data_dir)
-        update_expected_runs(conn, args.data_dir)
         update_schedules(conn, args.data_dir)
         print("Database update process completed")
     finally:
