@@ -185,7 +185,7 @@ def process_pitchers(df):
         group['pitcher'] = group['pitcher'].ffill()
         return group
 
-    result = grouped.apply(process_group, ignore_groups=False)
+    result = grouped.apply(process_group)
 
     df = result.reset_index(drop=True)
 
