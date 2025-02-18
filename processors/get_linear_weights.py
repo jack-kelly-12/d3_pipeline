@@ -71,10 +71,10 @@ def calculate_college_linear_weights(df_pbp, df_er):
 
 def calculate_normalized_linear_weights(linear_weights: pd.DataFrame, stats: pd.DataFrame) -> pd.DataFrame:
     required_columns = ['events', 'linear_weights_above_outs', 'count']
+
     if not all(col in linear_weights.columns for col in required_columns):
         raise ValueError(
             f"linear_weights must contain columns: {required_columns}")
-
     woba_scale_exists = "wOBA scale" in linear_weights['events'].values
     if woba_scale_exists:
         woba_scale_row = linear_weights[linear_weights['events']
@@ -82,29 +82,38 @@ def calculate_normalized_linear_weights(linear_weights: pd.DataFrame, stats: pd.
         linear_weights = linear_weights[linear_weights['events']
                                         != "wOBA scale"]
 
-    total_value = (linear_weights['linear_weights_above_outs'] *
-                   linear_weights['count']).sum()
+    stats['1B'] = stats['H'] - stats['2B'] - stats['3B'] - stats['HR']
 
-    total_pa = linear_weights['count'].sum()
-    denominator = total_value / total_pa
+    # Calculate league wOBA using the formula
+    numerator = (
+        linear_weights[linear_weights['events'] == 'walk']['linear_weights_above_outs'].values[0] * stats['BB'].sum() +
+        linear_weights[linear_weights['events'] == 'hit_by_pitch']['linear_weights_above_outs'].values[0] * stats['HBP'].sum() +
+        linear_weights[linear_weights['events'] == 'single']['linear_weights_above_outs'].values[0] * stats['1B'].sum() +
+        linear_weights[linear_weights['events'] == 'double']['linear_weights_above_outs'].values[0] * stats['2B'].sum() +
+        linear_weights[linear_weights['events'] == 'triple']['linear_weights_above_outs'].values[0] * stats['3B'].sum() +
+        linear_weights[linear_weights['events'] ==
+                       'home_run']['linear_weights_above_outs'].values[0] * stats['HR'].sum()
+    )
 
+    denominator = stats['AB'].sum() + stats['BB'].sum() - \
+        stats['IBB'].sum() + stats['SF'].sum() + stats['HBP'].sum()
+    league_woba = numerator / denominator
+
+    # Calculate league OBP
     league_obp = (stats['H'].sum() + stats['BB'].sum() + stats['HBP'].sum()) / \
-                 (stats['AB'].sum() + stats['BB'].sum() + stats['HBP'].sum() +
-                  stats['SF'].sum() + stats['SH'].sum())
+        (stats['AB'].sum() + stats['BB'].sum() + stats['IBB'].sum() + stats['HBP'].sum() +
+         stats['SF'].sum() + stats['SH'].sum())
 
-    woba_scale = league_obp / denominator
-
+    woba_scale = league_obp / league_woba
     normalized_weights = linear_weights.copy()
     normalized_weights['normalized_weight'] = (linear_weights['linear_weights_above_outs'] *
                                                woba_scale).round(3)
-
     woba_scale_row = pd.DataFrame({
         'events': ['wOBA scale'],
         'linear_weights_above_outs': [np.nan],
         'count': [np.nan],
         'normalized_weight': [round(woba_scale, 3)]
     })
-
     result = pd.concat([normalized_weights, woba_scale_row], ignore_index=True)
 
     return result
