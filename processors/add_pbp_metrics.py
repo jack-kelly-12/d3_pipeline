@@ -185,8 +185,7 @@ def process_pitchers(df):
         group['pitcher'] = group['pitcher'].ffill()
         return group
 
-    # Apply processing to each group
-    result = grouped.apply(process_group)
+    result = grouped.apply(process_group, ignore_groups=False)
 
     df = result.reset_index(drop=True)
 
@@ -215,7 +214,7 @@ def calculate_woba(df, lw):
 def melt_run_expectancy(df):
     df = df.copy()
 
-    df['base_state'] = df['Unnamed: 0']
+    df['base_state'] = df.index
     df.loc[0, 'base_state'] = '___'
     df = df[['base_state', '0', '1', '2']]
 
@@ -435,15 +434,12 @@ def merge_baseball_stats(df, leverage_melted, win_expectancy, re_melted):
 
 
 def fix_all_game_ends(df):
-    # Get first occurrence of game_end=1 for each game_id
     first_ends = df[df['game_end'] == 1].groupby('game_id').first()
 
-    # Create a mask for rows to drop
     rows_to_drop = []
     for idx, row in df.iterrows():
         game_id = row['game_id']
         if game_id in first_ends.index:
-            # If there's an end marker for this game and current row is after it
             if idx > first_ends.loc[game_id].name:
                 rows_to_drop.append(idx)
 
