@@ -12,7 +12,9 @@ def get_re(base_cd, outs, re24_matrix):
         if pd.isna(base_cd) or pd.isna(outs):
             return 0
 
-        # Convert numeric base_cd to the string format used in the matrix
+        base_cd = int(min(max(base_cd, 0), 7))
+        outs = str(min(max(int(outs), 0), 2))
+
         base_states = {
             0: '_ _ _',
             1: '1B _ _',
@@ -24,32 +26,42 @@ def get_re(base_cd, outs, re24_matrix):
             7: '1B 2B 3B'
         }
 
-        base_state = base_states.get(int(base_cd), '_ _ _')
-        outs_idx = str(min(max(int(outs), 0), 2))
+        base_state = base_states[base_cd]
 
-        return re24_matrix.loc[base_state, outs_idx]
+        if base_state not in re24_matrix.index:
+            print(f"Warning: Base state '{base_state}' not found in matrix")
+            return 0
+
+        re_value = re24_matrix.loc[base_state, outs]
+
+        if pd.isna(re_value):
+            print(
+                f"Warning: No value found for base_state={base_state}, outs={outs}")
+            return 0
+
+        return float(re_value)
     except Exception as e:
         print(f"Error in get_re: base_cd={base_cd}, outs={outs}")
+        print(f"Matrix shape: {re24_matrix.shape}")
+        print(f"Matrix index: {re24_matrix.index.tolist()}")
+        print(f"Matrix columns: {re24_matrix.columns.tolist()}")
         print(f"Error details: {str(e)}")
-        raise
+        return 0
 
 
 def calculate_college_linear_weights(pbp_df, re24_matrix):
     try:
-        # Event mapping
         event_map = {
             2: 'out', 3: 'out', 6: 'out', 14: 'walk',
             16: 'hit_by_pitch', 20: 'single', 21: 'double',
             22: 'triple', 23: 'home_run'
         }
 
-        # Convert event_cd to string type before mapping
         pbp_df['event_cd'] = pbp_df['event_cd'].astype(str)
         events = pd.Series(pbp_df['event_cd'].map(
             lambda x: event_map.get(int(x) if x.isdigit() else None, 'other')))
 
         print("Calculating RE start values...")
-        # Ensure numeric types for base_cd and outs
         pbp_df['base_cd_before'] = pd.to_numeric(
             pbp_df['base_cd_before'], errors='coerce')
         pbp_df['outs_before'] = pd.to_numeric(
@@ -59,20 +71,17 @@ def calculate_college_linear_weights(pbp_df, re24_matrix):
             x['base_cd_before'], x['outs_before'], re24_matrix), axis=1)
 
         print("Calculating RE end values...")
-        # Create next row values for RE end calculation
         next_base = pd.concat(
             [pbp_df['base_cd_before'].iloc[1:], pd.Series([0])])
         next_outs = pd.concat([pbp_df['outs_before'].iloc[1:], pd.Series([0])])
         re_end = pd.Series([get_re(base, outs, re24_matrix)
                            for base, outs in zip(next_base, next_outs)])
 
-        # Set RE end to 0 for inning endings
         re_end[pbp_df['inn_end'] == 1] = 0
 
         print("Calculating RE24...")
         re24 = re_end - re_start + pbp_df['runs_on_play']
 
-        # Group and calculate
         print("Grouping and calculating final results...")
         results = pd.DataFrame({
             'events': events,
@@ -101,13 +110,11 @@ def calculate_college_linear_weights(pbp_df, re24_matrix):
 
 def calculate_normalized_linear_weights(linear_weights, stats_df):
     try:
-        # Calculate total value and PA
         total_value = (linear_weights['linear_weights_above_outs'] *
                        linear_weights['count']).sum()
         total_pa = linear_weights['count'].sum()
         denominator = total_value / total_pa
 
-        # Calculate league OBP
         total_stats = stats_df.sum()
         league_obp = (total_stats['H'] + total_stats['BB'] + total_stats['HBP']) / \
                      (total_stats['AB'] + total_stats['BB'] + total_stats['HBP'] +
@@ -115,12 +122,10 @@ def calculate_normalized_linear_weights(linear_weights, stats_df):
 
         woba_scale = league_obp / denominator
 
-        # Calculate normalized weights
         result = linear_weights.copy()
         result['normalized_weight'] = (
             result['linear_weights_above_outs'] * woba_scale).round(3)
 
-        # Add wOBA scale row
         woba_scale_row = pd.DataFrame({
             'events': ['wOBA scale'],
             'count': [np.nan],
@@ -148,7 +153,6 @@ def main(data_dir):
 
     for division in divisions:
         try:
-            # Create filenames using proper string formatting
             pbp_file = data_dir / 'play_by_play' / \
                 f'd{division}_parsed_pbp_{year}.csv'
             re24_file = misc_dir / f'd{division}_expected_runs_{year}.csv'
@@ -159,36 +163,29 @@ def main(data_dir):
             print(f"RE24 file: {re24_file}")
             print(f"Stats file: {stats_file}")
 
-            # Check if all required files exist
             for file, desc in [(pbp_file, "PBP"), (re24_file, "Expected runs matrix"),
                                (stats_file, "Batting stats")]:
                 if not file.exists():
                     print(f"{desc} not found: {file}")
                     continue
 
-            # Read all required files
             print("Reading files...")
             pbp_df = pd.read_csv(pbp_file)
             re24_df = pd.read_csv(re24_file)
             stats_df = pd.read_csv(stats_file)
 
             print("Setting up RE24 matrix...")
-            # Set up the matrix with the correct index
             re24_matrix = re24_df.set_index('Bases')[['0', '1', '2']]
 
             print(f"Loaded {len(pbp_df)} rows for D{division} {year}")
 
-            # Calculate basic linear weights
             print("Calculating linear weights...")
             linear_weights = calculate_college_linear_weights(
                 pbp_df, re24_matrix)
 
-            # Calculate normalized weights
-            print("Calculating normalized weights...")
             normalized_weights = calculate_normalized_linear_weights(
                 linear_weights, stats_df)
 
-            # Save results
             output_file = misc_dir / f'd{division}_linear_weights_{year}.csv'
             normalized_weights.to_csv(output_file, index=False)
             print(

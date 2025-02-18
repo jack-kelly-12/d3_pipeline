@@ -48,7 +48,6 @@ def main(data_dir):
     divisions = range(1, 4)
     all_matrices = {}
 
-    # Create miscellaneous directory if it doesn't exist
     misc_dir = data_dir / 'miscellaneous'
     misc_dir.mkdir(exist_ok=True)
 
@@ -99,7 +98,6 @@ def main(data_dir):
     final_df = pd.concat(final_dfs, ignore_index=True)
     final_df = final_df.sort_values(['Division', 'Year', 'Bases'])
 
-    # Save the matrix for each division
     for division in divisions:
         output_file = misc_dir / f'd{division}_expected_runs_{year}.csv'
         division_df = final_df[final_df['Division'] == division]
