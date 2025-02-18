@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
+    env:
+      DB_PATH: home/ubuntu/d3_dashboard/backend/ncaa.db
+      DATA_DIR: home/ubuntu/d3_dashboard/backend/data
+
     steps:
       - name: Copy Data and Update Databases
         uses: appleboy/ssh-action@master
@@ -39,4 +43,4 @@ jobs:
             # Run update script
             cd /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend
             source venv/bin/activate
-            python3 update_database.py
+            python3 update_database.py --data_dir ${{ env.DATA_DIR }} --db_path ${{ env.DB_PATH }}
