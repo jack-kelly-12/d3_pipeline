@@ -221,7 +221,6 @@ def melt_run_expectancy(df):
     df = df.copy()
 
     df['base_state'] = df.index
-    df.loc[0, 'base_state'] = '_ _ _'
     df = df[['base_state', '0', '1', '2']]
 
     melted = pd.melt(
@@ -290,9 +289,18 @@ base_state_map = {
 
 def merge_baseball_stats(df, leverage_melted, win_expectancy, re_melted):
     df_copy = df.copy()
-    df_copy['effective_inning'] = df_copy['inning'].clip(upper=9)
+    max_innings = df_copy.groupby('game_id')['inning'].max()
+    inning_adjustments = 9 - max_innings
 
-    # First merge - leverage index
+    inning_adjustment_map = inning_adjustments[inning_adjustments > 0].to_dict(
+    )
+
+    df_copy['effective_inning'] = df_copy['inning'].clip(upper=9)
+    for game_id, adjustment in inning_adjustment_map.items():
+        mask = df_copy['game_id'] == game_id
+        df_copy.loc[mask, 'effective_inning'] = df_copy.loc[mask,
+                                                            'effective_inning'] + adjustment
+
     merged_df = df_copy.merge(
         leverage_melted,
         left_on=[
@@ -541,6 +549,8 @@ def process_single_year(args):
 
     output_path = os.path.join(
         data_dir, 'play_by_play', f'd{division}_parsed_pbp_new_{year}.csv')
+    merged_df = merged_df.sort_values(['game_id',
+                                       'play_id'], ascending=True)
     merged_df.to_csv(output_path, index=False)
 
     columns = [
