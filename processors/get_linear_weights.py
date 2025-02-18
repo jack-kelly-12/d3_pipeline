@@ -70,39 +70,26 @@ def main(data_dir):
 
             matrix = get_expected_runs_matrix_2(
                 base_cd, outs, runs_rest_of_inn)
-            all_matrices[f"D{division}_{year}"] = matrix
-            print(f"Processed D{division} {year}")
+
+            # Convert matrix to long format
+            df = pd.DataFrame({
+                'Division': division,
+                'Year': year,
+                'Bases': matrix.index,
+                '0': matrix['0'],
+                '1': matrix['1'],
+                '2': matrix['2']
+            })
+
+            # Save individual division file
+            output_file = misc_dir / f'd{division}_linear_weights_{year}.csv'
+            df.to_csv(output_file, index=False)
+            print(
+                f"Saved {len(df)} rows of linear weights for D{division} {year} to {output_file}")
 
         except Exception as e:
             print(f"Error processing D{division} {year}: {str(e)}")
             continue
-
-    final_dfs = []
-    for name, matrix in all_matrices.items():
-        division = int(name[1])
-        year = int(name.split('_')[1])
-
-        df = pd.DataFrame({
-            'Division': division,
-            'Year': year,
-            'Bases': matrix.index,
-            '0': matrix['0'],
-            '1': matrix['1'],
-            '2': matrix['2']
-        })
-        final_dfs.append(df)
-
-    if not final_dfs:
-        print("No matrices were generated!")
-        return None
-
-    final_df = pd.concat(final_dfs, ignore_index=True)
-    final_df = final_df.sort_values(['Division', 'Year', 'Bases'])
-
-    # Save the final matrix
-    output_file = misc_dir / f'linear_weights_{year}.csv'
-    final_df.to_csv(output_file, index=False)
-    print(f"Saved {len(final_df)} rows of linear weights to {output_file}")
 
 
 if __name__ == '__main__':
