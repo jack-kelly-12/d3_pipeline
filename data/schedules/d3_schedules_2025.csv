@@ -1,9 +1,11 @@
 "year","season_id","team_id","date","home_team","home_team_id","home_team_score","home_team_conference","home_team_conference_id","home_team_division","away_team","away_team_id","away_team_score","away_team_conference","away_team_conference_id","away_team_division","neutral_site","game_result","innings","slug","game_info_url","contest_id","division"
 2025,16779,597209,"02/14/2025","Adrian",597209,7,"Michigan Intercol. Ath. Assn.",873,3,"Berry ",597100,1,"SAA",30169,3,"LaGrange, GA","W",NA,"/contests/6339840/box_score","https://stats.ncaa.org/contests/6339840/box_score",6339840,3
-2025,16779,597209,"02/15/2025","Adrian",597209,20,"Michigan Intercol. Ath. Assn.",873,3,"Pfeiffer",597351,5,"USA South",842,3,NA,"W",NA,"/contests/6358916/box_score","https://stats.ncaa.org/contests/6358916/box_score",6358916,3
-2025,16779,597209,"02/15/2025","LaGrange",597117,13,"CCS",30251,3,"Adrian",597209,2,"Michigan Intercol. Ath. Assn.",873,3,NA,"L",NA,NA,NA,NA,3
+2025,16779,597209,"02/15/2025","Adrian",597209,20,"Michigan Intercol. Ath. Assn.",873,3,"Pfeiffer ",597351,5,"USA South",842,3,"LaGrange, GA","W",NA,"/contests/6358916/box_score","https://stats.ncaa.org/contests/6358916/box_score",6358916,3
+2025,16779,597209,"02/15/2025","LaGrange",597117,13,"CCS",30251,3,"Adrian",597209,2,"Michigan Intercol. Ath. Assn.",873,3,NA,"L",NA,"/contests/6339998/box_score","https://stats.ncaa.org/contests/6339998/box_score",6339998,3
+2025,16779,597209,"03/01/2025","Adrian",597209,NA,"Michigan Intercol. Ath. Assn.",873,3,"Hendrix ",597113,NA,"SAA",30169,3,"Marshall, TX",NA,NA,NA,NA,NA,3
 2025,16779,597205,"02/16/2025","Ferrum",597279,3,"ODAC",903,3,"Alfred St.",597205,12,"AMCC",30022,3,NA,"W",NA,"/contests/6339932/box_score","https://stats.ncaa.org/contests/6339932/box_score",6339932,3
 2025,16779,597205,"02/16/2025","Ferrum",597279,6,"ODAC",903,3,"Alfred St.",597205,18,"AMCC",30022,3,NA,"W",NA,"/contests/6349443/box_score","https://stats.ncaa.org/contests/6349443/box_score",6349443,3
+2025,16779,597205,"02/17/2025","Ferrum",597279,9,"ODAC",903,3,"Alfred St.",597205,11,"AMCC",30022,3,NA,"W",NA,"/contests/6340071/box_score","https://stats.ncaa.org/contests/6340071/box_score",6340071,3
 2025,16779,597099,"02/14/2025","Kean",597310,4,"NJAC",891,3,"Arcadia",597099,3,"MAC Freedom",28745,3,NA,"L",NA,"/contests/6339799/box_score","https://stats.ncaa.org/contests/6339799/box_score",6339799,3
 2025,16779,597096,"02/07/2025","Austin",597096,2,"SCAC",835,3,"Mary Hardin-Baylor",597124,4,"ASC",14825,3,NA,"L",NA,"/contests/6339519/box_score","https://stats.ncaa.org/contests/6339519/box_score",6339519,3
 2025,16779,597096,"02/08/2025","Austin",597096,7,"SCAC",835,3,"Mary Hardin-Baylor",597124,14,"ASC",14825,3,NA,"L",NA,"/contests/6339573/box_score","https://stats.ncaa.org/contests/6339573/box_score",6339573,3
@@ -24,6 +26,7 @@
 2025,16779,597100,"02/16/2025","LaGrange",597117,9,"CCS",30251,3,"Berry",597100,2,"SAA",30169,3,NA,"L",NA,"/contests/6340120/box_score","https://stats.ncaa.org/contests/6340120/box_score",6340120,3
 2025,16779,597230,"02/16/2025","Oglethorpe",597142,2,"SAA",30169,3,"Brandeis",597230,3,"UAA",1471,3,NA,"W",NA,"/contests/6340114/box_score","https://stats.ncaa.org/contests/6340114/box_score",6340114,3
 2025,16779,597230,"02/16/2025","Oglethorpe",597142,11,"SAA",30169,3,"Brandeis",597230,6,"UAA",1471,3,NA,"L",NA,"/contests/6349519/box_score","https://stats.ncaa.org/contests/6349519/box_score",6349519,3
+2025,16779,597230,"02/17/2025","Sewanee",597037,6,"SAA",30169,3,"Brandeis",597230,4,"UAA",1471,3,NA,"L",NA,"/contests/6340128/box_score","https://stats.ncaa.org/contests/6340128/box_score",6340128,3
 2025,16779,597352,"02/14/2025","Brevard",597352,1,"USA South",842,3,"Toccoa Falls",NA,4,NA,NA,NA,NA,"L",NA,"/contests/6339927/box_score","https://stats.ncaa.org/contests/6339927/box_score",6339927,3
 2025,16779,597352,"02/14/2025","Brevard",597352,7,"USA South",842,3,"Toccoa Falls",NA,3,NA,NA,NA,NA,"W",NA,"/contests/6349438/box_score","https://stats.ncaa.org/contests/6349438/box_score",6349438,3
 2025,16779,597237,"02/14/2025","Cal Lutheran",597237,7,"SCIAC",910,3,"George Fox",597108,4,"NWC",25300,3,NA,"W",NA,"/contests/6339779/box_score","https://stats.ncaa.org/contests/6339779/box_score",6339779,3
@@ -113,6 +116,9 @@
 2025,16779,597335,"02/16/2025","Millikin",597335,0,"CCIW",836,3,"Westminster (MO) ",597136,1,"SLIAC",12974,3,"Conway, AR","L",NA,"/contests/6340084/box_score","https://stats.ncaa.org/contests/6340084/box_score",6340084,3
 2025,16779,597164,"02/14/2025","Shenandoah",597034,5,"ODAC",903,3,"Misericordia",597164,3,"MAC Freedom",28745,3,NA,"L",NA,"/contests/6339914/box_score","https://stats.ncaa.org/contests/6339914/box_score",6339914,3
 2025,16779,597164,"02/14/2025","Shenandoah",597034,5,"ODAC",903,3,"Misericordia",597164,0,"MAC Freedom",28745,3,NA,"L",NA,"/contests/6349425/box_score","https://stats.ncaa.org/contests/6349425/box_score",6349425,3
+2025,16779,597357,"02/14/2025","Muskingum",597357,11,"OAC",901,3,"Ohio Christian ",NA,3,NA,NA,NA,"Gastonia, NC","W",NA,"/contests/6359146/box_score","https://stats.ncaa.org/contests/6359146/box_score",6359146,3
+2025,16779,597357,"02/14/2025","Muskingum",597357,5,"OAC",901,3,"Ohio Christian ",NA,2,NA,NA,NA,"Gastonia, NC","W",NA,"/contests/6359102/box_score","https://stats.ncaa.org/contests/6359102/box_score",6359102,3
+2025,16779,597357,"02/15/2025","Muskingum",597357,11,"OAC",901,3,"Ohio Christian ",NA,5,NA,NA,NA,"Gastonia, NC","W","9","/contests/6359160/box_score","https://stats.ncaa.org/contests/6359160/box_score",6359160,3
 2025,16779,596991,"02/14/2025","Occidental",596991,4,"SCIAC",910,3,"Puget Sound",597005,6,"NWC",25300,3,NA,"L",NA,"/contests/6339797/box_score","https://stats.ncaa.org/contests/6339797/box_score",6339797,3
 2025,16779,596991,"02/15/2025","Occidental",596991,0,"SCIAC",910,3,"Puget Sound",597005,8,"NWC",25300,3,NA,"L",NA,"/contests/6339871/box_score","https://stats.ncaa.org/contests/6339871/box_score",6339871,3
 2025,16779,596991,"02/15/2025","Occidental",596991,3,"SCIAC",910,3,"Puget Sound",597005,11,"NWC",25300,3,NA,"L",NA,"/contests/6349391/box_score","https://stats.ncaa.org/contests/6349391/box_score",6349391,3
