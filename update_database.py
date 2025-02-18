@@ -138,14 +138,14 @@ def update_pbp():
                 df = pd.read_csv(f'data/play_by_play/{file_name}')
                 df[columns].to_sql(
                     'pbp', conn, if_exists='append', index=False)
-                print(f"Successfully updated rosters with {file_name}")
+                print(f"Successfully updated pbp with {file_name}")
             except Exception as e:
-                print(f"Error updating rosters with {file_name}: {e}")
+                print(f"Error updating pbp with {file_name}: {e}")
 
         conn.commit()
-        print("Successfully completed rosters update")
+        print("Successfully completed pbp update")
     except Exception as e:
-        print(f"Error in rosters update process: {e}")
+        print(f"Error in pbp update process: {e}")
         conn.rollback()
     finally:
         conn.close()
