@@ -729,7 +729,7 @@ class BaseballStats:
 
         return pitcher_stats, team_stats
 
-    def process_and_save_stats(self, year):
+    def process_and_save_stats(self, year, war_dir):
         batting, pitching, pbp, self.guts, self.park_factors, rosters = self.get_data()
         self.guts = self.guts.reset_index(drop=True)
 
@@ -865,7 +865,7 @@ def main(data_dir):
 
     year = 2025
     try:
-        stats.process_and_save_stats(year)
+        stats.process_and_save_stats(year, war_dir)
         print("Successfully processed all statistics!")
     except Exception as e:
         print(f"Error processing statistics: {str(e)}")
