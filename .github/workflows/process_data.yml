@@ -92,10 +92,7 @@ jobs:
       - name: Get linear weights
         shell: Rscript {0}
         run: |
-          root_dir <- getwd()
-          setwd(root_dir)
-          source("processors/get_linear_weights.R")
-          main(working_dir = root_dir, data_dir = file.path(root_dir, '${{ env.DATA_DIR }}'))
+          python processors/get_linear_weights.py --data_dir ${{ env.DATA_DIR }}
 
       - name: New parsed pbp with leverage, win exp
         shell: bash
