@@ -80,13 +80,13 @@ def calculate_college_linear_weights(pbp_df: pd.DataFrame, re24_matrix: pd.DataF
     re_start = pbp_df.apply(lambda x: get_re(
         x['base_cd_before'], x['outs_before'], re24_matrix), axis=1)
 
-    # Calculate end state RE24
-    next_base = pd.concat([pbp_df['base_cd_before'].iloc[1:], pd.Series([0])])
-    next_outs = pd.concat([pbp_df['outs_before'].iloc[1:], pd.Series([0])])
+    next_base = pd.concat(
+        [pbp_df['base_cd_before'].iloc[1:].astype(int), pd.Series([0])])
+    next_outs = pd.concat(
+        [pbp_df['outs_before'].iloc[1:].astype(int), pd.Series([0])])
     re_end = pd.Series([get_re(base, outs, re24_matrix)
                        for base, outs in zip(next_base, next_outs)])
 
-    # Set end of inning RE to 0
     re_end[pbp_df['inn_end'] == 1] = 0
 
     # Calculate RE24
