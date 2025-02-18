@@ -34,7 +34,7 @@ def calculate_college_linear_weights(df_pbp, df_er):
         '22': 'triple', '23': 'home_run'
     }
 
-    df_pbp['event'] = df_pbp['event_cd'].astype(
+    df_pbp['events'] = df_pbp['event_cd'].astype(
         str).map(event_mapping).fillna('other')
 
     df_pbp.event.unique()
@@ -48,8 +48,8 @@ def calculate_college_linear_weights(df_pbp, df_er):
 
     re_end[df_pbp['inn_end'] == 1] = 0
     re24 = re_end - re_start + df_pbp['runs_on_play'].values
-    event_stats = (pd.DataFrame({'event': df_pbp['event'], 're24': re24})
-                   .groupby('event')
+    event_stats = (pd.DataFrame({'events': df_pbp['events'], 're24': re24})
+                   .groupby('events')
                    .agg(
         count=('re24', 'count'),
         total_re24=('re24', 'sum')
@@ -59,10 +59,10 @@ def calculate_college_linear_weights(df_pbp, df_er):
     event_stats['linear_weights_above_average'] = (event_stats['total_re24'] /
                                                    event_stats['count']).round(3)
 
-    final_stats = (event_stats[event_stats['event'] != 'other']
+    final_stats = (event_stats[event_stats['events'] != 'other']
                    .assign(linear_weights_above_outs=lambda x:
                            x['linear_weights_above_average'] -
-                           x.loc[x['event'] == 'out', 'linear_weights_above_average'].iloc[0])
+                           x.loc[x['events'] == 'out', 'linear_weights_above_average'].iloc[0])
                    .sort_values('linear_weights_above_average', ascending=False)
                    .reset_index(drop=True))
 
@@ -70,16 +70,16 @@ def calculate_college_linear_weights(df_pbp, df_er):
 
 
 def calculate_normalized_linear_weights(linear_weights: pd.DataFrame, stats: pd.DataFrame) -> pd.DataFrame:
-    required_columns = ['event', 'linear_weights_above_outs', 'count']
+    required_columns = ['events', 'linear_weights_above_outs', 'count']
     if not all(col in linear_weights.columns for col in required_columns):
         raise ValueError(
             f"linear_weights must contain columns: {required_columns}")
 
-    woba_scale_exists = "wOBA scale" in linear_weights['event'].values
+    woba_scale_exists = "wOBA scale" in linear_weights['events'].values
     if woba_scale_exists:
-        woba_scale_row = linear_weights[linear_weights['event']
+        woba_scale_row = linear_weights[linear_weights['events']
                                         == "wOBA scale"]
-        linear_weights = linear_weights[linear_weights['event']
+        linear_weights = linear_weights[linear_weights['events']
                                         != "wOBA scale"]
 
     total_value = (linear_weights['linear_weights_above_outs'] *
@@ -99,7 +99,7 @@ def calculate_normalized_linear_weights(linear_weights: pd.DataFrame, stats: pd.
                                                woba_scale).round(3)
 
     woba_scale_row = pd.DataFrame({
-        'event': ['wOBA scale'],
+        'events': ['wOBA scale'],
         'linear_weights_above_outs': [np.nan],
         'count': [np.nan],
         'normalized_weight': [round(woba_scale, 3)]
