@@ -16,13 +16,13 @@ class BaseballAnalytics:
         'ERROR': 18
     }
 
-    def __init__(self, pbp_df, year, division, output_path):
+    def __init__(self, pbp_df, year, division, data_path):
         self.original_df = pbp_df.copy()
         self.year = year
-        self.weights_path = os.path.join(
-            output_path, 'miscellaneous', f'd{division}_linear_weights_{year}.csv')
         self.situations = None
-        self.weights = None
+        self.weights = pd.read_csv(data_path /
+                                   f'miscellaneous/d{division}_linear_weights_{year}.csv').set_index(
+            'events')['normalized_weight'].to_dict()
         self.division = division
         self.right_pattern = r'to right|to 1b|rf line|to rf|right side|by 1b|by first base|to first base|1b line|by rf|by right field'
         self.left_pattern = r'to left|to 3b|lf line|left side|to lf|by 3b|by third base|to third base|down the 3b line|by lf|by left field'
@@ -44,18 +44,6 @@ class BaseballAnalytics:
             r'down the (?:1b|rf|3b|lf) line|'
             r'singled to (?:p|3b|1b|2b|ss|third|first|second|short)'
         )
-
-    def load_weights(self):
-        try:
-            lw = pd.read_csv(self.weights_path.format(
-                self.division, self.year))
-            self.weights = lw.set_index(
-                'events')['normalized_weight'].to_dict()
-        except FileNotFoundError:
-            raise FileNotFoundError(
-                f"Linear weights file for year {self.year} not found")
-        except Exception as e:
-            raise Exception(f"Error loading weights: {str(e)}")
 
     def prepare_situations(self):
         self.situations = self.original_df.copy()
@@ -342,9 +330,9 @@ class BaseballAnalytics:
         return pivot.reset_index()
 
 
-def run_analysis(pbp_df, year, division):
+def run_analysis(pbp_df, year, division, data_path):
     try:
-        analytics = BaseballAnalytics(pbp_df, year, division)
+        analytics = BaseballAnalytics(pbp_df, year, division, data_path)
         situational = analytics.get_pivot_results()
         batted_ball = analytics.calc_batted_ball_stats()
         splits = analytics.get_splits_results()
@@ -356,13 +344,13 @@ def run_analysis(pbp_df, year, division):
 
 def get_data(year, division, data_dir):
     pbp_df = pd.read_csv(
-        os.path.join(data_dir, 'play_by_play', f'd{division}_parsed_pbp_{year}.csv'))
+        data_dir / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv')
     bat_war = pd.read_csv(
-        os.path.join(data_dir, 'war', f'd{division}_batting_war_{year}.csv')).rename(columns={'WAR': 'bWAR'})
+        data_dir / f'war/d{division}_batting_war_{year}.csv').rename(columns={'WAR': 'bWAR'})
     rosters = pd.read_csv(
-        os.path.join(data_dir, 'rosters', f'd{division}_rosters_{year}.csv'))
+        data_dir / f'rosters/d{division}_rosters_{year}.csv')
     pitch_war = pd.read_csv(
-        os.path.join(data_dir, 'war', f'd{division}_pitching_war_{year}.csv'))
+        data_dir / f'war/d{division}_pitching_war_{year}.csv')
 
     bat_war['B/T'] = bat_war['B/T'].replace('0', np.nan).astype(str)
     pitch_war['B/T'] = pitch_war['B/T'].replace('0', np.nan).astype(str)
@@ -420,7 +408,7 @@ def main(data_dir):
         try:
             pbp_df, bat_war = get_data(year, division, data_dir)
             situational, batted_ball, splits = run_analysis(
-                pbp_df, year, division)
+                pbp_df, year, division, data_dir)
 
             if all(result is not None for result in [situational, batted_ball, splits]):
                 for df, lst in [(situational, all_situational),
