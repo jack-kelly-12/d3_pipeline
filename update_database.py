@@ -123,11 +123,11 @@ def update_pbp(conn, data_dir):
         delete_query = "DELETE FROM pbp WHERE year = 2025"
         conn.execute(delete_query)
 
-        for division in ['d1', 'd2', 'd3']:
-            file_name = f'{division}_parsed_pbp_new_2025.csv'
+        for division in [1, 2, 3]:
+            file_name = f'd{division}_parsed_pbp_new_2025.csv'
             try:
                 columns = [
-                    'home_team', 'away_team', 'home_score', 'away_score', 'date',
+                    'year', 'division', 'home_team', 'away_team', 'home_score', 'away_score', 'date',
                     'inning', 'top_inning', 'game_id', 'description',
                     'home_win_exp_before', 'wpa', 'run_expectancy_delta', 'woba', 'home_win_exp_after',
                     'player_id', 'pitcher_id', 'batter_id', 'li', 'home_score_after',
@@ -135,6 +135,8 @@ def update_pbp(conn, data_dir):
                     'hit_type'
                 ]
                 df = pd.read_csv(Path(data_dir) / 'play_by_play' / file_name)
+                df['year'] = 2025
+                df['division'] = division
                 df[columns].to_sql(
                     'pbp', conn, if_exists='append', index=False)
                 print(f"Successfully updated pbp with {file_name}")
