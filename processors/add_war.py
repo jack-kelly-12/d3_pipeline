@@ -538,7 +538,7 @@ class BaseballStats:
 
     def get_data(self):
         # Use dictionaries instead of lists
-        pitching, batting, pbp, rosters = {}, {}, {}, {}
+        pitching, batting, pbp, rosters, park_factors = {}, {}, {}, {}
         year = 2025
 
         for division in range(1, 4):
@@ -548,7 +548,7 @@ class BaseballStats:
 
             batting_df = pd.read_csv(
                 self.data_dir / f'stats/d{division}_batting_{year}.csv')
-            batting[division] = batting_df  # Store by division number
+            batting[division] = batting_df
 
             roster_df = pd.read_csv(
                 self.data_dir / f'rosters/d{division}_rosters_{year}.csv').query(
@@ -560,7 +560,9 @@ class BaseballStats:
             pbp[division] = pbp_df
 
         park_factors = pd.read_csv(
-            self.data_dir / 'park_factors/park_factors.csv')
+            self.data_dir / f'park_factors/d{division}park_factors.csv')
+        park_factors[division] = park_factors
+
         guts = pd.read_csv(self.data_dir / 'guts/guts_constants.csv')
 
         return batting, pitching, pbp, guts, park_factors, rosters
@@ -570,7 +572,7 @@ class BaseballStats:
         team_war['Season'] = year
         return team_war
 
-    def create_batting_team_war_table(self, df, year):
+    def create_batting_team_war_table(self, df, year, park_factors):
         team_war = self.create_team_war_table(df, year, self.team_batting_agg)
 
         team_war['BA'] = team_war['H'] / team_war['AB']
@@ -580,12 +582,12 @@ class BaseballStats:
                              team_war['IBB']) / (team_war['AB'] + team_war['BB'] +
                                                  team_war['IBB'] + team_war['HBP'] + team_war['SF'])
 
-        return self.add_batting_cols_team(team_war, self.park_factors, self.guts, year)
+        return self.add_batting_cols_team(team_war, park_factors, self.guts, year)
 
-    def create_pitching_team_war_table(self, df, year):
+    def create_pitching_team_war_table(self, df, year, park_factors):
         team_war = self.create_team_war_table(df, year, self.team_pitching_agg)
         team_war['ERA'] = (team_war['ER'] * 9) / team_war['IP']
-        team_war = self.add_pitching_cols_team(team_war)
+        team_war = self.add_pitching_cols_team(team_war, park_factors)
         return team_war.replace({np.inf: 0, -np.inf: 0})
 
     def add_batting_cols_team(self, df, park_factors, guts, year):
@@ -622,7 +624,7 @@ class BaseballStats:
 
         return df
 
-    def add_pitching_cols_team(self, df):
+    def add_pitching_cols_team(self, df, park_factors):
         df['IR-A%'] = ((df['Inh Run Score'] / df['Inh Run']) * 100).fillna(0)
         df['RA9'] = (df['R'] / df['IP']) * 9
         df['K9'] = (df['SO'] / df['IP']) * 9
@@ -647,7 +649,7 @@ class BaseballStats:
         df['xFIP'] = xfip
 
         df['iPF'] = df['Team'].map(
-            self.park_factors.set_index('team_name')['iPF'])
+            park_factors.set_index('team_name')['iPF'])
         df['PF'] = ((1 - (1 - df.iPF) * .6) * 100).fillna(100)
 
         df['ERA+'] = 100 * \
@@ -733,7 +735,7 @@ class BaseballStats:
         return pitcher_stats, team_stats
 
     def process_and_save_stats(self, year, war_dir):
-        batting, pitching, pbp, self.guts, self.park_factors, rosters = self.get_data()
+        batting, pitching, pbp, self.guts, park_factors, rosters = self.get_data()
         self.guts = self.guts.reset_index(drop=True)
 
         for division in [1, 2, 3]:
@@ -748,7 +750,7 @@ class BaseballStats:
             bat_war = self.process_batting_stats(
                 batting[division],  # Use the correct division's data
                 year_guts,
-                self.park_factors,
+                park_factors[division],
                 pbp[division],
                 rosters[division],
                 division
@@ -784,7 +786,8 @@ class BaseballStats:
             bat_war_file = war_dir / f'd{division}_batting_war_{year}.csv'
             bat_war.to_csv(bat_war_file, index=False)
 
-            bat_team_war = self.create_batting_team_war_table(bat_war, year)
+            bat_team_war = self.create_batting_team_war_table(
+                bat_war, year, park_factors[division])
             bat_team_war = bat_team_war.merge(
                 team_stats,
                 left_on='Team',
@@ -803,7 +806,7 @@ class BaseballStats:
             pitch_war = self.process_pitching_stats(
                 pitching[division],
                 pbp[division],
-                self.park_factors,
+                park_factors[division],
                 batting_war_total
             )
 
@@ -840,7 +843,7 @@ class BaseballStats:
 
             # Process team pitching WAR
             pitch_team_war = self.create_pitching_team_war_table(
-                pitch_war, year)
+                pitch_war, year, park_factors[division])
             pitch_team_war = pitch_team_war.merge(
                 team_stats,
                 left_on='Team',
