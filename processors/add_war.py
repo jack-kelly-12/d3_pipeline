@@ -537,8 +537,7 @@ class BaseballStats:
         return df.dropna(subset=['WAR'])
 
     def get_data(self):
-        # Use dictionaries instead of lists
-        pitching, batting, pbp, rosters, park_factors = {}, {}, {}, {}
+        pitching, batting, pbp, rosters, park_factors = {}, {}, {}, {}, {}
         year = 2025
 
         for division in range(1, 4):
