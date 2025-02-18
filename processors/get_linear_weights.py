@@ -28,7 +28,7 @@ def get_re(base_cd, outs, re_matrix) -> np.ndarray:
 
 def calculate_college_linear_weights(df_pbp, df_er):
     event_mapping = {
-        '2': 'out', '3': 'out', '6': 'out',
+        '2': 'out', '3': 'out', '19': 'out',
         '14': 'walk', '16': 'hit_by_pitch',
         '20': 'single', '21': 'double',
         '22': 'triple', '23': 'home_run'
