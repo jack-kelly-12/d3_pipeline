@@ -38,6 +38,11 @@ def get_data(year, division, data_dir):
     re = pd.read_csv(re_file)
     lw = pd.read_csv(lw_file)
 
+    pbp_df['play_id'] = pbp_df.groupby('game_id').cumcount() + 1
+
+    pbp_df = pbp_df.sort_values(['game_id',
+                                 'play_id'], ascending=True)
+
     # Process play-by-play data
     pbp_df['top_inning'] = pbp_df.top_inning.replace({0: 'Bottom', 1: 'Top'})
     pbp_df['description'] = np.where(
