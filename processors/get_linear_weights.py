@@ -22,9 +22,12 @@ def calculate_college_linear_weights(pbp_df, re24_matrix):
     # Vectorized RE24 calculation
     re_start = pbp_df.apply(lambda x: get_re(
         x['base_cd_before'], x['outs_before'], re24_matrix), axis=1)
-    re_end = pd.Series([get_re(base, outs, re24_matrix) for base, outs in
-                        zip(pd.concat([pbp_df['base_cd_before'].iloc[1:], pd.Series([0])]),
-                       pd.concat([pbp_df['outs_before'].iloc[1:], pd.Series([0])]))])
+
+    # Create next row values for RE end calculation
+    next_base = pd.concat([pbp_df['base_cd_before'].iloc[1:], pd.Series([0])])
+    next_outs = pd.concat([pbp_df['outs_before'].iloc[1:], pd.Series([0])])
+    re_end = pd.Series([get_re(base, outs, re24_matrix)
+                       for base, outs in zip(next_base, next_outs)])
 
     # Set RE end to 0 for inning endings
     re_end[pbp_df['inn_end'] == 1] = 0
@@ -53,13 +56,14 @@ def calculate_college_linear_weights(pbp_df, re24_matrix):
 
 
 def calculate_normalized_linear_weights(linear_weights, stats_df):
+    # Calculate total value and PA
     total_value = (linear_weights['linear_weights_above_outs'] *
                    linear_weights['count']).sum()
     total_pa = linear_weights['count'].sum()
     denominator = total_value / total_pa
 
+    # Calculate league OBP
     total_stats = stats_df.sum()
-
     league_obp = (total_stats['H'] + total_stats['BB'] + total_stats['HBP']) / \
                  (total_stats['AB'] + total_stats['BB'] + total_stats['HBP'] +
                   total_stats['SF'] + total_stats['SH'])
@@ -94,7 +98,7 @@ def main(data_dir):
 
     for division in divisions:
         try:
-            # Read PBP and RE24 files
+            # Create filenames using proper string formatting
             pbp_file = data_dir / 'play_by_play' / \
                 f'd{division}_parsed_pbp_{year}.csv'
             re24_file = misc_dir / f'd{division}_expected_runs_{year}.csv'
