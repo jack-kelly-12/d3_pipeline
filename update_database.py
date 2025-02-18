@@ -195,4 +195,10 @@ def update_war():
 if __name__ == "__main__":
     print("Starting database update process...")
     update_guts_constants()
+    update_war()
+    update_pbp()
+    update_leaderboards()
+    update_rosters()
+    update_expected_runs()
+    update_schedules()
     print("Database update process completed")
