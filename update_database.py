@@ -95,15 +95,15 @@ def update_expected_runs(conn, data_dir):
             file_name = f'{division}_expected_runs_2025.csv'
             try:
                 df = pd.read_csv(Path(data_dir) / 'miscellaneous' / file_name)
-                df.index = ['_ _ _', '1B _ _', '_ 2B _', '1B 2B _',
-                            '_ _ 3B', '1B _ 3B', '_ 2B 3B', '1B 2B 3B']
-                df = df.rename(columns={'index': 'Bases'})
-
+                df['Bases'] = ['_ _ _', '1B _ _', '_ 2B _', '1B 2B _',
+                               '_ _ 3B', '1B _ 3B', '_ 2B 3B', '1B 2B 3B']
+                df = df.reset_index()
+                df = df.set_index('Bases')
                 df['Year'] = 2025
                 df['Division'] = int(division[1])
 
-                df.to_sql('expected_runs', conn,
-                          if_exists='append', index=False)
+                df[['Division', 'Year', 'Bases', '0', '1', '2']].to_sql('expected_runs', conn,
+                                                                        if_exists='append', index=False)
                 print(f"Successfully updated expected_runs with {file_name}")
             except Exception as e:
                 print(f"Error updating expected_runs with {file_name}: {e}")
