@@ -20,6 +20,7 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
+            # Clone or update pipeline repository
             if [ -d "d3_pipeline" ]; then
               cd d3_pipeline
               git pull
@@ -28,8 +29,14 @@ jobs:
               cd d3_pipeline
             fi
 
-            cp -r data/* /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/data/
+            # Create backend data directory if it doesn't exist
+            mkdir -p /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/data
 
+            # Copy data files and update script
+            cp -r data/* /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/data/
+            cp update_database.py /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/
+
+            # Run update script
             cd /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend
             source venv/bin/activate
             python3 update_database.py

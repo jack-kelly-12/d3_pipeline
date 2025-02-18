@@ -6,7 +6,7 @@ from pathlib import Path
 
 def connect_db():
     """Create a connection to the SQLite database."""
-    db_path = Path('backend/ncaa.db')
+    db_path = Path('ncaa.db')
     return sqlite3.connect(db_path)
 
 
