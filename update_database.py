@@ -66,17 +66,18 @@ def update_schedules(conn, data_dir):
 def update_rosters(conn, data_dir):
     """Update rosters table."""
     try:
-        delete_query = "DELETE FROM rosters WHERE Year = 2025"
+        delete_query = "DELETE FROM rosters"
         conn.execute(delete_query)
 
         for division in ['d1', 'd2', 'd3']:
-            file_name = f'{division}_rosters_2025.csv'
-            try:
-                df = pd.read_csv(Path(data_dir) / 'rosters' / file_name)
-                df.to_sql('rosters', conn, if_exists='append', index=False)
-                print(f"Successfully updated rosters with {file_name}")
-            except Exception as e:
-                print(f"Error updating rosters with {file_name}: {e}")
+            for year in range(2021, 2026):
+                file_name = f'{division}_rosters_{year}.csv'
+                try:
+                    df = pd.read_csv(Path(data_dir) / 'rosters' / file_name)
+                    df.to_sql('rosters', conn, if_exists='append', index=False)
+                    print(f"Successfully updated rosters with {file_name}")
+                except Exception as e:
+                    print(f"Error updating rosters with {file_name}: {e}")
 
         conn.commit()
         print("Successfully completed rosters update")
@@ -95,15 +96,18 @@ def update_expected_runs(conn, data_dir):
             file_name = f'{division}_expected_runs_2025.csv'
             try:
                 df = pd.read_csv(Path(data_dir) / 'miscellaneous' / file_name)
+
                 df['Bases'] = ['_ _ _', '1B _ _', '_ 2B _', '1B 2B _',
                                '_ _ 3B', '1B _ 3B', '_ 2B 3B', '1B 2B 3B']
-                df = df.reset_index()
-                df = df.set_index('Bases')
                 df['Year'] = 2025
                 df['Division'] = int(division[1])
 
-                df[['Division', 'Year', 'Bases', '0', '1', '2']].to_sql('expected_runs', conn,
-                                                                        if_exists='append', index=False)
+                df_to_upload = df[['Division', 'Year', 'Bases', '0', '1', '2']]
+
+                df_to_upload.to_sql('expected_runs', conn,
+                                    if_exists='append',
+                                    index=False)
+
                 print(f"Successfully updated expected_runs with {file_name}")
             except Exception as e:
                 print(f"Error updating expected_runs with {file_name}: {e}")
@@ -159,26 +163,28 @@ def update_war(conn, data_dir):
         ]
 
         for table in war_tables:
-            delete_query = f"DELETE FROM {table} WHERE Season = 2025"
+            delete_query = f"DELETE FROM {table}"
             conn.execute(delete_query)
 
         for division in ['d1', 'd2', 'd3']:
-            file_to_table = {
-                f'{division}_batting_team_war_2025.csv': 'batting_team_war',
-                f'{division}_batting_war_2025.csv': 'batting_war',
-                f'{division}_pitching_team_war_2025.csv': 'pitching_team_war',
-                f'{division}_pitching_war_2025.csv': 'pitching_war'
-            }
+            for year in range(2021, 2026):
+                file_to_table = {
+                    f'{division}_batting_team_war_{year}.csv': 'batting_team_war',
+                    f'{division}_batting_war_{year}.csv': 'batting_war',
+                    f'{division}_pitching_team_war_{year}.csv': 'pitching_team_war',
+                    f'{division}_pitching_war_{year}.csv': 'pitching_war'
+                }
 
-            for file_name, table_name in file_to_table.items():
-                try:
-                    df = pd.read_csv(Path(data_dir) / 'war' / file_name)
-                    df.to_sql(table_name, conn,
-                              if_exists='append', index=False)
-                    print(
-                        f"Successfully updated {table_name} with {file_name}")
-                except Exception as e:
-                    print(f"Error updating {table_name} with {file_name}: {e}")
+                for file_name, table_name in file_to_table.items():
+                    try:
+                        df = pd.read_csv(Path(data_dir) / 'war' / file_name)
+                        df.to_sql(table_name, conn,
+                                  if_exists='append', index=False)
+                        print(
+                            f"Successfully updated {table_name} with {file_name}")
+                    except Exception as e:
+                        print(
+                            f"Error updating {table_name} with {file_name}: {e}")
 
         conn.commit()
         print("Successfully completed WAR updates")
