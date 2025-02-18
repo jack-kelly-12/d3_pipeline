@@ -542,28 +542,28 @@ class BaseballStats:
         year = 2025
         for division in range(1, 4):
             pitching_df = pd.read_csv(
-                f'{self.data_dir}/stats/d{division}_pitching_{year}.csv')
+                self.data_dir / f'stats/d{division}_pitching_{year}.csv')
             pitching.append(pitching_df)
 
             batting_df = pd.read_csv(
-                f'{self.data_dir}/stats/d{division}_batting_{year}.csv')
+                self.data_dir / f'stats/d{division}_batting_{year}.csv')
             batting.append(batting_df)
 
-            roster_df = pd.read_csv(f'{self.data_dir}/rosters/d{division}_rosters_{year}.csv').query(
+            roster_df = pd.read_csv(self.data_dir / f'rosters/d{division}_rosters_{year}.csv').query(
                 f'year == {year}').query(f'division == {division}')
             rosters.append(roster_df)
 
             pbp_df = pd.read_csv(
-                f'{self.data_dir}/play_by_play/d{division}_parsed_pbp_new_{year}.csv')
+                self.data_dir / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv')
             pbp.append(pbp_df)
 
             park_factors = pd.read_csv(
-                f'{self.data_dir}/park_factors/d{division}_park_factors.csv')
-            guts = pd.read_csv(f'{self.data_dir}/guts/guts_constants.csv')
+                self.data_dir / f'park_factors/d{division}_park_factors.csv')
+            guts = pd.read_csv(self.data_dir / f'guts/guts_constants.csv')
         return batting, pitching, pbp, guts, park_factors, rosters
 
     def create_team_war_table(self, df, year, agg_dict):
-        team_war = df.groupby('Team').agg(agg_dict).reset_index()
+        team_war = df.groupby(['Team', 'Season']).agg(agg_dict).reset_index()
         team_war['Season'] = year
         return team_war
 
@@ -733,10 +733,6 @@ class BaseballStats:
         batting, pitching, pbp, self.guts, self.park_factors, rosters = self.get_data()
         self.guts = self.guts.reset_index(drop=True)
 
-        # Create war directory if it doesn't exist
-        war_dir = Path(self.data_dir) / 'war'
-        war_dir.mkdir(exist_ok=True)
-
         for division in [1, 2, 3]:
             print(f"Processing Division {division}, Year {year}")
 
@@ -746,7 +742,6 @@ class BaseballStats:
                 continue
             year_guts = year_guts.iloc[0]
 
-            # Process batting stats
             bat_war = self.process_batting_stats(
                 batting[0],
                 year_guts,
@@ -783,11 +778,9 @@ class BaseballStats:
 
             bat_war = bat_war[self.batting_columns]
 
-            # Save batting WAR
             bat_war_file = war_dir / f'd{division}_batting_war_{year}.csv'
             bat_war.to_csv(bat_war_file, index=False)
 
-            # Process team batting WAR
             bat_team_war = self.create_batting_team_war_table(bat_war, year)
             bat_team_war = bat_team_war.merge(
                 team_stats,
@@ -865,16 +858,18 @@ def main(data_dir):
     if not data_dir.exists():
         raise FileNotFoundError(f"Data directory not found: {data_dir}")
 
+    war_dir = Path(data_dir) / 'war'
+    war_dir.mkdir(exist_ok=True)
+
     stats = BaseballStats(data_dir=data_dir)
 
     year = 2025
-    for division in range(1, 4):
-        try:
-            stats.process_and_save_stats(year)
-            print("Successfully processed all statistics!")
-        except Exception as e:
-            print(f"Error processing statistics: {str(e)}")
-            raise
+    try:
+        stats.process_and_save_stats(year)
+        print("Successfully processed all statistics!")
+    except Exception as e:
+        print(f"Error processing statistics: {str(e)}")
+        raise
 
 
 if __name__ == '__main__':

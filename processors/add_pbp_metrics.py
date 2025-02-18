@@ -520,13 +520,13 @@ def process_single_year(args):
     re_melted = melt_run_expectancy(re)
 
     leverage_melted['Runners'] = pd.to_numeric(
-        leverage_melted['Runners'].replace(base_state_map), errors='ignore')
+        leverage_melted['Runners'].replace(base_state_map))
     win_expectancy['Runners'] = pd.to_numeric(
-        win_expectancy['Runners'].replace(base_state_map), errors='ignore')
+        win_expectancy['Runners'].replace(base_state_map))
     re_melted['base_state'] = pd.to_numeric(
-        re_melted['base_state'].replace(base_state_map), errors='ignore')
+        re_melted['base_state'].replace(base_state_map))
     pbp_processed['base_cd_after'] = pd.to_numeric(pbp_processed['base_cd_after'].replace(
-        base_state_map), errors='ignore')
+        base_state_map))
 
     merged_df = merge_baseball_stats(pbp_processed, leverage_melted, win_expectancy, re_melted).drop_duplicates(
         ['game_id', 'inning', 'home_score_after', 'away_score_after', 'home_text', 'away_text']).dropna(subset=['description'])
