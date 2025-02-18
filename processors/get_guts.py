@@ -76,11 +76,10 @@ def calculate_guts_constants(division, year, output_path):
             output_path / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv')
         lw_df = pd.read_csv(
             output_path / f'miscellaneous/d{division}_linear_weights_{year}.csv')
-
-        pitching_df = pd.read_csv(output_path /
-                                  f'stats/d{division}_pitching_{year}.csv')
-        batting_df = pd.read_csv(output_path /
-                                 f'stats/d{division}_batting_{year}.csv')
+        pitching_df = pd.read_csv(
+            output_path / f'stats/d{division}_pitching_{year}.csv')
+        batting_df = pd.read_csv(
+            output_path / f'stats/d{division}_batting_{year}.csv')
 
         batting_df['1B'] = batting_df['H'] - batting_df['2B'] - \
             batting_df['3B'] - batting_df['HR']
@@ -106,22 +105,31 @@ def main(data_dir):
     guts_dir = data_dir / 'guts'
     guts_dir.mkdir(exist_ok=True)
 
+    guts_file = guts_dir / 'guts_constants.csv'
+    existing_guts = pd.DataFrame()
+    if guts_file.exists():
+        existing_guts = pd.read_csv(guts_file)
+        existing_guts = existing_guts[existing_guts['Year'] != 2025]
+
     divisions = [1, 2, 3]
     year = 2025
 
     all_constants = []
 
     for division in divisions:
-        constants = calculate_guts_constants(
-            division, year, data_dir)
+        constants = calculate_guts_constants(division, year, data_dir)
         if constants:
             all_constants.append(constants)
 
-    guts_df = pd.DataFrame(all_constants).sort_values(
+    new_guts = pd.DataFrame(all_constants)
+
+    combined_guts = pd.concat([existing_guts, new_guts], ignore_index=True)
+
+    combined_guts = combined_guts.sort_values(
         ['Division', 'Year'], ascending=[True, False])
 
-    guts_df.to_csv(f'{data_dir}/guts/guts_constants.csv', index=False)
-    print(f"Saved {len(guts_df)} rows of Guts constants")
+    combined_guts.to_csv(guts_file, index=False)
+    print(f"Saved {len(combined_guts)} rows of Guts constants")
 
 
 if __name__ == '__main__':
