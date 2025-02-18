@@ -177,9 +177,18 @@ def process_division(
     """
     # Setup paths
     misc_dir = data_dir / 'miscellaneous'
-    pbp_file = data_dir / 'play_by_play' / f'd{division}_parsed_pbp_{year}.csv'
-    re24_file = misc_dir / f'd{division}_expected_runs_{year}.csv'
-    stats_file = data_dir / 'stats' / f'd{division}_batting_{year}.csv'
+
+    # Use Path objects properly for concatenation
+    pbp_file = data_dir / 'play_by_play' / \
+        f"d{str(division)}_parsed_pbp_{str(year)}.csv"
+    re24_file = misc_dir / f"d{str(division)}_expected_runs_{str(year)}.csv"
+    stats_file = data_dir / 'stats' / \
+        f"d{str(division)}_batting_{str(year)}.csv"
+
+    print(f"Looking for files:")
+    print(f"PBP: {pbp_file}")
+    print(f"RE24: {re24_file}")
+    print(f"Stats: {stats_file}")
 
     # Validate files exist
     for file, desc in [
@@ -195,6 +204,11 @@ def process_division(
     re24_matrix = pd.read_csv(re24_file).set_index('Bases')[['0', '1', '2']]
     stats_df = pd.read_csv(stats_file)
 
+    print(f"Successfully loaded data:")
+    print(f"PBP rows: {len(pbp_df)}")
+    print(f"RE24 matrix shape: {re24_matrix.shape}")
+    print(f"Stats rows: {len(stats_df)}")
+
     # Calculate weights
     linear_weights = calculate_college_linear_weights(pbp_df, re24_matrix)
     normalized_weights = calculate_normalized_linear_weights(
@@ -202,8 +216,10 @@ def process_division(
 
     # Save results if requested
     if save_output:
-        output_file = misc_dir / f'd{division}_linear_weights_{year}.csv'
+        output_file = misc_dir / \
+            f"d{str(division)}_linear_weights_{str(year)}.csv"
         normalized_weights.to_csv(output_file, index=False)
+        print(f"Saved results to: {output_file}")
 
     return linear_weights, normalized_weights
 
@@ -218,6 +234,10 @@ def main(data_dir: str):
     data_path = Path(data_dir)
     year = 2025
     divisions = range(1, 4)
+
+    # Create miscellaneous directory if it doesn't exist
+    misc_dir = data_path / 'miscellaneous'
+    misc_dir.mkdir(exist_ok=True)
 
     for division in divisions:
         try:
