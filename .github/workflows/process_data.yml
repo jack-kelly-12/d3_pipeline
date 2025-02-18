@@ -114,6 +114,11 @@ jobs:
         run: |
           python processors/get_leaderboards.py --data_dir ${{ env.DATA_DIR }}
 
+      - name: Player id generation
+        shell: bash
+        run: |
+          python processors/add_player_id.py --data_dir ${{ env.DATA_DIR }}
+
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

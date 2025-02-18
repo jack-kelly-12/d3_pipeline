@@ -56,7 +56,7 @@ class PlayerMatcher:
 
         for file in sorted(batting_files):
             df = pd.read_csv(file)
-            year = int(file.split('_')[-1].split('.')[0])
+            year = int(file.stem.split('_')[-1].split('.')[0])
             df['year'] = year
             df['data_type'] = 'batting'
             df['original_id'] = df.index
@@ -64,7 +64,7 @@ class PlayerMatcher:
 
         for file in sorted(pitching_files):
             df = pd.read_csv(file)
-            year = int(file.split('_')[-1].split('.')[0])
+            year = int(file.stem.split('_')[-1].split('.')[0])
             df['year'] = year
             df['data_type'] = 'pitching'
             df['original_id'] = df.index
@@ -72,7 +72,7 @@ class PlayerMatcher:
 
         for file in sorted(roster_files):
             df = pd.read_csv(file)
-            year = int(file.split('_')[-1].split('.')[0])
+            year = int(file.stem.split('_')[-1].split('.')[0])
             df['year'] = year
             df['data_type'] = 'roster'
             df['original_id'] = df.index
@@ -172,25 +172,28 @@ class PlayerMatcher:
             })
 
     def _create_output_dataframe(self, df_type: pd.DataFrame) -> pd.DataFrame:
-        mapped_records = []
-        df_type = df_type.rename(
-            columns={'player_id': 'ncaa_id'}) if 'player_id' in df_type.columns else df_type
-        original_columns = df_type.columns.tolist()
+        # Create a mapping dictionary from original indices to new player IDs
+        id_mapping = {}
         data_type = df_type['data_type'].iloc[0]
 
+        # Build mapping from player_info
         for internal_id, seasons in self.player_info.items():
             for season in seasons:
                 if season['data_type'] == data_type:
-                    filtered_season = {
-                        k: v for k, v in season.items() if k in original_columns}
-                    filtered_season['player_id'] = internal_id
-                    mapped_records.append(filtered_season)
+                    original_id = season['original_id']
+                    id_mapping[original_id] = internal_id
 
-        result_df = pd.DataFrame(mapped_records)
+        # Create a copy of the original dataframe
+        result_df = df_type.copy()
 
-        columns_to_keep = [col for col in original_columns if col not in [
-            'clean_name', 'original_id', 'data_type']] + ['player_id']
-        return result_df[columns_to_keep]
+        # Map the new IDs using the mapping dictionary
+        result_df['player_id'] = result_df['original_id'].map(id_mapping)
+
+        # Drop the columns we don't want
+        result_df = result_df.drop(
+            ['clean_name', 'original_id', 'data_type'], axis=1)
+
+        return result_df
 
 
 def main(data_dir):
@@ -198,11 +201,9 @@ def main(data_dir):
     stats_dir = data_dir / 'stats'
     rosters_dir = data_dir / 'rosters'
 
-    # Ensure directories exist
     stats_dir.mkdir(exist_ok=True)
     rosters_dir.mkdir(exist_ok=True)
 
-    # Get file lists using pathlib
     batting_files = sorted(list(stats_dir.glob('d3_batting_2*.csv')))
     pitching_files = sorted(list(stats_dir.glob('d3_pitching_2*.csv')))
     roster_files = sorted(list(rosters_dir.glob('d3_rosters_2*.csv')))
@@ -211,12 +212,10 @@ def main(data_dir):
     mapped_batting, mapped_pitching, mapped_rosters = matcher.process_files(
         batting_files, pitching_files, roster_files)
 
-    for year in range(2021, 2025):
-        # Process batting data
+    for year in range(2021, 2026):
         df_batting = mapped_batting.query(
             f'year == {year}').rename(columns={'class': 'Yr'})
 
-        # Process pitching data
         df_pitching = mapped_pitching.query(
             f'year == {year}').rename(columns={'class': 'Yr'})
 

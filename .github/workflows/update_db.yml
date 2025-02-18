@@ -1,0 +1,35 @@
+name: DB Update
+
+on:
+  workflow_run:
+    workflows: ["NCAA Baseball Data Processing"]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  process-data:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+
+    steps:
+      - name: Copy Data and Update Databases
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            if [ -d "d3_pipeline" ]; then
+              cd d3_pipeline
+              git pull
+            else
+              git clone https://${GITHUB_TOKEN}@github.com/jack-kelly-12/d3_pipeline.git
+              cd d3_pipeline
+            fi
+
+            cp -r data/* /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/data/
+
+            cd /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend
+            source venv/bin/activate
+            python3 update_database.py
