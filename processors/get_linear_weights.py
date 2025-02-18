@@ -37,7 +37,7 @@ def calculate_college_linear_weights(df_pbp, df_er):
     df_pbp['events'] = df_pbp['event_cd'].astype(
         str).map(event_mapping).fillna('other')
 
-    df_pbp.event.unique()
+    df_pbp.events.unique()
 
     re_start = get_re(df_pbp['base_cd_before'].values,
                       df_pbp['outs_before'].values, df_er)
