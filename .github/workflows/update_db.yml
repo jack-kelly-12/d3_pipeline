@@ -13,8 +13,8 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
     env:
-      DB_PATH: home/ubuntu/d3_dashboard/backend/ncaa.db
-      DATA_DIR: home/ubuntu/d3_dashboard/backend/data
+      DB_PATH: /home/ubuntu/d3_dashboard/backend/ncaa.db
+      DATA_DIR: /home/ubuntu/d3_dashboard/backend/data
 
     steps:
       - name: Copy Data and Update Databases
@@ -33,8 +33,15 @@ jobs:
               cd d3_pipeline
             fi
 
-            # Create backend data directory if it doesn't exist
-            mkdir -p /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/data
+            # Create directories and set permissions
+            sudo mkdir -p /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/data
+            sudo mkdir -p /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend
+            sudo chown -R ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} /home/${{ secrets.EC2_USERNAME }}/d3_dashboard
+
+            # Create database directory if it doesn't exist
+            sudo mkdir -p $(dirname /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/ncaa.db)
+            sudo touch /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/ncaa.db
+            sudo chown ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/ncaa.db
 
             # Copy data files and update script
             cp -r data/* /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/data/
@@ -43,4 +50,6 @@ jobs:
             # Run update script
             cd /home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend
             source venv/bin/activate
-            python3 update_database.py --data_dir ${{ env.DATA_DIR }} --db_path ${{ env.DB_PATH }}
+            python3 update_database.py \
+              --data_dir "/home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/data" \
+              --db_path "/home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/ncaa.db"
