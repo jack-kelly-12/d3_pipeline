@@ -21,13 +21,28 @@ def get_re(base_cd: int, outs: int, re24_matrix: pd.DataFrame) -> float:
 
     # Ensure values are within bounds
     base_cd = int(min(max(base_cd, 0), 7))
-    outs = int(min(max(outs, 0), 2))
+    # Convert outs to string to match matrix columns
+    outs = str(min(max(outs, 0), 2))
+
+    # Map base_cd to base state string
+    base_states = {
+        0: '_ _ _',
+        1: '1B _ _',
+        2: '_ 2B _',
+        3: '1B 2B _',
+        4: '_ _ 3B',
+        5: '1B _ 3B',
+        6: '_ 2B 3B',
+        7: '1B 2B 3B'
+    }
+
+    base_state = base_states[base_cd]
 
     try:
-        return float(re24_matrix.iloc[base_cd, outs])
-    except (IndexError, ValueError):
+        return float(re24_matrix.loc[base_state, outs])
+    except (KeyError, ValueError):
         print(
-            f"Warning: Invalid matrix access - base_cd: {base_cd}, outs: {outs}")
+            f"Warning: Invalid matrix access - base_state: {base_state}, outs: {outs}")
         return 0.0
 
 
@@ -177,13 +192,14 @@ def process_division(
     """
     # Setup paths
     misc_dir = data_dir / 'miscellaneous'
+    division_str = str(division)
+    year_str = str(year)
 
     # Use Path objects properly for concatenation
     pbp_file = data_dir / 'play_by_play' / \
-        f"d{str(division)}_parsed_pbp_{str(year)}.csv"
-    re24_file = misc_dir / f"d{str(division)}_expected_runs_{str(year)}.csv"
-    stats_file = data_dir / 'stats' / \
-        f"d{str(division)}_batting_{str(year)}.csv"
+        f"d{division_str}_parsed_pbp_{year_str}.csv"
+    re24_file = misc_dir / f"d{division_str}_expected_runs_{year_str}.csv"
+    stats_file = data_dir / 'stats' / f"d{division_str}_batting_{year_str}.csv"
 
     print(f"Looking for files:")
     print(f"PBP: {pbp_file}")
@@ -201,12 +217,14 @@ def process_division(
 
     # Read data
     pbp_df = pd.read_csv(pbp_file)
-    re24_matrix = pd.read_csv(re24_file).set_index('Bases')[['0', '1', '2']]
+    re24_df = pd.read_csv(re24_file)
+    re24_matrix = re24_df.set_index('Bases')[['0', '1', '2']]
     stats_df = pd.read_csv(stats_file)
 
     print(f"Successfully loaded data:")
     print(f"PBP rows: {len(pbp_df)}")
     print(f"RE24 matrix shape: {re24_matrix.shape}")
+    print(f"RE24 matrix index: {re24_matrix.index.tolist()}")
     print(f"Stats rows: {len(stats_df)}")
 
     # Calculate weights
@@ -217,7 +235,7 @@ def process_division(
     # Save results if requested
     if save_output:
         output_file = misc_dir / \
-            f"d{str(division)}_linear_weights_{str(year)}.csv"
+            f"d{division_str}_linear_weights_{year_str}.csv"
         normalized_weights.to_csv(output_file, index=False)
         print(f"Saved results to: {output_file}")
 
@@ -248,6 +266,10 @@ def main(data_dir: str):
                 data_dir=data_path
             )
             print(f"Successfully processed Division {division}")
+            print("\nLinear Weights:")
+            print(linear_weights)
+            print("\nNormalized Weights:")
+            print(normalized_weights)
 
         except Exception as e:
             print(f"Error processing Division {division}:")
