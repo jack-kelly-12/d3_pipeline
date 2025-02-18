@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  process-data:
+  db_update:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
