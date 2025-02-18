@@ -114,7 +114,7 @@ def process_division(
     division: int,
     year: int,
     data_dir: Path,
-    save_output: bool = False
+    save_output: bool = True
 ) -> Tuple[pd.DataFrame, pd.DataFrame]:
 
     misc_dir = data_dir / 'miscellaneous'
