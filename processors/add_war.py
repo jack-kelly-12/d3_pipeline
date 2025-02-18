@@ -118,6 +118,9 @@ class BaseballStats:
         if df.empty:
             return df
 
+        df['player_id'] = df['player_id'].astype(str)
+        pbp_df['pitcher_id'] = pbp_df['pitcher_id'].astype(str)
+
         gmli = (pbp_df[pbp_df['description'].str.contains('to p for', na=False)]
                 .groupby(['pitcher_id'])
                 .agg({'li': 'mean'})
@@ -395,6 +398,7 @@ class BaseballStats:
             return df
 
         df = df.copy()
+        df['player_id'] = df['player_id'].astype(str)
         df['Pos'] = df['Pos'].apply(lambda x: '' if pd.isna(
             x) else str(x).split('/')[0].upper())
 
@@ -558,9 +562,9 @@ class BaseballStats:
                 self.data_dir / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv')
             pbp[division] = pbp_df
 
-        park_factors = pd.read_csv(
-            self.data_dir / f'park_factors/d{division}park_factors.csv')
-        park_factors[division] = park_factors
+            pf_df = pd.read_csv(
+                self.data_dir / f'park_factors/d{division}_park_factors.csv')
+            park_factors[division] = pf_df
 
         guts = pd.read_csv(self.data_dir / 'guts/guts_constants.csv')
 
@@ -657,6 +661,9 @@ class BaseballStats:
         return df
 
     def get_clutch_stats(self, pbp_df):
+        pbp_df = pbp_df.copy()
+        pbp_df['player_id'] = pbp_df['player_id'].astype(str)
+
         player_stats = pbp_df.groupby(['player_id']).agg({
             'rea': 'sum',
             'wpa': 'sum',
@@ -692,6 +699,9 @@ class BaseballStats:
         return player_stats, team_stats
 
     def get_pitcher_clutch_stats(self, pbp_df):
+        pbp_df = pbp_df.copy()
+        pbp_df['player_id'] = pbp_df['player_id'].astype(str)
+
         pbp_df['pREA'] = (-pbp_df['run_expectancy_delta'] -
                           pbp_df['runs_on_play'])
         pbp_df['pWPA'] = np.where(pbp_df['pitch_team'] == pbp_df['home_team'],
@@ -738,6 +748,13 @@ class BaseballStats:
         self.guts = self.guts.reset_index(drop=True)
 
         for division in [1, 2, 3]:
+            batting[division]['player_id'] = batting[division]['player_id'].astype(
+                str)
+            pitching[division]['player_id'] = pitching[division]['player_id'].astype(
+                str)
+            pbp[division]['player_id'] = pbp[division]['player_id'].astype(str)
+            pbp[division]['pitcher_id'] = pbp[division]['pitcher_id'].astype(
+                str)
             print(f"Processing Division {division}, Year {year}")
 
             div_guts = self.guts.query(f'Division == {division}')
@@ -765,7 +782,7 @@ class BaseballStats:
                 'conference': 'Conference'
             })
 
-            player_stats, team_stats = self.get_clutch_stats(pbp[0])
+            player_stats, team_stats = self.get_clutch_stats(pbp[division])
             bat_war = bat_war.merge(
                 player_stats,
                 left_on=['player_id'],
@@ -826,7 +843,8 @@ class BaseballStats:
             pitch_war = pitch_war.fillna(0)
             pitch_war = pitch_war.replace({np.inf: 0, -np.inf: 0})
 
-            pitcher_stats, team_stats = self.get_pitcher_clutch_stats(pbp[0])
+            pitcher_stats, team_stats = self.get_pitcher_clutch_stats(
+                pbp[division])
             pitch_war = pitch_war.merge(
                 pitcher_stats,
                 left_on=['player_id'],

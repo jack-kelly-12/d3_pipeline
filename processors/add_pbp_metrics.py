@@ -221,7 +221,7 @@ def melt_run_expectancy(df):
     df = df.copy()
 
     df['base_state'] = df.index
-    df.loc[0, 'base_state'] = '___'
+    df.loc[0, 'base_state'] = '_ _ _'
     df = df[['base_state', '0', '1', '2']]
 
     melted = pd.melt(
