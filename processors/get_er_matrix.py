@@ -101,7 +101,8 @@ def main(data_dir):
     for division in divisions:
         output_file = misc_dir / f'd{division}_expected_runs_{year}.csv'
         division_df = final_df[final_df['Division'] == division]
-        division_df.to_csv(output_file, index=False)
+        division_df.set_index('Bases')[['0', '1', '2']].to_csv(
+            output_file, index=False)
         print(f"Saved expected runs matrix for D{division} to {output_file}")
 
 
