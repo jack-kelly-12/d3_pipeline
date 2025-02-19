@@ -1,0 +1,95 @@
+2025-02-19 11:21:12,036 - ERROR - Error processing https://stats.ncaa.org/players/8895321: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:12,502 - ERROR - Error processing https://stats.ncaa.org/players/8528886: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:13,152 - ERROR - Error processing https://stats.ncaa.org/players/8428311: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:13,826 - ERROR - Error processing https://stats.ncaa.org/players/7346060: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:14,418 - ERROR - Error processing https://stats.ncaa.org/players/7566425: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:15,391 - ERROR - Error processing https://stats.ncaa.org/players/7976061: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:15,581 - ERROR - Error processing https://stats.ncaa.org/players/8282702: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:15,979 - ERROR - Error processing https://stats.ncaa.org/players/6899275: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:16,007 - ERROR - Error processing https://stats.ncaa.org/players/7337120: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:16,045 - ERROR - Error processing https://stats.ncaa.org/players/7705881: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:16,141 - ERROR - Error processing https://stats.ncaa.org/players/8279997: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:16,317 - ERROR - Error processing https://stats.ncaa.org/players/8285122: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:16,714 - ERROR - Error processing https://stats.ncaa.org/players/8003761: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:16,748 - ERROR - Error processing https://stats.ncaa.org/players/8269896: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:16,796 - ERROR - Error processing https://stats.ncaa.org/players/7812641: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:16,904 - ERROR - Error processing https://stats.ncaa.org/players/8267410: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:18,229 - ERROR - Error processing https://stats.ncaa.org/players/7138651: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:19,375 - ERROR - Error processing https://stats.ncaa.org/players/7580179: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:19,550 - ERROR - Error processing https://stats.ncaa.org/players/8269122: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:19,551 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:19,553 - ERROR - Error processing https://stats.ncaa.org/players/7345235: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:19,557 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:19,558 - ERROR - Error processing https://stats.ncaa.org/players/7826283: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:19,613 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:19,614 - ERROR - Error processing https://stats.ncaa.org/players/9218683: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:20,739 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:20,740 - ERROR - Error processing https://stats.ncaa.org/players/7814820: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:21,782 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:21,784 - ERROR - Error processing https://stats.ncaa.org/players/7126609: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:21,949 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:21,951 - ERROR - Error processing https://stats.ncaa.org/players/8281686: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:22,169 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:22,170 - ERROR - Error processing https://stats.ncaa.org/players/7987239: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:22,208 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:22,210 - ERROR - Error processing https://stats.ncaa.org/players/7591464: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:22,226 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:22,230 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:22,230 - ERROR - Error processing https://stats.ncaa.org/players/7158234: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:22,232 - ERROR - Error processing https://stats.ncaa.org/players/9110440: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:22,240 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:22,241 - ERROR - Error processing https://stats.ncaa.org/players/7100592: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:22,313 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:22,314 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:22,316 - ERROR - Error processing https://stats.ncaa.org/players/7146969: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:22,317 - ERROR - Error processing https://stats.ncaa.org/players/8877669: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:22,330 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:22,331 - ERROR - Error processing https://stats.ncaa.org/players/7100409: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:21:22,639 - INFO - Decreasing backoff multiplier to 1.0
+2025-02-19 11:21:22,641 - ERROR - Error processing https://stats.ncaa.org/players/7570264: name 'get_player_ids_and_urls' is not defined
+2025-02-19 11:26:18,838 - INFO - Increasing backoff multiplier to 1.5
+2025-02-19 11:26:18,839 - WARNING - Rate limit hit for https://stats.ncaa.org/players/7580378
+2025-02-19 11:26:19,281 - INFO - Increasing backoff multiplier to 2.25
+2025-02-19 11:26:19,282 - WARNING - Rate limit hit for https://stats.ncaa.org/players/7978395
+2025-02-19 11:26:19,295 - INFO - Increasing backoff multiplier to 3.375
+2025-02-19 11:26:19,296 - WARNING - Rate limit hit for https://stats.ncaa.org/players/8453863
+2025-02-19 11:26:19,304 - INFO - Increasing backoff multiplier to 5.0625
+2025-02-19 11:26:19,305 - WARNING - Rate limit hit for https://stats.ncaa.org/players/7354953
+2025-02-19 11:26:19,314 - INFO - Increasing backoff multiplier to 7.59375
+2025-02-19 11:26:19,315 - WARNING - Rate limit hit for https://stats.ncaa.org/players/7545368
+2025-02-19 11:26:19,362 - INFO - Increasing backoff multiplier to 11.390625
+2025-02-19 11:26:19,363 - WARNING - Rate limit hit for https://stats.ncaa.org/players/6915720
+2025-02-19 11:26:19,370 - INFO - Increasing backoff multiplier to 17.0859375
+2025-02-19 11:26:19,371 - INFO - Increasing backoff multiplier to 25.62890625
+2025-02-19 11:26:19,372 - WARNING - Rate limit hit for https://stats.ncaa.org/players/9096452
+2025-02-19 11:26:19,373 - WARNING - Rate limit hit for https://stats.ncaa.org/players/7345115
+2025-02-19 11:26:19,414 - INFO - Increasing backoff multiplier to 38.443359375
+2025-02-19 11:26:19,415 - WARNING - Rate limit hit for https://stats.ncaa.org/players/8891681
+2025-02-19 11:26:19,456 - INFO - Increasing backoff multiplier to 57.6650390625
+2025-02-19 11:26:19,457 - WARNING - Rate limit hit for https://stats.ncaa.org/players/8403950
+2025-02-19 11:26:19,514 - INFO - Increasing backoff multiplier to 86.49755859375
+2025-02-19 11:26:19,515 - WARNING - Rate limit hit for https://stats.ncaa.org/players/6913678
+2025-02-19 11:26:20,626 - INFO - Increasing backoff multiplier to 129.746337890625
+2025-02-19 11:26:20,627 - WARNING - Rate limit hit for https://stats.ncaa.org/players/7081963
+2025-02-19 11:26:21,181 - INFO - Increasing backoff multiplier to 194.6195068359375
+2025-02-19 11:26:21,182 - WARNING - Rate limit hit for https://stats.ncaa.org/players/6917009
+2025-02-19 11:26:22,125 - INFO - Increasing backoff multiplier to 291.92926025390625
+2025-02-19 11:26:22,126 - WARNING - Rate limit hit for https://stats.ncaa.org/players/8272152
+2025-02-19 11:26:23,316 - INFO - Increasing backoff multiplier to 437.8938903808594
+2025-02-19 11:26:23,318 - WARNING - Rate limit hit for https://stats.ncaa.org/players/7344816
+2025-02-19 11:26:25,400 - INFO - Increasing backoff multiplier to 656.8408355712891
+2025-02-19 11:26:25,401 - WARNING - Rate limit hit for https://stats.ncaa.org/players/8267510
+2025-02-19 11:26:32,448 - INFO - Increasing backoff multiplier to 985.2612533569336
+2025-02-19 11:26:32,450 - WARNING - Rate limit hit for https://stats.ncaa.org/players/8417765
+2025-02-19 11:26:32,512 - INFO - Increasing backoff multiplier to 1477.8918800354004
+2025-02-19 11:26:32,512 - WARNING - Rate limit hit for https://stats.ncaa.org/players/9172097
+2025-02-19 11:26:38,805 - INFO - Increasing backoff multiplier to 2216.8378200531006
+2025-02-19 11:26:38,807 - WARNING - Rate limit hit for https://stats.ncaa.org/players/8424564
+2025-02-19 11:26:48,408 - INFO - Increasing backoff multiplier to 3325.256730079651
+2025-02-19 11:26:48,409 - WARNING - Rate limit hit for https://stats.ncaa.org/players/7832788
+2025-02-19 11:27:02,985 - INFO - Increasing backoff multiplier to 4987.885095119476
+2025-02-19 11:27:02,986 - WARNING - Rate limit hit for https://stats.ncaa.org/players/8022522
+2025-02-19 11:27:25,632 - INFO - Increasing backoff multiplier to 7481.8276426792145
+2025-02-19 11:27:25,634 - WARNING - Rate limit hit for https://stats.ncaa.org/players/7575713
+2025-02-19 11:27:58,706 - INFO - Increasing backoff multiplier to 11222.741464018822
+2025-02-19 11:27:58,707 - WARNING - Rate limit hit for https://stats.ncaa.org/players/6912323

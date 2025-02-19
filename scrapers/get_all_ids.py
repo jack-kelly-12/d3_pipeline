@@ -88,7 +88,7 @@ def process_players(urls: List[str]) -> pd.DataFrame:
 
 def combine_roster_files(output_dir: str | Path) -> pd.DataFrame:
     output_dir = Path(output_dir)
-    all_files = list(output_dir.glob("*_rosters_*.csv"))
+    all_files = list(output_dir.glob("d3_rosters_2025.csv"))
     dfs = []
 
     for file in tqdm(all_files, desc="Reading roster files"):
