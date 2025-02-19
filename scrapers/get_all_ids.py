@@ -40,12 +40,12 @@ def get_player_ids_and_urls(html_content):
     return list(set(ids)), new_urls
 
 
-def process_players(urls: List[str], year: int, division: int) -> pd.DataFrame:
+def process_players(urls: List[str]) -> pd.DataFrame:
     scraped_urls = set()
     to_scrape = set(urls)
     all_player_data = []
 
-    with tqdm(total=len(to_scrape), desc=f"D{division} {year}") as pbar:
+    with tqdm(total=len(to_scrape)) as pbar:
         while to_scrape:
             current_batch = list(to_scrape)[:10]  # Process in batches of 10
             to_scrape = to_scrape - set(current_batch)
@@ -67,15 +67,12 @@ def process_players(urls: List[str], year: int, division: int) -> pd.DataFrame:
 
                     if player_ids:
                         min_id = min(player_ids)
-                        unique_id = f'd{division}-{year}-{min_id}'
+                        unique_id = f'd3d-{min_id}'
 
                         for ncaa_id in player_ids:
                             all_player_data.append({
                                 'ncaa_id': ncaa_id,
-                                'unique_id': unique_id,
-                                'year': year,
-                                'division': division,
-                                'source_url': url
+                                'unique_id': unique_id
                             })
 
                     scraped_urls.add(url)
