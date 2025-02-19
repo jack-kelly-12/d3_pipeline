@@ -3,7 +3,6 @@ library(purrr)
 library(collegebaseball)
 library(DBI)
 library(RSQLite)
-library(baseballr)
 
 ncaa_roster <- function(team_id = NULL, year, ...){
   if (is.null(team_id)) {
@@ -177,7 +176,7 @@ main <- function(working_dir, output_dir, db_path) {
   con <- dbConnect(SQLite(), db_path)
   
   if (dbExistsTable(con, "rosters")) {
-    dbExecute(con, "DELETE FROM rosters WHERE year = 2025")
+    dbExecute(con, "DELETE FROM rosters WHERE Year = 2025")
     cli::cli_alert_success("Deleted existing 2025 data from rosters table")
   }
   
@@ -207,3 +206,9 @@ main <- function(working_dir, output_dir, db_path) {
   dbDisconnect(con)
   cli::cli_alert_success("Process completed successfully!")
 }
+
+main(
+ working_dir = "C:/Users/kellyjc/Desktop/d3_pipeline",
+ output_dir = "C:/Users/kellyjc/Desktop/d3_pipeline/data/rosters",
+ db_path = "../d3_app_improved/backend/ncaa.db"
+)

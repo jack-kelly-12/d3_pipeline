@@ -129,7 +129,7 @@ def update_pbp(conn, data_dir):
             file_name = f'd{division}_parsed_pbp_new_2025.csv'
             try:
                 columns = [
-                    'year', 'division', 'home_team', 'away_team', 'home_score', 'away_score', 'date',
+                    'year', 'division', 'play_id', 'home_team', 'away_team', 'home_score', 'away_score', 'date',
                     'inning', 'top_inning', 'game_id', 'description',
                     'home_win_exp_before', 'wpa', 'run_expectancy_delta', 'woba', 'home_win_exp_after',
                     'player_id', 'pitcher_id', 'batter_id', 'li', 'home_score_after',
