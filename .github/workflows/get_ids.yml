@@ -1,11 +1,14 @@
 name: Get NCAA IDs
 
 on:
-  workflow_dispatch: # Manual trigger only
+  schedule:
+    - cron: "0 */6 * * *" # Runs every 6 hours
+  workflow_dispatch: # Keep manual trigger option
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 300 # 5 hour timeout (leaving buffer before next run)
 
     env:
       GITHUB_PAT: ${{ secrets.PAT }}
@@ -38,5 +41,5 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/rosters/master.csv
+          git add data/rosters/master_*.csv
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update roster data [skip ci]" && git push)
