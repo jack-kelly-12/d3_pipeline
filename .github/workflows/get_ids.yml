@@ -5,6 +5,10 @@ on:
     - cron: "0 */6 * * *" # Runs every 6 hours
   workflow_dispatch: # Keep manual trigger option
 
+concurrency:
+  group: ncaa-scraper
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
