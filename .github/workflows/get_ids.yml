@@ -2,8 +2,8 @@ name: Get NCAA IDs
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # Runs every 6 hours
-  workflow_dispatch: # Keep manual trigger option
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
 
 concurrency:
   group: ncaa-scraper
@@ -12,20 +12,17 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 300 # 5 hour timeout (leaving buffer before next run)
+    timeout-minutes: 300
 
     env:
       GITHUB_PAT: ${{ secrets.PAT }}
-      R_LIBS_USER: ${{ github.workspace }}/R/library
       DATA_DIR: data
-      SCHEDULES_DIR: data/schedules
-      PBP_DIR: data/play_by_play
-      STATS_DIR: data/stats
 
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          token: ${{ secrets.PAT }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -37,13 +34,36 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas requests beautifulsoup4 tqdm
 
+      # Run scraper in a separate step with shorter timeout
       - name: Run scraper
+        id: scraper
+        timeout-minutes: 290 # Leave 10 minutes for committing
+        continue-on-error: true # Continue to next step even if this fails
         run: |
           python scrapers/get_all_ids.py --data_dir ${{ env.DATA_DIR }}
 
-      - name: Commit and push if changed
+      # Always commit progress, even if scraper times out
+      - name: Commit and push progress
+        if: always() # This ensures this step runs even if previous step fails
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+
+          # Add all relevant files
+          git add scraper_progress.json
           git add data/rosters/master_*.csv
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update roster data [skip ci]" && git push)
+
+          # Check if there are changes to commit
+          if ! git diff --staged --quiet; then
+            git commit -m "Update roster data [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+
+      # Final cleanup step
+      - name: Cleanup
+        if: always()
+        run: |
+          # Add any cleanup tasks here
+          echo "Scraper completed with status: ${{ steps.scraper.outcome }}"

@@ -5,12 +5,11 @@ from tqdm import tqdm
 import time
 from pathlib import Path
 import json
-from typing import List, Set, Dict, Tuple
 import logging
 import random
 import signal
-from contextlib import contextmanager
 import sys
+from datetime import datetime, timedelta
 
 # Set up logging
 logging.basicConfig(
@@ -30,30 +29,82 @@ headers = {
 }
 
 
+class GracefulInterruptHandler:
+    def __init__(self, timeout_minutes=290):
+        self.interrupt_received = False
+        self.timeout_received = False
+        self.start_time = datetime.now()
+        self.timeout_minutes = timeout_minutes
+        signal.signal(signal.SIGINT, self._handle_interrupt)
+        signal.signal(signal.SIGTERM, self._handle_interrupt)
+
+    def _handle_interrupt(self, signum, frame):
+        logging.info(
+            "Received interrupt signal, will save progress and exit...")
+        self.interrupt_received = True
+
+    def should_stop(self):
+        # Check for timeout
+        if datetime.now() - self.start_time > timedelta(minutes=self.timeout_minutes):
+            if not self.timeout_received:
+                logging.info(
+                    f"Reached {self.timeout_minutes} minute timeout, will save progress and exit...")
+                self.timeout_received = True
+            return True
+        return self.interrupt_received or self.timeout_received
+
+
 class ProgressManager:
     def __init__(self, checkpoint_file: str = "scraper_progress.json"):
         self.checkpoint_file = Path(checkpoint_file)
+        self.temp_file = self.checkpoint_file.with_suffix('.tmp')
+        self.backup_file = self.checkpoint_file.with_suffix('.bak')
         self.scraped_urls = set()
         self.all_player_data = []
         self.load_progress()
 
     def load_progress(self):
-        if self.checkpoint_file.exists():
-            with self.checkpoint_file.open('r') as f:
-                data = json.load(f)
-                self.scraped_urls = set(data['scraped_urls'])
-                self.all_player_data = data['player_data']
-                logging.info(
-                    f"Loaded progress: {len(self.scraped_urls)} URLs scraped, {len(self.all_player_data)} players found")
+        # Try loading from main file, then temp, then backup
+        for file in [self.checkpoint_file, self.temp_file, self.backup_file]:
+            try:
+                if file.exists():
+                    with file.open('r') as f:
+                        data = json.load(f)
+                        self.scraped_urls = set(data['scraped_urls'])
+                        self.all_player_data = data['player_data']
+                        logging.info(
+                            f"Loaded progress from {file}: {len(self.scraped_urls)} URLs scraped")
+                        return
+            except Exception as e:
+                logging.warning(f"Error loading from {file}: {e}")
+                continue
 
-    def save_progress(self):
-        with self.checkpoint_file.open('w') as f:
-            json.dump({
-                'scraped_urls': list(self.scraped_urls),
-                'player_data': self.all_player_data
-            }, f)
+    def save_progress(self, final=False):
+        try:
+            # First save to temporary file
+            with self.temp_file.open('w') as f:
+                json.dump({
+                    'scraped_urls': list(self.scraped_urls),
+                    'player_data': self.all_player_data
+                }, f)
+
+            # If that succeeds, make a backup of current file if it exists
+            if self.checkpoint_file.exists():
+                self.checkpoint_file.replace(self.backup_file)
+
+            # Then move temp file to main file
+            self.temp_file.replace(self.checkpoint_file)
+
+            if final:
+                # Clean up backup and temp files
+                self.backup_file.unlink(missing_ok=True)
+                self.temp_file.unlink(missing_ok=True)
+
             logging.info(
                 f"Progress saved: {len(self.scraped_urls)} URLs scraped, {len(self.all_player_data)} players found")
+
+        except Exception as e:
+            logging.error(f"Error saving progress: {e}")
 
 
 def get_player_ids_and_urls(html_content):
@@ -63,12 +114,79 @@ def get_player_ids_and_urls(html_content):
     career_table = soup.find('table', id=lambda x: x and 'career_totals' in x)
     if career_table:
         for link in career_table.find_all('a'):
-            href = link['href']
+            href = link.get('href', '')
             if '/players/' in href:
-                player_id = href.split('/players/')[-1]
-                ids.append(player_id)
-                new_urls.add(f"https://stats.ncaa.com/players/{player_id}")
+                player_id = href.split('/players/')[-1].strip()
+                if player_id:
+                    ids.append(player_id)
+                    new_urls.add(f"https://stats.ncaa.com/players/{player_id}")
     return list(set(ids)), new_urls
+
+
+def process_players(urls: list, timeout_minutes: int = 290) -> pd.DataFrame:
+    progress = ProgressManager()
+    interrupt_handler = GracefulInterruptHandler(timeout_minutes)
+    to_scrape = set(urls) - progress.scraped_urls
+    session = requests.Session()
+    session.headers.update(headers)
+
+    try:
+        with tqdm(total=len(to_scrape)) as pbar:
+            while to_scrape and not interrupt_handler.should_stop():
+                current_batch = list(to_scrape)[:10]
+                to_scrape = to_scrape - set(current_batch)
+
+                for url in current_batch:
+                    if interrupt_handler.should_stop():
+                        break
+
+                    if url in progress.scraped_urls:
+                        pbar.update(1)
+                        continue
+
+                    try:
+                        time.sleep(1 + random.uniform(0, 0.5))
+                        response = session.get(
+                            url, headers=headers, timeout=30)
+
+                        if response.status_code == 430:
+                            logging.warning(f"Rate limit hit at URL: {url}")
+                            progress.save_progress()
+                            return pd.DataFrame(progress.all_player_data)
+
+                        player_ids, new_urls = get_player_ids_and_urls(
+                            response.content)
+                        new_urls = new_urls - progress.scraped_urls
+                        to_scrape.update(new_urls)
+                        pbar.total = len(to_scrape) + \
+                            len(progress.scraped_urls)
+
+                        if player_ids:
+                            min_id = min(player_ids)
+                            unique_id = f'd3d-{min_id}'
+                            for ncaa_id in player_ids:
+                                progress.all_player_data.append({
+                                    'ncaa_id': ncaa_id,
+                                    'unique_id': unique_id
+                                })
+
+                        progress.scraped_urls.add(url)
+                        pbar.update(1)
+
+                        if len(progress.scraped_urls) % 10 == 0:
+                            progress.save_progress()
+
+                    except Exception as e:
+                        logging.error(f"Error processing {url}: {e}")
+                        continue
+
+    except Exception as e:
+        logging.error(f"Unexpected error: {e}")
+    finally:
+        # Save final progress and clean up temporary files
+        progress.save_progress(final=True)
+
+    return pd.DataFrame(progress.all_player_data)
 
 
 def combine_roster_files(output_dir: str | Path) -> pd.DataFrame:
@@ -81,7 +199,7 @@ def combine_roster_files(output_dir: str | Path) -> pd.DataFrame:
             df = pd.read_csv(file)
             dfs.append(df)
         except Exception as e:
-            print(f"Error reading {file}: {e}")
+            logging.error(f"Error reading {file}: {e}")
             continue
 
     if not dfs:
@@ -89,121 +207,9 @@ def combine_roster_files(output_dir: str | Path) -> pd.DataFrame:
 
     combined_df = pd.concat(dfs, ignore_index=True)
     combined_df = combined_df.drop_duplicates()
-    print(
+    logging.info(
         f"Combined {len(all_files)} files into DataFrame with {len(combined_df)} rows")
     return combined_df
-
-
-class TimeoutException(Exception):
-    pass
-
-
-@contextmanager
-def timeout_handler(seconds):
-    def signal_handler(signum, frame):
-        raise TimeoutException("Timeout reached")
-
-    # Register the signal handler
-    signal.signal(signal.SIGALRM, signal_handler)
-    signal.alarm(seconds)
-
-    try:
-        yield
-    finally:
-        # Disable the alarm
-        signal.alarm(0)
-
-
-class ProgressManager:
-    def __init__(self, checkpoint_file: str = "scraper_progress.json"):
-        self.checkpoint_file = Path(checkpoint_file)
-        self.scraped_urls = set()
-        self.all_player_data = []
-        self.load_progress()
-
-    def load_progress(self):
-        if self.checkpoint_file.exists():
-            with self.checkpoint_file.open('r') as f:
-                data = json.load(f)
-                self.scraped_urls = set(data['scraped_urls'])
-                self.all_player_data = data['player_data']
-                logging.info(
-                    f"Loaded progress: {len(self.scraped_urls)} URLs scraped, {len(self.all_player_data)} players found")
-
-    def save_progress(self):
-        with self.checkpoint_file.open('w') as f:
-            json.dump({
-                'scraped_urls': list(self.scraped_urls),
-                'player_data': self.all_player_data
-            }, f)
-            logging.info(
-                f"Progress saved: {len(self.scraped_urls)} URLs scraped, {len(self.all_player_data)} players found")
-
-
-def process_players(urls: List[str], timeout_minutes: int = 290) -> pd.DataFrame:
-    progress = ProgressManager()
-    to_scrape = set(urls) - progress.scraped_urls
-    start_time = time.time()
-
-    try:
-        with timeout_handler(timeout_minutes * 60):  # Convert minutes to seconds
-            with tqdm(total=len(to_scrape)) as pbar:
-                while to_scrape:
-                    current_batch = list(to_scrape)[:10]
-                    to_scrape = to_scrape - set(current_batch)
-
-                    for url in current_batch:
-                        if url in progress.scraped_urls:
-                            pbar.update(1)
-                            continue
-
-                        try:
-                            time.sleep(1 + random.uniform(0, 0.5))
-                            response = requests.get(url, headers=headers)
-
-                            if response.status_code == 430:
-                                logging.warning(
-                                    f"Rate limit hit at URL: {url}")
-                                progress.save_progress()
-                                return pd.DataFrame(progress.all_player_data)
-
-                            player_ids, new_urls = get_player_ids_and_urls(
-                                response.content)
-                            new_urls = new_urls - progress.scraped_urls
-                            to_scrape.update(new_urls)
-                            pbar.total = len(to_scrape) + \
-                                len(progress.scraped_urls)
-
-                            if player_ids:
-                                min_id = min(player_ids)
-                                unique_id = f'd3d-{min_id}'
-                                for ncaa_id in player_ids:
-                                    progress.all_player_data.append({
-                                        'ncaa_id': ncaa_id,
-                                        'unique_id': unique_id
-                                    })
-
-                            progress.scraped_urls.add(url)
-                            pbar.update(1)
-
-                            if len(progress.scraped_urls) % 10 == 0:
-                                progress.save_progress()
-
-                        except Exception as e:
-                            logging.error(f"Error processing {url}: {e}")
-                            continue
-
-    except TimeoutException:
-        logging.warning(
-            f"Timeout reached after {timeout_minutes} minutes. Saving progress and exiting...")
-        progress.save_progress()
-    except Exception as e:
-        logging.error(f"Unexpected error: {e}")
-        progress.save_progress()
-
-    # Save final progress
-    progress.save_progress()
-    return pd.DataFrame(progress.all_player_data)
 
 
 def main(data_dir: str) -> None:
@@ -211,25 +217,32 @@ def main(data_dir: str) -> None:
     output_dir = data_dir / "rosters"
     output_dir.mkdir(exist_ok=True)
 
-    df = combine_roster_files(output_dir)
-    unique_links = df.player_url.unique()
+    try:
+        df = combine_roster_files(output_dir)
+        unique_links = df.player_url.unique()
 
-    # Process with 290-minute timeout (leaving buffer for GitHub Actions)
-    result = process_players(unique_links, timeout_minutes=290)
+        result = process_players(unique_links)
 
-    # Save results with timestamp
-    timestamp = time.strftime("%Y%m%d_%H%M%S")
-    output_file = output_dir / f'master_{timestamp}.csv'
-    result.to_csv(output_file, index=False)
+        # Save results with timestamp
+        timestamp = time.strftime("%Y%m%d_%H%M%S")
+        output_file = output_dir / f'master_{timestamp}.csv'
+        result.to_csv(output_file, index=False)
 
-    # Also update the main master.csv file
-    master_file = output_dir / 'master.csv'
-    if master_file.exists():
-        existing_df = pd.read_csv(master_file)
-        result = pd.concat([existing_df, result]).drop_duplicates()
-    result.to_csv(master_file, index=False)
+        # Update master.csv
+        master_file = output_dir / 'master.csv'
+        if master_file.exists():
+            existing_df = pd.read_csv(master_file)
+            result = pd.concat([existing_df, result]).drop_duplicates()
+        result.to_csv(master_file, index=False)
 
-    logging.info(f"Results saved to {output_file} and master.csv")
+        logging.info(f"Results saved to {output_file} and master.csv")
+
+        # Return success status
+        return 0
+
+    except Exception as e:
+        logging.error(f"Fatal error in main: {e}")
+        return 1
 
 
 if __name__ == '__main__':
@@ -239,4 +252,4 @@ if __name__ == '__main__':
                         help='Root directory containing the data folders')
     args = parser.parse_args()
 
-    main(args.data_dir)
+    sys.exit(main(args.data_dir))
