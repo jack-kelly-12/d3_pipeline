@@ -93,10 +93,12 @@
 2025,16779,596824,"02/01/2025","CSUSB",596867,1,"CCAA",828,2,"Azusa Pacific",596824,2,"PacWest",19591,2,NA,"W",NA,"/contests/6339284/box_score","https://stats.ncaa.org/contests/6339284/box_score",6339284,2
 2025,16779,596824,"02/01/2025","CSUSB",596867,13,"CCAA",828,2,"Azusa Pacific",596824,12,"PacWest",19591,2,NA,"L",NA,"/contests/6349240/box_score","https://stats.ncaa.org/contests/6349240/box_score",6349240,2
 2025,16779,596824,"02/06/2025","Azusa Pacific",596824,3,"PacWest",19591,2,"Cal St. Monterey Bay",596806,9,"CCAA",828,2,NA,"L",NA,"/contests/6339434/box_score","https://stats.ncaa.org/contests/6339434/box_score",6339434,2
-2025,16779,596824,"02/08/2025","Azusa Pacific",596824,7,"PacWest",19591,2,"Cal St. Monterey Bay",596806,6,"CCAA",828,2,NA,"W",NA,"/contests/6339977/box_score","https://stats.ncaa.org/contests/6339977/box_score",6339977,2
-2025,16779,596824,"02/08/2025","Azusa Pacific",596824,8,"PacWest",19591,2,"Cal St. Monterey Bay",596806,9,"CCAA",828,2,NA,"L",NA,"/contests/6349476/box_score","https://stats.ncaa.org/contests/6349476/box_score",6349476,2
-2025,16779,596824,"02/15/2025","Azusa Pacific",596824,6,"PacWest",19591,2,"Chaminade",596976,3,"PacWest",19591,2,NA,"W",NA,"/contests/6339835/box_score","https://stats.ncaa.org/contests/6339835/box_score",6339835,2
-2025,16779,596824,"02/15/2025","Azusa Pacific",596824,6,"PacWest",19591,2,"Chaminade",596976,7,"PacWest",19591,2,NA,"L",NA,"/contests/6339739/box_score","https://stats.ncaa.org/contests/6339739/box_score",6339739,2
+2025,16779,596824,"02/08/2025","Azusa Pacific",596824,7,"PacWest",19591,2,"Cal St. Monterey Bay",596806,6,"CCAA",828,2,NA,"W","10","/contests/6349284/box_score","https://stats.ncaa.org/contests/6349284/box_score",6349284,2
+2025,16779,596824,"02/08/2025","Azusa Pacific",596824,8,"PacWest",19591,2,"Cal St. Monterey Bay",596806,9,"CCAA",828,2,NA,"L","8","/contests/6339548/box_score","https://stats.ncaa.org/contests/6339548/box_score",6339548,2
+2025,16779,596824,"02/15/2025","Azusa Pacific",596824,6,"PacWest",19591,2,"Chaminade",596976,3,"PacWest",19591,2,NA,"W",NA,"/contests/6339977/box_score","https://stats.ncaa.org/contests/6339977/box_score",6339977,2
+2025,16779,596824,"02/15/2025","Azusa Pacific",596824,6,"PacWest",19591,2,"Chaminade",596976,7,"PacWest",19591,2,NA,"L",NA,"/contests/6349476/box_score","https://stats.ncaa.org/contests/6349476/box_score",6349476,2
+2025,16779,596824,"02/17/2025","Azusa Pacific",596824,4,"PacWest",19591,2,"Chaminade",596976,9,"PacWest",19591,2,NA,"L",NA,"/contests/6339835/box_score","https://stats.ncaa.org/contests/6339835/box_score",6339835,2
+2025,16779,596824,"02/17/2025","Azusa Pacific",596824,15,"PacWest",19591,2,"Chaminade",596976,2,"PacWest",19591,2,NA,"W",NA,"/contests/6339739/box_score","https://stats.ncaa.org/contests/6339739/box_score",6339739,2
 2025,16779,596859,"01/31/2025","Barry",596859,9,"Sunshine State",919,2,"Wingate",596759,8,"SAC",12850,2,NA,"W",NA,"/contests/6339250/box_score","https://stats.ncaa.org/contests/6339250/box_score",6339250,2
 2025,16779,596859,"02/01/2025","Barry",596859,2,"Sunshine State",919,2,"Mount Olive",596738,1,"Conference Carolinas",4423,2,NA,"W",NA,"/contests/6339334/box_score","https://stats.ncaa.org/contests/6339334/box_score",6339334,2
 2025,16779,596859,"02/02/2025","Barry",596859,5,"Sunshine State",919,2,"Catawba",596958,4,"SAC",12850,2,NA,"W",NA,"/contests/6339366/box_score","https://stats.ncaa.org/contests/6339366/box_score",6339366,2
@@ -360,6 +362,7 @@
 2025,16779,596843,"02/15/2025","Davenport",596843,4,"GLIAC",854,2,"Northwood ",596920,1,"G-MAC",30182,2,"Johnson City, TN","W",NA,"/contests/6339944/box_score","https://stats.ncaa.org/contests/6339944/box_score",6339944,2
 2025,16779,596843,"02/15/2025","Davenport",596843,16,"GLIAC",854,2,"Northwood ",596920,6,"G-MAC",30182,2,"Johnson City, TN","W",NA,"/contests/6349453/box_score","https://stats.ncaa.org/contests/6349453/box_score",6349453,2
 2025,16779,596879,"02/07/2025","King (TN)",596803,10,"Conference Carolinas",4423,2,"Davis & Elkins",596879,3,"MEC",30183,2,NA,"L",NA,"/contests/6357936/box_score","https://stats.ncaa.org/contests/6357936/box_score",6357936,2
+2025,16779,596879,"02/08/2025","King (TN)",596803,10,"Conference Carolinas",4423,2,"Davis & Elkins",596879,5,"MEC",30183,2,NA,"L",NA,"/contests/6349314/box_score","https://stats.ncaa.org/contests/6349314/box_score",6349314,2
 2025,16779,596880,"01/31/2025","Palm Beach Atl.",596801,5,"Sunshine State",919,2,"Delta St.",596880,6,"Gulf South",858,2,NA,"W",NA,"/contests/6339256/box_score","https://stats.ncaa.org/contests/6339256/box_score",6339256,2
 2025,16779,596880,"02/01/2025","Nova Southeastern",596797,17,"Sunshine State",919,2,"Delta St.",596880,6,"Gulf South",858,2,NA,"L",NA,"/contests/6339327/box_score","https://stats.ncaa.org/contests/6339327/box_score",6339327,2
 2025,16779,596880,"02/01/2025","Nova Southeastern",596797,8,"Sunshine State",919,2,"Delta St.",596880,2,"Gulf South",858,2,NA,"L",NA,"/contests/6339339/box_score","https://stats.ncaa.org/contests/6339339/box_score",6339339,2
@@ -415,6 +418,7 @@
 2025,16779,596968,"02/15/2025","Edward Waters",596968,13,"SIAC",913,2,"LeMoyne-Owen",596897,3,"SIAC",913,2,NA,"W",NA,"/contests/6358966/box_score","https://stats.ncaa.org/contests/6358966/box_score",6358966,2
 2025,16779,596968,"02/15/2025","Edward Waters",596968,30,"SIAC",913,2,"LeMoyne-Owen",596897,6,"SIAC",913,2,NA,"W",NA,"/contests/6358967/box_score","https://stats.ncaa.org/contests/6358967/box_score",6358967,2
 2025,16779,596968,"02/16/2025","Edward Waters",596968,16,"SIAC",913,2,"LeMoyne-Owen",596897,7,"SIAC",913,2,NA,"W",NA,"/contests/6358968/box_score","https://stats.ncaa.org/contests/6358968/box_score",6358968,2
+2025,16779,596968,"02/18/2025","Embry-Riddle (FL)",596781,9,"Sunshine State",919,2,"Edward Waters",596968,2,"SIAC",913,2,NA,"L",NA,"/contests/6340175/box_score","https://stats.ncaa.org/contests/6340175/box_score",6340175,2
 2025,16779,596878,"02/01/2025","Anderson (SC)",596791,4,"SAC",12850,2,"Emory & Henry",596878,10,"SAC",12850,2,NA,"W",NA,"/contests/6339237/box_score","https://stats.ncaa.org/contests/6339237/box_score",6339237,2
 2025,16779,596878,"02/02/2025","Anderson (SC)",596791,10,"SAC",12850,2,"Emory & Henry",596878,2,"SAC",12850,2,NA,"L",NA,"/contests/6339304/box_score","https://stats.ncaa.org/contests/6339304/box_score",6339304,2
 2025,16779,596878,"02/02/2025","Anderson (SC)",596791,5,"SAC",12850,2,"Emory & Henry",596878,3,"SAC",12850,2,NA,"L",NA,"/contests/6349253/box_score","https://stats.ncaa.org/contests/6349253/box_score",6349253,2
@@ -614,11 +618,12 @@
 2025,16779,596736,"02/02/2025","USC Aiken",596784,7,"Peach Belt",12923,2,"Mars Hill",596736,5,"SAC",12850,2,NA,"L",NA,"/contests/6339380/box_score","https://stats.ncaa.org/contests/6339380/box_score",6339380,2
 2025,16779,596736,"02/05/2025","Mars Hill",596736,13,"SAC",12850,2,"King (TN)",596803,11,"Conference Carolinas",4423,2,NA,"W",NA,"/contests/6339419/box_score","https://stats.ncaa.org/contests/6339419/box_score",6339419,2
 2025,16779,596736,"02/11/2025","Emmanuel (GA)",596838,7,"Conference Carolinas",4423,2,"Mars Hill",596736,3,"SAC",12850,2,NA,"L",NA,"/contests/6339687/box_score","https://stats.ncaa.org/contests/6339687/box_score",6339687,2
-2025,16779,596736,"02/18/2025","Southern Wesleyan",596837,9,"Conference Carolinas",4423,2,"Mars Hill",596736,10,"SAC",12850,2,NA,"W","12","/contests/6340173/box_score","https://stats.ncaa.org/contests/6340173/box_score",6340173,2
+2025,16779,596736,"02/18/2025","Southern Wesleyan",596837,9,"Conference Carolinas",4423,2,"Mars Hill",596736,10,"SAC",12850,2,NA,"W","11","/contests/6340173/box_score","https://stats.ncaa.org/contests/6340173/box_score",6340173,2
 2025,16779,596809,"02/01/2025","Mary",596809,7,"NSIC",12853,2,"UC-Colo. Springs ",596782,6,"RMAC",13128,2,"Tucson, AZ","W",NA,"/contests/6339326/box_score","https://stats.ncaa.org/contests/6339326/box_score",6339326,2
 2025,16779,596809,"02/02/2025","UC-Colo. Springs",596782,1,"RMAC",13128,2,"Mary",596809,0,"NSIC",12853,2,NA,"L",NA,"/contests/6357294/box_score","https://stats.ncaa.org/contests/6357294/box_score",6357294,2
-2025,16779,596971,"02/15/2025","Menlo",596971,3,"PacWest",19591,2,"San Fran. St.",596934,18,"CCAA",828,2,NA,"L",NA,"/contests/6339808/box_score","https://stats.ncaa.org/contests/6339808/box_score",6339808,2
-2025,16779,596971,"02/16/2025","San Fran. St.",596934,12,"CCAA",828,2,"Menlo",596971,4,"PacWest",19591,2,NA,"L",NA,"/contests/6340069/box_score","https://stats.ncaa.org/contests/6340069/box_score",6340069,2
+2025,16779,596971,"02/15/2025","Menlo",596971,3,"PacWest",19591,2,"San Fran. St.",596934,18,"CCAA",828,2,NA,"L",NA,"/contests/6339963/box_score","https://stats.ncaa.org/contests/6339963/box_score",6339963,2
+2025,16779,596971,"02/16/2025","San Fran. St.",596934,12,"CCAA",828,2,"Menlo",596971,4,"PacWest",19591,2,NA,"L",NA,"/contests/6339808/box_score","https://stats.ncaa.org/contests/6339808/box_score",6339808,2
+2025,16779,596971,"02/16/2025","San Fran. St.",596934,5,"CCAA",828,2,"Menlo",596971,0,"PacWest",19591,2,NA,"L",NA,"/contests/6340069/box_score","https://stats.ncaa.org/contests/6340069/box_score",6340069,2
 2025,16779,596908,"01/31/2025","Miles",596908,12,"SIAC",913,2,"Rust ",NA,11,NA,NA,NA,"New Orleans, LA","W",NA,"/contests/6339411/box_score","https://stats.ncaa.org/contests/6339411/box_score",6339411,2
 2025,16779,596908,"02/01/2025","Miles",596908,10,"SIAC",913,2,"Southern-N.O. ",NA,9,NA,NA,NA,"New Orleans, LA","W",NA,"/contests/6339444/box_score","https://stats.ncaa.org/contests/6339444/box_score",6339444,2
 2025,16779,596908,"02/08/2025","Miles",596908,7,"SIAC",913,2,"Claflin",596807,7,"Peach Belt",12923,2,NA,"T","8","/contests/6359346/box_score","https://stats.ncaa.org/contests/6359346/box_score",6359346,2
@@ -680,7 +685,6 @@
 2025,16779,596739,"02/14/2025","Newberry",596739,5,"SAC",12850,2,"Tusculum",596790,9,"SAC",12850,2,NA,"L",NA,"/contests/6358752/box_score","https://stats.ncaa.org/contests/6358752/box_score",6358752,2
 2025,16779,596739,"02/14/2025","Newberry",596739,4,"SAC",12850,2,"Tusculum",596790,0,"SAC",12850,2,NA,"W",NA,"/contests/6358823/box_score","https://stats.ncaa.org/contests/6358823/box_score",6358823,2
 2025,16779,596739,"02/15/2025","Newberry",596739,9,"SAC",12850,2,"Tusculum",596790,5,"SAC",12850,2,NA,"W",NA,"/contests/6358889/box_score","https://stats.ncaa.org/contests/6358889/box_score",6358889,2
-2025,16779,596739,"02/15/2025","Newberry",596739,9,"SAC",12850,2,"Tusculum",596790,5,"SAC",12850,2,NA,"W",NA,"/contests/6359254/box_score","https://stats.ncaa.org/contests/6359254/box_score",6359254,2
 2025,16779,596804,"02/14/2025","North Georgia",596804,12,"Peach Belt",12923,2,"Saint Leo",596932,5,"Sunshine State",919,2,NA,"W",NA,"/contests/6358805/box_score","https://stats.ncaa.org/contests/6358805/box_score",6358805,2
 2025,16779,596804,"02/14/2025","North Georgia",596804,9,"Peach Belt",12923,2,"Saint Leo",596932,5,"Sunshine State",919,2,NA,"W",NA,"/contests/6358806/box_score","https://stats.ncaa.org/contests/6358806/box_score",6358806,2
 2025,16779,596804,"02/16/2025","North Georgia",596804,12,"Peach Belt",12923,2,"Saint Leo",596932,9,"Sunshine State",919,2,NA,"W",NA,"/contests/6340052/box_score","https://stats.ncaa.org/contests/6340052/box_score",6340052,2
@@ -753,10 +757,10 @@
 2025,16779,596747,"02/07/2025","Stanislaus St.",596871,10,"CCAA",828,2,"Saint Martin's",596747,1,"Great Northwest",30012,2,NA,"L",NA,"/contests/6339492/box_score","https://stats.ncaa.org/contests/6339492/box_score",6339492,2
 2025,16779,596747,"02/08/2025","Stanislaus St.",596871,10,"CCAA",828,2,"Saint Martin's",596747,2,"Great Northwest",30012,2,NA,"L",NA,"/contests/6339557/box_score","https://stats.ncaa.org/contests/6339557/box_score",6339557,2
 2025,16779,596747,"02/08/2025","Stanislaus St.",596871,7,"CCAA",828,2,"Saint Martin's",596747,1,"Great Northwest",30012,2,NA,"L",NA,"/contests/6349301/box_score","https://stats.ncaa.org/contests/6349301/box_score",6349301,2
-2025,16779,596747,"02/14/2025","Bushnell",NA,4,NA,NA,NA,"Saint Martin's",596747,3,"Great Northwest",30012,2,NA,"L",NA,"/contests/6359279/box_score","https://stats.ncaa.org/contests/6359279/box_score",6359279,2
-2025,16779,596747,"02/14/2025","Bushnell",NA,4,NA,NA,NA,"Saint Martin's",596747,3,"Great Northwest",30012,2,NA,"L",NA,"/contests/6349507/box_score","https://stats.ncaa.org/contests/6349507/box_score",6349507,2
-2025,16779,596747,"02/14/2025","Bushnell",NA,7,NA,NA,NA,"Saint Martin's",596747,6,"Great Northwest",30012,2,NA,"L",NA,"/contests/6359280/box_score","https://stats.ncaa.org/contests/6359280/box_score",6359280,2
-2025,16779,596747,"02/15/2025","Bushnell",NA,13,NA,NA,NA,"Saint Martin's",596747,12,"Great Northwest",30012,2,NA,"L",NA,"/contests/6349496/box_score","https://stats.ncaa.org/contests/6349496/box_score",6349496,2
+2025,16779,596747,"02/14/2025","Bushnell",NA,4,NA,NA,NA,"Saint Martin's",596747,3,"Great Northwest",30012,2,NA,"L",NA,"/contests/6340043/box_score","https://stats.ncaa.org/contests/6340043/box_score",6340043,2
+2025,16779,596747,"02/14/2025","Bushnell",NA,7,NA,NA,NA,"Saint Martin's",596747,6,"Great Northwest",30012,2,NA,"L",NA,"/contests/6349507/box_score","https://stats.ncaa.org/contests/6349507/box_score",6349507,2
+2025,16779,596747,"02/15/2025","Bushnell",NA,13,NA,NA,NA,"Saint Martin's",596747,12,"Great Northwest",30012,2,NA,"L",NA,"/contests/6340008/box_score","https://stats.ncaa.org/contests/6340008/box_score",6340008,2
+2025,16779,596747,"02/15/2025","Bushnell",NA,8,NA,NA,NA,"Saint Martin's",596747,7,"Great Northwest",30012,2,NA,"L",NA,"/contests/6349496/box_score","https://stats.ncaa.org/contests/6349496/box_score",6349496,2
 2025,16779,596934,"02/07/2025","Westmont",596723,12,"PacWest",19591,2,"San Fran. St.",596934,7,"CCAA",828,2,NA,"L",NA,"/contests/6339445/box_score","https://stats.ncaa.org/contests/6339445/box_score",6339445,2
 2025,16779,596934,"02/07/2025","Westmont",596723,4,"PacWest",19591,2,"San Fran. St.",596934,2,"CCAA",828,2,NA,"L",NA,"/contests/6349276/box_score","https://stats.ncaa.org/contests/6349276/box_score",6349276,2
 2025,16779,596934,"02/08/2025","Westmont",596723,5,"PacWest",19591,2,"San Fran. St.",596934,4,"CCAA",828,2,NA,"L","8","/contests/6339428/box_score","https://stats.ncaa.org/contests/6339428/box_score",6339428,2
@@ -792,6 +796,7 @@
 2025,16779,596746,"02/01/2025","St. Edward's",596746,7,"Lone Star",868,2,"West Tex. A&M",596948,5,"Lone Star",868,2,NA,"W",NA,"/contests/6339283/box_score","https://stats.ncaa.org/contests/6339283/box_score",6339283,2
 2025,16779,596746,"02/01/2025","St. Edward's",596746,2,"Lone Star",868,2,"West Tex. A&M",596948,5,"Lone Star",868,2,NA,"L",NA,"/contests/6349239/box_score","https://stats.ncaa.org/contests/6349239/box_score",6349239,2
 2025,16779,596746,"02/02/2025","St. Edward's",596746,12,"Lone Star",868,2,"West Tex. A&M",596948,7,"Lone Star",868,2,NA,"W",NA,"/contests/6339368/box_score","https://stats.ncaa.org/contests/6339368/box_score",6339368,2
+2025,16779,596746,"02/18/2025","St. Edward's",596746,9,"Lone Star",868,2,"Huston-Tillotson",NA,0,NA,NA,NA,NA,"W",NA,"/contests/6340132/box_score","https://stats.ncaa.org/contests/6340132/box_score",6340132,2
 2025,16779,596970,"01/31/2025","St. Mary's (TX)",596748,3,"Lone Star",868,2,"Sul Ross St.",596970,1,"Lone Star",868,2,NA,"L",NA,"/contests/6339253/box_score","https://stats.ncaa.org/contests/6339253/box_score",6339253,2
 2025,16779,596970,"02/01/2025","St. Mary's (TX)",596748,14,"Lone Star",868,2,"Sul Ross St.",596970,5,"Lone Star",868,2,NA,"L",NA,"/contests/6339324/box_score","https://stats.ncaa.org/contests/6339324/box_score",6339324,2
 2025,16779,596970,"02/01/2025","St. Mary's (TX)",596748,2,"Lone Star",868,2,"Sul Ross St.",596970,6,"Lone Star",868,2,NA,"W",NA,"/contests/6349267/box_score","https://stats.ncaa.org/contests/6349267/box_score",6349267,2
@@ -829,6 +834,7 @@
 2025,16779,596722,"02/07/2025","USC Beaufort",596722,5,"Peach Belt",12923,2,"Albany St. (GA)",596852,9,"SIAC",913,2,NA,"L",NA,"/contests/6339503/box_score","https://stats.ncaa.org/contests/6339503/box_score",6339503,2
 2025,16779,596722,"02/08/2025","USC Beaufort",596722,10,"Peach Belt",12923,2,"Albany St. (GA)",596852,15,"SIAC",913,2,NA,"L",NA,"/contests/6339544/box_score","https://stats.ncaa.org/contests/6339544/box_score",6339544,2
 2025,16779,596722,"02/08/2025","USC Beaufort",596722,13,"Peach Belt",12923,2,"Albany St. (GA)",596852,6,"SIAC",913,2,NA,"W",NA,"/contests/6349299/box_score","https://stats.ncaa.org/contests/6349299/box_score",6349299,2
+2025,16779,596722,"02/18/2025","Middle Ga. St.",NA,10,NA,NA,NA,"USC Beaufort",596722,0,"Peach Belt",12923,2,NA,"L",NA,"/contests/6340159/box_score","https://stats.ncaa.org/contests/6340159/box_score",6340159,2
 2025,16779,596835,"02/08/2025","UVA Wise",596835,4,"SAC",12850,2,"Union (TN)",596829,3,"Gulf South",858,2,NA,"W",NA,"/contests/6339588/box_score","https://stats.ncaa.org/contests/6339588/box_score",6339588,2
 2025,16779,596835,"02/08/2025","UVA Wise",596835,6,"SAC",12850,2,"Union (TN)",596829,2,"Gulf South",858,2,NA,"W",NA,"/contests/6349322/box_score","https://stats.ncaa.org/contests/6349322/box_score",6349322,2
 2025,16779,596835,"02/09/2025","UVA Wise",596835,6,"SAC",12850,2,"Union (TN)",596829,3,"Gulf South",858,2,NA,"W",NA,"/contests/6339628/box_score","https://stats.ncaa.org/contests/6339628/box_score",6339628,2

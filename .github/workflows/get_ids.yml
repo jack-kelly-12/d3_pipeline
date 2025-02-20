@@ -49,7 +49,7 @@ jobs:
 
           # Add all relevant files
           git add scraper_progress.json
-          git add data/rosters/master_*.csv
+          git add data/rosters/*
 
           # Check if there are changes to commit
           if ! git diff --staged --quiet; then

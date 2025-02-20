@@ -2,3 +2,6 @@
 .ipynb_checkpoints/
 .ipynb
 venv/
+data/*/*_202[0-4].csv
+data/*/*_201*.csv
+data/*/*_new_202[0-4].csv

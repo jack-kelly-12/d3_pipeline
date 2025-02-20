@@ -10,12 +10,11 @@ def get_re(base_cd, outs, re_matrix) -> np.ndarray:
 
     if valid_mask.any():
         base_states = np.array(
-            ['_ _ _', '1 _ _', '_ 2 _', '1B 2B _', '_ _ 3', '1 _ 3', '_ 2 3', '1B 2B 3B'])
+            ['1B 2B 3B', '_ 2 3', '1 _ 3', '_ _ 3', '1B 2B _', '_ 2 _', '1 _ _', '_ _ _'])
         base_idx = np.clip(base_cd[valid_mask].astype(int), 0, 7)
         base_strings = base_states[base_idx]
         outs_valid = np.clip(outs[valid_mask].astype(int), 0, 2)
 
-        # Look up values using matrix indexing
         for i, (base, out) in enumerate(zip(base_strings, outs_valid)):
             idx = valid_mask.nonzero()[0][i]
             try:
