@@ -52,6 +52,12 @@ ncaa_stats_bulk <- function(year,
       if (!is.null(result$result)) {
         result$result <- result$result %>%
           mutate(across(where(is.logical), as.character))
+        
+        # Add player URL for later extraction of player_id
+        if (!is.null(result$result$player_id)) {
+          result$result <- result$result %>%
+            mutate(player_url = paste0("http://stats.ncaa.org/players/", player_id))
+        }
       }
       
       return(result$result)

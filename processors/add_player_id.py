@@ -59,7 +59,7 @@ def map_player_ids(data_dir: str | Path) -> None:
     batting_files = list((data_dir / "stats").glob("d3_batting_*.csv"))
     for file in tqdm(batting_files, desc="Processing batting files"):
         try:
-            df = pd.read_csv(file)
+            df = pd.read_csv(file, dtype={'player_id': str})
             if 'player_id' in df.columns:
                 df['player_id'] = df['player_id'].apply(
                     lambda x: safe_map_id(x, id_mapping))
@@ -72,7 +72,7 @@ def map_player_ids(data_dir: str | Path) -> None:
     pitching_files = list((data_dir / "stats").glob("d3_pitching_*.csv"))
     for file in tqdm(pitching_files, desc="Processing pitching files"):
         try:
-            df = pd.read_csv(file)
+            df = pd.read_csv(file, dtype={'player_id': str})
             if 'player_id' in df.columns:
                 df['player_id'] = df['player_id'].apply(
                     lambda x: safe_map_id(x, id_mapping))
@@ -85,7 +85,7 @@ def map_player_ids(data_dir: str | Path) -> None:
     roster_files = list((data_dir / "rosters").glob("d3_rosters_*.csv"))
     for file in tqdm(roster_files, desc="Processing roster files"):
         try:
-            df = pd.read_csv(file)
+            df = pd.read_csv(file, dtype={'player_id': str})
             if 'player_id' in df.columns:
                 df['player_id'] = df['player_id'].apply(
                     lambda x: safe_map_id(x, id_mapping))
@@ -98,7 +98,7 @@ def map_player_ids(data_dir: str | Path) -> None:
     master_file = data_dir / "rosters" / "master.csv"
     if master_file.exists():
         try:
-            df = pd.read_csv(master_file)
+            df = pd.read_csv(master_file, dtype={'player_id': str})
             if 'player_id' in df.columns:
                 df['player_id'] = df['player_id'].apply(
                     lambda x: safe_map_id(x, id_mapping))

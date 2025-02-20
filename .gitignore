@@ -4,5 +4,3 @@
 venv/
 data/play_by_play/*_202[0-4].csv
 data/play_by_play/*_201*.csv
-data/war/*_202[0-4].csv
-data/war/*_201*.csv

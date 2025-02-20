@@ -74,7 +74,8 @@ def update_rosters(conn, data_dir, year):
             for year in range(2021, 2026):
                 file_name = f'{division}_rosters_{year}.csv'
                 try:
-                    df = pd.read_csv(Path(data_dir) / 'rosters' / file_name)
+                    df = pd.read_csv(Path(data_dir) / 'rosters' /
+                                     file_name,  dtype={'player_id': str})
                     df.to_sql('rosters', conn, if_exists='append', index=False)
                     print(f"Successfully updated rosters with {file_name}")
                 except Exception as e:
@@ -140,7 +141,8 @@ def update_pbp(conn, data_dir, year):
                     'away_score_after', 'event_cd', 'times_through_order', 'base_cd_before', 'base_cd_after',
                     'hit_type'
                 ]
-                df = pd.read_csv(Path(data_dir) / 'play_by_play' / file_name)
+                df = pd.read_csv(Path(data_dir) / 'play_by_play' / file_name,
+                                 dtype={'player_id': str, 'pitcher_id': str, 'batter_id': str, })
                 df['year'] = year
                 df['division'] = division
                 df[columns].to_sql(
@@ -181,7 +183,12 @@ def update_war(conn, data_dir, year):
 
                 for file_name, table_name in file_to_table.items():
                     try:
-                        df = pd.read_csv(Path(data_dir) / 'war' / file_name)
+                        if table_name == 'batting_war' or table_name != "pitching_war":
+                            df = pd.read_csv(
+                                Path(data_dir) / 'war' / file_name, dtype={'player_id': str})
+                        else:
+                            df = pd.read_csv(
+                                Path(data_dir) / 'war' / file_name)
                         df.to_sql(table_name, conn,
                                   if_exists='append', index=False)
                         print(

@@ -116,7 +116,7 @@ jobs:
       - name: Guts constants
         shell: bash
         run: |
-          python processors/get_guts.py --data_dir ${{ env.DATA_DIR }} --year 2025
+          python processors/get_guts.py --data_dir ${{ env.DATA_DIR }}
 
       - name: Generate leaderboards
         shell: bash

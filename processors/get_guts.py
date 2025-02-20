@@ -100,7 +100,7 @@ def calculate_guts_constants(division, year, output_path):
         return None
 
 
-def main(data_dir, year):
+def main(data_dir):
     data_dir = Path(data_dir)
     guts_dir = data_dir / 'guts'
     guts_dir.mkdir(exist_ok=True)
@@ -131,7 +131,6 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', required=True)
-    parser.add_argument('--year', required=True)
     args = parser.parse_args()
 
-    main(args.data_dir, args.year)
+    main(args.data_dir)
