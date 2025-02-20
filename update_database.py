@@ -98,8 +98,10 @@ def update_expected_runs(conn, data_dir, year):
             try:
                 df = pd.read_csv(Path(data_dir) / 'miscellaneous' / file_name)
 
-                df['Bases'] = ['_ _ _', '1B _ _', '_ 2B _', '1B 2B _',
-                               '_ _ 3B', '1B _ 3B', '_ 2B 3B', '1B 2B 3B']
+                df = df[df['Year'] != year]
+
+                df['Bases'] = ['1B 2B 3B', '_ 2 3', '1 _ 3',
+                               '_ _ 3', '1B 2B _', '_ 2 _', '1 _ _', '_ _ _']
                 df['Year'] = year
                 df['Division'] = int(division[1])
 
