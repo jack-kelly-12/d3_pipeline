@@ -1,0 +1,9 @@
+events,count,total_re24,linear_weights_above_average,linear_weights_above_outs,normalized_weight
+home_run,10781.0,15373.121,1.426,1.88,1.729
+triple,2758.0,3374.372,1.223,1.677,1.543
+double,22212.0,20633.159,0.929,1.383,1.272
+single,80440.0,47933.205,0.596,1.05,0.966
+hit_by_pitch,16036.0,7786.56,0.486,0.94,0.865
+walk,53017.0,24099.22,0.455,0.909,0.836
+out,294647.0,-133794.32,-0.454,0.0,0.0
+wOBA scale,,,,,0.92

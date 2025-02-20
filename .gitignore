@@ -4,8 +4,6 @@
 venv/
 data/play_by_play/*_202[0-4].csv
 data/play_by_play/*_201*.csv
-data/miscellaneous/*_202[0-4].csv
-data/miscellaneous/*_201*.csv
 data/schedules/*_202[0-4].csv
 data/schedules/*_201*.csv
 data/war/*_202[0-4].csv
