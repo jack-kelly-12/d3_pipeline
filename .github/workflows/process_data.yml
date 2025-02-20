@@ -82,38 +82,38 @@ jobs:
           root_dir <- getwd()
           setwd(root_dir)
           source("processors/parse_pbp.R")
-          main(working_dir = root_dir, data_dir = file.path(root_dir, '${{ env.PBP_DIR }}'))
+          main(working_dir = root_dir, data_dir = file.path(root_dir, '${{ env.PBP_DIR }}'), year = 2025)
         shell: Rscript {0}
 
       - name: Get expected runs matrix
         shell: bash
         run: |
-          python processors/get_er_matrix.py --data_dir ${{ env.DATA_DIR }}
+          python processors/get_er_matrix.py --data_dir ${{ env.DATA_DIR }} --year 2025
 
       - name: Get linear weights
         shell: bash
         run: |
-          python processors/get_linear_weights.py --data_dir ${{ env.DATA_DIR }}
+          python processors/get_linear_weights.py --data_dir ${{ env.DATA_DIR }} --year 2025
 
       - name: New parsed pbp with leverage, win exp
         shell: bash
         run: |
-          python processors/add_pbp_metrics.py --data_dir ${{ env.DATA_DIR }}
+          python processors/add_pbp_metrics.py --data_dir ${{ env.DATA_DIR }} --year 2025
 
       - name: Calculate wins above replacement
         shell: bash
         run: |
-          python processors/add_war.py --data_dir ${{ env.DATA_DIR }}
+          python processors/add_war.py --data_dir ${{ env.DATA_DIR }} --year 2025
 
       - name: Guts constants
         shell: bash
         run: |
-          python processors/get_guts.py --data_dir ${{ env.DATA_DIR }}
+          python processors/get_guts.py --data_dir ${{ env.DATA_DIR }} --year 2025
 
       - name: Generate leaderboards
         shell: bash
         run: |
-          python processors/get_leaderboards.py --data_dir ${{ env.DATA_DIR }}
+          python processors/get_leaderboards.py --data_dir ${{ env.DATA_DIR }} --year 2025
 
       - name: Commit and push changes
         run: |

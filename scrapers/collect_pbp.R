@@ -168,8 +168,7 @@ get_schedules <- function(output_dir, division, year) {
   }
 }
 
-main <- function(working_dir, output_dir) {
-  year <- 2025
+main <- function(working_dir, output_dir, year) {
   setwd(working_dir)
   
   if (!dir.exists(output_dir)) {

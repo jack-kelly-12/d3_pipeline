@@ -12,6 +12,7 @@ def parse_args():
                         help='Path to the SQLite database file')
     parser.add_argument('--data_dir', type=str, default='data',
                         help='Base directory containing the data folders (default: data)')
+    parser.add_argument('--year', type=str, default='data')
     return parser.parse_args()
 
 
@@ -20,7 +21,7 @@ def connect_db(db_path):
     return sqlite3.connect(db_path)
 
 
-def update_guts_constants(conn, data_dir):
+def update_guts_constants(conn, data_dir, year):
     """Update guts constants table."""
     try:
         df = pd.read_csv(Path(data_dir) / 'guts' / 'guts_constants.csv')
@@ -30,7 +31,7 @@ def update_guts_constants(conn, data_dir):
         print(f"Error updating guts_constants: {e}")
 
 
-def update_leaderboards(conn, data_dir):
+def update_leaderboards(conn, data_dir, year):
     """Update leaderboard tables."""
     try:
         for lb in ['splits', 'situational', 'baserunning', 'batted_ball']:
@@ -41,14 +42,14 @@ def update_leaderboards(conn, data_dir):
         print(f"Error updating leaderboards: {e}")
 
 
-def update_schedules(conn, data_dir):
+def update_schedules(conn, data_dir, year):
     """Update schedules table."""
     try:
-        delete_query = "DELETE FROM schedules WHERE year = 2025"
-        conn.execute(delete_query)
+        delete_query = "DELETE FROM schedules WHERE year = ?"
+        conn.execute(delete_query, (year, ))
 
         for division in ['d1', 'd2', 'd3']:
-            file_name = f'{division}_schedules_2025.csv'
+            file_name = f'{division}_schedules_{year}.csv'
             try:
                 df = pd.read_csv(Path(data_dir) / 'schedules' / file_name)
                 df.to_sql('schedules', conn, if_exists='append', index=False)
@@ -63,7 +64,7 @@ def update_schedules(conn, data_dir):
         conn.rollback()
 
 
-def update_rosters(conn, data_dir):
+def update_rosters(conn, data_dir, year):
     """Update rosters table."""
     try:
         delete_query = "DELETE FROM rosters"
@@ -86,20 +87,20 @@ def update_rosters(conn, data_dir):
         conn.rollback()
 
 
-def update_expected_runs(conn, data_dir):
+def update_expected_runs(conn, data_dir, year):
     """Update expected runs table."""
     try:
-        delete_query = "DELETE FROM expected_runs WHERE Year = 2025"
-        conn.execute(delete_query)
+        delete_query = "DELETE FROM expected_runs WHERE Year = ?"
+        conn.execute(delete_query, (year, ))
 
         for division in ['d1', 'd2', 'd3']:
-            file_name = f'{division}_expected_runs_2025.csv'
+            file_name = f'{division}_expected_runs_{year}.csv'
             try:
                 df = pd.read_csv(Path(data_dir) / 'miscellaneous' / file_name)
 
                 df['Bases'] = ['_ _ _', '1B _ _', '_ 2B _', '1B 2B _',
                                '_ _ 3B', '1B _ 3B', '_ 2B 3B', '1B 2B 3B']
-                df['Year'] = 2025
+                df['Year'] = year
                 df['Division'] = int(division[1])
 
                 df_to_upload = df[['Division', 'Year', 'Bases', '0', '1', '2']]
@@ -119,14 +120,14 @@ def update_expected_runs(conn, data_dir):
         conn.rollback()
 
 
-def update_pbp(conn, data_dir):
+def update_pbp(conn, data_dir, year):
     """Update play-by-play table."""
     try:
-        delete_query = "DELETE FROM pbp WHERE year = 2025"
-        conn.execute(delete_query)
+        delete_query = "DELETE FROM pbp WHERE year = ?"
+        conn.execute(delete_query, (year, ))
 
         for division in [1, 2, 3]:
-            file_name = f'd{division}_parsed_pbp_new_2025.csv'
+            file_name = f'd{division}_parsed_pbp_new_{year}.csv'
             try:
                 columns = [
                     'year', 'division', 'play_id', 'home_team', 'away_team', 'home_score', 'away_score', 'date',
@@ -137,7 +138,7 @@ def update_pbp(conn, data_dir):
                     'hit_type'
                 ]
                 df = pd.read_csv(Path(data_dir) / 'play_by_play' / file_name)
-                df['year'] = 2025
+                df['year'] = year
                 df['division'] = division
                 df[columns].to_sql(
                     'pbp', conn, if_exists='append', index=False)
@@ -152,7 +153,7 @@ def update_pbp(conn, data_dir):
         conn.rollback()
 
 
-def update_war(conn, data_dir):
+def update_war(conn, data_dir, year):
     """Update WAR-related tables."""
     try:
         war_tables = [
@@ -203,13 +204,13 @@ def main():
 
     conn = connect_db(args.db_path)
     try:
-        update_expected_runs(conn, args.data_dir)
-        update_guts_constants(conn, args.data_dir)
-        update_war(conn, args.data_dir)
-        update_pbp(conn, args.data_dir)
-        update_leaderboards(conn, args.data_dir)
-        update_rosters(conn, args.data_dir)
-        update_schedules(conn, args.data_dir)
+        update_expected_runs(conn, args.data_dir, args.year)
+        update_guts_constants(conn, args.data_dir, args.year)
+        update_war(conn, args.data_dir, args.year)
+        update_pbp(conn, args.data_dir, args.year)
+        update_leaderboards(conn, args.data_dir, args.year)
+        update_rosters(conn, args.data_dir, args.year)
+        update_schedules(conn, args.data_dir, args.year)
         print("Database update process completed")
     finally:
         conn.close()

@@ -42,9 +42,8 @@ def get_expected_runs_matrix_2(base_cd, outs, runs_rest_of_inn):
     return ER_matrix
 
 
-def main(data_dir):
+def main(data_dir, year):
     data_dir = Path(data_dir)
-    year = 2025
     divisions = range(1, 4)
     all_matrices = {}
 
@@ -111,6 +110,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', required=True,
                         help='Root directory containing the data folders')
+    parser.add_argument('--year', required=True)
     args = parser.parse_args()
 
-    main(args.data_dir)
+    main(args.data_dir, args.year)

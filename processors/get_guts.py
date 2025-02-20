@@ -100,7 +100,7 @@ def calculate_guts_constants(division, year, output_path):
         return None
 
 
-def main(data_dir):
+def main(data_dir, year):
     data_dir = Path(data_dir)
     guts_dir = data_dir / 'guts'
     guts_dir.mkdir(exist_ok=True)
@@ -109,10 +109,9 @@ def main(data_dir):
     existing_guts = pd.DataFrame()
     if guts_file.exists():
         existing_guts = pd.read_csv(guts_file)
-        existing_guts = existing_guts[existing_guts['Year'] != 2025]
+        existing_guts = existing_guts[existing_guts['Year'] != year]
 
     divisions = [1, 2, 3]
-    year = 2025
 
     all_constants = []
 
@@ -136,6 +135,7 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', required=True)
+    parser.add_argument('--year', required=True)
     args = parser.parse_args()
 
-    main(args.data_dir)
+    main(args.data_dir, args.year)

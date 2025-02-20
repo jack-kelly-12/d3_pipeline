@@ -71,8 +71,7 @@ ncaa_stats_bulk <- function(year,
   return(combined_stats)
 }
 
-main <- function(working_dir, output_dir) {
-  year <- 2025
+main <- function(working_dir, output_dir, year) {
   setwd(working_dir)
   
   if (!dir.exists(output_dir)) {

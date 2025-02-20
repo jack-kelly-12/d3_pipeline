@@ -1,7 +1,7 @@
 library(collegebaseball)
 library(dplyr)
 
-get_schedules <- function(year = 2025, division = 1) {
+get_schedules <- function(year, division = 1) {
   teams_df <- baseballr:::rds_from_url(
     "https://raw.githubusercontent.com/robert-frey/college-baseball/main/ncaa_team_lookup.rds"
   ) %>%
@@ -61,8 +61,7 @@ safe_dbWriteTable <- function(conn, table_name, data, append = FALSE) {
   }
 }
 
-main <- function(working_dir, output_dir) {
-  year <- 2025
+main <- function(working_dir, output_dir, year) {
   setwd(working_dir)
   for (division in c(1, 2, 3)) {
     division_schedules <- data.frame()

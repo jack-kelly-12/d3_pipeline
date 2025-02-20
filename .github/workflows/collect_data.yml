@@ -77,17 +77,19 @@ jobs:
 
           setwd(root_dir)
           source('scrapers/collect_schedules.R')
-          main(working_dir = root_dir, output_dir = file.path(root_dir, '${{ env.SCHEDULES_DIR }}'))
+          main(working_dir = root_dir, output_dir = file.path(root_dir, '${{ env.SCHEDULES_DIR }}'), year = 2025)
 
           setwd(root_dir)
           source('scrapers/collect_pbp.R')
           main(working_dir = file.path(root_dir, '${{ env.SCHEDULES_DIR }}'), 
-               output_dir = file.path(root_dir, '${{ env.PBP_DIR }}'))
+               output_dir = file.path(root_dir, '${{ env.PBP_DIR }}'), 
+               year = 2025)
 
           setwd(root_dir)
           source('scrapers/collect_stats.R')
           main(working_dir = root_dir, 
-               output_dir = file.path(root_dir, '${{ env.STATS_DIR }}'))
+               output_dir = file.path(root_dir, '${{ env.STATS_DIR }}'), 
+               year = 2025)
 
       - name: Commit and push changes
         run: |

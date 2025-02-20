@@ -52,4 +52,5 @@ jobs:
             source venv/bin/activate
             python3 update_database.py \
               --data_dir "/home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/data" \
-              --db_path "/home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/ncaa.db"
+              --db_path "/home/${{ secrets.EC2_USERNAME }}/d3_dashboard/backend/ncaa.db" \
+              --year 2025

@@ -158,9 +158,8 @@ def process_division(
         print(f"Saved results to: {output_file}")
 
 
-def main(data_dir: str):
+def main(data_dir: str, year):
     data_path = Path(data_dir)
-    year = 2025
     divisions = range(1, 4)
 
     misc_dir = data_path / 'miscellaneous'
@@ -189,6 +188,7 @@ if __name__ == '__main__':
         description='Calculate linear weights for college baseball')
     parser.add_argument('--data_dir', required=True,
                         help='Root directory containing the data folders')
+    parser.add_argument('--year', required=True)
 
     args = parser.parse_args()
-    main(args.data_dir)
+    main(args.data_dir, args.year)

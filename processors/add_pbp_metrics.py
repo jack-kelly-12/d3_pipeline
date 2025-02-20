@@ -569,10 +569,9 @@ def process_single_year(args):
     return final_df
 
 
-def main(data_dir):
+def main(data_dir, year):
     data_dir = Path(data_dir)
     divisions = range(1, 4)
-    year = 2024
     all_pbp_data = []
 
     for division in divisions:
@@ -589,6 +588,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', required=True,
                         help='Root directory containing the data folders')
+    parser.add_argument('--year', required=True)
     args = parser.parse_args()
 
-    main(args.data_dir)
+    main(args.data_dir, args.year)

@@ -542,8 +542,7 @@ ncaa_parse_parallel <- function(pbp_data_frame, num_cores = detectCores() - 1) {
   do.call(rbind, results)
 }
 
-main <- function(working_dir, data_dir) {
-  year <- 2025
+main <- function(working_dir, data_dir, year) {
   setwd(working_dir)
   
   if (!dir.exists(data_dir)) {

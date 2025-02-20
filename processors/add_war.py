@@ -540,9 +540,8 @@ class BaseballStats:
 
         return df.dropna(subset=['WAR'])
 
-    def get_data(self):
+    def get_data(self, year):
         pitching, batting, pbp, rosters, park_factors = {}, {}, {}, {}, {}
-        year = 2025
 
         for division in range(1, 4):
             pitching_df = pd.read_csv(
@@ -744,7 +743,8 @@ class BaseballStats:
         return pitcher_stats, team_stats
 
     def process_and_save_stats(self, year, war_dir):
-        batting, pitching, pbp, self.guts, park_factors, rosters = self.get_data()
+        batting, pitching, pbp, self.guts, park_factors, rosters = self.get_data(
+            year)
         self.guts = self.guts.reset_index(drop=True)
 
         for division in [1, 2, 3]:
@@ -876,7 +876,7 @@ class BaseballStats:
             pitch_team_war.to_csv(pitch_team_war_file, index=False)
 
 
-def main(data_dir):
+def main(data_dir, year):
     data_dir = Path(data_dir)
     if not data_dir.exists():
         raise FileNotFoundError(f"Data directory not found: {data_dir}")
@@ -886,7 +886,6 @@ def main(data_dir):
 
     stats = BaseballStats(data_dir=data_dir)
 
-    year = 2025
     try:
         stats.process_and_save_stats(year, war_dir)
         print("Successfully processed all statistics!")
@@ -900,6 +899,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', required=True,
                         help='Root directory containing the data folders')
+    parser.add_argument('--year', required=True)
     args = parser.parse_args()
 
-    main(args.data_dir)
+    main(args.data_dir, args.year)

@@ -165,8 +165,7 @@ safe_dbWriteTable <- function(conn, table_name, data, append = FALSE) {
   }
 }
 
-main <- function(working_dir, output_dir, db_path) {
-  year <- 2025
+main <- function(working_dir, output_dir, db_path, year) {
   setwd(working_dir)
   
   if (!dir.exists(output_dir)) {
@@ -176,8 +175,8 @@ main <- function(working_dir, output_dir, db_path) {
   con <- dbConnect(SQLite(), db_path)
   
   if (dbExistsTable(con, "rosters")) {
-    dbExecute(con, "DELETE FROM rosters WHERE Year = 2025")
-    cli::cli_alert_success("Deleted existing 2025 data from rosters table")
+    dbExecute(con, "DELETE FROM rosters WHERE Year = ?", year)
+    cli::cli_alert_success("Deleted existing data from rosters table")
   }
   
   all_rosters <- list()

@@ -391,12 +391,10 @@ def standardize_hand(x):
     return np.nan
 
 
-def main(data_dir):
+def main(data_dir, year):
     data_dir = Path(data_dir)
     leaderboards_dir = data_dir / 'leaderboards'
     leaderboards_dir.mkdir(exist_ok=True)
-
-    year = 2025
 
     all_situational = []
     all_baserunning = []
@@ -449,6 +447,7 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', required=True)
+    parser.add_argument('--year', required=True)
     args = parser.parse_args()
 
-    main(args.data_dir)
+    main(args.data_dir, args.year)
