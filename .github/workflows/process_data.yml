@@ -77,11 +77,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas numpy fuzzywuzzy python-Levenshtein
 
-      - name: Player id generation
-        shell: bash
-        run: |
-          python processors/add_player_id.py --data_dir ${{ env.DATA_DIR }}
-
       - name: Parse pbp data
         run: |
           root_dir <- getwd()
