@@ -106,29 +106,25 @@ def main(data_dir, year):
     guts_dir.mkdir(exist_ok=True)
 
     guts_file = guts_dir / 'guts_constants.csv'
-    existing_guts = pd.DataFrame()
-    if guts_file.exists():
-        existing_guts = pd.read_csv(guts_file)
-        existing_guts = existing_guts[existing_guts['Year'] != year]
 
     divisions = [1, 2, 3]
+    years = [2021, 2022, 2023, 2024, 2025]
 
     all_constants = []
 
     for division in divisions:
-        constants = calculate_guts_constants(division, year, data_dir)
-        if constants:
-            all_constants.append(constants)
+        for year in years:
+            constants = calculate_guts_constants(division, year, data_dir)
+            if constants:
+                all_constants.append(constants)
 
     new_guts = pd.DataFrame(all_constants)
 
-    combined_guts = pd.concat([existing_guts, new_guts], ignore_index=True)
-
-    combined_guts = combined_guts.sort_values(
+    new_guts = new_guts.sort_values(
         ['Division', 'Year'], ascending=[True, False])
 
-    combined_guts.to_csv(guts_file, index=False)
-    print(f"Saved {len(combined_guts)} rows of Guts constants")
+    new_guts.to_csv(guts_file, index=False)
+    print(f"Saved {len(new_guts)} rows of Guts constants")
 
 
 if __name__ == '__main__':
