@@ -88,11 +88,9 @@ class ProgressManager:
                     'player_data': self.all_player_data
                 }, f)
 
-            # If that succeeds, make a backup of current file if it exists
             if self.checkpoint_file.exists():
                 self.checkpoint_file.replace(self.backup_file)
 
-            # Then move temp file to main file
             self.temp_file.replace(self.checkpoint_file)
 
             if final:
@@ -223,21 +221,14 @@ def main(data_dir: str) -> None:
 
         result = process_players(unique_links)
 
-        # Save results with timestamp
-        timestamp = time.strftime("%Y%m%d_%H%M%S")
-        output_file = output_dir / f'master_{timestamp}.csv'
-        result.to_csv(output_file, index=False)
-
-        # Update master.csv
         master_file = output_dir / 'master.csv'
         if master_file.exists():
             existing_df = pd.read_csv(master_file)
             result = pd.concat([existing_df, result]).drop_duplicates()
         result.to_csv(master_file, index=False)
 
-        logging.info(f"Results saved to {output_file} and master.csv")
+        logging.info(f"Results saved to master.csv")
 
-        # Return success status
         return 0
 
     except Exception as e:
