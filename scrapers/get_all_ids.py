@@ -181,7 +181,6 @@ def process_players(urls: list, timeout_minutes: int = 290) -> pd.DataFrame:
     except Exception as e:
         logging.error(f"Unexpected error: {e}")
     finally:
-        # Save final progress and clean up temporary files
         progress.save_progress(final=True)
 
     return pd.DataFrame(progress.all_player_data)
@@ -189,7 +188,7 @@ def process_players(urls: list, timeout_minutes: int = 290) -> pd.DataFrame:
 
 def combine_roster_files(output_dir: str | Path) -> pd.DataFrame:
     output_dir = Path(output_dir)
-    all_files = list(output_dir.glob("d3_rosters_*.csv"))
+    all_files = list(output_dir.glob("d*_rosters_*.csv"))
     dfs = []
 
     for file in tqdm(all_files, desc="Reading roster files"):
