@@ -34,17 +34,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas requests beautifulsoup4 tqdm
 
-      # Run scraper in a separate step with shorter timeout
       - name: Run scraper
         id: scraper
-        timeout-minutes: 290 # Leave 10 minutes for committing
-        continue-on-error: true # Continue to next step even if this fails
+        timeout-minutes: 290
+        continue-on-error: true
         run: |
           python scrapers/get_all_ids.py --data_dir ${{ env.DATA_DIR }}
 
-      # Always commit progress, even if scraper times out
       - name: Commit and push progress
-        if: always() # This ensures this step runs even if previous step fails
+        if: always()
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -56,7 +54,7 @@ jobs:
           # Check if there are changes to commit
           if ! git diff --staged --quiet; then
             git commit -m "Update roster data [skip ci]"
-            git push
+            git push "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           else
             echo "No changes to commit"
           fi
