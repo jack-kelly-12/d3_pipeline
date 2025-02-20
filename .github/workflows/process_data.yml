@@ -99,7 +99,7 @@ jobs:
         run: |
           root_dir <- getwd()
           setwd(root_dir)
-          source("processors/parse_pbp.R")
+          source("processors/get_linear_weight.R")
           main(data_dir = file.path(root_dir, '${{ env.DATA_DIR }}'), year = 2025)
         shell: Rscript {0}
 
