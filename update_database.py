@@ -25,6 +25,7 @@ def update_guts_constants(conn, data_dir, year):
     """Update guts constants table."""
     try:
         df = pd.read_csv(Path(data_dir) / 'guts' / 'guts_constants.csv')
+        df = df[df['Year'] != year]
         df.to_sql('guts_constants', conn, if_exists='replace', index=False)
         print("Successfully updated guts_constants table")
     except Exception as e:
