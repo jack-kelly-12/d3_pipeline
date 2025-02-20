@@ -119,7 +119,7 @@ def get_player_ids_and_urls(html_content):
                 player_id = href.split('/players/')[-1].strip()
                 if player_id:
                     ids.append(player_id)
-                    new_urls.add(f"https://stats.ncaa.com/players/{player_id}")
+                    new_urls.add(f"https://stats.ncaa.org/players/{player_id}")
     return list(set(ids)), new_urls
 
 
