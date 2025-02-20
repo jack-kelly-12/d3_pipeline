@@ -90,31 +90,32 @@ def update_rosters(conn, data_dir, year):
 def update_expected_runs(conn, data_dir, year):
     """Update expected runs table."""
     try:
-        delete_query = "DELETE FROM expected_runs WHERE Year = ?"
-        conn.execute(delete_query, (year, ))
+        delete_query = "DELETE FROM expected_runs"
+        conn.execute(delete_query)
 
         for division in ['d1', 'd2', 'd3']:
-            file_name = f'{division}_expected_runs_{year}.csv'
-            try:
-                df = pd.read_csv(Path(data_dir) / 'miscellaneous' / file_name)
+            for year in [2021, 2022, 2023, 2024, 2025]:
+                file_name = f'{division}_expected_runs_{year}.csv'
+                try:
+                    df = pd.read_csv(Path(data_dir) /
+                                     'miscellaneous' / file_name)
+                    df['Bases'] = ['1B 2B 3B', '_ 2 3', '1 _ 3',
+                                   '_ _ 3', '1B 2B _', '_ 2 _', '1 _ _', '_ _ _']
+                    df['Year'] = year
+                    df['Division'] = int(division[1])
 
-                df = df[df['Year'] != year]
+                    df_to_upload = df[['Division',
+                                       'Year', 'Bases', '0', '1', '2']]
 
-                df['Bases'] = ['1B 2B 3B', '_ 2 3', '1 _ 3',
-                               '_ _ 3', '1B 2B _', '_ 2 _', '1 _ _', '_ _ _']
-                df['Year'] = year
-                df['Division'] = int(division[1])
+                    df_to_upload.to_sql('expected_runs', conn,
+                                        if_exists='append',
+                                        index=False)
 
-                df_to_upload = df[['Division', 'Year', 'Bases', '0', '1', '2']]
-
-                df_to_upload.to_sql('expected_runs', conn,
-                                    if_exists='append',
-                                    index=False)
-
-                print(f"Successfully updated expected_runs with {file_name}")
-            except Exception as e:
-                print(f"Error updating expected_runs with {file_name}: {e}")
-
+                    print(
+                        f"Successfully updated expected_runs with {file_name}")
+                except Exception as e:
+                    print(
+                        f"Error updating expected_runs with {file_name}: {e}")
         conn.commit()
         print("Successfully completed expected_runs update")
     except Exception as e:
