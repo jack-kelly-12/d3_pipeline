@@ -436,8 +436,17 @@ def main(data_dir, year):
 
     for name, (data_list, dedup_cols) in data_sets.items():
         if data_list:
-            combined_df = pd.concat(data_list, ignore_index=True)
+            filtered_data_list = []
+            for df in data_list:
+                if 'Year' in df.columns:
+                    filtered_df = df[df['Year'] != year]
+                    filtered_data_list.append(filtered_df)
+                else:
+                    filtered_data_list.append(df)
+
+            combined_df = pd.concat(filtered_data_list, ignore_index=True)
             combined_df = combined_df.drop_duplicates(subset=dedup_cols)
+
             combined_df.to_csv(
                 os.path.join(data_dir, 'leaderboards', f'{name}.csv'), index=False)
     print("Processing complete!")
