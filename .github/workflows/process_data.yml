@@ -96,9 +96,12 @@ jobs:
           python processors/get_er_matrix.py --data_dir ${{ env.DATA_DIR }} --year 2025
 
       - name: Get linear weights
-        shell: bash
         run: |
-          python processors/get_linear_weights.py --data_dir ${{ env.DATA_DIR }} --year 2025
+          root_dir <- getwd()
+          setwd(root_dir)
+          source("processors/parse_pbp.R")
+          main(data_dir = file.path(root_dir, '${{ env.DATA_DIR }}'), year = 2025)
+        shell: Rscript {0}
 
       - name: New parsed pbp with leverage, win exp
         shell: bash

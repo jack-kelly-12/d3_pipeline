@@ -15,9 +15,27 @@ logging.basicConfig(
 )
 
 
+def safe_map_id(player_id: str, id_mapping: dict) -> str:
+    """
+    Maps player_id using id_mapping, returning original id if no mapping exists.
+
+    Args:
+        player_id: The original player ID
+        id_mapping: Dictionary of ID mappings
+
+    Returns:
+        Mapped ID if available, otherwise original ID
+    """
+    if pd.isna(player_id):
+        return player_id
+    str_id = str(player_id)
+    return id_mapping.get(str_id, str_id)
+
+
 def map_player_ids(data_dir: str | Path) -> None:
     """
     Maps unique_id from scraper progress to player_id in batting, pitching, and roster files.
+    Keeps existing ID if no mapping is found.
 
     Args:
         data_dir: Path to the data directory containing stats/ and rosters/ subdirectories
@@ -43,7 +61,8 @@ def map_player_ids(data_dir: str | Path) -> None:
         try:
             df = pd.read_csv(file)
             if 'player_id' in df.columns:
-                df['player_id'] = df['player_id'].astype(str).map(id_mapping)
+                df['player_id'] = df['player_id'].apply(
+                    lambda x: safe_map_id(x, id_mapping))
                 df.to_csv(file, index=False)
                 logging.info(f"Updated batting file: {file}")
         except Exception as e:
@@ -55,7 +74,8 @@ def map_player_ids(data_dir: str | Path) -> None:
         try:
             df = pd.read_csv(file)
             if 'player_id' in df.columns:
-                df['player_id'] = df['player_id'].astype(str).map(id_mapping)
+                df['player_id'] = df['player_id'].apply(
+                    lambda x: safe_map_id(x, id_mapping))
                 df.to_csv(file, index=False)
                 logging.info(f"Updated pitching file: {file}")
         except Exception as e:
@@ -67,7 +87,8 @@ def map_player_ids(data_dir: str | Path) -> None:
         try:
             df = pd.read_csv(file)
             if 'player_id' in df.columns:
-                df['player_id'] = df['player_id'].astype(str).map(id_mapping)
+                df['player_id'] = df['player_id'].apply(
+                    lambda x: safe_map_id(x, id_mapping))
                 df.to_csv(file, index=False)
                 logging.info(f"Updated roster file: {file}")
         except Exception as e:
@@ -79,7 +100,8 @@ def map_player_ids(data_dir: str | Path) -> None:
         try:
             df = pd.read_csv(master_file)
             if 'player_id' in df.columns:
-                df['player_id'] = df['player_id'].astype(str).map(id_mapping)
+                df['player_id'] = df['player_id'].apply(
+                    lambda x: safe_map_id(x, id_mapping))
                 df.to_csv(master_file, index=False)
                 logging.info("Updated master roster file")
         except Exception as e:

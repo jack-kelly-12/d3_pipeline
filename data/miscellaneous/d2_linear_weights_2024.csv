@@ -1,9 +1,9 @@
-events,count,total_re24,linear_weights_above_average,linear_weights_above_outs,normalized_weight
-home_run,11133.0,15923.472,1.43,1.889,1.739
-triple,2713.0,3258.6299999999997,1.201,1.6600000000000001,1.528
-double,22390.0,21142.799,0.944,1.403,1.292
-single,81960.0,48380.171,0.59,1.049,0.966
-hit_by_pitch,16940.0,8109.393999999999,0.479,0.938,0.864
-walk,54445.0,24314.211,0.447,0.906,0.834
-out,296838.0,-136321.825,-0.459,0.0,0.0
-wOBA scale,,,,,0.921
+events,count,linear_weights_above_average,linear_weights_above_outs,normalized_weight
+home_run,11133,1.437,1.885,1.708
+triple,2713,1.334,1.782,1.615
+double,22390,0.95,1.398,1.267
+single,81960,0.569,1.017,0.921
+hit_by_pitch,16940,0.449,0.897,0.813
+walk,54445,0.416,0.864,0.783
+out,282317,-0.448,0,0
+wOBA scale,NA,NA,NA,0.906

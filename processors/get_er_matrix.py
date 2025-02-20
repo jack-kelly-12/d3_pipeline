@@ -4,34 +4,34 @@ from pathlib import Path
 
 
 def get_expected_runs_matrix_2(base_cd, outs, runs_rest_of_inn):
+    # Create initial dataframe and drop NA values all at once
     ER = pd.DataFrame({
         'base_cd': base_cd,
         'outs': outs,
         'runs_rest_of_inn': runs_rest_of_inn
     }).dropna()
 
-    ER = ER[
-        (ER['base_cd'].between(0, 7)) &
-        (ER['outs'].between(0, 2))
-    ]
-
+    # Calculate ERV (no need for between filtering since we handle this in matrix creation)
     ER = (ER.groupby(['base_cd', 'outs'])
-          .agg({
-              'runs_rest_of_inn': ['mean', 'size']
-          })
-          .reset_index())
-
-    ER.columns = ['base_cd', 'outs', 'ERV', 'count']
+          .agg(
+              ERV=('runs_rest_of_inn', 'mean'),
+              count=('runs_rest_of_inn', 'size')
+    )
+        .reset_index())
 
     ER['ERV'] = ER['ERV'].round(3)
-    ER['state'] = ER['base_cd'].astype(str) + ' ' + ER['outs'].astype(str)
 
+    # Initialize matrix with zeros
     ER_matrix = np.zeros((8, 3))
-    for i in range(len(ER)):
-        row = int(ER['base_cd'].iloc[i])
-        col = int(ER['outs'].iloc[i])
-        ER_matrix[row, col] = ER['ERV'].iloc[i]
 
+    # Fill matrix (adding 0 to base_cd and outs since R is 1-based)
+    for _, row in ER.iterrows():
+        base_idx = int(row['base_cd'])
+        out_idx = int(row['outs'])
+        if 0 <= base_idx < 8 and 0 <= out_idx < 3:  # Ensure indices are valid
+            ER_matrix[base_idx, out_idx] = row['ERV']
+
+    # Convert to DataFrame with proper labels
     ER_matrix = pd.DataFrame(
         ER_matrix,
         index=['_ _ _', '1B _ _', '_ 2B _', '1B 2B _',
@@ -100,7 +100,7 @@ def main(data_dir, year):
     for division in divisions:
         output_file = misc_dir / f'd{division}_expected_runs_{year}.csv'
         division_df = final_df[final_df['Division'] == division]
-        division_df.set_index('Bases')[['0', '1', '2']].to_csv(
+        division_df.to_csv(
             output_file, index=False)
         print(f"Saved expected runs matrix for D{division} to {output_file}")
 

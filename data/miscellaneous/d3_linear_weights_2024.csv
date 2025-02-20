@@ -1,9 +1,9 @@
-"","events","count","total_re24","linear_weights_above_average","linear_weights_above_outs","normalized_weight"
-"1","home_run",17607,25418.9360000009,1.444,1.911,1.722
-"2","triple",7096,8739.8340000001,1.232,1.699,1.531
-"3","double",51336,49143.7079999793,0.957,1.424,1.283
-"4","single",193902,117127.197000148,0.604,1.071,0.965
-"5","hit_by_pitch",42456,20555.4239999959,0.484,0.951,0.857
-"6","walk",122915,56152.1739999632,0.457,0.924,0.833
-"7","out",665486,-310904.550000851,-0.467,0,0
-"8","wOBA scale",NA,NA,NA,NA,0.901
+events,count,linear_weights_above_average,linear_weights_above_outs,normalized_weight
+home_run,17607,1.449,1.9100000000000001,1.703
+triple,7096,1.346,1.8070000000000002,1.611
+double,51336,0.963,1.424,1.27
+single,193902,0.586,1.047,0.933
+hit_by_pitch,42456,0.458,0.919,0.819
+walk,122915,0.431,0.892,0.795
+out,645749,-0.461,0,0
+wOBA scale,NA,NA,NA,0.892

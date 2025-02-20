@@ -1,0 +1,16 @@
+2025-02-20 11:43:03,832 - INFO - Updated batting file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_batting_2021.csv
+2025-02-20 11:43:04,248 - INFO - Updated batting file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_batting_2022.csv
+2025-02-20 11:43:04,674 - INFO - Updated batting file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_batting_2023.csv
+2025-02-20 11:43:05,116 - INFO - Updated batting file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_batting_2024.csv
+2025-02-20 11:43:05,183 - INFO - Updated batting file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_batting_2025.csv
+2025-02-20 11:43:05,628 - INFO - Updated pitching file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_pitching_2021.csv
+2025-02-20 11:43:06,241 - INFO - Updated pitching file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_pitching_2022.csv
+2025-02-20 11:43:06,867 - INFO - Updated pitching file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_pitching_2023.csv
+2025-02-20 11:43:07,170 - INFO - Updated pitching file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_pitching_2024.csv
+2025-02-20 11:43:07,216 - INFO - Updated pitching file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_pitching_2025.csv
+2025-02-20 11:43:07,461 - INFO - Updated roster file: C:\Users\kellyjc\Desktop\d3_pipeline\data\rosters\d3_rosters_2021.csv
+2025-02-20 11:43:07,712 - INFO - Updated roster file: C:\Users\kellyjc\Desktop\d3_pipeline\data\rosters\d3_rosters_2022.csv
+2025-02-20 11:43:07,990 - INFO - Updated roster file: C:\Users\kellyjc\Desktop\d3_pipeline\data\rosters\d3_rosters_2023.csv
+2025-02-20 11:43:08,239 - INFO - Updated roster file: C:\Users\kellyjc\Desktop\d3_pipeline\data\rosters\d3_rosters_2024.csv
+2025-02-20 11:43:08,507 - INFO - Updated roster file: C:\Users\kellyjc\Desktop\d3_pipeline\data\rosters\d3_rosters_2025.csv
+2025-02-20 11:43:08,522 - INFO - Completed ID mapping
