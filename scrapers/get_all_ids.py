@@ -55,7 +55,7 @@ class GracefulInterruptHandler:
 
 
 class ProgressManager:
-    def __init__(self, checkpoint_file: str = "scraper_progress.json"):
+    def __init__(self, checkpoint_file: str = "scraper_progress.bak"):
         self.checkpoint_file = Path(checkpoint_file)
         self.temp_file = self.checkpoint_file.with_suffix('.tmp')
         self.backup_file = self.checkpoint_file.with_suffix('.bak')
