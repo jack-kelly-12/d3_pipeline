@@ -1,0 +1,3 @@
+2025-02-22 06:42:11,153 - INFO - Combined 15 files into DataFrame with 185124 rows
+2025-02-22 06:42:11,180 - INFO - Loaded progress from scraper_progress.json: 29 URLs scraped
+2025-02-22 06:42:24,402 - INFO - Progress saved: 30 URLs scraped, 63 players found
