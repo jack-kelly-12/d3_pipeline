@@ -48,7 +48,7 @@ def get_data(year, data_dir):
         rosters[division] = roster_df
 
         pbp_df = pd.read_csv(
-            data_dir / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv', dtype={'player_id': str})
+            data_dir / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv', dtype={'player_id': str, 'pitcher_id': str})
         pbp[division] = pbp_df
 
         pf_df = pd.read_csv(
@@ -281,7 +281,7 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
             .agg({'li': 'mean'})
             .reset_index()
             .rename(columns={'li': 'gmLI', 'pitch_team': 'Team'}))
-
+    df.player_id = df.player_id.astype(str)
     df = df.merge(gmli, how='left',
                   left_on=['player_id'],
                   right_on=['pitcher_id'])
@@ -402,6 +402,7 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
 
     pitcher_stats, team_stats = get_pitcher_clutch_stats(
         pbp_df)
+    df.player_id = df.player_id.astype(str)
     df = df.merge(
         pitcher_stats,
         left_on=['player_id'],
@@ -610,7 +611,7 @@ def get_clutch_stats(pbp_df):
 
 def get_pitcher_clutch_stats(pbp_df):
     pbp_df = pbp_df.copy()
-    pbp_df['player_id'] = pbp_df['player_id'].astype(str)
+    pbp_df['pitcher_id'] = pbp_df['pitcher_id'].astype(str)
 
     pbp_df['pREA'] = (-pbp_df['run_expectancy_delta'] -
                       pbp_df['runs_on_play'])
@@ -808,6 +809,7 @@ def calculate_batting_war(batting_df, guts_df, park_factors_df, pbp_df, rosters_
     })
 
     player_stats, team_stats = get_clutch_stats(pbp_df)
+    df.player_id = df.player_id.astype(str)
     df = df.merge(
         player_stats,
         left_on=['player_id'],
