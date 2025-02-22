@@ -41,7 +41,7 @@ jobs:
 
       - name: Run scraper
         id: scraper
-        timeout-minutes: 1
+        timeout-minutes: 290
         continue-on-error: true
         run: |
           python scrapers/get_all_ids.py --data_dir ${{ env.DATA_DIR }}
