@@ -52,42 +52,71 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          # Stage data directory and any output files
-          git add data/ scraper.log scraper_progress.bak || true
+          # Stage all relevant files
+          git add data/ || true
+          git add scraper.log scraper_progress.bak || true
 
           # Check if there are changes to commit
           if [[ -n "$(git status --porcelain)" ]]; then
-            # Commit the changes
+            # Commit changes first
             git commit -m "Updated ids"
             
-            # Fetch latest from remote
-            git fetch origin
+            # Simple push attempt with retry logic
+            MAX_RETRIES=3
+            RETRY_COUNT=0
+            PUSH_SUCCESS=false
             
-            # Try to rebase our changes on top of the latest remote
-            git rebase origin/${GITHUB_REF#refs/heads/} || {
-              # If rebase fails, reset to the last commit and try again
-              echo "Rebase failed, trying alternative approach..."
-              git rebase --abort
+            while [ $RETRY_COUNT -lt $MAX_RETRIES ] && [ "$PUSH_SUCCESS" != "true" ]; do
+              echo "Push attempt $((RETRY_COUNT+1))/$MAX_RETRIES"
               
-              # Reset to the latest remote
-              git reset --hard origin/${GITHUB_REF#refs/heads/}
+              # Fetch latest changes
+              git fetch origin
               
-              # Re-add our changes
-              git add data/ scraper.log scraper_progress.bak || true
+              # Try to pull with merge strategy
+              git pull --no-edit origin ${GITHUB_REF#refs/heads/} || {
+                echo "Pull failed, attempting simple merge..."
+                # If complex merge fails, try a simple merge
+                git merge --strategy-option=ours --no-edit origin/${GITHUB_REF#refs/heads/} || {
+                  echo "Both pull and merge failed, trying to reset and apply changes"
+                  # Stash our current changes
+                  git stash
+                  # Reset to remote
+                  git reset --hard origin/${GITHUB_REF#refs/heads/}
+                  # Try to apply stashed changes
+                  git stash pop || {
+                    echo "Could not apply stashed changes, forcing push"
+                    git add data/ scraper.log scraper_progress.bak || true
+                    git commit -m "Updated ids (reset)" || true
+                  }
+                }
+              }
               
-              # Check if we still have changes after reset
-              if [[ -n "$(git status --porcelain)" ]]; then
-                git commit -m "Updated ids"
+              # Try to push
+              if git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"; then
+                PUSH_SUCCESS=true
+                echo "Push successful on attempt $((RETRY_COUNT+1))"
               else
-                echo "No changes after reset, skipping commit"
-                exit 0
+                RETRY_COUNT=$((RETRY_COUNT+1))
+                
+                if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+                  echo "Push failed, retrying in $((5*RETRY_COUNT)) seconds..."
+                  sleep $((5*RETRY_COUNT))
+                else
+                  echo "All regular push attempts failed, trying force push as last resort"
+                  git push --force-with-lease "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" && {
+                    echo "Force push succeeded"
+                    PUSH_SUCCESS=true
+                  } || {
+                    echo "Even force push failed, giving up"
+                  }
+                fi
               fi
-            }
+            done
             
-            # Push changes, with a slight delay to avoid race conditions
-            sleep 2
-            git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-            echo "Changes committed and pushed successfully"
+            if [ "$PUSH_SUCCESS" != "true" ]; then
+              echo "Failed to push changes after multiple attempts"
+              exit 1
+            fi
           else
             echo "No changes to commit"
           fi
