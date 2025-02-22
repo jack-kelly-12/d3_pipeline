@@ -46,14 +46,14 @@ jobs:
         run: |
           python scrapers/get_all_ids.py --data_dir ${{ env.DATA_DIR }}
 
-      - name: Commit and push progress (alternative)
+      - name: Commit and push progress
         if: always()
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
           # Stage changes and commit if needed
-          git add data/
+          git add .
           git diff --staged --quiet || git commit -m "Updated ids"
 
           # Force push with lease (safer than force push)
