@@ -41,7 +41,7 @@ def map_player_ids(data_dir: str | Path) -> None:
         data_dir: Path to the data directory containing stats/ and rosters/ subdirectories
     """
     data_dir = Path(data_dir)
-    progress_file = Path("scraper_progress.json")
+    progress_file = Path("scraper_progress.bak")
 
     # Load ID mapping from progress file
     try:
