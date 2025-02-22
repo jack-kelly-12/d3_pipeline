@@ -100,7 +100,7 @@ def calculate_guts_constants(division, year, output_path):
         return None
 
 
-def main(data_dir):
+def main(data_dir, year):
     data_dir = Path(data_dir)
     guts_dir = data_dir / 'guts'
     guts_dir.mkdir(exist_ok=True)
@@ -108,22 +108,23 @@ def main(data_dir):
     guts_file = guts_dir / 'guts_constants.csv'
 
     divisions = [1, 2, 3]
-    years = [2021, 2022, 2023, 2024, 2025]
 
     all_constants = []
+    existing_guts = pd.read_csv(guts_file)
 
     for division in divisions:
-        for year in years:
-            constants = calculate_guts_constants(division, year, data_dir)
-            if constants:
-                all_constants.append(constants)
+        constants = calculate_guts_constants(division, year, data_dir)
+        if constants:
+            all_constants.append(constants)
 
     new_guts = pd.DataFrame(all_constants)
 
-    new_guts = new_guts.sort_values(
+    guts = pd.concat([existing_guts, new_guts])
+
+    guts = guts.sort_values(
         ['Division', 'Year'], ascending=[True, False])
 
-    new_guts.to_csv(guts_file, index=False)
+    guts.to_csv(guts_file, index=False)
     print(f"Saved {len(new_guts)} rows of Guts constants")
 
 
@@ -131,6 +132,7 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', required=True)
+    parser.add_argument('--year', required=True)
     args = parser.parse_args()
 
-    main(args.data_dir)
+    main(args.data_dir, args.year)
