@@ -1,7 +1,7 @@
 events,count,linear_weights_above_average,linear_weights_above_outs,normalized_weight
 home_run,173,1.513,1.9369999999999998,1.827
-triple,80,1.351,1.775,1.675
-double,595,0.948,1.3719999999999999,1.294
+triple,80,1.35,1.774,1.673
+double,595,0.949,1.373,1.295
 single,2157,0.597,1.021,0.963
 hit_by_pitch,576,0.437,0.861,0.812
 walk,1606,0.385,0.8089999999999999,0.763
