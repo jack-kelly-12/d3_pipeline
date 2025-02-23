@@ -770,9 +770,7 @@ def calculate_batting_war(batting_df, guts_df, park_factors_df, pbp_df, rosters_
     df['baserunning'] = df['wSB'] + df['wGDP'] + df['wTEB']
 
     base_adjustments = df['Pos'].map(position_adjustments).fillna(0)
-    division_scaling = np.where(division == 1, 1, 1.3)
-    scaled_adjustments = base_adjustments * division_scaling
-    df['Adjustment'] = scaled_adjustments * \
+    df['Adjustment'] = base_adjustments * \
         (df['GP'] / (np.where(division == 3, 40, 50)))
 
     conf_adjustments = {}
