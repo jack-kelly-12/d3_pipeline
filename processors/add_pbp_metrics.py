@@ -33,7 +33,6 @@ def get_data(year, division, data_dir):
     # Read data files
     pbp_df = pd.read_csv(pbp_file)
     roster = pd.read_csv(roster_file, dtype={'player_id': str})
-    roster.player_id = roster.player_id.astype(str)
     le = pd.read_csv(le_file)
     we = pd.read_csv(we_file).rename(columns={'Tie': '0'})
     re = pd.read_csv(re_file)
@@ -81,7 +80,7 @@ def standardize_names(pbp_df, roster, threshold=30):
     pbp_df['pitcher'] = pbp_df['pitcher'].apply(format_name)
 
     roster_lookup = {
-        team: group.set_index('player_name')['player_id'].astype(str).to_dict()
+        team: group.set_index('player_name')['player_id'].to_dict()
         for team, group in roster.groupby('team_name')
     }
 
@@ -136,10 +135,6 @@ def standardize_names(pbp_df, roster, threshold=30):
     pbp_df['pitcher_standardized'] = pbp_df['pitcher_standardized'].fillna(
         'Starter')
 
-    pbp_df['pitcher_id'] = pbp_df['pitcher_id'].astype(str)
-    pbp_df['batter_id'] = pbp_df['batter_id'].astype(str)
-    pbp_df['player_id'] = pbp_df['player_id'].astype(str)
-
     return pbp_df
 
 
@@ -175,7 +170,7 @@ def process_pitchers(df):
 
     df['pitcher'] = pd.Series(dtype='string')
     df.loc[pitcher_changes, 'pitcher'] = df.loc[pitcher_changes,
-                                                'sub_in'].astype(str)
+                                                'sub_in']
 
     grouped = df.groupby(['game_id', 'pitch_team'])
 
@@ -567,18 +562,9 @@ def process_single_year(args):
         'hit_type'
     ]
 
-    merged_df['player_id'] = merged_df['player_id'].astype(str)
-    merged_df['pitcher_id'] = merged_df['pitcher_id'].astype(str)
-    merged_df['batter_id'] = merged_df['batter_id'].astype(str)
-
     final_df = merged_df[columns].copy()
     final_df['year'] = year
     final_df['division'] = division
-
-    # Ensure the final dataframe also has string IDs:
-    final_df['player_id'] = final_df['player_id'].astype(str)
-    final_df['pitcher_id'] = final_df['pitcher_id'].astype(str)
-    final_df['batter_id'] = final_df['batter_id'].astype(str)
 
     return final_df
 
