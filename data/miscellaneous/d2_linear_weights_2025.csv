@@ -1,9 +1,9 @@
 events,count,linear_weights_above_average,linear_weights_above_outs,normalized_weight
-home_run,1494,1.444,1.8579999999999999,1.787
-triple,455,1.364,1.778,1.71
-double,3492,0.914,1.328,1.277
-single,12288,0.556,0.97,0.933
-hit_by_pitch,3160,0.435,0.849,0.816
-walk,9001,0.407,0.821,0.79
-out,46101,-0.414,0,0
-wOBA scale,NA,NA,NA,0.962
+home_run,1689,1.444,1.8639999999999999,1.767
+triple,506,1.349,1.769,1.677
+double,3933,0.915,1.335,1.266
+single,13696,0.565,0.9849999999999999,0.934
+hit_by_pitch,3532,0.447,0.867,0.822
+walk,10096,0.42,0.84,0.796
+out,51377,-0.42,0,0
+wOBA scale,NA,NA,NA,0.948
