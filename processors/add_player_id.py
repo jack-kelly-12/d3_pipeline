@@ -81,6 +81,18 @@ def map_player_ids(data_dir: str | Path) -> None:
         except Exception as e:
             logging.error(f"Error processing pitching file {file}: {e}")
 
+    pitching_files = list((data_dir / "war").glob("d3_*.csv"))
+    for file in tqdm(pitching_files, desc="Processing war files"):
+        try:
+            df = pd.read_csv(file, dtype={'player_id': str})
+            if 'player_id' in df.columns:
+                df['player_id'] = df['player_id'].apply(
+                    lambda x: safe_map_id(x, id_mapping))
+                df.to_csv(file, index=False)
+                logging.info(f"Updated pitching file: {file}")
+        except Exception as e:
+            logging.error(f"Error processing pitching file {file}: {e}")
+
     # Process roster files
     roster_files = list((data_dir / "rosters").glob("d3_rosters_*.csv"))
     for file in tqdm(roster_files, desc="Processing roster files"):

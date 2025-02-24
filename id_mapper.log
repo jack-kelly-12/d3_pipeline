@@ -14,3 +14,19 @@
 2025-02-20 11:43:08,239 - INFO - Updated roster file: C:\Users\kellyjc\Desktop\d3_pipeline\data\rosters\d3_rosters_2024.csv
 2025-02-20 11:43:08,507 - INFO - Updated roster file: C:\Users\kellyjc\Desktop\d3_pipeline\data\rosters\d3_rosters_2025.csv
 2025-02-20 11:43:08,522 - INFO - Completed ID mapping
+2025-02-23 22:51:02,080 - INFO - Updated batting file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_batting_2021.csv
+2025-02-23 22:51:02,578 - INFO - Updated batting file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_batting_2022.csv
+2025-02-23 22:51:03,113 - INFO - Updated batting file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_batting_2023.csv
+2025-02-23 22:51:03,625 - INFO - Updated batting file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_batting_2024.csv
+2025-02-23 22:51:03,731 - INFO - Updated batting file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_batting_2025.csv
+2025-02-23 22:51:04,255 - INFO - Updated pitching file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_pitching_2021.csv
+2025-02-23 22:51:04,838 - INFO - Updated pitching file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_pitching_2022.csv
+2025-02-23 22:51:05,434 - INFO - Updated pitching file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_pitching_2023.csv
+2025-02-23 22:51:05,733 - INFO - Updated pitching file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_pitching_2024.csv
+2025-02-23 22:51:05,802 - INFO - Updated pitching file: C:\Users\kellyjc\Desktop\d3_pipeline\data\stats\d3_pitching_2025.csv
+2025-02-23 22:51:06,139 - INFO - Updated roster file: C:\Users\kellyjc\Desktop\d3_pipeline\data\rosters\d3_rosters_2021.csv
+2025-02-23 22:51:06,447 - INFO - Updated roster file: C:\Users\kellyjc\Desktop\d3_pipeline\data\rosters\d3_rosters_2022.csv
+2025-02-23 22:51:06,771 - INFO - Updated roster file: C:\Users\kellyjc\Desktop\d3_pipeline\data\rosters\d3_rosters_2023.csv
+2025-02-23 22:51:07,097 - INFO - Updated roster file: C:\Users\kellyjc\Desktop\d3_pipeline\data\rosters\d3_rosters_2024.csv
+2025-02-23 22:51:07,395 - INFO - Updated roster file: C:\Users\kellyjc\Desktop\d3_pipeline\data\rosters\d3_rosters_2025.csv
+2025-02-23 22:51:07,417 - INFO - Completed ID mapping
