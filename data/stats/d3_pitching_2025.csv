@@ -36,11 +36,11 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Augustana (IL),CCIW,3,27,Cameron Miller,Sr,P,1,0,0.0,1.0,0,0,0,0,1,0,3,3,0,0,0,0,0,0,0,0,0,0,0,16,0,2,0,0,0,0,-,R/R,597218,836,8887084,http://stats.ncaa.org/players/8887084
 2025,Augustana (IL),CCIW,3,24,Zach DeMarlie,Jr,UT,1,1,1.5,6.0,3,2,1,4,6,0,24,19,1,0,0,1,0,1,0,0,0,0,0,95,7,3,0,0,0,2,-,R/R,597218,836,8882290,http://stats.ncaa.org/players/8882290
 2025,Augustana (IL),CCIW,3,34,Chance Carruthers,Jr,P,1,0,27.0,1.0,4,3,3,0,2,0,6,6,1,0,0,1,0,0,0,0,0,0,0,15,0,0,0,1,0,1,-,R/R,597218,836,8879421,http://stats.ncaa.org/players/8879421
-2025,Augustana (IL),CCIW,3,36,Brian Fischer,Jr,P,1,0,0.0,0.2,0,0,0,1,1,0,3,2,0,0,0,0,0,0,0,0,0,0,0,16,0,1,0,0,0,0,-,R/R,597218,836,8893386,http://stats.ncaa.org/players/8893386
+2025,Augustana (IL),CCIW,3,36,Brian Fischer,Jr,P,1,0,0.0,0.2,0,0,0,1,1,0,3,2,0,0,0,0,0,0,0,0,0,0,0,16,0,1,0,0,0,0,-,R/R,597218,836,d3d-8010328,http://stats.ncaa.org/players/8893386
 2025,Austin,SCAC,3,32,Gavin Brady,Jr,P,2,1,108.0,0.2,7,9,8,7,0,0,15,8,3,0,0,0,1,0,0,0,0,0,0,25,1,0,0,1,0,0,-,,597096,835,8878631,http://stats.ncaa.org/players/8878631
 2025,Austin,SCAC,3,3,Tyler Ramage,Sr,P,3,0,20.25,2.2,4,7,6,3,2,0,17,13,1,0,0,1,1,1,0,0,0,0,0,53,3,2,0,0,0,1,-,,597096,835,8877615,http://stats.ncaa.org/players/8877615
 2025,Austin,SCAC,3,27,Jonas Ceballos,Jr,P,4,1,2.79,9.2,10,11,3,5,4,0,47,39,1,0,1,2,1,2,0,0,0,0,1,128,13,10,0,1,0,0,-,,597096,835,d3d-8012087,http://stats.ncaa.org/players/8878127
-2025,Austin,SCAC,3,35,Brant Stuber,Sr,INF,1,0,45.0,1.0,4,6,5,0,0,0,10,8,3,0,0,0,1,2,0,0,0,0,0,31,1,2,0,1,0,0,-,,597096,835,8874439,http://stats.ncaa.org/players/8874439
+2025,Austin,SCAC,3,35,Brant Stuber,Sr,INF,1,0,45.0,1.0,4,6,5,0,0,0,10,8,3,0,0,0,1,2,0,0,0,0,0,31,1,2,0,1,0,0,-,,597096,835,d3d-7578504,http://stats.ncaa.org/players/8874439
 2025,Austin,SCAC,3,34,Joe Potter,Jr,P,2,0,40.5,1.1,4,6,6,1,0,0,11,8,1,0,0,0,0,2,0,0,0,0,0,25,2,2,0,0,0,0,-,,597096,835,d3d-8009425,http://stats.ncaa.org/players/8880485
 2025,Austin,SCAC,3,2,Mason Woodhouse,Sr,INF,1,0,0.0,0.1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-,,597096,835,8875377,http://stats.ncaa.org/players/8875377
 2025,Austin,SCAC,3,47,Colten Millsap,So,P,1,0,27.0,2.0,6,7,6,1,1,0,15,13,1,0,0,0,0,1,0,0,0,0,0,48,4,1,0,0,0,1,-,,597096,835,8886659,http://stats.ncaa.org/players/8886659
@@ -48,14 +48,14 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Austin,SCAC,3,14,Asher Thompson,Sr,INF,1,0,0.0,1.2,2,0,0,0,0,0,5,5,0,0,0,0,0,0,0,0,0,0,0,14,2,1,0,0,0,0,-,,597096,835,d3d-7591502,http://stats.ncaa.org/players/8893910
 2025,Austin,SCAC,3,13,Blake Skipworth,Jr,P,1,0,9.0,1.0,1,1,1,1,0,0,4,3,1,0,1,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,-,,597096,835,8892015,http://stats.ncaa.org/players/8892015
 2025,Austin,SCAC,3,5,Ethan Lowery,Jr,C,2,0,9.0,1.0,0,1,1,2,0,0,6,2,0,0,0,0,0,2,0,0,0,0,0,22,2,0,0,0,0,0,-,,597096,835,d3d-8014010,http://stats.ncaa.org/players/8901528
-2025,Austin,SCAC,3,6,Trystan Mallory,Sr,P,2,2,4.26,6.1,4,3,3,4,11,0,27,21,1,1,0,0,1,1,0,0,0,0,1,39,4,3,0,1,0,3,-,,597096,835,8902071,http://stats.ncaa.org/players/8902071
+2025,Austin,SCAC,3,6,Trystan Mallory,Sr,P,2,2,4.26,6.1,4,3,3,4,11,0,27,21,1,1,0,0,1,1,0,0,0,0,1,39,4,3,0,1,0,3,-,,597096,835,d3d-7578501,http://stats.ncaa.org/players/8902071
 2025,Austin,SCAC,3,24,J. Wilhelm,,3b,1,0,0.0,3.0,3,0,0,0,5,0,12,12,0,0,1,0,0,0,0,0,0,0,0,51,4,0,0,0,0,1,-,,597096,835,9219788,http://stats.ncaa.org/players/9219788
 2025,Austin,SCAC,3,12,J. Hinojosa,,dh,1,0,0.0,0.0,4,4,4,2,0,0,6,4,1,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,-,,597096,835,9219784,http://stats.ncaa.org/players/9219784
 2025,Austin,SCAC,3,36,N. Paul,Fr,p,1,0,0.0,1.0,2,2,0,1,1,0,6,5,0,0,0,0,2,0,0,0,0,0,0,29,1,0,0,0,0,0,-,,597096,835,9219795,http://stats.ncaa.org/players/9219795
 2025,Austin,SCAC,3,20,T. Bane,Jr,p,2,0,9.0,4.0,5,6,4,5,7,0,22,15,1,1,0,0,0,2,0,0,0,0,0,53,0,3,0,0,0,2,-,,597096,835,9219792,http://stats.ncaa.org/players/9219792
 2025,Austin,SCAC,3,52,C. Rabal,,p,2,0,18.0,2.0,5,4,4,1,2,0,13,10,2,1,0,0,1,1,0,0,0,0,1,21,0,4,0,0,0,0,-,,597096,835,9219797,http://stats.ncaa.org/players/9219797
 2025,Austin,SCAC,3,27,N. Trujillo,,p,1,0,81.0,0.1,1,3,3,2,1,0,4,2,1,0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,-,,597096,835,9219790,http://stats.ncaa.org/players/9219790
-2025,Austin,SCAC,3,55,Z. Andrews,,p,2,1,22.85,4.1,9,11,11,5,7,0,27,22,3,0,0,2,0,0,0,0,0,0,0,107,3,3,0,2,0,1,-,,597096,835,9219783,http://stats.ncaa.org/players/9219783
+2025,Austin,SCAC,3,55,Z. Andrews,,p,2,1,22.85,4.1,9,11,11,5,7,0,27,22,3,0,0,2,0,0,0,0,0,0,0,107,3,3,0,2,0,1,-,,597096,835,d3d-9219783,http://stats.ncaa.org/players/9219783
 2025,Austin,SCAC,3,10,B. Goodridge,,p,2,2,13.5,7.1,12,12,11,5,8,0,39,33,4,1,1,3,0,0,0,0,0,0,1,153,3,11,0,1,0,2,-,,597096,835,9219789,http://stats.ncaa.org/players/9219789
 2025,Austin,SCAC,3,0,Davin Vialpando,Sr,P,2,0,20.25,2.2,7,8,6,4,2,0,19,15,2,0,0,2,0,0,0,0,0,0,0,78,5,1,0,0,0,0,-,,597096,835,d3d-7113936,http://stats.ncaa.org/players/9219791
 2025,Averett,ODAC,3,36,Preston Corbitt,Fr,P,1,0,18.0,1.0,2,2,2,2,0,0,7,3,0,0,0,0,0,0,0,0,0,0,2,0,0,3,0,0,0,0,5-9,L/L,597220,903,9171510,http://stats.ncaa.org/players/9171510
@@ -88,7 +88,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Bates,NESCAC,3,2,Matthew Shrake,Sr,P,1,0,3.0,3.0,3,1,1,4,3,0,14,9,0,0,0,0,0,0,0,0,0,0,1,0,2,2,0,0,0,0,6-1,L/L,597223,12817,8875390,http://stats.ncaa.org/players/8875390
 2025,Bates,NESCAC,3,22,Micah Sheats,Sr,P,1,0,0.0,2.0,2,0,0,1,3,0,9,7,0,0,0,0,0,0,1,0,0,1,0,0,2,1,1,0,0,2,5-11,L/L,597223,12817,8877459,http://stats.ncaa.org/players/8877459
 2025,Bates,NESCAC,3,12,John Tully,Jr,P,1,1,18.9,3.1,7,7,7,2,4,0,19,14,0,0,0,0,1,2,0,0,0,1,0,0,2,2,0,0,0,0,6-0,R/R,597223,12817,d3d-7972581,http://stats.ncaa.org/players/8893434
-2025,Bates,NESCAC,3,19,Nolan Hobbs,So,P,1,0,20.25,1.1,3,3,3,2,1,0,9,6,1,0,0,0,2,1,0,0,0,0,0,0,1,1,0,0,0,1,6-4,R/R,597223,12817,8896908,http://stats.ncaa.org/players/8896908
+2025,Bates,NESCAC,3,19,Nolan Hobbs,So,P,1,0,20.25,1.1,3,3,3,2,1,0,9,6,1,0,0,0,2,1,0,0,0,0,0,0,1,1,0,0,0,1,6-4,R/R,597223,12817,d3d-8456160,http://stats.ncaa.org/players/8896908
 2025,Bates,NESCAC,3,23,Ian McAslan,Sr,P,1,1,4.5,4.0,2,2,2,3,6,0,18,14,0,0,0,0,0,1,0,0,0,0,0,0,5,1,0,0,0,1,6-2,R/R,597223,12817,d3d-7578079,http://stats.ncaa.org/players/8894662
 2025,Bates,NESCAC,3,28,Max Dio,Jr,P,1,0,9.0,1.0,2,1,1,1,1,0,6,5,0,0,0,0,1,0,0,0,0,0,0,0,0,2,0,0,0,0,6-2,R/R,597223,12817,8893394,http://stats.ncaa.org/players/8893394
 2025,Bates,NESCAC,3,26,Charlie Bushley,Fr,P,1,0,36.0,1.0,3,4,4,2,2,0,8,5,1,0,0,0,2,0,0,0,0,0,1,0,0,1,0,1,0,0,6-3,R/R,597223,12817,9093173,http://stats.ncaa.org/players/9093173
@@ -189,7 +189,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Cal Lutheran,SCIAC,3,14,Frank Willius,So,P,3,0,1.8,5.0,4,1,1,2,9,0,21,19,0,1,0,0,0,0,0,0,0,0,0,83,2,4,0,0,1,1,6-4,L/L,597237,910,d3d-8454975,http://stats.ncaa.org/players/8895751
 2025,Cal Lutheran,SCIAC,3,23,Max Sagan,So,P,1,0,0.0,0.2,0,0,0,3,1,0,5,2,0,0,0,0,0,0,0,0,0,0,0,22,1,0,0,0,0,0,6-1,R/R,597237,910,8902078,http://stats.ncaa.org/players/8902078
 2025,Cal Lutheran,SCIAC,3,48,JJ Frazier,Sr,P,1,1,0.0,5.0,1,0,0,1,7,0,16,15,1,0,0,0,0,0,0,0,0,0,0,64,4,3,0,0,0,2,6-3,R/R,597237,910,d3d-7124340,http://stats.ncaa.org/players/9113523
-2025,Cal Lutheran,SCIAC,3,30,Leo Bristow,Sr,P,2,2,0.0,11.0,5,0,0,2,19,0,44,40,0,0,0,0,0,2,0,0,0,0,0,153,8,6,2,0,0,3,6-0,R/R,597237,910,9113524,http://stats.ncaa.org/players/9113524
+2025,Cal Lutheran,SCIAC,3,30,Leo Bristow,Sr,P,2,2,0.0,11.0,5,0,0,2,19,0,44,40,0,0,0,0,0,2,0,0,0,0,0,153,8,6,2,0,0,3,6-0,R/R,597237,910,d3d-6713555,http://stats.ncaa.org/players/9113524
 2025,Cal Lutheran,SCIAC,3,31,Matt Campo,Sr,P,1,0,13.5,0.2,4,5,1,0,0,0,9,7,1,0,0,0,0,2,0,0,0,0,0,29,1,1,0,0,0,0,6-3,R/R,597237,910,9113526,http://stats.ncaa.org/players/9113526
 2025,Cal Lutheran,SCIAC,3,20,Caleb Wilson,Fr,P,1,0,0.0,1.0,1,1,0,0,1,0,7,6,0,0,0,0,0,0,0,0,0,0,1,17,1,1,0,0,0,0,5-10,B/R,597237,910,9113540,http://stats.ncaa.org/players/9113540
 2025,Caltech,SCIAC,3,10,Kenji Farrell,Fr,p,1,1,9.0,4.0,4,4,4,4,2,0,21,15,2,0,0,0,1,2,0,0,0,0,0,85,2,7,0,1,0,1,-,,597236,910,d3d-9299676,http://stats.ncaa.org/players/9299676
@@ -210,14 +210,14 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Capital,OAC,3,25,Ben Mohler,Sr,P,2,0,16.2,3.1,7,6,6,1,2,0,20,17,2,0,0,0,0,1,0,0,0,1,0,51,5,3,0,0,0,0,-,,597239,901,d3d-8595938,http://stats.ncaa.org/players/9104461
 2025,Capital,OAC,3,46,Diego Astacio,So,P,2,0,13.5,2.0,3,3,3,0,1,0,11,7,1,0,0,1,0,2,0,0,0,1,1,33,2,3,0,0,0,0,-,,597239,901,9104417,http://stats.ncaa.org/players/9104417
 2025,Capital,OAC,3,30,Sam Everts,Fr,P,2,0,6.75,2.2,3,2,2,3,3,0,14,11,1,0,0,1,1,0,0,0,0,0,0,67,1,4,0,0,1,0,-,,597239,901,9104427,http://stats.ncaa.org/players/9104427
-2025,Capital,OAC,3,11,Nathan Budill,Fr,P,1,0,135.0,0.1,6,5,5,0,1,0,7,7,3,1,0,1,0,0,0,0,0,0,0,22,0,0,0,0,0,0,-,,597239,901,9104419,http://stats.ncaa.org/players/9104419
+2025,Capital,OAC,3,11,Nathan Budill,Fr,P,1,0,135.0,0.1,6,5,5,0,1,0,7,7,3,1,0,1,0,0,0,0,0,0,0,22,0,0,0,0,0,0,-,,597239,901,d3d-9104419,http://stats.ncaa.org/players/9104419
 2025,Carthage,CCIW,3,33,Ryan Scanlon,Sr,P,1,0,216.0,0.1,6,9,8,2,0,0,10,8,2,0,0,0,0,0,0,0,0,0,0,47,1,0,0,0,0,0,-,,597242,836,9302820,http://stats.ncaa.org/players/9302820
 2025,Carthage,CCIW,3,13,Wyatt Modory,Fr,P,1,1,4.15,4.1,5,2,2,3,1,0,20,17,1,0,0,0,1,0,0,0,0,0,0,70,7,3,1,0,0,1,-,,597242,836,9302828,http://stats.ncaa.org/players/9302828
 2025,Carthage,CCIW,3,17,Bryce Schaum,Sr,P,1,1,4.5,4.0,0,2,2,7,3,0,18,11,0,0,0,0,0,0,0,0,0,0,0,86,5,3,0,1,0,1,-,,597242,836,d3d-7586006,http://stats.ncaa.org/players/8886908
 2025,Carthage,CCIW,3,22,Jacob Papagallo,Sr,P,1,0,0.0,2.2,0,0,0,2,3,0,11,8,0,0,0,0,0,1,0,0,0,0,0,44,2,3,0,0,0,1,-,,597242,836,8875551,http://stats.ncaa.org/players/8875551
 2025,Carthage,CCIW,3,34,Jake Hartman Jr.,Sr,P,1,0,0.0,1.2,1,0,0,1,2,0,8,7,0,0,0,0,0,0,0,0,0,0,0,30,0,3,0,0,0,1,-,,597242,836,d3d-7586253,http://stats.ncaa.org/players/8896969
 2025,Catholic,Landmark,3,39,Joe Mascaro,Fr,P,1,0,9.0,2.0,2,2,2,1,3,0,10,8,1,0,2,0,0,1,0,0,0,0,0,41,2,1,1,0,0,1,6-1,R/R,597245,30101,9302524,http://stats.ncaa.org/players/9302524
-2025,Catholic,Landmark,3,6,Roman Tozzi,Jr,P,1,1,3.6,5.0,4,2,2,1,5,0,20,18,0,0,0,1,0,0,0,0,0,0,1,70,5,5,0,1,0,2,5-10,L/L,597245,30101,8888842,http://stats.ncaa.org/players/8888842
+2025,Catholic,Landmark,3,6,Roman Tozzi,Jr,P,1,1,3.6,5.0,4,2,2,1,5,0,20,18,0,0,0,1,0,0,0,0,0,0,1,70,5,5,0,1,0,2,5-10,L/L,597245,30101,d3d-7995690,http://stats.ncaa.org/players/8888842
 2025,Catholic,Landmark,3,17,Luke Cardman,So,P,1,0,162.0,0.1,4,6,6,2,1,0,7,5,2,0,0,0,0,0,0,0,0,0,0,30,0,0,0,0,0,1,6-1,R/R,597245,30101,d3d-8458229,http://stats.ncaa.org/players/8873913
 2025,Catholic,Landmark,3,44,Cody Bosak,Sr,P,1,1,3.18,5.2,4,2,2,1,3,0,24,21,0,1,0,0,0,1,1,0,0,1,0,72,10,4,0,0,0,1,5-10,R/R,597245,30101,8885238,http://stats.ncaa.org/players/8885238
 2025,Catholic,Landmark,3,14,Sam Fairhurst,So,P,1,0,6.0,3.0,4,2,2,0,4,0,13,13,1,0,0,1,0,0,0,0,0,0,0,49,3,2,0,0,0,2,6-3,R/R,597245,30101,8884730,http://stats.ncaa.org/players/8884730
@@ -274,15 +274,15 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Chatham,PAC,3,30,C. Bennett,,p,1,0,4.91,3.2,4,2,2,5,3,0,20,14,3,0,0,0,0,0,0,0,0,1,0,76,1,7,0,1,0,0,-,,597159,907,9304950,http://stats.ncaa.org/players/9304950
 2025,Chatham,PAC,3,36,E. Botkin,Fr,p,1,0,27.0,1.1,5,4,4,0,0,0,9,8,0,0,0,1,0,1,0,0,0,0,0,28,2,1,0,0,0,0,-,,597159,907,9304951,http://stats.ncaa.org/players/9304951
 2025,Chatham,PAC,3,2,R. Baum,Fr,1b/p,1,0,11.57,2.1,1,3,3,3,3,0,13,8,0,0,0,0,0,1,0,0,0,0,1,48,2,2,0,0,0,2,-,,597159,907,9304955,http://stats.ncaa.org/players/9304955
-2025,Chatham,PAC,3,11,Dawson Morrow,Sr,P,1,0,0.0,1.2,1,0,0,2,1,0,8,6,0,0,0,0,2,0,0,0,0,0,0,26,2,2,0,0,0,0,-,,597159,907,8878785,http://stats.ncaa.org/players/8878785
+2025,Chatham,PAC,3,11,Dawson Morrow,Sr,P,1,0,0.0,1.2,1,0,0,2,1,0,8,6,0,0,0,0,2,0,0,0,0,0,0,26,2,2,0,0,0,0,-,,597159,907,d3d-7565045,http://stats.ncaa.org/players/8878785
 2025,Chatham,PAC,3,1,Carter Beneigh,Sr,P,1,1,5.4,5.0,2,3,3,3,4,0,22,17,0,0,0,1,1,1,0,0,0,1,0,57,7,4,0,1,0,0,-,,597159,907,8885437,http://stats.ncaa.org/players/8885437
-2025,Chris. Newport,C2C,3,36,Jackson Chappell,Fr,p,1,0,27.0,0.2,1,2,2,3,1,0,6,3,0,0,0,0,0,0,0,3,2,0,0,27,1,0,0,0,0,0,-,,597251,15810,9299948,http://stats.ncaa.org/players/9299948
+2025,Chris. Newport,C2C,3,36,Jackson Chappell,Fr,p,1,0,27.0,0.2,1,2,2,3,1,0,6,3,0,0,0,0,0,0,0,3,2,0,0,27,1,0,0,0,0,0,-,,597251,15810,d3d-9299948,http://stats.ncaa.org/players/9299948
 2025,Chris. Newport,C2C,3,88,Charlie Gunn,Fr,p,3,0,6.0,6.0,6,4,4,5,5,0,33,21,0,0,0,0,1,4,0,0,0,2,1,101,8,5,0,0,0,1,-,,597251,15810,9299278,http://stats.ncaa.org/players/9299278
 2025,Chris. Newport,C2C,3,9,Cooper Newell,Jr,P,3,3,4.5,10.0,4,5,5,7,11,0,43,35,1,0,0,0,0,1,0,0,0,0,0,205,8,10,1,1,0,1,-,,597251,15810,9299320,http://stats.ncaa.org/players/9299320
 2025,Chris. Newport,C2C,3,99,Eli Novario,So,p,3,0,0.0,3.0,2,0,0,1,3,0,13,10,0,0,0,0,0,1,0,3,1,0,1,43,1,5,0,0,0,0,-,,597251,15810,8886675,http://stats.ncaa.org/players/8886675
 2025,Chris. Newport,C2C,3,47,Connor Godshalk,So,p,2,0,40.5,1.1,4,7,6,4,1,0,14,8,1,1,0,1,1,2,0,0,0,0,0,44,0,3,0,0,0,1,-,,597251,15810,8882643,http://stats.ncaa.org/players/8882643
 2025,Chris. Newport,C2C,3,25,Marcus Dux,Jr,P,3,0,6.75,4.0,5,4,3,3,5,0,22,18,2,0,0,0,0,1,0,0,0,0,0,96,4,3,0,0,0,2,6-1,L/L,597251,15810,8887881,http://stats.ncaa.org/players/8887881
-2025,Chris. Newport,C2C,3,52,Christian Williams,Sr,P,4,0,0.0,3.2,1,0,0,1,4,0,13,12,1,0,0,0,0,0,0,1,0,0,0,54,3,4,1,0,2,0,6-1,L/L,597251,15810,8881536,http://stats.ncaa.org/players/8881536
+2025,Chris. Newport,C2C,3,52,Christian Williams,Sr,P,4,0,0.0,3.2,1,0,0,1,4,0,13,12,1,0,0,0,0,0,0,1,0,0,0,54,3,4,1,0,2,0,6-1,L/L,597251,15810,d3d-7580387,http://stats.ncaa.org/players/8881536
 2025,Chris. Newport,C2C,3,41,Nate Toomey,Jr,P,2,0,2.25,4.0,4,1,1,1,1,0,17,15,2,0,0,0,0,1,0,2,2,0,0,57,3,7,1,0,0,1,6-2,R/R,597251,15810,8874632,http://stats.ncaa.org/players/8874632
 2025,Chris. Newport,C2C,3,39,Ryan Morrison,Jr,P,3,0,2.16,8.1,5,2,2,7,7,0,36,26,1,0,0,0,2,2,0,3,1,1,0,162,9,5,1,0,0,4,6-0,L/L,597251,15810,8895603,http://stats.ncaa.org/players/8895603
 2025,Chris. Newport,C2C,3,33,Jackson Gimbel,Jr,P,2,0,20.25,1.1,3,4,3,3,3,0,12,7,1,0,0,0,1,1,0,0,0,1,0,46,0,1,0,0,0,1,6-1,R/R,597251,15810,8890313,http://stats.ncaa.org/players/8890313
@@ -291,7 +291,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Chris. Newport,C2C,3,29,Chase Hustead,Jr,P,3,2,10.38,8.2,14,11,10,5,5,0,49,41,4,1,0,1,2,3,0,0,0,0,0,185,12,8,0,1,0,0,5-11,,597251,15810,d3d-8009500,http://stats.ncaa.org/players/9218541
 2025,Claremont-M-S,SCIAC,3,31,Matthew Bergan,Sr,P,2,1,0.0,3.2,3,1,0,0,4,0,17,16,0,0,0,0,0,1,0,0,0,0,0,70,4,3,0,0,0,1,6-3,R/R,597252,910,8880770,http://stats.ncaa.org/players/8880770
 2025,Claremont-M-S,SCIAC,3,16,Aaron Herst,Jr,P,2,0,7.71,2.1,2,2,2,1,2,0,12,9,0,0,0,0,0,2,0,0,0,0,0,49,2,3,0,0,0,1,5-2,L/L,597252,910,8886055,http://stats.ncaa.org/players/8886055
-2025,Claremont-M-S,SCIAC,3,6,Hamilton Finefrock,Sr,P,2,0,0.0,5.1,3,0,0,4,6,0,20,15,0,0,0,0,0,1,0,0,0,0,0,29,3,3,0,0,0,1,6-0,R/R,597252,910,8886989,http://stats.ncaa.org/players/8886989
+2025,Claremont-M-S,SCIAC,3,6,Hamilton Finefrock,Sr,P,2,0,0.0,5.1,3,0,0,4,6,0,20,15,0,0,0,0,0,1,0,0,0,0,0,29,3,3,0,0,0,1,6-0,R/R,597252,910,d3d-7562708,http://stats.ncaa.org/players/8886989
 2025,Claremont-M-S,SCIAC,3,3,Dominic Rolla,Jr,P,2,2,5.4,5.0,6,4,3,2,1,0,24,21,1,0,0,0,2,1,0,0,0,0,0,111,7,7,0,0,0,0,5-11,L/L,597252,910,d3d-7993631,http://stats.ncaa.org/players/8889368
 2025,Claremont-M-S,SCIAC,3,12,Bryant Smaaladen,Jr,P,2,1,13.5,6.0,11,9,9,2,4,0,30,28,1,0,0,1,0,0,0,0,0,0,0,51,8,5,0,1,0,0,6-1,L/L,597252,910,d3d-7993637,http://stats.ncaa.org/players/8884238
 2025,Claremont-M-S,SCIAC,3,25,PJ Wendler,Sr,P,1,0,13.5,2.0,4,3,3,0,4,0,12,11,1,0,0,0,1,1,0,0,0,0,0,28,1,2,0,0,0,2,6-1,L/R,597252,910,d3d-7562702,http://stats.ncaa.org/players/8887341
@@ -312,7 +312,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Clarkson,Liberty League,3,42,Cole Riskin,Sr,INF,1,1,23.63,2.2,5,7,7,3,4,0,19,12,0,0,1,1,0,3,0,0,0,0,1,76,1,2,0,0,0,2,5-9,R/R,597254,24197,d3d-7564444,http://stats.ncaa.org/players/8902283
 2025,Clarkson,Liberty League,3,30,Mateo Sarabia,Sr,P,1,1,3.0,3.0,3,1,1,1,1,0,11,10,0,0,0,0,0,0,0,0,0,0,0,32,3,3,1,0,0,1,6-0,R/R,597254,24197,d3d-7564428,http://stats.ncaa.org/players/8902579
 2025,Clarkson,Liberty League,3,35,Nicholas Hofacker,Sr,P,1,0,0.0,2.0,1,0,0,0,3,0,7,7,0,0,0,0,0,0,0,0,0,0,0,17,1,2,0,0,1,1,5-11,R/R,597254,24197,9215693,http://stats.ncaa.org/players/9215693
-2025,Clarkson,Liberty League,3,14,Chase Fisher,Fr,P,1,0,9.0,1.0,2,1,1,1,0,0,6,3,0,0,0,0,0,1,0,0,0,0,1,16,0,2,0,0,0,0,5-11,L/L,597254,24197,9215704,http://stats.ncaa.org/players/9215704
+2025,Clarkson,Liberty League,3,14,Chase Fisher,Fr,P,1,0,9.0,1.0,2,1,1,1,0,0,6,3,0,0,0,0,0,1,0,0,0,0,1,16,0,2,0,0,0,0,5-11,L/L,597254,24197,d3d-9215704,http://stats.ncaa.org/players/9215704
 2025,Clarkson,Liberty League,3,32,Nolan Zenkewicz,Fr,P,1,0,27.0,0.1,1,1,1,0,0,0,2,2,0,0,0,1,0,0,0,0,0,0,0,5,1,0,0,0,0,0,6-3,R/R,597254,24197,9215716,http://stats.ncaa.org/players/9215716
 2025,Concordia (TX),SCAC,3,47,G. Gautier,,p,1,0,32.4,1.2,4,6,6,4,1,0,13,9,0,1,0,2,0,0,0,0,0,0,0,50,2,2,0,0,0,1,-,,597176,835,9300159,http://stats.ncaa.org/players/9300159
 2025,Concordia (TX),SCAC,3,29,David Matthews,Sr,P,1,0,9.0,1.0,1,1,1,0,0,0,5,4,1,0,0,0,2,1,0,0,0,0,0,22,3,0,0,0,0,0,-,L/L,597176,835,9300069,http://stats.ncaa.org/players/9300069
@@ -499,7 +499,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Ferrum,ODAC,3,24,Jorge Garcia,Sr,P,3,0,3.86,4.2,2,2,2,3,5,0,21,17,0,0,0,0,0,1,0,0,0,0,0,0,2,7,1,0,0,2,-,,597279,903,d3d-9296362,http://stats.ncaa.org/players/9296362
 2025,Ferrum,ODAC,3,27,Elias Rosario,Jr,P,2,0,0.0,3.1,1,2,0,3,2,0,16,12,0,0,0,0,1,1,0,0,0,0,0,0,1,6,0,0,0,1,-,,597279,903,9296364,http://stats.ncaa.org/players/9296364
 2025,Ferrum,ODAC,3,47,Carter Liverman,Fr,P,1,0,5.4,1.2,2,2,1,0,2,0,9,7,1,0,0,0,3,0,0,0,0,0,2,0,0,3,0,0,0,1,-,,597279,903,9296413,http://stats.ncaa.org/players/9296413
-2025,Ferrum,ODAC,3,49,Kaleb Tischler,So,P,2,0,2.25,4.0,1,5,1,5,5,0,22,17,0,0,0,0,1,0,0,0,0,0,0,0,3,3,0,0,0,2,-,,597279,903,8878677,http://stats.ncaa.org/players/8878677
+2025,Ferrum,ODAC,3,49,Kaleb Tischler,So,P,2,0,2.25,4.0,1,5,1,5,5,0,22,17,0,0,0,0,1,0,0,0,0,0,0,0,3,3,0,0,0,2,-,,597279,903,d3d-8878677,http://stats.ncaa.org/players/8878677
 2025,Ferrum,ODAC,3,54,Wyatt Chaffin,Jr,P,1,0,9.0,1.0,2,1,1,1,0,0,6,5,1,0,0,0,1,0,0,0,0,0,0,0,1,2,0,0,0,0,6-0,R/R,597279,903,d3d-7987442,http://stats.ncaa.org/players/8882981
 2025,Ferrum,ODAC,3,10,Matthew Wright,Jr,P,1,1,16.2,1.2,1,3,3,2,2,0,11,5,1,0,0,0,1,3,0,0,0,0,1,0,2,1,0,1,0,2,-,R/R,597279,903,d3d-7999820,http://stats.ncaa.org/players/8877126
 2025,Ferrum,ODAC,3,11,Slade Keyser,So,P,2,0,6.75,4.0,4,4,3,3,5,0,21,14,0,0,0,2,3,1,0,0,0,1,2,0,3,5,0,1,0,2,-,,597279,903,8885463,http://stats.ncaa.org/players/8885463
@@ -522,7 +522,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Franklin & Marshall,Centennial,3,26,Dan Galef,Sr,P,1,1,3.6,5.0,5,2,2,4,2,0,24,18,1,0,0,0,0,1,0,0,0,1,0,82,4,8,1,0,0,0,5-11,R/R,597282,9683,8889579,http://stats.ncaa.org/players/8889579
 2025,Franklin & Marshall,Centennial,3,28,Bijan Anvar,Sr,P,1,1,0.0,5.0,2,0,0,1,3,0,18,17,0,0,0,0,1,0,0,0,0,0,0,67,8,3,1,0,0,1,6-3,R/R,597282,9683,8882329,http://stats.ncaa.org/players/8882329
 2025,Franklin & Marshall,Centennial,3,22,Dax Bush,So,P,1,0,0.0,0.0,0,2,2,2,0,0,3,0,0,0,0,0,0,1,0,0,0,0,0,13,0,0,0,0,0,0,6-0,R/R,597282,9683,8900819,http://stats.ncaa.org/players/8900819
-2025,Franklin & Marshall,Centennial,3,12,Jack Boesen,Fr,P,1,0,0.0,0.1,0,0,0,1,1,0,3,1,0,0,0,0,0,1,0,0,0,0,0,12,0,0,0,0,0,0,6-0,R/R,597282,9683,9094073,http://stats.ncaa.org/players/9094073
+2025,Franklin & Marshall,Centennial,3,12,Jack Boesen,Fr,P,1,0,0.0,0.1,0,0,0,1,1,0,3,1,0,0,0,0,0,1,0,0,0,0,0,12,0,0,0,0,0,0,6-0,R/R,597282,9683,d3d-9094073,http://stats.ncaa.org/players/9094073
 2025,Franklin & Marshall,Centennial,3,23,Garrett Stowe,Fr,P,1,0,9.0,1.0,1,1,1,1,1,0,6,4,1,0,0,0,0,1,0,0,0,0,0,25,1,1,0,0,0,1,6-1,R/R,597282,9683,9094080,http://stats.ncaa.org/players/9094080
 2025,Franklin & Marshall,Centennial,3,30,Anders Snow,Fr,P,2,0,0.0,2.0,1,0,0,0,1,0,7,6,0,0,0,0,1,0,0,0,0,0,1,29,2,2,0,0,0,0,6-0,R/R,597282,9683,9094082,http://stats.ncaa.org/players/9094082
 2025,Franklin & Marshall,Centennial,3,10,David McGeorge,Fr,P,1,0,5.4,3.1,4,2,2,4,1,0,17,13,2,0,0,0,0,0,0,0,0,0,0,69,6,2,1,0,0,0,6-2,R/R,597282,9683,9094068,http://stats.ncaa.org/players/9094068
@@ -580,9 +580,9 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Grinnell,MWC,3,21,S. Goel,Fr,p,1,0,40.5,0.2,3,3,3,0,1,0,5,5,3,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,-,,597287,23119,9304975,http://stats.ncaa.org/players/9304975
 2025,Grinnell,MWC,3,32,P Shortridge,Fr,p,1,0,0.0,0.0,1,3,3,1,0,0,3,1,1,0,0,0,0,1,0,2,2,0,0,0,0,0,0,0,0,0,-,,597287,23119,9304976,http://stats.ncaa.org/players/9304976
 2025,Grinnell,MWC,3,38,Ajay Griffin,So,P,1,0,0.0,1.2,0,0,0,0,1,0,5,5,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,-,,597287,23119,8887051,http://stats.ncaa.org/players/8887051
-2025,Grinnell,MWC,3,6,Neill Natori,Sr,P,1,0,13.5,2.0,4,3,3,1,0,0,10,9,3,0,0,1,0,0,0,0,0,0,0,0,2,3,0,0,0,0,-,,597287,23119,8888439,http://stats.ncaa.org/players/8888439
+2025,Grinnell,MWC,3,6,Neill Natori,Sr,P,1,0,13.5,2.0,4,3,3,1,0,0,10,9,3,0,0,1,0,0,0,0,0,0,0,0,2,3,0,0,0,0,-,,597287,23119,d3d-7553338,http://stats.ncaa.org/players/8888439
 2025,Grinnell,MWC,3,19,Ian Feld,Sr,P,1,1,6.75,4.0,6,3,3,1,3,0,20,19,1,1,0,1,0,0,0,0,0,0,0,0,1,8,0,0,0,1,-,,597287,23119,8883330,http://stats.ncaa.org/players/8883330
-2025,Grinnell,MWC,3,40,Matthew Nakamoto,Sr,OF,1,0,54.0,0.2,5,4,4,0,2,0,7,7,3,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,1,-,,597287,23119,8901245,http://stats.ncaa.org/players/8901245
+2025,Grinnell,MWC,3,40,Matthew Nakamoto,Sr,OF,1,0,54.0,0.2,5,4,4,0,2,0,7,7,3,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,1,-,,597287,23119,d3d-7553352,http://stats.ncaa.org/players/8901245
 2025,Grove City,PAC,3,20,David Leslie,Sr,P,1,1,0.0,5.0,3,0,0,1,8,0,18,17,0,0,0,0,0,0,0,0,0,0,0,0,2,4,1,0,0,1,6-3,R/R,597288,907,d3d-7820491,http://stats.ncaa.org/players/8886119
 2025,Grove City,PAC,3,13,Sam Bevin,So,3B,1,0,0.0,1.1,1,0,0,0,2,0,5,5,0,0,0,0,0,0,0,2,0,0,0,0,1,1,0,0,0,0,-,R/R,597288,907,8883746,http://stats.ncaa.org/players/8883746
 2025,Grove City,PAC,3,28,Jack Houston,So,P,1,0,13.5,0.2,1,1,1,1,0,0,5,3,1,0,0,0,0,1,0,0,0,0,0,0,0,2,0,0,0,0,-,R/R,597288,907,8898696,http://stats.ncaa.org/players/8898696
@@ -653,7 +653,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Hartford,CNE,3,39,Logan Huzi,Jr,P,1,0,9.0,1.0,1,1,1,1,2,0,5,4,1,0,0,0,0,0,0,0,0,0,0,18,1,0,0,0,0,0,6-3,R/R,596977,839,d3d-9214482,http://stats.ncaa.org/players/9214482
 2025,Hartford,CNE,3,41,Christian Kells,Fr,P,1,0,0.0,2.0,2,4,0,2,3,0,12,8,0,0,0,0,0,1,0,0,0,1,0,42,1,2,0,1,0,1,6-1,L/L,596977,839,9214487,http://stats.ncaa.org/players/9214487
 2025,Hartford,CNE,3,32,Michael Greco,Fr,P,1,0,0.0,1.0,0,0,0,0,3,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,5-11,R/R,596977,839,9214471,http://stats.ncaa.org/players/9214471
-2025,Heidelberg,OAC,3,15,Justin Wilkins,So,,1,0,81.0,0.1,3,3,3,1,0,0,4,3,2,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,-,,597295,901,8876115,http://stats.ncaa.org/players/8876115
+2025,Heidelberg,OAC,3,15,Justin Wilkins,So,,1,0,81.0,0.1,3,3,3,1,0,0,4,3,2,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,-,,597295,901,d3d-8526948,http://stats.ncaa.org/players/8876115
 2025,Heidelberg,OAC,3,1,Corey Brafford,Sr,P,1,1,9.0,5.0,7,5,5,1,5,0,22,20,1,0,0,3,0,1,0,0,0,0,0,88,6,2,0,1,0,2,-,,597295,901,8876130,http://stats.ncaa.org/players/8876130
 2025,Heidelberg,OAC,3,13,Payton Moser,Sr,P,1,0,7.71,2.1,2,2,2,0,2,0,9,9,0,1,0,1,0,0,0,0,0,0,0,21,4,1,0,0,0,1,-,,597295,901,d3d-7582689,http://stats.ncaa.org/players/8879185
 2025,Hendrix,SAA,3,30,Chance Reed,Jr,P,3,0,0.0,2.2,2,0,0,2,2,0,12,9,0,0,0,0,0,0,0,3,3,0,1,23,3,3,0,0,0,0,-,-/R,597113,30169,8889011,http://stats.ncaa.org/players/8889011
@@ -671,8 +671,8 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Hendrix,SAA,3,29,Kyle Taylor,Fr,P,1,0,0.0,0.0,1,0,0,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,-,,597113,30169,9105376,http://stats.ncaa.org/players/9105376
 2025,Hendrix,SAA,3,40,Rowan Glover,Fr,P,2,0,6.0,3.0,4,2,2,3,3,0,16,12,0,0,0,0,0,1,0,0,0,0,0,70,3,2,0,0,0,1,-,,597113,30169,9105382,http://stats.ncaa.org/players/9105382
 2025,Hendrix,SAA,3,34,Conner Bryson,Jr,P,1,0,135.0,0.1,3,5,5,2,1,0,7,4,0,0,0,1,0,1,0,0,0,0,0,29,0,0,0,1,0,1,-,,597113,30169,9105380,http://stats.ncaa.org/players/9105380
-2025,Hood,MAC Commonwealth,3,32,Mason Salisbury,Jr,P,2,0,9.64,4.2,6,7,5,1,3,0,26,22,0,0,0,0,1,3,0,0,0,0,0,106,6,5,1,0,0,1,6-0,R/R,597148,28744,8899037,http://stats.ncaa.org/players/8899037
-2025,Hood,MAC Commonwealth,3,9,Mason Sawyers,So,UT,2,0,2.35,7.2,3,2,2,8,3,0,36,24,1,0,0,0,1,2,0,0,0,2,0,148,11,9,0,0,1,2,5-11,R/R,597148,28744,9299941,http://stats.ncaa.org/players/9299941
+2025,Hood,MAC Commonwealth,3,32,Mason Salisbury,Jr,P,2,0,9.64,4.2,6,7,5,1,3,0,26,22,0,0,0,0,1,3,0,0,0,0,0,106,6,5,1,0,0,1,6-0,R/R,597148,28744,d3d-8001125,http://stats.ncaa.org/players/8899037
+2025,Hood,MAC Commonwealth,3,9,Mason Sawyers,So,UT,2,0,2.35,7.2,3,2,2,8,3,0,36,24,1,0,0,0,1,2,0,0,0,2,0,148,11,9,0,0,1,2,5-11,R/R,597148,28744,d3d-8001130,http://stats.ncaa.org/players/9299941
 2025,Hood,MAC Commonwealth,3,3,Tyler Knill,Fr,P,1,0,0.0,1.0,5,5,0,1,0,0,10,9,2,0,0,0,0,0,0,0,0,0,0,28,2,1,0,0,0,0,5-7,L/L,597148,28744,9298397,http://stats.ncaa.org/players/9298397
 2025,Hood,MAC Commonwealth,3,38,Michael Ashton,Fr,P,1,0,0.0,2.0,1,2,0,1,0,0,9,7,0,0,0,0,0,1,0,0,0,0,0,0,3,3,0,0,0,0,5-11,R/R,597148,28744,9298419,http://stats.ncaa.org/players/9298419
 2025,Hood,MAC Commonwealth,3,42,Mason Potter,Fr,INF,1,0,0.0,0.1,0,2,0,1,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,15,1,0,0,0,0,0,6-4,R/R,597148,28744,9298421,http://stats.ncaa.org/players/9298421
@@ -804,7 +804,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Lancaster Bible,United East,3,7,Logan Kline,Sr,P,1,0,0.0,1.1,1,0,0,1,2,0,6,5,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,-,,597198,30071,d3d-7550503,http://stats.ncaa.org/players/8878803
 2025,Lancaster Bible,United East,3,36,Owen Shimmel,Sr,P,1,1,43.2,1.2,7,8,8,3,1,0,16,13,2,0,0,1,1,0,0,0,0,0,0,0,3,1,0,1,0,1,-,,597198,30071,8889325,http://stats.ncaa.org/players/8889325
 2025,Lancaster Bible,United East,3,10,Bronson Coburn,So,P,1,0,18.0,1.0,6,9,2,3,1,0,13,10,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,-,,597198,30071,8877132,http://stats.ncaa.org/players/8877132
-2025,Lancaster Bible,United East,3,25,Jacob Stolte,Sr,P,1,0,18.0,2.0,6,5,4,1,1,0,12,11,1,0,0,0,1,0,0,0,0,0,0,0,0,4,0,0,0,0,-,,597198,30071,8879130,http://stats.ncaa.org/players/8879130
+2025,Lancaster Bible,United East,3,25,Jacob Stolte,Sr,P,1,0,18.0,2.0,6,5,4,1,1,0,12,11,1,0,0,0,1,0,0,0,0,0,0,0,0,4,0,0,0,0,-,,597198,30071,d3d-7550527,http://stats.ncaa.org/players/8879130
 2025,Lancaster Bible,United East,3,20,Noah Robinette,So,P,1,0,0.0,2.0,2,0,0,1,4,0,9,8,1,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,2,6-2,R/R,597198,30071,9101932,http://stats.ncaa.org/players/9101932
 2025,Lancaster Bible,United East,3,17,Paulie Brosious,Jr,P,1,0,0.0,1.0,1,1,0,2,1,0,7,4,0,0,0,0,1,1,0,0,0,0,0,0,2,0,1,0,0,0,6-3,R/R,597198,30071,9101929,http://stats.ncaa.org/players/9101929
 2025,LeTourneau,ASC,3,23,Kevin Wright,Sr,P,2,0,13.5,1.1,1,2,2,3,1,0,8,5,1,0,0,0,0,0,0,4,2,0,0,26,2,0,0,0,0,0,6-0,R/R,597150,14825,9302929,http://stats.ncaa.org/players/9302929
@@ -855,7 +855,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Luther,American Rivers,3,46,CJ Boudreaux,Sr,P,1,0,0.0,3.0,2,0,0,0,2,0,11,11,0,0,0,0,0,0,0,0,0,0,0,0,4,3,0,0,0,0,6-1,R/R,597319,864,d3d-7821436,http://stats.ncaa.org/players/8886231
 2025,Luther,American Rivers,3,34,Josh Stratton,Jr,P,1,0,12.0,3.0,4,4,4,0,3,0,13,13,0,0,0,2,0,0,0,0,0,0,0,44,2,4,0,1,0,1,6-0,L/L,597319,864,8889531,http://stats.ncaa.org/players/8889531
 2025,Luther,American Rivers,3,24,Brody Von Berge,Jr,P,1,1,18.0,2.0,4,4,4,2,2,0,15,9,2,0,0,0,1,4,1,0,0,0,0,57,2,1,0,1,0,0,6-2,R/R,597319,864,9108362,http://stats.ncaa.org/players/9108362
-2025,Luther,American Rivers,3,45,Blake Jondle,Sr,P,1,0,7.71,2.1,6,4,2,1,1,0,15,12,2,0,0,0,1,1,0,0,0,1,0,39,4,2,0,1,0,1,5-11,L/L,597319,864,9108157,http://stats.ncaa.org/players/9108157
+2025,Luther,American Rivers,3,45,Blake Jondle,Sr,P,1,0,7.71,2.1,6,4,2,1,1,0,15,12,2,0,0,0,1,1,0,0,0,1,0,39,4,2,0,1,0,1,5-11,L/L,597319,864,d3d-7821419,http://stats.ncaa.org/players/9108157
 2025,Luther,American Rivers,3,14,Zach Gwost,Jr,INF,1,0,27.0,0.2,2,3,2,0,1,0,5,3,2,0,0,0,0,0,0,0,0,1,1,15,0,1,0,0,0,0,6-3,L/R,597319,864,d3d-9108354,http://stats.ncaa.org/players/9108354
 2025,Luther,American Rivers,3,5,Kaleb Thiesse,Sr,P,1,1,0.0,5.2,2,1,0,1,3,0,20,19,0,0,0,0,1,0,0,0,0,0,0,63,4,9,0,0,0,0,6-1,R/R,597319,864,9108155,http://stats.ncaa.org/players/9108155
 2025,Luther,American Rivers,3,13,Nolan Klocke,Jr,P,1,1,108.0,0.1,2,4,4,3,0,0,6,2,0,0,0,0,0,0,0,0,0,0,1,25,0,1,0,0,0,0,5-11,R/R,597319,864,9108158,http://stats.ncaa.org/players/9108158
@@ -915,7 +915,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Manchester,HCAC,3,20,Jackson Todor,Jr,INF,1,0,0.0,0.0,1,4,3,2,0,0,4,1,0,0,3,0,0,0,0,0,0,1,0,16,0,0,0,1,0,0,5-10,R/R,597121,9174,d3d-8009976,http://stats.ncaa.org/players/8895269
 2025,Manchester,HCAC,3,4,Arturo Casas,Sr,P,1,0,0.0,3.0,1,0,0,0,2,0,10,10,0,0,0,0,0,0,0,0,0,0,0,40,1,6,0,0,1,0,5-10,L/L,597121,9174,d3d-7583147,http://stats.ncaa.org/players/8900937
 2025,Marietta,OAC,3,55,Reece Rupert,Fr,p,1,0,0.0,1.0,3,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,-,,597324,901,9304922,http://stats.ncaa.org/players/9304922
-2025,Marietta,OAC,3,5,Jared Bees,Jr,P,1,0,13.5,1.1,1,2,2,1,1,0,7,4,0,0,0,0,1,2,0,0,0,0,0,0,2,0,0,1,0,0,5-8,R/R,597324,901,8877849,http://stats.ncaa.org/players/8877849
+2025,Marietta,OAC,3,5,Jared Bees,Jr,P,1,0,13.5,1.1,1,2,2,1,1,0,7,4,0,0,0,0,1,2,0,0,0,0,0,0,2,0,0,1,0,0,5-8,R/R,597324,901,d3d-8013048,http://stats.ncaa.org/players/8877849
 2025,Marietta,OAC,3,75,UNKNOWN Ziance,So,p,1,1,10.13,2.2,4,8,3,5,3,0,20,13,1,0,0,0,1,2,0,0,0,0,0,0,4,2,0,1,0,0,-,,597324,901,8882076,http://stats.ncaa.org/players/8882076
 2025,Marietta,OAC,3,23,Zach Marzetz,Sr,P,1,1,3.18,5.2,7,2,2,1,3,0,24,22,0,0,0,1,0,1,0,0,0,0,0,0,6,6,0,0,0,1,6-2,R/R,597324,901,8881579,http://stats.ncaa.org/players/8881579
 2025,Marietta,OAC,3,9,Jacob Rocky,Sr,P,1,1,0.0,7.0,5,0,0,2,4,0,28,25,1,0,0,0,0,1,0,0,0,0,0,92,7,9,1,0,0,2,6-0,L/L,597324,901,d3d-7571184,http://stats.ncaa.org/players/8877526
@@ -1024,7 +1024,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Merchant Marine,Skyline,3,28,Michael Monkevich,Sr,P,1,0,6.0,3.0,4,2,2,0,2,0,11,10,1,1,0,0,0,0,0,0,0,0,1,0,1,4,0,0,0,0,6-4,R/R,597052,13054,d3d-7587217,http://stats.ncaa.org/players/8877646
 2025,Merchant Marine,Skyline,3,13,Jacob Syversen,Sr,P,1,0,2.08,4.1,6,1,1,4,6,0,22,18,0,0,0,0,0,0,0,3,3,0,0,0,3,3,1,0,0,1,6-2,R/R,597052,13054,8875993,http://stats.ncaa.org/players/8875993
 2025,Merchant Marine,Skyline,3,4,David Cherwonuk,So,P,1,1,7.36,3.2,3,4,3,2,4,0,19,15,1,0,0,0,0,2,0,0,0,0,0,0,2,5,0,0,0,1,6-1,R/L,597052,13054,8886351,http://stats.ncaa.org/players/8886351
-2025,Merchant Marine,Skyline,3,9,Ryan Felton,Jr,P,1,1,12.0,3.0,3,4,4,2,3,0,14,12,1,0,0,1,0,0,0,0,0,0,0,0,6,0,0,1,0,1,6-4,R/R,597052,13054,8895128,http://stats.ncaa.org/players/8895128
+2025,Merchant Marine,Skyline,3,9,Ryan Felton,Jr,P,1,1,12.0,3.0,3,4,4,2,3,0,14,12,1,0,0,1,0,0,0,0,0,0,0,0,6,0,0,1,0,1,6-4,R/R,597052,13054,d3d-8009257,http://stats.ncaa.org/players/8895128
 2025,Messiah,MAC Commonwealth,3,34,Jason Long,So,P,2,2,12.15,6.2,11,9,9,6,6,0,38,30,2,0,0,0,2,2,0,0,0,0,0,154,7,6,0,1,0,2,-,,597332,28744,8878791,http://stats.ncaa.org/players/8878791
 2025,Messiah,MAC Commonwealth,3,25,Drew Dellinger,Sr,P,2,0,0.0,3.1,2,0,0,1,0,0,13,12,0,0,1,0,0,0,0,0,0,0,0,43,7,3,0,0,0,0,-,,597332,28744,d3d-7574238,http://stats.ncaa.org/players/8887038
 2025,Messiah,MAC Commonwealth,3,24,Noah Barrall,Sr,P,2,0,32.4,1.2,4,6,6,3,1,0,11,6,0,0,0,0,1,0,0,2,1,1,1,42,2,1,0,1,0,0,-,,597332,28744,8883187,http://stats.ncaa.org/players/8883187
@@ -1045,8 +1045,8 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Methodist,USA South,3,28,Josh Plisko,Sr,P,3,0,10.38,4.1,9,5,5,3,4,0,24,19,1,1,0,1,1,0,0,0,0,0,2,79,5,3,0,0,0,2,6-0,R/R,597333,842,8876479,http://stats.ncaa.org/players/8876479
 2025,Methodist,USA South,3,20,Tanner Simpson,Sr,P,1,0,0.0,1.0,0,0,0,0,1,0,3,3,0,0,0,0,0,0,0,0,0,0,0,10,0,2,0,0,0,1,5-10,R/R,597333,842,d3d-8006936,http://stats.ncaa.org/players/8893841
 2025,Methodist,USA South,3,4,Jackson Kuhn,Jr,C,1,0,18.0,1.0,3,2,2,0,0,0,6,5,0,0,0,1,1,1,0,0,0,0,0,24,1,1,0,0,0,0,6-2,R/R,597333,842,d3d-8006959,http://stats.ncaa.org/players/8898677
-2025,Methodist,USA South,3,29,Kyle Molivas,Jr,P,3,3,6.23,13.0,13,10,9,7,8,0,64,54,3,0,0,1,1,2,0,0,0,1,0,257,20,11,1,1,0,0,6-1,R/R,597333,842,8897323,http://stats.ncaa.org/players/8897323
-2025,Methodist,USA South,3,37,Andrew Baur,Sr,P,3,0,8.1,6.2,8,7,6,4,5,0,35,27,1,0,0,1,0,4,0,0,0,0,0,132,3,11,0,1,1,1,5-11,B/R,597333,842,8890804,http://stats.ncaa.org/players/8890804
+2025,Methodist,USA South,3,29,Kyle Molivas,Jr,P,3,3,6.23,13.0,13,10,9,7,8,0,64,54,3,0,0,1,1,2,0,0,0,1,0,257,20,11,1,1,0,0,6-1,R/R,597333,842,d3d-7574147,http://stats.ncaa.org/players/8897323
+2025,Methodist,USA South,3,37,Andrew Baur,Sr,P,3,0,8.1,6.2,8,7,6,4,5,0,35,27,1,0,0,1,0,4,0,0,0,0,0,132,3,11,0,1,1,1,5-11,B/R,597333,842,d3d-7574143,http://stats.ncaa.org/players/8890804
 2025,Methodist,USA South,3,9,Presley Patterson,So,P,3,3,3.65,12.1,9,5,5,7,10,0,55,46,2,0,0,2,1,2,0,0,0,0,0,209,14,13,1,0,0,3,6-2,R/R,597333,842,8891658,http://stats.ncaa.org/players/8891658
 2025,Methodist,USA South,3,25,Ian Swanson,Fr,P,3,2,0.0,14.0,7,0,0,5,18,0,54,48,1,0,0,0,2,1,0,0,0,0,0,224,10,12,1,0,0,3,6-2,R/R,597333,842,9216329,http://stats.ncaa.org/players/9216329
 2025,Methodist,USA South,3,36,Andrew Bubon,Jr,P,3,0,6.75,2.2,4,2,2,2,5,0,14,12,2,1,0,0,0,0,0,0,0,0,0,32,2,1,0,1,0,3,6-0,R/R,597333,842,9216331,http://stats.ncaa.org/players/9216331
@@ -1078,7 +1078,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Misericordia,MAC Freedom,3,12,Dante Viola,Sr,P,2,0,36.0,1.0,7,4,4,0,1,0,10,10,0,0,0,0,0,0,0,0,0,0,0,10,1,1,0,0,0,1,6-1,L/L,597164,28745,d3d-7572910,http://stats.ncaa.org/players/8876567
 2025,Misericordia,MAC Freedom,3,28,Bryan Henry,So,P,2,1,4.7,7.2,10,4,4,2,11,0,35,32,2,0,1,0,2,0,0,0,0,1,0,44,8,4,1,1,0,3,6-7,R/R,597164,28745,d3d-8429272,http://stats.ncaa.org/players/8892460
 2025,Misericordia,MAC Freedom,3,6,Max Oliver,Sr,P,2,2,4.5,10.0,9,5,5,5,6,0,44,36,2,0,0,0,0,0,0,0,0,2,1,172,10,13,1,1,0,2,5-10,L/L,597164,28745,8894262,http://stats.ncaa.org/players/8894262
-2025,Misericordia,MAC Freedom,3,11,Max Kneidinger,So,P,2,0,0.0,2.1,2,0,0,0,3,0,9,9,0,0,0,0,0,0,0,0,0,0,0,16,2,2,0,0,0,0,5-10,R/R,597164,28745,8901272,http://stats.ncaa.org/players/8901272
+2025,Misericordia,MAC Freedom,3,11,Max Kneidinger,So,P,2,0,0.0,2.1,2,0,0,0,3,0,9,9,0,0,0,0,0,0,0,0,0,0,0,16,2,2,0,0,0,0,5-10,R/R,597164,28745,d3d-8429285,http://stats.ncaa.org/players/8901272
 2025,Mitchell,Great Northeast,3,21,Eddie Kaftan,Sr,P,1,1,3.0,6.0,7,3,2,2,7,0,26,23,1,0,0,0,0,0,0,0,0,1,0,91,9,1,0,1,0,2,6-0,R/R,597189,23257,d3d-7126445,http://stats.ncaa.org/players/9303930
 2025,Mitchell,Great Northeast,3,31,Joshua Scamman,So,P,1,0,13.5,0.2,2,1,1,1,1,0,6,4,0,0,0,0,0,1,0,0,0,0,0,19,0,1,0,0,0,1,6-2,R/L,597189,23257,8877669,http://stats.ncaa.org/players/8877669
 2025,Mitchell,Great Northeast,3,18,Chris Gibbs,Sr,P,1,1,6.75,5.1,6,4,4,2,6,0,23,21,0,1,0,1,0,0,0,0,0,0,0,84,7,2,0,1,0,3,6-1,R/R,597189,23257,8887550,http://stats.ncaa.org/players/8887550
@@ -1120,7 +1120,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Mount Union,OAC,3,36,Chase Mayer,So,P,1,0,7.71,2.1,6,4,2,1,3,0,14,12,2,0,0,0,0,1,0,0,0,0,0,56,2,0,0,1,0,0,-,,597355,901,8875004,http://stats.ncaa.org/players/8875004
 2025,Mount Union,OAC,3,58,Chris Phillips,Sr,P,1,0,18.0,2.0,5,4,4,1,3,0,12,10,1,2,0,1,0,0,0,0,0,0,1,54,1,2,0,0,0,1,-,,597355,901,8881419,http://stats.ncaa.org/players/8881419
 2025,Mount Union,OAC,3,23,Zach Breeden,Sr,P,1,1,1.29,7.0,4,1,1,3,8,0,28,24,0,1,1,0,1,0,0,0,0,0,1,95,9,4,1,0,0,6,-,,597355,901,8891045,http://stats.ncaa.org/players/8891045
-2025,Mount Union,OAC,3,47,Ty Dennison,So,P,1,0,3.6,5.0,6,2,2,1,3,0,21,20,1,0,0,0,0,0,0,0,0,0,0,75,9,1,1,0,0,0,-,,597355,901,8891906,http://stats.ncaa.org/players/8891906
+2025,Mount Union,OAC,3,47,Ty Dennison,So,P,1,0,3.6,5.0,6,2,2,1,3,0,21,20,1,0,0,0,0,0,0,0,0,0,0,75,9,1,1,0,0,0,-,,597355,901,d3d-8592780,http://stats.ncaa.org/players/8891906
 2025,Mount Union,OAC,3,5,Ryan Romito,So,3b,1,0,16.2,1.2,2,3,3,2,1,0,9,7,0,0,0,1,0,0,0,0,0,0,0,36,1,3,0,0,0,0,-,,597355,901,8900774,http://stats.ncaa.org/players/8900774
 2025,Mt. St. Joseph,HCAC,3,49,Nolan Miller,So,P,1,0,0.0,4.1,1,0,0,3,7,0,17,14,1,0,0,0,0,0,0,0,0,0,0,71,5,1,1,0,0,4,5-10,,597152,9174,8880733,http://stats.ncaa.org/players/8880733
 2025,Mt. St. Joseph,HCAC,3,7,Kaiden Morris,Sr,P,1,0,0.0,2.0,1,0,0,2,0,0,8,6,0,0,0,0,0,0,0,0,0,0,0,31,0,5,0,0,0,0,6-3,,597152,9174,8875712,http://stats.ncaa.org/players/8875712
@@ -1235,7 +1235,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Oglethorpe,SAA,3,50,Hayden Partian,Fr,P,2,1,16.2,3.1,5,6,6,4,4,0,19,15,0,0,0,0,0,0,0,1,0,0,0,93,4,2,1,0,0,1,-,L/L,597142,30169,9040584,http://stats.ncaa.org/players/9040584
 2025,Oglethorpe,SAA,3,52,Alex Kerr,Jr,P,2,0,4.5,2.0,3,1,1,2,1,0,10,8,1,0,0,0,1,0,0,6,3,0,0,41,3,1,0,0,0,0,-,R/R,597142,30169,9040586,http://stats.ncaa.org/players/9040586
 2025,Oglethorpe,SAA,3,24,Konner Burrell,Fr,P,2,0,36.0,1.0,2,4,4,2,1,0,7,4,0,0,0,0,0,0,0,5,0,1,0,25,2,0,0,0,0,0,-,R/R,597142,30169,9040577,http://stats.ncaa.org/players/9040577
-2025,Oglethorpe,SAA,3,8,Grant Guinther,Sr,P,1,0,0.0,0.0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,2,1,0,0,8,0,0,0,0,0,0,-,R/R,597142,30169,9049047,http://stats.ncaa.org/players/9049047
+2025,Oglethorpe,SAA,3,8,Grant Guinther,Sr,P,1,0,0.0,0.0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,2,1,0,0,8,0,0,0,0,0,0,-,R/R,597142,30169,d3d-7100704,http://stats.ncaa.org/players/9049047
 2025,Oglethorpe,SAA,3,51,Cian Khajavi,Fr,P,1,0,18.0,1.0,3,4,2,2,1,0,10,7,1,0,0,0,1,1,0,3,3,0,0,45,1,1,0,0,0,0,-,R/R,597142,30169,9049078,http://stats.ncaa.org/players/9049078
 2025,Oglethorpe,SAA,3,11,Colin Stewart,Sr,P,1,0,4.5,2.0,3,1,1,0,2,0,9,8,1,0,0,0,0,1,0,0,0,0,0,26,2,1,0,0,0,2,-,R/R,597142,30169,9049050,http://stats.ncaa.org/players/9049050
 2025,Olivet,Michigan Intercol. Ath. Assn.,3,29,Jacob Wadsworth,Fr,P,1,1,9.64,4.2,7,5,5,2,5,0,25,21,0,1,0,1,0,2,0,0,0,0,0,105,1,8,0,1,0,0,6-0,L/L,596995,873,9279860,http://stats.ncaa.org/players/9279860
@@ -1266,11 +1266,11 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Ozarks (AR),SCAC,3,38,Kielton Siedlik,Jr,P,1,0,0.0,0.2,2,0,0,1,1,0,5,3,1,0,0,0,0,0,0,0,0,1,0,19,1,0,0,0,0,1,5-10,R/R,597172,835,9104955,http://stats.ncaa.org/players/9104955
 2025,Pacific (OR),NWC,3,18,Trevor Kazahaya,So,P,1,0,19.29,2.1,8,5,5,1,2,0,16,14,2,0,0,0,0,1,0,0,0,0,0,40,3,1,0,0,0,1,-,,597144,25300,8886822,http://stats.ncaa.org/players/8886822
 2025,Pacific (OR),NWC,3,36,Trent Nagamine,So,P,1,0,7.71,2.1,4,2,2,3,2,0,14,11,0,0,0,0,0,0,0,0,0,0,0,54,3,2,0,0,0,2,-,,597144,25300,d3d-8453226,http://stats.ncaa.org/players/8882930
-2025,Pacific (OR),NWC,3,20,Matthew Palmateer,Jr,P,1,0,0.0,2.2,1,0,0,0,3,0,9,9,0,0,0,0,0,0,0,0,0,0,0,30,1,4,0,0,0,2,-,,597144,25300,8873941,http://stats.ncaa.org/players/8873941
+2025,Pacific (OR),NWC,3,20,Matthew Palmateer,Jr,P,1,0,0.0,2.2,1,0,0,0,3,0,9,9,0,0,0,0,0,0,0,0,0,0,0,30,1,4,0,0,0,2,-,,597144,25300,d3d-7990931,http://stats.ncaa.org/players/8873941
 2025,Pacific (OR),NWC,3,2,Vincent Lagatta,Sr,P,1,1,18.0,3.0,7,6,6,3,2,0,18,13,1,0,0,0,0,0,0,0,0,1,1,70,2,4,0,1,0,1,-,,597144,25300,8881966,http://stats.ncaa.org/players/8881966
 2025,Pacific (OR),NWC,3,21,Cayden Okada,Sr,P,1,0,54.0,0.1,3,2,2,0,0,0,4,4,1,0,0,0,0,0,0,0,0,0,0,26,1,0,0,0,0,0,-,,597144,25300,8884506,http://stats.ncaa.org/players/8884506
 2025,Pacific (OR),NWC,3,25,Governor Aufranc,Jr,P,1,1,1.42,6.1,3,1,1,5,5,0,28,21,1,0,0,0,0,0,0,0,0,2,0,93,9,5,0,1,0,0,-,,597144,25300,8885500,http://stats.ncaa.org/players/8885500
-2025,Pacific (OR),NWC,3,52,Dax Smith,Sr,P,1,0,0.0,0.1,1,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,3,1,0,0,0,0,0,-,,597144,25300,8876422,http://stats.ncaa.org/players/8876422
+2025,Pacific (OR),NWC,3,52,Dax Smith,Sr,P,1,0,0.0,0.1,1,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,3,1,0,0,0,0,0,-,,597144,25300,d3d-8453260,http://stats.ncaa.org/players/8876422
 2025,Pacific (OR),NWC,3,9,William Merriott,Sr,P,1,0,0.0,1.2,1,0,0,0,0,0,7,7,0,0,0,0,0,0,0,0,0,0,0,25,5,0,0,0,0,0,-,,597144,25300,8889913,http://stats.ncaa.org/players/8889913
 2025,Pacific (OR),NWC,3,13,Isaiah Hirsh,So,P,1,0,27.0,1.2,3,5,5,1,3,0,12,8,1,1,0,0,0,3,0,0,0,0,0,49,1,1,0,0,0,0,-,,597144,25300,d3d-8453180,http://stats.ncaa.org/players/8897545
 2025,Pacific (OR),NWC,3,4,Davis Koester,Sr,P,1,0,0.0,0.2,0,0,0,1,1,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,-,,597144,25300,9113395,http://stats.ncaa.org/players/9113395
@@ -1337,7 +1337,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Penn St.-Berks,United East,3,30,Amanjeet Turka,Fr,,1,0,0.0,1.0,0,0,0,0,2,0,3,3,0,0,0,0,0,0,0,0,0,0,0,11,1,0,0,0,1,2,-,,597190,30071,9105266,http://stats.ncaa.org/players/9105266
 2025,Pfeiffer,USA South,3,10,J. Eason,,3b,1,0,27.0,0.1,2,1,1,1,1,0,4,3,0,0,0,0,0,0,0,0,0,0,0,21,0,0,0,0,0,0,-,,597351,842,9299687,http://stats.ncaa.org/players/9299687
 2025,Pfeiffer,USA South,3,6,L. Barrett,,dh,1,0,4.5,4.0,5,2,2,4,4,0,21,16,2,0,0,0,1,1,0,0,0,0,0,76,5,2,0,0,0,1,-,,597351,842,9299686,http://stats.ncaa.org/players/9299686
-2025,Pfeiffer,USA South,3,11,Thad Lewis,Sr,P,2,2,7.0,9.0,9,9,7,8,10,0,44,34,2,0,0,0,2,2,0,0,0,0,0,156,10,4,0,1,0,3,5-0,R/R,597351,842,9299682,http://stats.ncaa.org/players/9299682
+2025,Pfeiffer,USA South,3,11,Thad Lewis,Sr,P,2,2,7.0,9.0,9,9,7,8,10,0,44,34,2,0,0,0,2,2,0,0,0,0,0,156,10,4,0,1,0,3,5-0,R/R,597351,842,d3d-7125621,http://stats.ncaa.org/players/9299682
 2025,Pfeiffer,USA South,3,42,A. Bruss,,p,1,0,135.0,0.1,1,5,5,1,0,0,6,2,0,0,0,0,0,3,0,0,0,0,0,24,0,1,0,0,0,0,-,,597351,842,9300072,http://stats.ncaa.org/players/9300072
 2025,Pfeiffer,USA South,3,48,Josh Little,So,P,2,0,27.0,2.0,9,8,6,2,0,0,19,13,3,0,0,0,0,2,2,2,2,1,1,61,5,1,0,1,0,0,-,,597351,842,d3d-7554956,http://stats.ncaa.org/players/9299684
 2025,Pfeiffer,USA South,3,23,JD Basinger,Fr,P,1,1,9.0,3.0,3,7,3,4,3,0,19,14,2,0,0,0,3,1,0,0,0,0,0,95,3,2,0,1,0,2,5-10,R/R,597351,842,d3d-7833687,http://stats.ncaa.org/players/9300071
@@ -1386,7 +1386,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Puget Sound,NWC,3,6,Mason Seay,So,P,1,0,2.45,3.2,3,1,1,0,1,0,14,12,0,0,0,1,0,2,0,0,0,0,0,64,2,6,1,0,0,0,-,,597005,25300,8877896,http://stats.ncaa.org/players/8877896
 2025,Puget Sound,NWC,3,2,Preston Crockett,So,OF,1,1,3.0,3.0,2,1,1,1,3,0,12,9,0,0,0,0,1,1,0,0,0,1,0,54,3,2,0,0,0,0,-,,597005,25300,d3d-8398561,http://stats.ncaa.org/players/8875117
 2025,Puget Sound,NWC,3,11,Brett Harvey,Sr,P,2,2,4.82,9.1,14,5,5,4,6,0,46,37,0,0,1,1,0,1,0,0,0,4,0,63,7,13,0,1,0,2,-,,597005,25300,8888212,http://stats.ncaa.org/players/8888212
-2025,Puget Sound,NWC,3,15,Cooper Allen,Jr,INF,1,0,0.0,0.1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,19,0,1,0,0,0,0,-,,597005,25300,8887275,http://stats.ncaa.org/players/8887275
+2025,Puget Sound,NWC,3,15,Cooper Allen,Jr,INF,1,0,0.0,0.1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,19,0,1,0,0,0,0,-,,597005,25300,d3d-7985668,http://stats.ncaa.org/players/8887275
 2025,Puget Sound,NWC,3,34,Charlie Decker,So,P,2,2,2.25,12.0,7,3,3,3,12,0,44,40,1,0,0,1,0,0,0,0,0,0,1,76,10,11,2,0,0,4,-,,597005,25300,8886256,http://stats.ncaa.org/players/8886256
 2025,Puget Sound,NWC,3,41,Mitchell Holliday,So,P,2,0,0.0,2.0,2,0,0,1,0,0,10,9,0,0,0,0,0,0,0,0,0,0,0,23,2,3,1,0,1,0,-,,597005,25300,8885368,http://stats.ncaa.org/players/8885368
 2025,Puget Sound,NWC,3,18,Tucker Berg,Sr,INF,1,0,0.0,1.1,0,0,0,1,2,0,7,5,0,0,0,0,0,1,0,0,0,0,0,29,0,2,0,0,0,0,-,,597005,25300,d3d-7556268,http://stats.ncaa.org/players/8887380
@@ -1408,7 +1408,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Randolph-Macon,ODAC,3,37,Michael Shanahan,Sr,P,1,0,2.45,3.2,2,1,1,0,0,0,13,12,1,0,0,0,0,0,0,0,0,0,1,41,2,8,0,0,1,0,6-0,R/R,597007,903,8879713,http://stats.ncaa.org/players/8879713
 2025,Randolph-Macon,ODAC,3,14,William Wian,Jr,P,1,1,9.82,3.2,5,4,4,1,3,0,18,17,0,1,0,1,0,0,0,0,0,0,0,77,6,2,0,0,0,0,6-3,R/R,597007,903,8889524,http://stats.ncaa.org/players/8889524
 2025,Randolph-Macon,ODAC,3,13,Bere Bauers,Sr,P,1,1,0.0,7.0,5,1,0,0,12,0,28,28,1,0,0,0,0,0,0,0,0,0,0,92,4,5,0,1,0,3,5-10,R/R,597007,903,8880601,http://stats.ncaa.org/players/8880601
-2025,Randolph-Macon,ODAC,3,10,Colin Casey,Jr,P,1,0,20.25,1.1,2,3,3,2,3,0,9,6,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,2,6-2,L/L,597007,903,8892469,http://stats.ncaa.org/players/8892469
+2025,Randolph-Macon,ODAC,3,10,Colin Casey,Jr,P,1,0,20.25,1.1,2,3,3,2,3,0,9,6,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,2,6-2,L/L,597007,903,d3d-8010719,http://stats.ncaa.org/players/8892469
 2025,Randolph-Macon,ODAC,3,3,Sam Slevin,Sr,P,1,0,0.0,1.0,0,0,0,1,1,0,4,3,0,0,0,0,0,0,0,0,0,0,0,16,2,0,0,0,1,1,5-10,R/R,597007,903,8895975,http://stats.ncaa.org/players/8895975
 2025,Randolph-Macon,ODAC,3,30,Gavin Tomlin,Sr,P,1,1,0.0,4.0,1,0,0,0,7,0,13,13,0,0,0,0,0,0,0,0,0,0,0,100,3,2,1,0,0,4,5-11,R/R,597007,903,8891238,http://stats.ncaa.org/players/8891238
 2025,Redlands,SCIAC,3,11,Kaiya Saito,Sr,C,1,0,9.0,1.0,1,1,1,1,2,0,5,4,0,0,0,0,0,0,0,0,0,0,0,19,1,0,0,0,0,1,5-10,R/R,597008,910,8881837,http://stats.ncaa.org/players/8881837
@@ -1467,7 +1467,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Rosemont,United East,3,23,Jack Lally,Jr,P,1,1,4.5,4.0,3,2,2,2,6,0,18,15,1,0,0,0,0,1,0,0,0,0,0,57,5,1,1,0,0,2,-,,597347,30071,8900518,http://stats.ncaa.org/players/8900518
 2025,Rutgers-Camden,NJAC,3,17,Ethan Carpenter,Sr,P,1,1,3.18,5.2,6,2,2,0,8,0,23,23,1,0,0,0,0,0,0,0,0,0,0,0,6,3,1,0,0,2,5-8,R/R,597019,891,d3d-7581461,http://stats.ncaa.org/players/9216566
 2025,Rutgers-Camden,NJAC,3,32,Daniel Robeson,Sr,P,1,0,5.4,3.1,3,2,2,1,6,0,13,12,0,0,0,1,1,0,0,0,0,0,0,0,1,2,0,0,1,3,5-9,R/L,597019,891,8902630,http://stats.ncaa.org/players/8902630
-2025,Rutgers-Camden,NJAC,3,26,Chase Cooper,Sr,P,1,1,3.6,5.0,7,2,2,1,4,0,22,20,1,1,0,0,0,0,0,0,0,0,1,0,5,5,0,0,0,2,5-11,L/L,597019,891,9216567,http://stats.ncaa.org/players/9216567
+2025,Rutgers-Camden,NJAC,3,26,Chase Cooper,Sr,P,1,1,3.6,5.0,7,2,2,1,4,0,22,20,1,1,0,0,0,0,0,0,0,0,1,0,5,5,0,0,0,2,5-11,L/L,597019,891,d3d-7130543,http://stats.ncaa.org/players/9216567
 2025,Rutgers-Camden,NJAC,3,43,Jacob Shapley,Sr,P,1,0,9.0,4.0,6,4,4,2,4,0,21,16,2,1,0,0,0,2,0,0,0,0,1,0,3,4,1,0,0,2,6-6,R/R,597019,891,9216603,http://stats.ncaa.org/players/9216603
 2025,SUNY Brockport,Empire 8,3,29,Camden Schaffer,Fr,P,1,0,0.0,0.2,1,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,10,1,0,0,0,0,0,6-0,R/R,597233,863,9302831,http://stats.ncaa.org/players/9302831
 2025,SUNY Brockport,Empire 8,3,11,Nick Ianniello,So,3B,1,0,0.0,2.0,1,0,0,1,3,0,8,7,0,1,0,0,0,0,0,0,0,0,0,34,0,3,0,0,1,1,5-11,R/R,597233,863,9302812,http://stats.ncaa.org/players/9302812
@@ -1481,7 +1481,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,SUNY Brockport,Empire 8,3,37,Thomas Browne,Sr,P,1,0,27.0,1.0,5,3,3,0,3,0,9,8,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,3,6-0,L/R,597233,863,8895152,http://stats.ncaa.org/players/8895152
 2025,SUNY Brockport,Empire 8,3,21,Troy Leibert,Sr,P,1,0,0.0,2.1,2,0,0,1,3,0,11,9,1,0,0,0,0,1,0,0,0,0,0,42,4,0,0,0,0,0,5-10,R/R,597233,863,d3d-8464757,http://stats.ncaa.org/players/8902149
 2025,SUNY Canton,SUNYAC,3,8,AJ Campi,So,UT,1,1,13.5,1.1,2,2,2,4,2,0,9,5,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,5-10,R/R,597203,917,9303768,http://stats.ncaa.org/players/9303768
-2025,SUNY Canton,SUNYAC,3,28,Daniel Aviles,So,P,1,0,0.0,3.0,0,0,0,0,2,0,11,9,0,0,0,0,0,2,0,0,0,0,0,0,2,3,1,0,0,1,5-8,L/L,597203,917,8883413,http://stats.ncaa.org/players/8883413
+2025,SUNY Canton,SUNYAC,3,28,Daniel Aviles,So,P,1,0,0.0,3.0,0,0,0,0,2,0,11,9,0,0,0,0,0,2,0,0,0,0,0,0,2,3,1,0,0,1,5-8,L/L,597203,917,d3d-8596344,http://stats.ncaa.org/players/8883413
 2025,SUNY Canton,SUNYAC,3,18,Keegan Franklin,Jr,P,1,0,54.0,0.1,1,2,2,1,1,0,3,2,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,6-2,R/R,597203,917,8874377,http://stats.ncaa.org/players/8874377
 2025,SUNY Canton,SUNYAC,3,29,Maxwell Rose,So,UT,1,0,0.0,2.1,3,0,0,1,3,0,11,9,1,0,0,0,0,1,0,1,0,0,0,0,3,0,0,0,0,3,6-1,L/R,597203,917,d3d-8596349,http://stats.ncaa.org/players/8874645
 2025,SUNY Canton,SUNYAC,3,44,Hunter LaValley,Sr,UT,1,0,3.0,3.0,4,2,1,2,3,0,15,13,0,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0,0,0,5-8,R/R,597203,917,8897154,http://stats.ncaa.org/players/8897154
@@ -1539,7 +1539,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Saint Elizabeth,United East,3,18,David Lopez-Rodriguez,So,UT,1,0,0.0,1.1,1,2,0,2,2,0,8,6,0,0,0,0,0,0,0,0,0,0,0,37,0,2,0,0,0,1,5-10,R/R,597342,30071,8880348,http://stats.ncaa.org/players/8880348
 2025,Saint Elizabeth,United East,3,41,Kevin Conway,Jr,P,1,0,0.0,1.2,1,0,0,1,2,0,6,5,0,0,0,0,0,0,0,0,0,0,0,23,2,0,0,0,0,1,6-0,L/L,597342,30071,8896168,http://stats.ncaa.org/players/8896168
 2025,Saint Elizabeth,United East,3,22,Malcolm Solomon,So,UT,1,0,0.0,1.0,0,0,0,0,2,0,4,4,0,0,0,0,0,0,0,0,0,0,0,16,1,0,0,0,0,1,6-0,R/R,597342,30071,8890904,http://stats.ncaa.org/players/8890904
-2025,Saint Elizabeth,United East,3,4,Diego Rodriguez,Sr,P,1,0,0.0,1.0,1,0,0,1,1,0,5,4,0,0,0,0,0,0,0,0,0,0,0,16,0,2,0,0,0,0,5-10,R/R,597342,30071,8902178,http://stats.ncaa.org/players/8902178
+2025,Saint Elizabeth,United East,3,4,Diego Rodriguez,Sr,P,1,0,0.0,1.0,1,0,0,1,1,0,5,4,0,0,0,0,0,0,0,0,0,0,0,16,0,2,0,0,0,0,5-10,R/R,597342,30071,d3d-7592375,http://stats.ncaa.org/players/8902178
 2025,Salisbury,C2C,3,15,Garrett Beaver,Jr,P,1,0,0.0,3.2,2,0,0,1,4,0,13,12,1,0,0,0,0,0,0,0,0,0,0,44,3,3,1,0,0,1,6-3,R/R,597031,15810,8890938,http://stats.ncaa.org/players/8890938
 2025,Salisbury,C2C,3,17,Tyler Villa,Jr,P,1,1,0.0,4.1,3,0,0,1,3,0,17,16,0,0,0,0,0,0,0,0,0,0,0,64,5,4,0,0,0,2,6-2,R/R,597031,15810,8891862,http://stats.ncaa.org/players/8891862
 2025,Salve Regina,NEWMAC,3,45,Brayden Clark,Sr,P,1,1,5.06,5.1,6,4,3,4,4,0,24,20,0,0,0,2,0,0,0,0,0,0,0,95,7,2,1,0,0,1,5-11,R/R,597032,890,9299403,http://stats.ncaa.org/players/9299403
@@ -1606,7 +1606,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Southern Va.,USA South,3,4,Benjamin Agnew,Jr,1B,2,0,6.75,2.2,3,3,2,2,4,0,15,12,1,0,0,0,2,1,0,0,0,0,0,56,2,2,1,0,0,0,-,,597202,842,d3d-8019493,http://stats.ncaa.org/players/8878601
 2025,Southern Va.,USA South,3,41,Carson Bybee,Jr,P,1,1,30.38,2.2,10,10,9,1,0,0,20,16,3,0,0,0,1,2,0,0,0,0,1,64,3,4,0,1,0,0,-,,597202,842,d3d-8016209,http://stats.ncaa.org/players/8876772
 2025,Southern Va.,USA South,3,2,Rock Giles,Jr,P,1,0,9.0,2.0,4,2,2,1,1,0,11,10,1,0,0,0,1,0,0,0,0,0,0,44,3,2,0,0,0,0,-,,597202,842,8879075,http://stats.ncaa.org/players/8879075
-2025,Southern Va.,USA South,3,25,Stockton Hall,Jr,3B,1,0,0.0,1.0,1,0,0,1,0,0,5,4,0,0,0,0,0,0,0,0,0,0,0,20,0,3,0,0,1,0,-,,597202,842,8877522,http://stats.ncaa.org/players/8877522
+2025,Southern Va.,USA South,3,25,Stockton Hall,Jr,3B,1,0,0.0,1.0,1,0,0,1,0,0,5,4,0,0,0,0,0,0,0,0,0,0,0,20,0,3,0,0,1,0,-,,597202,842,d3d-8013135,http://stats.ncaa.org/players/8877522
 2025,Southern Va.,USA South,3,14,Jeffrey Hill,So,P,1,0,0.0,2.0,1,0,0,0,2,0,7,7,1,0,0,0,0,0,0,0,0,0,0,30,1,3,0,0,0,1,-,,597202,842,d3d-8423337,http://stats.ncaa.org/players/8893840
 2025,Southern Va.,USA South,3,22,Zack Geertsen,So,P,1,1,3.86,7.0,7,3,3,0,3,0,28,28,0,0,0,1,0,0,0,0,0,0,0,91,9,8,1,0,1,0,-,,597202,842,8896633,http://stats.ncaa.org/players/8896633
 2025,Southwestern (TX),SCAC,3,24,Ryan Corbett,Sr,P,2,0,6.0,6.0,8,6,4,5,9,0,33,26,2,0,0,0,0,2,1,0,0,0,0,127,4,4,0,0,0,5,-,,597154,835,d3d-7549967,http://stats.ncaa.org/players/8886714
@@ -1649,7 +1649,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,St. Thomas (TX),SCAC,3,14,Walker Holzhausen,Jr,P,1,0,27.0,1.0,4,3,3,0,0,0,7,7,0,0,0,1,1,0,0,0,0,0,0,23,2,1,0,0,0,0,-,,597345,835,d3d-7979980,http://stats.ncaa.org/players/8893416
 2025,St. Thomas (TX),SCAC,3,32,Houston Rhodes,Fr,P,1,0,0.0,1.0,1,0,0,0,1,0,4,4,0,0,0,0,0,0,0,0,0,0,0,15,0,2,0,0,0,1,-,,597345,835,9100150,http://stats.ncaa.org/players/9100150
 2025,St. Thomas (TX),SCAC,3,15,Jacob Mead,Sr,1B,3,0,6.23,4.1,5,4,3,3,6,0,21,16,0,0,0,0,2,2,0,0,0,0,0,89,2,3,0,0,1,3,-,,597345,835,d3d-7147764,http://stats.ncaa.org/players/9100078
-2025,St. Thomas (TX),SCAC,3,27,Landon Murray,Sr,P,2,2,6.75,10.2,16,10,8,3,8,0,52,48,1,1,0,1,1,1,0,0,0,0,0,173,14,8,1,0,0,1,-,,597345,835,9104606,http://stats.ncaa.org/players/9104606
+2025,St. Thomas (TX),SCAC,3,27,Landon Murray,Sr,P,2,2,6.75,10.2,16,10,8,3,8,0,52,48,1,1,0,1,1,1,0,0,0,0,0,173,14,8,1,0,0,1,-,,597345,835,d3d-6628765,http://stats.ncaa.org/players/9104606
 2025,St. Thomas (TX),SCAC,3,58,Kameron Craig,Sr,P,2,0,5.4,3.1,6,2,2,1,4,0,16,15,0,0,0,0,0,0,1,0,0,0,0,62,0,5,0,2,0,1,-,,597345,835,d3d-7130067,http://stats.ncaa.org/players/9100188
 2025,St. Thomas (TX),SCAC,3,53,Tyler Dunham,Fr,P,1,0,0.0,2.0,1,0,0,0,1,0,8,8,0,0,0,0,0,0,0,0,0,0,0,26,1,4,0,0,0,0,-,,597345,835,9100179,http://stats.ncaa.org/players/9100179
 2025,St. Thomas (TX),SCAC,3,17,Brian Craig,Fr,,2,2,2.16,8.1,7,3,2,6,10,0,39,29,2,0,1,0,2,3,0,0,0,1,0,151,8,4,1,0,0,2,-,,597345,835,9100086,http://stats.ncaa.org/players/9100086
@@ -1747,7 +1747,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,UChicago,UAA,3,8,Kirk Waller,Sr,P,1,0,0.0,2.0,1,0,0,0,0,0,10,8,0,0,0,0,1,2,0,0,0,0,0,39,5,1,0,0,0,0,-,,597250,1471,8894908,http://stats.ncaa.org/players/8894908
 2025,UChicago,UAA,3,33,Hayden Leiderman,Sr,P,1,1,0.0,6.0,3,0,0,0,9,0,24,22,0,0,0,0,0,2,0,0,0,0,0,77,7,2,1,0,0,3,-,,597250,1471,8895299,http://stats.ncaa.org/players/8895299
 2025,UChicago,UAA,3,17,Dave Flanagan,So,P,1,0,0.0,1.2,1,0,0,1,2,0,7,6,1,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,-,R/R,597250,1471,8900894,http://stats.ncaa.org/players/8900894
-2025,UChicago,UAA,3,30,Uday Narottam,Sr,P,1,0,0.0,4.0,5,1,0,1,7,0,18,17,0,0,0,0,0,0,0,0,0,0,0,88,5,0,0,0,0,1,5-9,R/L,597250,1471,9218540,http://stats.ncaa.org/players/9218540
+2025,UChicago,UAA,3,30,Uday Narottam,Sr,P,1,0,0.0,4.0,5,1,0,1,7,0,18,17,0,0,0,0,0,0,0,0,0,0,0,88,5,0,0,0,0,1,5-9,R/L,597250,1471,d3d-7544244,http://stats.ncaa.org/players/9218540
 2025,UMass Dartmouth,Little East,3,43,R. Boutiette,Jr,p,1,0,36.0,1.0,3,4,4,2,0,0,9,7,2,0,0,0,0,0,0,0,0,0,0,0,1,2,0,1,0,0,-,,597038,867,9304535,http://stats.ncaa.org/players/9304535
 2025,UMass Dartmouth,Little East,3,6,Ian-James McCasland,Sr,P,1,1,17.18,3.2,6,8,7,6,3,0,25,16,2,0,0,2,1,1,0,0,0,2,0,0,3,4,0,0,0,0,-,,597038,867,9304540,http://stats.ncaa.org/players/9304540
 2025,UMass Dartmouth,Little East,3,23,Adam Maher,Sr,P,1,1,2.25,4.0,1,1,1,3,9,0,16,13,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,2,-,,597038,867,8877741,http://stats.ncaa.org/players/8877741
@@ -1769,7 +1769,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Ursinus,Centennial,3,28,Barritt Ross,So,OF,1,0,0.0,1.0,0,1,0,1,3,0,6,5,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,1,1,-,,597054,9683,8875739,http://stats.ncaa.org/players/8875739
 2025,Ursinus,Centennial,3,22,David Morgan,Sr,P,1,0,0.0,1.0,1,0,0,1,1,0,4,3,0,0,0,0,0,0,0,0,0,0,0,19,1,0,0,0,0,1,-,,597054,9683,8885145,http://stats.ncaa.org/players/8885145
 2025,Ursinus,Centennial,3,27,Max Shilstone,Jr,P,1,0,0.0,1.0,0,0,0,0,2,0,3,3,0,0,0,0,0,0,0,0,0,0,0,12,1,0,0,0,0,2,6-2,-/R,597054,9683,8885214,http://stats.ncaa.org/players/8885214
-2025,Ursinus,Centennial,3,44,Kieran Hollander,Sr,P,1,1,0.0,5.0,2,0,0,1,4,0,20,17,0,0,0,0,1,2,0,0,0,0,0,72,5,5,1,0,0,3,-,,597054,9683,8881328,http://stats.ncaa.org/players/8881328
+2025,Ursinus,Centennial,3,44,Kieran Hollander,Sr,P,1,1,0.0,5.0,2,0,0,1,4,0,20,17,0,0,0,0,1,2,0,0,0,0,0,72,5,5,1,0,0,3,-,,597054,9683,d3d-7588553,http://stats.ncaa.org/players/8881328
 2025,Ursinus,Centennial,3,19,Connor Bogansky,Sr,P,1,0,0.0,1.0,0,0,0,0,2,0,4,4,0,0,0,0,0,0,0,0,0,0,0,12,0,1,0,0,0,1,-,,597054,9683,8892249,http://stats.ncaa.org/players/8892249
 2025,Ursinus,Centennial,3,48,Jack Garrity,So,P,1,0,0.0,0.0,0,2,0,2,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,33,0,0,0,0,0,0,-,,597054,9683,8891999,http://stats.ncaa.org/players/8891999
 2025,Ursinus,Centennial,3,34,Dan Bass,Jr,P,1,1,6.0,3.0,1,2,2,6,3,0,16,10,0,0,0,0,0,0,0,0,0,0,0,64,2,3,0,1,0,0,-,,597054,9683,8893393,http://stats.ncaa.org/players/8893393
@@ -1788,7 +1788,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Wabash,NCAC,3,37,Dylan Haslett,Jr,P,1,0,5.4,1.2,2,1,1,0,1,0,7,7,0,0,0,0,1,0,0,0,0,0,0,25,2,2,0,0,0,0,6-3,R/R,597058,897,d3d-8453861,http://stats.ncaa.org/players/8879937
 2025,Wabash,NCAC,3,45,Henry Birk,Jr,P,1,0,0.0,1.1,1,0,0,1,0,0,6,5,0,0,0,0,0,0,0,0,0,0,0,23,1,3,0,0,0,0,6-1,R/R,597058,897,8889422,http://stats.ncaa.org/players/8889422
 2025,Wabash,NCAC,3,30,Jackon Woehr,Jr,P,1,0,9.0,1.0,1,1,1,0,1,0,4,4,1,0,0,0,0,0,0,0,0,0,0,11,0,2,0,0,0,0,6-5,R/R,597058,897,8875275,http://stats.ncaa.org/players/8875275
-2025,Wabash,NCAC,3,5,Grant Stratton,Sr,P,1,1,8.31,4.1,7,4,4,1,1,0,21,18,2,0,0,1,0,2,0,0,0,0,0,66,4,6,0,1,0,0,6-1,R/R,597058,897,8884585,http://stats.ncaa.org/players/8884585
+2025,Wabash,NCAC,3,5,Grant Stratton,Sr,P,1,1,8.31,4.1,7,4,4,1,1,0,21,18,2,0,0,1,0,2,0,0,0,0,0,66,4,6,0,1,0,0,6-1,R/R,597058,897,d3d-7576785,http://stats.ncaa.org/players/8884585
 2025,Wabash,NCAC,3,28,Caleb Everson,Jr,P,1,1,6.0,3.0,4,3,2,0,3,0,14,14,1,0,0,1,0,0,0,0,0,0,0,52,2,4,0,0,0,2,6-0,R/R,597058,897,d3d-7993301,http://stats.ncaa.org/players/8874454
 2025,Wabash,NCAC,3,31,Ethan Kimmerle,So,P,1,0,27.0,0.2,3,2,2,0,2,0,5,5,2,0,0,0,0,0,0,0,0,0,0,24,0,0,0,0,0,0,5-10,R/R,597058,897,8875429,http://stats.ncaa.org/players/8875429
 2025,Wabash,NCAC,3,4,Aiden McConnell,Jr,P,1,0,6.75,1.1,1,1,1,2,0,0,7,5,0,0,0,0,0,0,0,0,0,0,0,26,0,3,1,0,0,0,6-1,R/R,597058,897,8901238,http://stats.ncaa.org/players/8901238
@@ -1823,7 +1823,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Webster,SLIAC,3,25,Elijah Rompala-Matthews,Jr,P,1,1,9.0,2.0,2,2,2,4,2,0,13,7,0,0,0,0,0,1,0,0,0,1,0,47,2,1,0,1,0,0,-,,597064,12974,8887497,http://stats.ncaa.org/players/8887497
 2025,Webster,SLIAC,3,17,Carter Hunt,Sr,P,2,0,0.0,6.0,1,0,0,2,9,0,21,18,1,0,0,0,0,1,0,0,0,0,0,57,4,3,0,0,1,2,-,,597064,12974,d3d-7550899,http://stats.ncaa.org/players/8896029
 2025,Webster,SLIAC,3,28,Jack Wilson,Fr,P,1,0,0.0,1.0,1,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,16,2,1,0,0,0,0,-,,597064,12974,9095014,http://stats.ncaa.org/players/9095014
-2025,Webster,SLIAC,3,26,J.T. Miller,Sr,P,1,0,0.0,0.2,0,0,0,0,1,0,2,2,0,0,0,0,0,0,0,0,0,0,0,12,0,1,0,0,0,0,-,,597064,12974,9095004,http://stats.ncaa.org/players/9095004
+2025,Webster,SLIAC,3,26,J.T. Miller,Sr,P,1,0,0.0,0.2,0,0,0,0,1,0,2,2,0,0,0,0,0,0,0,0,0,0,0,12,0,1,0,0,0,0,-,,597064,12974,d3d-7083621,http://stats.ncaa.org/players/9095004
 2025,Webster,SLIAC,3,35,Cullen McBride,Sr,P,1,0,3.0,3.0,3,1,1,1,3,0,13,11,1,0,0,0,0,0,0,0,0,1,0,56,2,4,0,0,0,1,6-0,R/R,597064,12974,d3d-6601618,http://stats.ncaa.org/players/9095055
 2025,Webster,SLIAC,3,44,Joel Arsenault,Sr,P,1,0,0.0,1.0,0,0,0,0,2,0,5,4,0,0,0,0,0,1,0,0,0,0,0,18,1,0,0,0,0,1,-,,597064,12974,9095086,http://stats.ncaa.org/players/9095086
 2025,Webster,SLIAC,3,43,Zach Mevert,Jr,P,1,0,0.0,1.0,0,0,0,2,0,0,6,2,0,0,2,0,1,0,0,0,0,1,0,23,2,1,0,0,0,0,-,,597064,12974,9095085,http://stats.ncaa.org/players/9095085
@@ -1852,7 +1852,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Wheaton (IL),CCIW,3,7,Josh Liu,So,INF,1,0,18.0,1.0,1,2,2,3,0,0,7,3,0,0,0,0,0,1,0,0,0,0,0,29,2,0,0,0,0,0,5-10,R/R,597072,836,d3d-8418988,http://stats.ncaa.org/players/8893665
 2025,Wheaton (IL),CCIW,3,20,Micah Johnson,Sr,P,1,0,0.0,0.1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,6-0,L/L,597072,836,8890572,http://stats.ncaa.org/players/8890572
 2025,Wheaton (IL),CCIW,3,44,Jack Lindsay,Sr,P,2,0,5.4,1.2,2,1,1,2,2,0,10,7,0,0,0,0,1,1,0,0,0,0,0,31,2,1,0,1,0,0,5-10,R/R,597072,836,8896317,http://stats.ncaa.org/players/8896317
-2025,Wheaton (IL),CCIW,3,2,Sean Smith,Sr,OF,2,0,18.0,1.0,1,3,2,1,0,0,8,5,0,0,0,0,0,2,0,0,0,0,0,27,2,1,0,0,0,0,5-11,R/R,597072,836,8899616,http://stats.ncaa.org/players/8899616
+2025,Wheaton (IL),CCIW,3,2,Sean Smith,Sr,OF,2,0,18.0,1.0,1,3,2,1,0,0,8,5,0,0,0,0,0,2,0,0,0,0,0,27,2,1,0,0,0,0,5-11,R/R,597072,836,d3d-7584307,http://stats.ncaa.org/players/8899616
 2025,Wheaton (IL),CCIW,3,13,Billy Kessler,Fr,P,1,0,0.0,1.0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,9,2,1,0,0,0,0,5-11,R/R,597072,836,9103849,http://stats.ncaa.org/players/9103849
 2025,Wheaton (IL),CCIW,3,16,Nate Burden,Fr,P,1,1,5.06,5.1,3,3,3,3,6,0,23,19,0,0,0,0,1,1,0,0,0,0,0,92,6,3,0,1,0,0,6-0,L/L,597072,836,9103855,http://stats.ncaa.org/players/9103855
 2025,Whitman,NWC,3,9,Wyatt Adams,Sr,,1,1,1.29,7.0,4,1,1,3,7,0,29,25,1,0,0,0,1,1,0,0,0,0,0,0,4,8,1,0,0,2,-,,597074,25300,8888882,http://stats.ncaa.org/players/8888882
@@ -1861,7 +1861,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Whitman,NWC,3,30,Tanner Coddington,So,,1,0,0.0,2.0,2,0,0,1,4,0,9,8,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,1,-,,597074,25300,8876544,http://stats.ncaa.org/players/8876544
 2025,Whittier,SCIAC,3,51,Christian Arreola,Fr,OF,1,0,0.0,2.1,2,0,0,0,0,0,10,9,1,0,0,0,1,1,0,0,0,0,0,34,3,4,0,0,0,0,-,,597075,910,9214969,http://stats.ncaa.org/players/9214969
 2025,Whittier,SCIAC,3,53,Diego Castillo,Jr,P,1,1,43.2,1.2,7,8,8,2,1,0,15,11,1,0,0,0,0,1,0,0,0,0,1,50,1,3,0,1,0,0,-,,597075,910,9214972,http://stats.ncaa.org/players/9214972
-2025,Whittier,SCIAC,3,22,Aaron Cazares,Jr,P,3,0,3.6,5.0,4,2,2,0,6,0,19,19,1,0,0,0,0,0,0,0,0,0,0,83,3,6,1,0,0,1,-,,597075,910,8884352,http://stats.ncaa.org/players/8884352
+2025,Whittier,SCIAC,3,22,Aaron Cazares,Jr,P,3,0,3.6,5.0,4,2,2,0,6,0,19,19,1,0,0,0,0,0,0,0,0,0,0,83,3,6,1,0,0,1,-,,597075,910,d3d-7984905,http://stats.ncaa.org/players/8884352
 2025,Whittier,SCIAC,3,27,Jackson Salinas,Sr,,2,0,5.79,4.2,2,4,3,2,1,0,19,16,0,0,0,0,0,0,0,0,0,1,0,51,7,6,0,0,0,0,-,,597075,910,8888411,http://stats.ncaa.org/players/8888411
 2025,Whittier,SCIAC,3,46,Brady Hess,So,,2,0,6.75,2.2,6,2,2,1,2,0,16,15,2,0,0,0,0,0,0,0,0,0,0,41,4,2,0,0,0,0,-,,597075,910,8881517,http://stats.ncaa.org/players/8881517
 2025,Whittier,SCIAC,3,33,Marcus Owens,Jr,P,1,0,13.5,1.1,2,2,2,2,1,0,7,5,0,0,0,0,1,0,0,0,0,0,0,24,1,1,0,0,0,0,-,,597075,910,8881606,http://stats.ncaa.org/players/8881606
@@ -1892,7 +1892,7 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,Whitworth,NWC,3,3,Jared Hardie,Fr,P,2,0,10.38,4.1,8,5,5,1,6,0,24,20,2,0,0,1,0,3,0,0,0,0,0,32,2,4,1,0,0,1,6-0,R/R,597138,25300,9110788,http://stats.ncaa.org/players/9110788
 2025,Widener,MAC Commonwealth,3,26,J. Hallihan,,p,1,0,0.0,0.2,0,0,0,1,1,0,3,2,0,0,0,0,1,0,0,0,0,0,0,20,1,0,0,0,0,1,-,,597076,28744,9304335,http://stats.ncaa.org/players/9304335
 2025,Widener,MAC Commonwealth,3,37,Trae Sanders,So,P,1,1,4.5,4.0,8,2,2,0,4,0,20,19,1,0,0,0,0,0,0,0,0,1,0,64,5,3,1,0,0,1,6-0,L/L,597076,28744,8895506,http://stats.ncaa.org/players/8895506
-2025,Widener,MAC Commonwealth,3,25,Ethan Lytle,Jr,P,2,0,0.0,1.1,0,0,0,0,2,0,4,4,0,0,0,0,0,0,0,0,0,0,0,21,0,2,0,0,0,0,5-10,L/L,597076,28744,8892362,http://stats.ncaa.org/players/8892362
+2025,Widener,MAC Commonwealth,3,25,Ethan Lytle,Jr,P,2,0,0.0,1.1,0,0,0,0,2,0,4,4,0,0,0,0,0,0,0,0,0,0,0,21,0,2,0,0,0,0,5-10,L/L,597076,28744,d3d-8000901,http://stats.ncaa.org/players/8892362
 2025,Widener,MAC Commonwealth,3,3,John Najdek,Jr,P,1,0,0.0,1.0,0,0,0,1,2,0,5,3,0,0,0,0,1,1,0,0,0,0,0,22,1,0,0,0,0,1,5-10,R/R,597076,28744,8891473,http://stats.ncaa.org/players/8891473
 2025,Widener,MAC Commonwealth,3,23,Sean Curran,Sr,P,1,1,1.8,5.0,4,1,1,1,2,0,20,17,1,1,0,0,0,1,0,0,0,1,0,77,6,6,0,1,0,1,6-3,R/R,597076,28744,d3d-7126141,http://stats.ncaa.org/players/9110171
 2025,Widener,MAC Commonwealth,3,15,Jake Mellow,Fr,P,1,0,0.0,1.0,1,0,0,0,1,0,4,4,1,0,0,0,0,0,0,0,0,0,0,22,1,1,0,0,0,1,6-1,R/R,597076,28744,9110363,http://stats.ncaa.org/players/9110363
@@ -1930,14 +1930,14 @@ year,team_name,conference,division,Jersey,player_name,Yr,Pos,App,GS,ERA,IP,H,R,E
 2025,William Peace,USA South,3,51,Maddax Brown,Fr,P,2,0,27.0,1.1,3,4,4,3,2,0,10,7,0,0,0,0,0,0,0,0,0,0,0,40,1,1,0,0,0,1,6-2,-/R,597165,842,9095749,http://stats.ncaa.org/players/9095749
 2025,William Peace,USA South,3,36,Alejandro Posluszny,Fr,P,1,1,0.0,3.2,3,1,0,1,1,0,18,15,1,0,0,0,0,2,0,0,0,0,0,70,2,8,0,0,0,0,6-0,-/R,597165,842,9095738,http://stats.ncaa.org/players/9095738
 2025,William Peace,USA South,3,38,Tyler DeLuzio,Jr,P,1,0,0.0,0.0,2,2,2,1,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,13,0,0,0,0,0,0,5-11,-/L,597165,842,9095741,http://stats.ncaa.org/players/9095741
-2025,Wilson,United East,3,33,Chase Supensky,Jr,P,1,1,3.38,2.2,3,8,1,6,2,0,18,12,0,0,1,0,0,0,0,0,0,0,0,0,1,5,0,1,0,1,5-10,L/L,597341,30071,8887197,http://stats.ncaa.org/players/8887197
+2025,Wilson,United East,3,33,Chase Supensky,Jr,P,1,1,3.38,2.2,3,8,1,6,2,0,18,12,0,0,1,0,0,0,0,0,0,0,0,0,1,5,0,1,0,1,5-10,L/L,597341,30071,d3d-8011541,http://stats.ncaa.org/players/8887197
 2025,Wittenberg,NCAC,3,31,Nate Floyd,Sr,P,1,1,0.0,5.0,3,0,0,0,8,0,18,17,1,0,0,0,0,1,0,0,0,0,0,76,6,0,1,0,0,1,6-1,R/R,597088,897,8895861,http://stats.ncaa.org/players/8895861
 2025,Wittenberg,NCAC,3,22,Charlie Schafer,Sr,P,1,0,9.0,1.0,2,1,1,0,0,0,5,5,1,0,0,0,0,0,0,0,0,0,0,19,1,2,0,0,0,0,6-2,R/R,597088,897,8898882,http://stats.ncaa.org/players/8898882
 2025,Wittenberg,NCAC,3,40,Tommy Anthony,So,P,1,0,0.0,1.1,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,17,2,2,0,0,0,0,6-0,R/R,597088,897,8896437,http://stats.ncaa.org/players/8896437
 2025,Wittenberg,NCAC,3,41,Andrew Rust,Jr,P,1,0,0.0,1.2,1,0,0,1,1,0,6,5,0,0,0,0,0,0,0,0,0,0,0,29,2,1,0,0,0,1,-,R/R,597088,897,8891117,http://stats.ncaa.org/players/8891117
 2025,Wm. Paterson,NJAC,3,33,Nick Durso,Jr,P,1,0,9.0,1.0,4,1,1,0,1,0,6,6,0,0,0,0,0,0,0,0,0,0,0,21,0,1,0,0,0,0,5-10,R/R,597079,891,8887300,http://stats.ncaa.org/players/8887300
 2025,Wm. Paterson,NJAC,3,18,Robert Nathan,So,P,1,0,0.0,2.0,0,0,0,0,3,0,6,6,0,0,0,0,0,0,0,0,0,0,0,26,2,1,0,0,1,2,6-3,R/R,597079,891,8877342,http://stats.ncaa.org/players/8877342
-2025,Wm. Paterson,NJAC,3,10,Chris Quartuccio,Jr,P,1,0,0.0,1.0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,7,1,2,0,0,0,0,5-11,R/R,597079,891,8874397,http://stats.ncaa.org/players/8874397
+2025,Wm. Paterson,NJAC,3,10,Chris Quartuccio,Jr,P,1,0,0.0,1.0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,7,1,2,0,0,0,0,5-11,R/R,597079,891,d3d-8004696,http://stats.ncaa.org/players/8874397
 2025,Wm. Paterson,NJAC,3,37,Cole McGregor,Jr,P,1,0,0.0,1.0,0,0,0,0,1,0,3,3,0,0,0,0,0,0,0,0,0,0,0,15,2,0,0,0,0,1,5-9,L/R,597079,891,8885682,http://stats.ncaa.org/players/8885682
 2025,Wm. Paterson,NJAC,3,40,Kevin Reiner,So,P,1,0,0.0,1.0,1,0,0,1,1,0,5,4,0,0,0,0,1,0,0,0,0,0,0,19,1,1,0,0,0,1,6-1,R/R,597079,891,8885769,http://stats.ncaa.org/players/8885769
 2025,Wm. Paterson,NJAC,3,30,Chase Geisler,Sr,P,1,1,0.0,6.0,4,0,0,1,6,0,24,22,1,0,0,0,0,1,0,0,0,0,0,81,5,7,1,0,0,1,6-4,R/R,597079,891,8898640,http://stats.ncaa.org/players/8898640
