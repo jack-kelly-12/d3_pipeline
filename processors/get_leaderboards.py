@@ -344,13 +344,13 @@ def run_analysis(pbp_df, year, division, data_path):
 
 def get_data(year, division, data_dir):
     pbp_df = pd.read_csv(
-        data_dir / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv')
+        data_dir / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv', dtype={'player_id': str, 'batter_id': str, 'pitcher_id': str})
     bat_war = pd.read_csv(
-        data_dir / f'war/d{division}_batting_war_{year}.csv').rename(columns={'WAR': 'bWAR'})
+        data_dir / f'war/d{division}_batting_war_{year}.csv', dtype={'player_id': str}).rename(columns={'WAR': 'bWAR'})
     rosters = pd.read_csv(
-        data_dir / f'rosters/d{division}_rosters_{year}.csv')
+        data_dir / f'rosters/d{division}_rosters_{year}.csv', dtype={'player_id': str})
     pitch_war = pd.read_csv(
-        data_dir / f'war/d{division}_pitching_war_{year}.csv')
+        data_dir / f'war/d{division}_pitching_war_{year}.csv', dtype={'player_id': str})
 
     bat_war['B/T'] = bat_war['B/T'].replace('0', np.nan).astype(str)
     pitch_war['B/T'] = pitch_war['B/T'].replace('0', np.nan).astype(str)
@@ -401,6 +401,31 @@ def main(data_dir, year):
     all_batted_ball = []
     all_splits = []
 
+    # First, read existing CSV files
+    data_sets = {
+        'situational': (all_situational, ['batter_id', 'batter_standardized', 'bat_team', 'Year', 'Division']),
+        'baserunning': (all_baserunning, ['player_id', 'Team', 'Year', 'Division']),
+        'batted_ball': (all_batted_ball, ['batter_id', 'batter_standardized', 'bat_team', 'Year', 'Division']),
+        'splits': (all_splits, ['batter_id', 'batter_standardized', 'bat_team', 'Year', 'Division'])
+    }
+
+    # Load existing data first
+    for name, (data_list, _) in data_sets.items():
+        existing_file = leaderboards_dir / f'{name}.csv'
+        if existing_file.exists():
+            try:
+                existing_df = pd.read_csv(existing_file)
+                # Filter out current year data if it exists in the file
+                if 'Year' in existing_df.columns:
+                    existing_df = existing_df[existing_df['Year'] != int(year)]
+                if not existing_df.empty:
+                    data_list.append(existing_df)
+                    print(
+                        f"Loaded existing {name} data with {len(existing_df)} records")
+            except Exception as e:
+                print(f"Error loading existing {name} data: {e}")
+
+    # Process new data for the specified year
     for division in range(1, 4):
         print(f'Processing data for {year} D{division}')
         try:
@@ -412,14 +437,14 @@ def main(data_dir, year):
                 for df, lst in [(situational, all_situational),
                                 (batted_ball, all_batted_ball),
                                 (splits, all_splits)]:
-                    df['Year'] = year
+                    df['Year'] = int(year)
                     df['Division'] = division
                     lst.append(df)
 
                 baserun = bat_war[['Player', 'player_id', 'Team', 'Conference', 'SB%', 'wSB',
                                    'wGDP', 'wTEB', 'Baserunning', 'EBT', 'OutsOB', 'Opportunities',
                                    'CS', 'SB', 'Picked']].sort_values('Baserunning')
-                baserun['Year'] = year
+                baserun['Year'] = int(year)
                 baserun['Division'] = division
                 all_baserunning.append(baserun)
 
@@ -427,33 +452,28 @@ def main(data_dir, year):
             print(f"Error processing {year} D{division}: {e}")
             continue
 
-    data_sets = {
-        'situational': (all_situational, ['batter_id', 'batter_standardized', 'bat_team', 'Year', 'Division']),
-        'baserunning': (all_baserunning, ['player_id', 'Team', 'Year', 'Division']),
-        'batted_ball': (all_batted_ball, ['batter_id', 'batter_standardized', 'bat_team', 'Year', 'Division']),
-        'splits': (all_splits, ['batter_id', 'batter_standardized', 'bat_team', 'Year', 'Division'])
-    }
-
+    # Save combined datasets
     for name, (data_list, dedup_cols) in data_sets.items():
         if data_list:
-            filtered_data_list = []
-            for df in data_list:
-                if 'Year' in df.columns:
-                    filtered_df = df[df['Year'] != year]
-                    filtered_data_list.append(filtered_df)
-                else:
-                    filtered_data_list.append(df)
+            try:
+                # Combine all dataframes including existing and new data
+                combined_df = pd.concat(data_list, ignore_index=True)
+                # Remove duplicates based on the specified columns
+                combined_df = combined_df.drop_duplicates(subset=dedup_cols)
+                # Save the combined dataframe
+                output_file = leaderboards_dir / f'{name}.csv'
+                combined_df.to_csv(output_file, index=False)
+                print(
+                    f"Saved {name} data with {len(combined_df)} records to {output_file}")
+            except Exception as e:
+                print(f"Error saving {name} data: {e}")
 
-            combined_df = pd.concat(filtered_data_list, ignore_index=True)
-            combined_df = combined_df.drop_duplicates(subset=dedup_cols)
-
-            combined_df.to_csv(
-                os.path.join(data_dir, 'leaderboards', f'{name}.csv'), index=False)
     print("Processing complete!")
 
 
 if __name__ == '__main__':
     import argparse
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', required=True)
     parser.add_argument('--year', required=True)
