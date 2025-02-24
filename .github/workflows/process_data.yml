@@ -108,15 +108,6 @@ jobs:
         run: |
           python processors/add_pbp_metrics.py --data_dir ${{ env.DATA_DIR }} --year 2025
 
-      - name: Calculate wins above replacement
-        shell: bash
-        run: |
-          python processors/add_war.py --data_dir ${{ env.DATA_DIR }} --year 2025
-          python processors/add_war.py --data_dir ${{ env.DATA_DIR }} --year 2024
-          python processors/add_war.py --data_dir ${{ env.DATA_DIR }} --year 2023
-          python processors/add_war.py --data_dir ${{ env.DATA_DIR }} --year 2022
-          python processors/add_war.py --data_dir ${{ env.DATA_DIR }} --year 2021
-
       - name: Guts constants
         shell: bash
         run: |
