@@ -344,13 +344,13 @@ def run_analysis(pbp_df, year, division, data_path):
 
 def get_data(year, division, data_dir):
     pbp_df = pd.read_csv(
-        data_dir / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv')
+        data_dir / f'play_by_play/d{division}_parsed_pbp_new_{year}.csv', dtype={'player_id': str, 'batter_id': str, 'pitcher_id': str})
     bat_war = pd.read_csv(
-        data_dir / f'war/d{division}_batting_war_{year}.csv').rename(columns={'WAR': 'bWAR'})
+        data_dir / f'war/d{division}_batting_war_{year}.csv', dtype={'player_id': str}).rename(columns={'WAR': 'bWAR'})
     rosters = pd.read_csv(
-        data_dir / f'rosters/d{division}_rosters_{year}.csv')
+        data_dir / f'rosters/d{division}_rosters_{year}.csv', dtype={'player_id': str})
     pitch_war = pd.read_csv(
-        data_dir / f'war/d{division}_pitching_war_{year}.csv')
+        data_dir / f'war/d{division}_pitching_war_{year}.csv', dtype={'player_id': str})
 
     bat_war['B/T'] = bat_war['B/T'].replace('0', np.nan).astype(str)
     pitch_war['B/T'] = pitch_war['B/T'].replace('0', np.nan).astype(str)
