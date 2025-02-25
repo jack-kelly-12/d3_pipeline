@@ -118,6 +118,11 @@ jobs:
         run: |
           python processors/get_leaderboards.py --data_dir ${{ env.DATA_DIR }} --year 2025
 
+      - name: Calculate WAR
+        shell: bash
+        run: |
+          python processors/add_war.py --data_dir ${{ env.DATA_DIR }} --year 2025
+
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
