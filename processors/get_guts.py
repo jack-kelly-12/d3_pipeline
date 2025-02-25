@@ -111,6 +111,7 @@ def main(data_dir, year):
 
     all_constants = []
     existing_guts = pd.read_csv(guts_file)
+    existing_guts = existing_guts[existing_guts['Year'] != year]
 
     for division in divisions:
         constants = calculate_guts_constants(division, year, data_dir)
