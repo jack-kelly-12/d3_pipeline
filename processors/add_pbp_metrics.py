@@ -166,7 +166,7 @@ def extract_player_from_description(row):
 def process_pitchers(df):
     df = df.copy()
 
-    pitcher_changes = df['description'].str.contains('to p for', na=False)
+    pitcher_changes = df['description'].str.contains('to p', na=False)
 
     df['pitcher'] = pd.Series(dtype='string')
     df.loc[pitcher_changes, 'pitcher'] = df.loc[pitcher_changes,

@@ -276,7 +276,7 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
     df['player_id'] = df['player_id'].astype(str)
     pbp_df['pitcher_id'] = pbp_df['pitcher_id'].astype(str)
 
-    gmli = (pbp_df[pbp_df['description'].str.contains('to p for', na=False)]
+    gmli = (pbp_df[pbp_df['description'].str.contains('to p', na=False)]
             .groupby(['pitcher_id'])
             .agg({'li': 'mean'})
             .reset_index()
