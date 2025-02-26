@@ -117,6 +117,17 @@ def calculate_pitching_team_war(pitching_df, park_factors_df, team_clutch):
                                  'FO': 'sum', 'BB': 'sum', 'HB': 'sum', 'SO': 'sum',
                                  'BF': 'sum', 'Pitches': 'sum', 'Season': 'first', 'Division': 'first'}).reset_index()
 
+    def convert_to_baseball_notation(innings):
+        whole_innings = int(innings)
+        outs = round((innings - whole_innings) * 3)
+
+        if outs == 3:
+            whole_innings += 1
+            outs = 0
+
+        return f"{whole_innings}.{outs}"
+
+    df['IP'] = df['IP'].apply(convert_to_baseball_notation)
     df['ERA'] = (df['ER'] * 9) / df['IP']
     df['IR-A%'] = ((df['Inh Run Score'] / df['Inh Run']) * 100).fillna(0)
     df['RA9'] = (df['R'] / df['IP']) * 9
