@@ -104,7 +104,7 @@ def main(data_dir, year):
     data_dir = Path(data_dir)
     guts_dir = data_dir / 'guts'
     guts_dir.mkdir(exist_ok=True)
-    year - int(year)
+    year = int(year)
 
     guts_file = guts_dir / 'guts_constants.csv'
 
