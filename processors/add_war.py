@@ -324,11 +324,21 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
     df['player_id'] = df['player_id'].astype(str)
     pbp_df['pitcher_id'] = pbp_df['pitcher_id'].astype(str)
 
-    gmli = (pbp_df[pbp_df['description'].str.contains('to p', na=False)]
+    first_li_per_game = (pbp_df
+                         .sort_values(['pitcher_id', 'game_id', 'play_id'])
+                         .groupby(['pitcher_id', 'game_id'])
+                         .apply(lambda x: pd.Series({
+                             'li': x['li'].iloc[0] if x['inning'].iloc[0] != 1 else np.nan,
+                             'inning': x['inning'].iloc[0]
+                         }))
+                         .reset_index())
+
+    gmli = (first_li_per_game
             .groupby(['pitcher_id'])
             .agg({'li': 'mean'})
             .reset_index()
-            .rename(columns={'li': 'gmLI', 'pitch_team': 'Team'}))
+            .rename(columns={'li': 'gmLI'}))
+
     df.player_id = df.player_id.astype(str)
     df = df.merge(gmli, how='left',
                   left_on=['player_id'],

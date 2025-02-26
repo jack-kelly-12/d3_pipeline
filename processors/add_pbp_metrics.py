@@ -91,7 +91,7 @@ def standardize_names(pbp_df, roster, threshold=30):
     def match_players(df, lookup, player_col, team_col, id_col, standardized_col):
         results = []
         for team, name in zip(df[team_col], df[player_col]):
-            if pd.isna(name) or pd.isna(team):
+            if pd.isna(name) or pd.isna(team) or name == np.nan:
                 results.append((None, None))
                 continue
 
@@ -166,7 +166,7 @@ def extract_player_from_description(row):
 def process_pitchers(df):
     df = df.copy()
 
-    pitcher_changes = df['description'].str.contains('to p', na=False)
+    pitcher_changes = df['description'].str.contains('to p for', na=False)
 
     df['pitcher'] = pd.Series(dtype='string')
     df.loc[pitcher_changes, 'pitcher'] = df.loc[pitcher_changes,

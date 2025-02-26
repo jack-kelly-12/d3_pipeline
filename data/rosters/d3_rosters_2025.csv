@@ -296,7 +296,7 @@ Austin Bakowski,Fr.,P,0.0,0.0,40.0,6-2,RIGHT,RIGHT,"Pittsburgh, PA",North Hills,
 Liam Irving,Fr.,OF,0.0,0.0,1.0,5-11,RIGHT,RIGHT,"Olney, MD",Sherwood,https://stats.ncaa.org/players/9215679,597212.0,2025,Allegheny,907.0,PAC,3.0,16779.0,19.0,9215679
 Alex Nash,Fr.,P,0.0,0.0,51.0,6-3,RIGHT,RIGHT,"Rostraver Township, PA",Belle Vernon Area,https://stats.ncaa.org/players/9215737,597212.0,2025,Allegheny,907.0,PAC,3.0,16779.0,19.0,9215737
 Corey Sanderson,So.,INF,0.0,0.0,63.0,6-1,RIGHT,RIGHT,"Commerce Twp, MI",Lakeland,https://stats.ncaa.org/players/8875652,597214.0,2025,Alma,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,21.0,8875652
-Cameron Bleasdale,Jr.,P,0.0,0.0,15.0,6-0,LEFT,RIGHT,"Saint Clair, MI",Saint Clair,https://stats.ncaa.org/players/8884932,597214.0,2025,Alma,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,21.0,8884932
+Cameron Bleasdale,Jr.,P,0.0,0.0,15.0,6-0,LEFT,RIGHT,"Saint Clair, MI",Saint Clair,https://stats.ncaa.org/players/8884932,597214.0,2025,Alma,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,21.0,d3d-8006437
 Lucas Dunham,So.,OF,0.0,0.0,17.0,6-2,RIGHT,RIGHT,"Davison, MI",Davison,https://stats.ncaa.org/players/8887901,597214.0,2025,Alma,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,21.0,8887901
 Michael Kasperek,So.,INF,0.0,0.0,57.0,5-5,LEFT,RIGHT,"Sterling Heights, MI",Utica Academy of International Studies,https://stats.ncaa.org/players/8882895,597214.0,2025,Alma,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,21.0,8882895
 Ryan Koob,So.,P,0.0,0.0,48.0,6-4,RIGHT,RIGHT,"Plainwell, MI",Plainwell,https://stats.ncaa.org/players/8884981,597214.0,2025,Alma,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,21.0,8884981
@@ -440,7 +440,7 @@ Logan Nickel,Sr.,P,0.0,0.0,3.0,-,RIGHT,RIGHT,"Westfield, IN",Westfield,https://s
 Eli Ketterer,Jr.,P,0.0,0.0,44.0,-,RIGHT,RIGHT,"Noblesville, IN",Noblesville,https://stats.ncaa.org/players/8892411,597095.0,2025,Anderson (IN),9174.0,HCAC,3.0,16779.0,939.0,8892411
 Drew Doty,Jr.,P,0.0,0.0,2.0,-,RIGHT,RIGHT,"Franklin, IN",Franklin Community,https://stats.ncaa.org/players/8892453,597095.0,2025,Anderson (IN),9174.0,HCAC,3.0,16779.0,939.0,8892453
 Nolan Netter,Jr.,INF,0.0,0.0,37.0,-,RIGHT,RIGHT,"Franklin, IN",Franklin Community,https://stats.ncaa.org/players/8894693,597095.0,2025,Anderson (IN),9174.0,HCAC,3.0,16779.0,939.0,8894693
-Gavin Owsley,So.,P,0.0,0.0,16.0,-,RIGHT,RIGHT,"Lafayette, IN",Harrison,https://stats.ncaa.org/players/8898345,597095.0,2025,Anderson (IN),9174.0,HCAC,3.0,16779.0,939.0,8898345
+Gavin Owsley,So.,P,0.0,0.0,16.0,-,RIGHT,RIGHT,"Lafayette, IN",Harrison,https://stats.ncaa.org/players/8898345,597095.0,2025,Anderson (IN),9174.0,HCAC,3.0,16779.0,939.0,d3d-8446931
 Isaac Bair,So.,C,0.0,0.0,22.0,-,RIGHT,RIGHT,"Lapel, IN",Lapel,https://stats.ncaa.org/players/8895217,597095.0,2025,Anderson (IN),9174.0,HCAC,3.0,16779.0,939.0,8895217
 Carter Knoblauch,Jr.,P,0.0,0.0,9.0,-,LEFT,LEFT,"New Haven, IN",Woodlan,https://stats.ncaa.org/players/8902819,597095.0,2025,Anderson (IN),9174.0,HCAC,3.0,16779.0,939.0,8902819
 Cody Jackson,So.,UT,0.0,0.0,4.0,-,RIGHT,RIGHT,"Sellersburg, IN",Our Lady of Providence,https://stats.ncaa.org/players/8900377,597095.0,2025,Anderson (IN),9174.0,HCAC,3.0,16779.0,939.0,8900377
@@ -497,10 +497,10 @@ Alex Toomey,So.,P,0.0,0.0,33.0,-,,,,,https://stats.ncaa.org/players/8889662,5972
 Tommy Sasso,Sr.,OF,0.0,0.0,43.0,-,,,,,https://stats.ncaa.org/players/9114750,597216.0,2025,Anna Maria,23257.0,Great Northeast,3.0,16779.0,26.0,9114750
 Alex Mandell,Fr.,P,0.0,0.0,21.0,-,,,,,https://stats.ncaa.org/players/9114727,597216.0,2025,Anna Maria,23257.0,Great Northeast,3.0,16779.0,26.0,9114727
 Francesco De Vivo,Fr.,P,0.0,0.0,24.0,-,,,,,https://stats.ncaa.org/players/9114738,597216.0,2025,Anna Maria,23257.0,Great Northeast,3.0,16779.0,26.0,9114738
-Jeremy Rosenberg,Sr.,INF,0.0,0.0,34.0,-,,,,,https://stats.ncaa.org/players/8876487,597216.0,2025,Anna Maria,23257.0,Great Northeast,3.0,16779.0,26.0,8876487
+Jeremy Rosenberg,Sr.,INF,0.0,0.0,34.0,-,,,,,https://stats.ncaa.org/players/8876487,597216.0,2025,Anna Maria,23257.0,Great Northeast,3.0,16779.0,26.0,d3d-7576457
 Michael Shorey,Sr.,P,0.0,0.0,16.0,-,,,,,https://stats.ncaa.org/players/8894425,597216.0,2025,Anna Maria,23257.0,Great Northeast,3.0,16779.0,26.0,8894425
 Sean Sage,So.,P,0.0,0.0,46.0,-,,,,,https://stats.ncaa.org/players/8896195,597216.0,2025,Anna Maria,23257.0,Great Northeast,3.0,16779.0,26.0,8896195
-Conor Francesconi,Jr.,P,0.0,0.0,2.0,-,,,,,https://stats.ncaa.org/players/8897571,597216.0,2025,Anna Maria,23257.0,Great Northeast,3.0,16779.0,26.0,8897571
+Conor Francesconi,Jr.,P,0.0,0.0,2.0,-,,,,,https://stats.ncaa.org/players/8897571,597216.0,2025,Anna Maria,23257.0,Great Northeast,3.0,16779.0,26.0,d3d-8018156
 I. White,So.,3b,0.0,0.0,19.0,-,,,,,https://stats.ncaa.org/players/8897614,597216.0,2025,Anna Maria,23257.0,Great Northeast,3.0,16779.0,26.0,8897614
 Matt Beuka,Jr.,INF,0.0,0.0,11.0,-,,,,,https://stats.ncaa.org/players/8901985,597216.0,2025,Anna Maria,23257.0,Great Northeast,3.0,16779.0,26.0,d3d-8594468
 Will Conroy,Jr.,P,1.0,1.0,46.0,-,,,,,https://stats.ncaa.org/players/8899004,597099.0,2025,Arcadia,28745.0,MAC Freedom,3.0,16779.0,966.0,8899004
@@ -698,7 +698,7 @@ Logan Riley,Sr.,INF,0.0,0.0,12.0,-,,,,,https://stats.ncaa.org/players/8877250,59
 Kyle Mosley,Jr.,P,0.0,0.0,45.0,-,,,,,https://stats.ncaa.org/players/8876343,597219.0,2025,Aurora,30097.0,NACC,3.0,16779.0,42.0,8876343
 Dominick Curcio,Sr.,OF,0.0,0.0,20.0,-,,,,,https://stats.ncaa.org/players/8876386,597219.0,2025,Aurora,30097.0,NACC,3.0,16779.0,42.0,8876386
 Lucas Gamble,Jr.,UT,0.0,0.0,41.0,-,,,,,https://stats.ncaa.org/players/8878450,597219.0,2025,Aurora,30097.0,NACC,3.0,16779.0,42.0,8878450
-Tyler Patton,Jr.,C,0.0,0.0,21.0,-,,,,,https://stats.ncaa.org/players/8882512,597219.0,2025,Aurora,30097.0,NACC,3.0,16779.0,42.0,8882512
+Tyler Patton,Jr.,C,0.0,0.0,21.0,-,,,,,https://stats.ncaa.org/players/8882512,597219.0,2025,Aurora,30097.0,NACC,3.0,16779.0,42.0,d3d-7995431
 Carson Faust,So.,INF,0.0,0.0,27.0,-,,,,,https://stats.ncaa.org/players/8895485,597219.0,2025,Aurora,30097.0,NACC,3.0,16779.0,42.0,8895485
 Brandon Todd,So.,P,0.0,0.0,23.0,-,,,,,https://stats.ncaa.org/players/8893700,597219.0,2025,Aurora,30097.0,NACC,3.0,16779.0,42.0,8893700
 Alex Panico,So.,OF,0.0,0.0,15.0,-,,,,,https://stats.ncaa.org/players/8894248,597219.0,2025,Aurora,30097.0,NACC,3.0,16779.0,42.0,8894248
@@ -793,7 +793,7 @@ Kai Freeman,Fr.,INF,0.0,0.0,30.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/playe
 Logan Napoleon,Jr.,OF,0.0,0.0,26.0,5-10,LEFT,LEFT,,,https://stats.ncaa.org/players/9171485,597220.0,2025,Averett,903.0,ODAC,3.0,16779.0,44.0,9171485
 Josh Herner,Fr.,UT,0.0,0.0,43.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9171513,597220.0,2025,Averett,903.0,ODAC,3.0,16779.0,44.0,9171513
 Ean Amerson,Fr.,P,1.0,1.0,18.0,5-9,RIGHT,LEFT,,,https://stats.ncaa.org/players/9171484,597220.0,2025,Averett,903.0,ODAC,3.0,16779.0,44.0,d3d-9171484
-Teddy Hauser,So.,INF,1.0,1.0,49.0,5-9,RIGHT,RIGHT,"White Plains, NY",Canterbury School,https://stats.ncaa.org/players/9171487,597220.0,2025,Averett,903.0,ODAC,3.0,16779.0,44.0,9171487
+Teddy Hauser,So.,INF,1.0,1.0,49.0,5-9,RIGHT,RIGHT,"White Plains, NY",Canterbury School,https://stats.ncaa.org/players/9171487,597220.0,2025,Averett,903.0,ODAC,3.0,16779.0,44.0,d3d-9171487
 Maddox Warren,Fr.,UT,1.0,0.0,31.0,6-3,LEFT,LEFT,,,https://stats.ncaa.org/players/9171490,597220.0,2025,Averett,903.0,ODAC,3.0,16779.0,44.0,d3d-9171490
 Brady Kremer,Fr.,INF,0.0,0.0,39.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9171511,597220.0,2025,Averett,903.0,ODAC,3.0,16779.0,44.0,9171511
 Oscar Rodriguez-Marin,So.,1B,0.0,0.0,40.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9171512,597220.0,2025,Averett,903.0,ODAC,3.0,16779.0,44.0,9171512
@@ -903,7 +903,7 @@ Kenneth Pastrana,So.,OF,0.0,0.0,2.0,5-9,LEFT,RIGHT,"Central Islip, NY",Islip,htt
 "Pedro Tejada, Jr.",Sr.,C,0.0,0.0,22.0,5-8,RIGHT,RIGHT,"Howard Beach, NY",Christ the King,https://stats.ncaa.org/players/8885092,597225.0,2025,Baruch,834.0,CUNYAC,3.0,16779.0,58.0,8885092
 Benjamin Luciano,Sr.,OF,0.0,0.0,44.0,6-2,RIGHT,RIGHT,"Brooklyn, NY",Bishop Loughlin,https://stats.ncaa.org/players/8879947,597225.0,2025,Baruch,834.0,CUNYAC,3.0,16779.0,58.0,d3d-8680529
 Julian Diaz,Jr.,1B,0.0,0.0,23.0,5-10,RIGHT,RIGHT,"New York City, NY",Evangel Christian,https://stats.ncaa.org/players/8881115,597225.0,2025,Baruch,834.0,CUNYAC,3.0,16779.0,58.0,8881115
-Joseph Cocozza,Sr.,INF,0.0,0.0,21.0,6-3,RIGHT,RIGHT,"Staten Island, NY",Monsignor Farrell,https://stats.ncaa.org/players/8888271,597225.0,2025,Baruch,834.0,CUNYAC,3.0,16779.0,58.0,8888271
+Joseph Cocozza,Sr.,INF,0.0,0.0,21.0,6-3,RIGHT,RIGHT,"Staten Island, NY",Monsignor Farrell,https://stats.ncaa.org/players/8888271,597225.0,2025,Baruch,834.0,CUNYAC,3.0,16779.0,58.0,d3d-7584031
 Brian Baek,Jr.,P,0.0,0.0,30.0,6-2,RIGHT,RIGHT,"Flushing, NY",H.S. of American Studies,https://stats.ncaa.org/players/8878140,597225.0,2025,Baruch,834.0,CUNYAC,3.0,16779.0,58.0,8878140
 Jayden Pepitone,So.,INF,0.0,0.0,37.0,6-0,RIGHT,RIGHT,"Southampton, NY",Southampton,https://stats.ncaa.org/players/8887438,597225.0,2025,Baruch,834.0,CUNYAC,3.0,16779.0,58.0,8887438
 Andrew Page,So.,C,0.0,0.0,8.0,5-11,RIGHT,RIGHT,"Jackson Heights, NY",American Studies,https://stats.ncaa.org/players/8874361,597225.0,2025,Baruch,834.0,CUNYAC,3.0,16779.0,58.0,8874361
@@ -978,7 +978,7 @@ Braden Fox,Fr.,OF,1.0,0.0,35.0,-,,,"Auburn, AL",Auburn HS,https://stats.ncaa.org
 Cooper Sirk,Fr.,P,0.0,0.0,56.0,-,,LEFT,"Baton Rouge, LA",The Dunham School,https://stats.ncaa.org/players/9171667,597339.0,2025,Belhaven,30251.0,CCS,3.0,16779.0,30197.0,9171667
 Austin Canale,Fr.,P,2.0,2.0,13.0,-,RIGHT,RIGHT,"Mandeville, LA",Fountainebleau HS,https://stats.ncaa.org/players/9171669,597339.0,2025,Belhaven,30251.0,CCS,3.0,16779.0,30197.0,9171669
 Logan Goodreau,Sr.,P,0.0,0.0,7.0,6-1,LEFT,LEFT,"Mandeville, LA",Fountainebleu HS,https://stats.ncaa.org/players/8879272,597339.0,2025,Belhaven,30251.0,CCS,3.0,16779.0,30197.0,8879272
-Sage Rivere,Jr.,INF,1.0,0.0,33.0,6-0,RIGHT,RIGHT,"Napoleonville, LA",Assumption HS,https://stats.ncaa.org/players/8882496,597339.0,2025,Belhaven,30251.0,CCS,3.0,16779.0,30197.0,8882496
+Sage Rivere,Jr.,INF,1.0,0.0,33.0,6-0,RIGHT,RIGHT,"Napoleonville, LA",Assumption HS,https://stats.ncaa.org/players/8882496,597339.0,2025,Belhaven,30251.0,CCS,3.0,16779.0,30197.0,d3d-8008743
 Tristan Pearson,Sr.,UT,3.0,3.0,2.0,5-10,LEFT,RIGHT,"Biloxi, MS",Biloxi HS,https://stats.ncaa.org/players/8878544,597339.0,2025,Belhaven,30251.0,CCS,3.0,16779.0,30197.0,d3d-8527953
 Ben Hoover,Jr.,P,1.0,0.0,48.0,6-4,RIGHT,RIGHT,"Fairhope, AL",Fairhope HS,https://stats.ncaa.org/players/9116113,597339.0,2025,Belhaven,30251.0,CCS,3.0,16779.0,30197.0,d3d-7817161
 Cole Fletcher,Sr.,UT,2.0,2.0,22.0,6-1,RIGHT,RIGHT,"Picayune, MS",St. Stanislaus,https://stats.ncaa.org/players/8891603,597339.0,2025,Belhaven,30251.0,CCS,3.0,16779.0,30197.0,d3d-8528204
@@ -1095,7 +1095,7 @@ Giovanni Ortiz,Jr.,C,0.0,0.0,17.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/playe
 Marcelo Manrique,Sr.,C,0.0,0.0,45.0,6-1,RIGHT,RIGHT,"Miami, FL",Coral Reef Senior,https://stats.ncaa.org/players/8880510,597206.0,2025,Berea,9174.0,HCAC,3.0,16779.0,30171.0,8880510
 Rafael Ramos-Davila,So.,C,0.0,0.0,23.0,5-11,BOTH,RIGHT,"Bayamon, PR",El Shaddai Christian Academy,https://stats.ncaa.org/players/8874480,597206.0,2025,Berea,9174.0,HCAC,3.0,16779.0,30171.0,8874480
 Julian Cancel,So.,INF,0.0,0.0,42.0,5-7,,,,,https://stats.ncaa.org/players/8880606,597206.0,2025,Berea,9174.0,HCAC,3.0,16779.0,30171.0,8880606
-Justin Brown,Sr.,INF,0.0,0.0,25.0,5-9,RIGHT,RIGHT,"Covington, GA",Newton HS,https://stats.ncaa.org/players/8877516,597206.0,2025,Berea,9174.0,HCAC,3.0,16779.0,30171.0,8877516
+Justin Brown,Sr.,INF,0.0,0.0,25.0,5-9,RIGHT,RIGHT,"Covington, GA",Newton HS,https://stats.ncaa.org/players/8877516,597206.0,2025,Berea,9174.0,HCAC,3.0,16779.0,30171.0,d3d-7582565
 Darius Davis,Sr.,1B,0.0,0.0,7.0,6-0,RIGHT,RIGHT,"New Orleans, LA",De La Salle HS,https://stats.ncaa.org/players/8885735,597206.0,2025,Berea,9174.0,HCAC,3.0,16779.0,30171.0,8885735
 Ricardo Serra,Sr.,INF,0.0,0.0,14.0,6-1,RIGHT,RIGHT,"Toa Baja, PR",Carlos Beltran Baseball Academy,https://stats.ncaa.org/players/8874646,597206.0,2025,Berea,9174.0,HCAC,3.0,16779.0,30171.0,d3d-7582395
 Zion Clay,Sr.,1B,0.0,0.0,40.0,6-0,,,"Detroit, MI",University of Detroit Jesuit,https://stats.ncaa.org/players/8895446,597206.0,2025,Berea,9174.0,HCAC,3.0,16779.0,30171.0,8895446
@@ -1125,7 +1125,7 @@ Andrew McAdams,So.,C,0.0,0.0,36.0,6-0,RIGHT,RIGHT,"Birmingham, AL",Briarwood Chr
 JON STRYDOM,Jr.,P,4.0,0.0,27.0,6-1,RIGHT,RIGHT,"Marietta, GA",Pope,https://stats.ncaa.org/players/8889364,597100.0,2025,Berry,30169.0,SAA,3.0,16779.0,973.0,8889364
 AUBREY HIGGINS,Jr.,P,1.0,0.0,14.0,6-3,RIGHT,RIGHT,"Cornelia, GA",Tallulah Falls,https://stats.ncaa.org/players/8885300,597100.0,2025,Berry,30169.0,SAA,3.0,16779.0,973.0,8885300
 Rowan Billings,So.,P,0.0,0.0,50.0,6-3,RIGHT,RIGHT,"Cartersville, GA",Woodland,https://stats.ncaa.org/players/8882245,597100.0,2025,Berry,30169.0,SAA,3.0,16779.0,973.0,8882245
-CJ Whaley,Sr.,P,0.0,0.0,32.0,6-3,RIGHT,RIGHT,"Kennesaw, GA",Kennesaw Mountain,https://stats.ncaa.org/players/8874277,597100.0,2025,Berry,30169.0,SAA,3.0,16779.0,973.0,8874277
+CJ Whaley,Sr.,P,0.0,0.0,32.0,6-3,RIGHT,RIGHT,"Kennesaw, GA",Kennesaw Mountain,https://stats.ncaa.org/players/8874277,597100.0,2025,Berry,30169.0,SAA,3.0,16779.0,973.0,d3d-7551960
 Cam Welsh,So.,P,0.0,0.0,12.0,6-0,LEFT,RIGHT,"Spring Garden, AL",Spring Garden,https://stats.ncaa.org/players/8874331,597100.0,2025,Berry,30169.0,SAA,3.0,16779.0,973.0,8874331
 Will Waters,So.,INF,1.0,0.0,30.0,6-2,RIGHT,RIGHT,"Sandy Springs, GA",St. Pius X,https://stats.ncaa.org/players/8878331,597100.0,2025,Berry,30169.0,SAA,3.0,16779.0,973.0,8878331
 Joey Garcia,Sr.,INF,5.0,5.0,5.0,6-0,RIGHT,RIGHT,"Atlanta, GA",Lakeside,https://stats.ncaa.org/players/8887643,597100.0,2025,Berry,30169.0,SAA,3.0,16779.0,973.0,8887643
@@ -1222,7 +1222,7 @@ Malachi Santiago,Sr.,INF,0.0,0.0,1.0,-,,,,,https://stats.ncaa.org/players/887550
 Gavin Jacobsen,Sr.,P,0.0,0.0,14.0,-,,,,,https://stats.ncaa.org/players/8893642,597186.0,2025,Bethany Lutheran,30115.0,UMAC,3.0,16779.0,30038.0,8893642
 Caleb Randolph,Jr.,P,0.0,0.0,50.0,-,,,,,https://stats.ncaa.org/players/8898547,597186.0,2025,Bethany Lutheran,30115.0,UMAC,3.0,16779.0,30038.0,8898547
 Connor Brigger,So.,1B,0.0,0.0,36.0,-,,,,,https://stats.ncaa.org/players/8896094,597186.0,2025,Bethany Lutheran,30115.0,UMAC,3.0,16779.0,30038.0,8896094
-Xavier Palmer,Jr.,OF,0.0,0.0,3.0,-,,,,,https://stats.ncaa.org/players/8898327,597186.0,2025,Bethany Lutheran,30115.0,UMAC,3.0,16779.0,30038.0,8898327
+Xavier Palmer,Jr.,OF,0.0,0.0,3.0,-,,,,,https://stats.ncaa.org/players/8898327,597186.0,2025,Bethany Lutheran,30115.0,UMAC,3.0,16779.0,30038.0,d3d-8019276
 Tyler Rodgers,So.,OF,0.0,0.0,40.0,-,,,,,https://stats.ncaa.org/players/8893069,597186.0,2025,Bethany Lutheran,30115.0,UMAC,3.0,16779.0,30038.0,8893069
 Lucas Reiff,Jr.,OF,0.0,0.0,26.0,-,,,,,https://stats.ncaa.org/players/8893399,597186.0,2025,Bethany Lutheran,30115.0,UMAC,3.0,16779.0,30038.0,8893399
 Raimundo Heredias Jr.,Sr.,P,0.0,0.0,11.0,-,,,,,https://stats.ncaa.org/players/8900220,597186.0,2025,Bethany Lutheran,30115.0,UMAC,3.0,16779.0,30038.0,8900220
@@ -1253,7 +1253,7 @@ Sam Johnson,Sr.,OF,0.0,0.0,4.0,-,LEFT,RIGHT,"Stillwater, MN",St. Croix Prep,http
 Jordan Krupke,Sr.,P,0.0,0.0,10.0,-,RIGHT,RIGHT,"Saint Michael, MN",St. Michael-Albertville,https://stats.ncaa.org/players/9211577,597227.0,2025,Bethel (MN),882.0,MIAC,3.0,16779.0,60.0,d3d-7133839
 Alexander Kile,So.,P,0.0,0.0,8.0,-,RIGHT,RIGHT,"Newington, GA",Screven County,https://stats.ncaa.org/players/8884715,597227.0,2025,Bethel (MN),882.0,MIAC,3.0,16779.0,60.0,8884715
 Leo Fleischhacker,Jr.,OF,0.0,0.0,20.0,-,RIGHT,RIGHT,"Roseville, MN",Moundsview,https://stats.ncaa.org/players/8875456,597227.0,2025,Bethel (MN),882.0,MIAC,3.0,16779.0,60.0,8875456
-Max Sutter,Sr.,P,0.0,0.0,6.0,-,RIGHT,RIGHT,"Albertville, MN",St. Miachel-Albertville,https://stats.ncaa.org/players/8890403,597227.0,2025,Bethel (MN),882.0,MIAC,3.0,16779.0,60.0,8890403
+Max Sutter,Sr.,P,0.0,0.0,6.0,-,RIGHT,RIGHT,"Albertville, MN",St. Miachel-Albertville,https://stats.ncaa.org/players/8890403,597227.0,2025,Bethel (MN),882.0,MIAC,3.0,16779.0,60.0,d3d-7593052
 Kellan Schultz,So.,P,0.0,0.0,27.0,-,RIGHT,RIGHT,"Loveland, CO",Thompson Valley,https://stats.ncaa.org/players/8890477,597227.0,2025,Bethel (MN),882.0,MIAC,3.0,16779.0,60.0,8890477
 Brandon Witter,So.,P,0.0,0.0,43.0,-,LEFT,RIGHT,"Lakeville, MN",Lakeville South,https://stats.ncaa.org/players/8898805,597227.0,2025,Bethel (MN),882.0,MIAC,3.0,16779.0,60.0,8898805
 Samuel Abbas,So.,C,0.0,0.0,34.0,-,RIGHT,RIGHT,"Andover, MN",Andover,https://stats.ncaa.org/players/8894143,597227.0,2025,Bethel (MN),882.0,MIAC,3.0,16779.0,60.0,8894143
@@ -1444,7 +1444,7 @@ Andy Fahringer,Jr.,P,2.0,0.0,18.0,6-0,RIGHT,RIGHT,"Holly Springs, NC",Holly Spri
 CP Pyle,Sr.,OF,5.0,5.0,49.0,5-7,RIGHT,RIGHT,"Salisbury, NC",Jesse C. Carson HS,https://stats.ncaa.org/players/8877676,597352.0,2025,Brevard,842.0,USA South,3.0,16779.0,30094.0,8877676
 Logan Sawyer,Jr.,INF,5.0,5.0,9.0,6-1,RIGHT,RIGHT,"Asheboro, NC",Uwharrie Charter School,https://stats.ncaa.org/players/8878838,597352.0,2025,Brevard,842.0,USA South,3.0,16779.0,30094.0,d3d-8011809
 Hatcher Bailey,So.,P,1.0,0.0,46.0,6-3,RIGHT,RIGHT,"Griffin, GA",Spalding HS,https://stats.ncaa.org/players/8886066,597352.0,2025,Brevard,842.0,USA South,3.0,16779.0,30094.0,8886066
-Jacob Thompson,Sr.,P,1.0,1.0,17.0,6-0,RIGHT,RIGHT,"Gray, GA",Jones County HS,https://stats.ncaa.org/players/8886078,597352.0,2025,Brevard,842.0,USA South,3.0,16779.0,30094.0,8886078
+Jacob Thompson,Sr.,P,1.0,1.0,17.0,6-0,RIGHT,RIGHT,"Gray, GA",Jones County HS,https://stats.ncaa.org/players/8886078,597352.0,2025,Brevard,842.0,USA South,3.0,16779.0,30094.0,d3d-7568672
 Alex Dial,Sr.,OF,0.0,0.0,31.0,6-0,RIGHT,RIGHT,"Goose Creek, SC",Goose Creek HS,https://stats.ncaa.org/players/8887097,597352.0,2025,Brevard,842.0,USA South,3.0,16779.0,30094.0,8887097
 Braxton Mueller,So.,INF,0.0,0.0,28.0,5-10,RIGHT,RIGHT,"Fayetteville, GA",Whitewater HS,https://stats.ncaa.org/players/8874116,597352.0,2025,Brevard,842.0,USA South,3.0,16779.0,30094.0,8874116
 Baylor Wyatt,Sr.,INF,1.0,0.0,34.0,6-1,RIGHT,RIGHT,"Gastonia, NC",Ashbrook HS,https://stats.ncaa.org/players/8876085,597352.0,2025,Brevard,842.0,USA South,3.0,16779.0,30094.0,d3d-7810654
@@ -1496,7 +1496,7 @@ Jake Harris,So.,C,0.0,0.0,31.0,6-0,RIGHT,RIGHT,"Richmond, VA",Mills Godwin,https
 Andrew Baugher,Jr.,P,0.0,0.0,24.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8879697,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,d3d-7983627
 Cole Keel,So.,P,0.0,0.0,39.0,6-0,RIGHT,RIGHT,"Leesburg, VA",Tuscarora,https://stats.ncaa.org/players/8882749,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,8882749
 Spencer Sigmon,Jr.,C,0.0,0.0,23.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8878815,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,8878815
-Hunter Covill,So.,P,0.0,0.0,42.0,5-9,RIGHT,RIGHT,"Spotsylvania, VA",Chancellor,https://stats.ncaa.org/players/8877905,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,8877905
+Hunter Covill,So.,P,0.0,0.0,42.0,5-9,RIGHT,RIGHT,"Spotsylvania, VA",Chancellor,https://stats.ncaa.org/players/8877905,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,d3d-8417429
 Spencer Lloyd,So.,P,0.0,0.0,99.0,6-0,RIGHT,RIGHT,"Richmond, VA",Midlothian,https://stats.ncaa.org/players/8885112,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,8885112
 Liam Moriarty,So.,P,0.0,0.0,99.0,6-1,RIGHT,RIGHT,"Aldie, VA",Lightridge,https://stats.ncaa.org/players/8887072,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,8887072
 Nick Stavros,Jr.,INF,0.0,0.0,8.0,5-8,LEFT,RIGHT,"Stony Point, NY",Bergen Catholic,https://stats.ncaa.org/players/8884177,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,d3d-7983599
@@ -1513,7 +1513,7 @@ Garrett Gargano,Jr.,OF,0.0,0.0,35.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/pla
 Kevin Hugenberg,So.,P,0.0,0.0,99.0,5-10,RIGHT,RIGHT,"Chesterfield, VA",Monacan,https://stats.ncaa.org/players/8892592,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,8892592
 Nick Dawson,So.,INF,0.0,0.0,99.0,6-2,RIGHT,RIGHT,"Amherst, VA",Amherst,https://stats.ncaa.org/players/8890545,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,8890545
 Joe Christopher,Sr.,P,0.0,0.0,26.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8892619,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,d3d-7818722
-Mitchell Vedder,Sr.,P,0.0,0.0,22.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8890569,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,8890569
+Mitchell Vedder,Sr.,P,0.0,0.0,22.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8890569,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,d3d-7560309
 Nick Harris,Jr.,P,0.0,0.0,33.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8892782,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,8892782
 Carter Childs,So.,INF,0.0,0.0,29.0,6-3,RIGHT,RIGHT,"Spotsylvania, VA",Chancellor,https://stats.ncaa.org/players/8896445,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,8896445
 Camden Herron,Sr.,INF,0.0,0.0,1.0,5-8,RIGHT,RIGHT,"Bridgewater, VA",Turner Ashby,https://stats.ncaa.org/players/8893294,597231.0,2025,Bridgewater (VA),903.0,ODAC,3.0,16779.0,75.0,8893294
@@ -1649,7 +1649,7 @@ Zach Barnes,So.,P,0.0,0.0,13.0,6-5,RIGHT,RIGHT,"Chapel Hill, NC",Chapel Hill,htt
 Jackson Brewer,Sr.,P,0.0,0.0,33.0,6-3,RIGHT,RIGHT,"Greenville, SC",Wade Hampton,https://stats.ncaa.org/players/8888343,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,8888343
 Archer Stankowski,Jr.,P,0.0,0.0,20.0,6-3,RIGHT,RIGHT,"New Albany, OH",St. Charles Prep,https://stats.ncaa.org/players/8879591,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,d3d-7986836
 Sean Donahue,Jr.,C,0.0,0.0,22.0,6-0,RIGHT,RIGHT,"Durham, NC",Durham Academy,https://stats.ncaa.org/players/8881674,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,d3d-7986857
-Logan Andreyko,Sr.,OF,0.0,0.0,7.0,5-7,LEFT,RIGHT,"Pittsburgh, PA",North Allegheny Senior,https://stats.ncaa.org/players/8896011,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,8896011
+Logan Andreyko,Sr.,OF,0.0,0.0,7.0,5-7,LEFT,RIGHT,"Pittsburgh, PA",North Allegheny Senior,https://stats.ncaa.org/players/8896011,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,d3d-7557323
 Quinn Saunders,So.,P,0.0,0.0,29.0,6-4,LEFT,LEFT,"Palos Park, IL",Amos Alonso Stagg,https://stats.ncaa.org/players/8892773,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,8892773
 Matt Trout,Jr.,OF,0.0,0.0,14.0,6-3,RIGHT,RIGHT,"North East, MD",St. Elizabeth,https://stats.ncaa.org/players/8892927,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,8892927
 Jasiah Harris,Jr.,INF,0.0,0.0,1.0,6-0,RIGHT,RIGHT,"Upper Marlboro, MD",Saint Stephens & Saint Agnes,https://stats.ncaa.org/players/8896420,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,d3d-7986829
@@ -1657,7 +1657,7 @@ Carson Walker,So.,C,0.0,0.0,19.0,5-9,RIGHT,RIGHT,"San Diego, CA",La Jolla Countr
 Tyler Stillson,So.,UT,0.0,0.0,10.0,6-3,RIGHT,RIGHT,"Chapel Hill, NC",Chapel Hill,https://stats.ncaa.org/players/8901864,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,d3d-8591649
 Tommy Moonan,So.,OF,0.0,0.0,11.0,5-9,RIGHT,LEFT,"Johns Creek, GA",Johns Creek,https://stats.ncaa.org/players/8899419,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,8899419
 Kyle Gearding,Sr.,P,0.0,0.0,27.0,6-4,LEFT,RIGHT,"Cincinnati, OH",Anderson,https://stats.ncaa.org/players/8902087,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,8902087
-Nick Harms,Sr.,OF,0.0,0.0,26.0,6-3,LEFT,LEFT,"Saint Louis, MO",Parkway West,https://stats.ncaa.org/players/8900916,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,8900916
+Nick Harms,Sr.,OF,0.0,0.0,26.0,6-3,LEFT,LEFT,"Saint Louis, MO",Parkway West,https://stats.ncaa.org/players/8900916,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,d3d-7557376
 Franco Alonso,Sr.,INF,0.0,0.0,2.0,6-2,RIGHT,RIGHT,"Pasadena, CA",Polytechnic School,https://stats.ncaa.org/players/9110482,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,d3d-6712198
 Dane Camphausen,Sr.,INF,0.0,0.0,40.0,6-8,RIGHT,RIGHT,"Mc Lean, VA",The Landon School,https://stats.ncaa.org/players/9110486,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,d3d-6622328
 Karthik Gondy,Jr.,P,0.0,0.0,35.0,6-1,RIGHT,RIGHT,"Las Vegas, NV",Palo Verde,https://stats.ncaa.org/players/9110501,597243.0,2025,CWRU,1471.0,UAA,3.0,16779.0,122.0,9110501
@@ -1731,7 +1731,7 @@ Oscar Lopez,So.,P,0.0,0.0,29.0,6-3,LEFT,LEFT,,,https://stats.ncaa.org/players/88
 Michael Smith,So.,P,0.0,0.0,34.0,6-1,BOTH,RIGHT,,,https://stats.ncaa.org/players/8877982,597237.0,2025,Cal Lutheran,910.0,SCIAC,3.0,16779.0,105.0,8877982
 Griffin Zitko,Sr.,C,0.0,0.0,21.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8889414,597237.0,2025,Cal Lutheran,910.0,SCIAC,3.0,16779.0,105.0,d3d-7979384
 Luke Wechsler,Sr.,P,1.0,1.0,13.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8882071,597237.0,2025,Cal Lutheran,910.0,SCIAC,3.0,16779.0,105.0,8882071
-Lucas Danielewicz,Sr.,OF,2.0,2.0,12.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8882128,597237.0,2025,Cal Lutheran,910.0,SCIAC,3.0,16779.0,105.0,8882128
+Lucas Danielewicz,Sr.,OF,2.0,2.0,12.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8882128,597237.0,2025,Cal Lutheran,910.0,SCIAC,3.0,16779.0,105.0,d3d-8454970
 Noah Matsumoto,Sr.,C,1.0,0.0,11.0,6-2,LEFT,RIGHT,,,https://stats.ncaa.org/players/8883196,597237.0,2025,Cal Lutheran,910.0,SCIAC,3.0,16779.0,105.0,d3d-7979366
 Joshua Kim,Sr.,P,2.0,0.0,27.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8883247,597237.0,2025,Cal Lutheran,910.0,SCIAC,3.0,16779.0,105.0,d3d-8454983
 Carlos Vega,Sr.,INF,2.0,2.0,22.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8882253,597237.0,2025,Cal Lutheran,910.0,SCIAC,3.0,16779.0,105.0,8882253
@@ -1772,7 +1772,7 @@ Ryan Wong,Sr.,P,1.0,0.0,16.0,6-1,RIGHT,RIGHT,"Chicago, IL",Lane Tech College Pre
 Raymond Provost,So.,1B,0.0,0.0,2.0,5-4,RIGHT,RIGHT,"Floral Park, NY",Regis,https://stats.ncaa.org/players/8885057,597236.0,2025,Caltech,910.0,SCIAC,3.0,16779.0,89.0,8885057
 Thorsen Kristufek,Sr.,OF,1.0,1.0,22.0,6-5,RIGHT,RIGHT,"Mc Kinney, TX",McKinney,https://stats.ncaa.org/players/8881996,597236.0,2025,Caltech,910.0,SCIAC,3.0,16779.0,89.0,8881996
 Kailen Hargenrader,So.,1B,3.0,2.0,29.0,6-1,LEFT,LEFT,"Bethesda, MD",The Maret School,https://stats.ncaa.org/players/8877350,597236.0,2025,Caltech,910.0,SCIAC,3.0,16779.0,89.0,8877350
-Jacob Alderete,Jr.,OF,3.0,2.0,25.0,6-0,RIGHT,RIGHT,"Murrieta, CA",Murrieta Mesa,https://stats.ncaa.org/players/8881587,597236.0,2025,Caltech,910.0,SCIAC,3.0,16779.0,89.0,8881587
+Jacob Alderete,Jr.,OF,3.0,2.0,25.0,6-0,RIGHT,RIGHT,"Murrieta, CA",Murrieta Mesa,https://stats.ncaa.org/players/8881587,597236.0,2025,Caltech,910.0,SCIAC,3.0,16779.0,89.0,d3d-7998298
 Jack Bernhardt,So.,C,0.0,0.0,68.0,5-9,RIGHT,RIGHT,"Littleton, CO",Columbine,https://stats.ncaa.org/players/8885684,597236.0,2025,Caltech,910.0,SCIAC,3.0,16779.0,89.0,8885684
 Jack Fishel,Sr.,UT,3.0,3.0,11.0,6-1,RIGHT,RIGHT,"Baltimore, MD",Boys' Latin School of Maryland,https://stats.ncaa.org/players/8896827,597236.0,2025,Caltech,910.0,SCIAC,3.0,16779.0,89.0,d3d-7569698
 Joseph Pieper,So.,1B,2.0,0.0,14.0,6-2,RIGHT,RIGHT,"Palatine, IL",Palatine,https://stats.ncaa.org/players/8897065,597236.0,2025,Caltech,910.0,SCIAC,3.0,16779.0,89.0,8897065
@@ -1922,7 +1922,7 @@ Joey Rivera,Sr.,P,0.0,0.0,18.0,5-10,RIGHT,RIGHT,"Chicago, IL",DePaul College Pre
 Noah Hoffman,Jr.,P,0.0,0.0,16.0,6-0,RIGHT,RIGHT,"Brookfield, WI",Brookfield Central,https://stats.ncaa.org/players/8891207,597241.0,2025,Carroll (WI),836.0,CCIW,3.0,16779.0,120.0,8891207
 Dylan Eckrote,So.,P,0.0,0.0,39.0,6-3,LEFT,LEFT,"Vernon Hills, IL",Vernon Hills,https://stats.ncaa.org/players/8898009,597241.0,2025,Carroll (WI),836.0,CCIW,3.0,16779.0,120.0,8898009
 Ross Olsen,So.,C,0.0,0.0,33.0,6-2,RIGHT,RIGHT,"Terre Haute, IN",South Vigo,https://stats.ncaa.org/players/8902742,597241.0,2025,Carroll (WI),836.0,CCIW,3.0,16779.0,120.0,8902742
-Lane Scott,Sr.,INF,0.0,0.0,24.0,6-1,RIGHT,RIGHT,"Chicago, IL",Carl Sandberg,https://stats.ncaa.org/players/8902808,597241.0,2025,Carroll (WI),836.0,CCIW,3.0,16779.0,120.0,8902808
+Lane Scott,Sr.,INF,0.0,0.0,24.0,6-1,RIGHT,RIGHT,"Chicago, IL",Carl Sandberg,https://stats.ncaa.org/players/8902808,597241.0,2025,Carroll (WI),836.0,CCIW,3.0,16779.0,120.0,d3d-7564854
 Nate Sternig,Jr.,P,0.0,0.0,51.0,6-1,RIGHT,RIGHT,"Phoenix, AZ",Boulder Creek,https://stats.ncaa.org/players/8901848,597241.0,2025,Carroll (WI),836.0,CCIW,3.0,16779.0,120.0,8901848
 Gabe Lee,Jr.,C,0.0,0.0,17.0,6-1,RIGHT,RIGHT,"Madison, WI",McFarland,https://stats.ncaa.org/players/8899376,597241.0,2025,Carroll (WI),836.0,CCIW,3.0,16779.0,120.0,d3d-8272113
 Anthony Tado,Sr.,INF,0.0,0.0,8.0,5-8,LEFT,RIGHT,"Bridgeport, IL",St. Laurence,https://stats.ncaa.org/players/8901005,597241.0,2025,Carroll (WI),836.0,CCIW,3.0,16779.0,120.0,8901005
@@ -1956,7 +1956,7 @@ L. Wagner,Fr.,p,0.0,0.0,13.0,-,,,,,https://stats.ncaa.org/players/8883073,597242
 Dawson Gaynor,Jr.,,0.0,0.0,26.0,-,,,,,https://stats.ncaa.org/players/8874073,597242.0,2025,Carthage,836.0,CCIW,3.0,16779.0,121.0,8874073
 Collin Callahan,Sr.,SS,0.0,0.0,31.0,-,,,,,https://stats.ncaa.org/players/8883238,597242.0,2025,Carthage,836.0,CCIW,3.0,16779.0,121.0,8883238
 D. Bruggeman,Fr.,ss,0.0,0.0,15.0,-,,,,,https://stats.ncaa.org/players/8888346,597242.0,2025,Carthage,836.0,CCIW,3.0,16779.0,121.0,8888346
-Max Cairo,Jr.,UT,0.0,0.0,19.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8879166,597242.0,2025,Carthage,836.0,CCIW,3.0,16779.0,121.0,8879166
+Max Cairo,Jr.,UT,0.0,0.0,19.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8879166,597242.0,2025,Carthage,836.0,CCIW,3.0,16779.0,121.0,d3d-7591160
 Evan Devine,Sr.,INF,0.0,0.0,4.0,-,,,,,https://stats.ncaa.org/players/8889590,597242.0,2025,Carthage,836.0,CCIW,3.0,16779.0,121.0,8889590
 D. Gutke,Fr.,p,0.0,0.0,20.0,-,,,,,https://stats.ncaa.org/players/8889678,597242.0,2025,Carthage,836.0,CCIW,3.0,16779.0,121.0,8889678
 Nick Caruso,Sr.,INF,0.0,0.0,5.0,-,,,,,https://stats.ncaa.org/players/8884512,597242.0,2025,Carthage,836.0,CCIW,3.0,16779.0,121.0,8884512
@@ -1997,7 +1997,7 @@ Beckham McNally,So.,P,0.0,0.0,40.0,5-11,RIGHT,RIGHT,"Allentown, PA",Bethlehem Ca
 Lance Eilbacher,So.,OF,0.0,0.0,52.0,6-0,RIGHT,RIGHT,"Titusville, NJ",Notre Dame,https://stats.ncaa.org/players/8882912,597245.0,2025,Catholic,30101.0,Landmark,3.0,16779.0,124.0,8882912
 Daniel Nellum,So.,INF,0.0,0.0,38.0,6-2,LEFT,RIGHT,"Crofton, MD",DeMatha Catholic,https://stats.ncaa.org/players/8884052,597245.0,2025,Catholic,30101.0,Landmark,3.0,16779.0,124.0,8884052
 Luke Cardman,So.,P,0.0,0.0,17.0,6-1,RIGHT,RIGHT,"Alexandria, VA",West Potomac,https://stats.ncaa.org/players/8873913,597245.0,2025,Catholic,30101.0,Landmark,3.0,16779.0,124.0,d3d-8458229
-Mark Villanueva,Jr.,INF,0.0,0.0,18.0,5-6,RIGHT,RIGHT,"Rockville, MD",Our Lady of Good Counsel,https://stats.ncaa.org/players/8877104,597245.0,2025,Catholic,30101.0,Landmark,3.0,16779.0,124.0,8877104
+Mark Villanueva,Jr.,INF,0.0,0.0,18.0,5-6,RIGHT,RIGHT,"Rockville, MD",Our Lady of Good Counsel,https://stats.ncaa.org/players/8877104,597245.0,2025,Catholic,30101.0,Landmark,3.0,16779.0,124.0,d3d-7983923
 Cody Bosak,Sr.,P,0.0,0.0,44.0,5-10,RIGHT,RIGHT,"Woodbridge, VA",Potomac Senior,https://stats.ncaa.org/players/8885238,597245.0,2025,Catholic,30101.0,Landmark,3.0,16779.0,124.0,d3d-7584470
 Eddie Kaftan,Sr.,P,0.0,0.0,22.0,6-0,RIGHT,RIGHT,"Lyme, CT",Gould Academy,https://stats.ncaa.org/players/8879177,597245.0,2025,Catholic,30101.0,Landmark,3.0,16779.0,124.0,8879177
 Cole Peverall,Sr.,P,0.0,0.0,21.0,6-0,RIGHT,RIGHT,"Alexandria, VA",Gonzaga,https://stats.ncaa.org/players/8885522,597245.0,2025,Catholic,30101.0,Landmark,3.0,16779.0,124.0,8885522
@@ -2065,7 +2065,7 @@ Trace Shirley,So.,INF,0.0,0.0,41.0,5-8,RIGHT,RIGHT,"Cleveland, TX",,https://stat
 C. Laroux,Fr.,p,1.0,0.0,32.0,-,,,,,https://stats.ncaa.org/players/9220189,597246.0,2025,Centenary (LA),835.0,SCAC,3.0,16779.0,125.0,9220189
 H. Doyle,---,p,1.0,0.0,65.0,-,,,,,https://stats.ncaa.org/players/9220205,597246.0,2025,Centenary (LA),835.0,SCAC,3.0,16779.0,125.0,d3d-9220205
 T. Martin,---,p,1.0,0.0,47.0,-,,,,,https://stats.ncaa.org/players/9220206,597246.0,2025,Centenary (LA),835.0,SCAC,3.0,16779.0,125.0,9220206
-R. Ardoin,Fr.,p,1.0,0.0,44.0,-,,,,,https://stats.ncaa.org/players/9219798,597246.0,2025,Centenary (LA),835.0,SCAC,3.0,16779.0,125.0,9219798
+R. Ardoin,Fr.,p,1.0,0.0,44.0,-,,,,,https://stats.ncaa.org/players/9219798,597246.0,2025,Centenary (LA),835.0,SCAC,3.0,16779.0,125.0,d3d-9219798
 B. Birkelbac,Fr.,cf,3.0,2.0,23.0,-,,,,,https://stats.ncaa.org/players/9219799,597246.0,2025,Centenary (LA),835.0,SCAC,3.0,16779.0,125.0,d3d-9219799
 B. Hebert,Fr.,lf,3.0,3.0,11.0,-,,,,,https://stats.ncaa.org/players/9219803,597246.0,2025,Centenary (LA),835.0,SCAC,3.0,16779.0,125.0,9219803
 Christian Meiki,So.,C,2.0,1.0,8.0,6-0,LEFT,RIGHT,"Shreveport, LA",Captain Shreve,https://stats.ncaa.org/players/9219804,597246.0,2025,Centenary (LA),835.0,SCAC,3.0,16779.0,125.0,d3d-9219804
@@ -2603,7 +2603,7 @@ Bret Jones,So.,,0.0,0.0,95.0,-,,,,,https://stats.ncaa.org/players/8882044,597176
 Ayden Ryan,Jr.,,0.0,0.0,89.0,-,,,,,https://stats.ncaa.org/players/8884486,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,8884486
 Travis Brick,Jr.,P,1.0,0.0,31.0,-,,,,,https://stats.ncaa.org/players/8875317,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,d3d-8001959
 Jayden Menchaca,Jr.,P,0.0,0.0,99.0,-,,,,,https://stats.ncaa.org/players/8880423,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,8880423
-Landon Hyle,Jr.,UT,5.0,3.0,6.0,-,,,,,https://stats.ncaa.org/players/8877426,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,8877426
+Landon Hyle,Jr.,UT,5.0,3.0,6.0,-,,,,,https://stats.ncaa.org/players/8877426,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,d3d-8001964
 Samuel Ortiz,So.,INF,0.0,0.0,4.0,-,,,,,https://stats.ncaa.org/players/8882507,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,8882507
 Nico Young,Jr.,P,0.0,0.0,48.0,-,,,,,https://stats.ncaa.org/players/8892268,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,8892268
 Jake Lancaster,Jr.,P,2.0,0.0,41.0,-,,,,,https://stats.ncaa.org/players/8896917,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,d3d-8002001
@@ -2636,7 +2636,7 @@ Cage Chaney,Sr.,P,1.0,0.0,11.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/92
 K. McDaniel,Fr.,pr,1.0,0.0,33.0,-,,,,,https://stats.ncaa.org/players/9219812,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,9219812
 B. Hutchings,---,p,2.0,0.0,21.0,-,,,,,https://stats.ncaa.org/players/9219825,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,d3d-9219825
 T. Currie,---,2b,1.0,0.0,43.0,-,,,,,https://stats.ncaa.org/players/9219914,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,9219914
-L. Smith,Jr.,ss,5.0,4.0,13.0,-,,,,,https://stats.ncaa.org/players/9219819,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,9219819
+L. Smith,Jr.,ss,5.0,4.0,13.0,-,,,,,https://stats.ncaa.org/players/9219819,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,d3d-9219819
 C. North,---,p,2.0,0.0,41.0,-,,,,,https://stats.ncaa.org/players/9219826,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,9219826
 Matthew Armes,Sr.,INF,2.0,2.0,5.0,-,,,,,https://stats.ncaa.org/players/9219807,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,9219807
 B. Dinscore,Jr.,1b,4.0,4.0,30.0,-,,,,,https://stats.ncaa.org/players/9219808,597176.0,2025,Concordia (TX),835.0,SCAC,3.0,16779.0,24400.0,9219808
@@ -3005,7 +3005,7 @@ Josh Shepherd,Fr.,P,1.0,0.0,37.0,5-10,RIGHT,RIGHT,"Raleigh, NC",Ravenscroft H.S.
 Brody Davis,Fr.,P,0.0,0.0,14.0,6-3,LEFT,LEFT,"Austin, TX",Vista Ridge H.S,https://stats.ncaa.org/players/9083288,597103.0,2025,Dallas,835.0,SCAC,3.0,16779.0,1044.0,9083288
 Liam Mosley,Fr.,P,2.0,2.0,19.0,6-6,RIGHT,RIGHT,"Highlands Ranch, CO",Regis Jesuit H.S.,https://stats.ncaa.org/players/9083292,597103.0,2025,Dallas,835.0,SCAC,3.0,16779.0,1044.0,9083292
 Caleb Mize,Fr.,INF,2.0,0.0,4.0,6-2,RIGHT,RIGHT,"Humble, TX",Summer Creek H.S.,https://stats.ncaa.org/players/9083301,597103.0,2025,Dallas,835.0,SCAC,3.0,16779.0,1044.0,9083301
-Nate Gonzales,Fr.,OF,3.0,0.0,6.0,5-10,LEFT,LEFT,"San Antonio, TX",Cornerstone Christian,https://stats.ncaa.org/players/9083286,597103.0,2025,Dallas,835.0,SCAC,3.0,16779.0,1044.0,9083286
+Nate Gonzales,Fr.,OF,3.0,0.0,6.0,5-10,LEFT,LEFT,"San Antonio, TX",Cornerstone Christian,https://stats.ncaa.org/players/9083286,597103.0,2025,Dallas,835.0,SCAC,3.0,16779.0,1044.0,d3d-9083286
 Tito Ramos,Fr.,P,1.0,0.0,25.0,5-10,RIGHT,RIGHT,"San Antonio, TX",Homeschool,https://stats.ncaa.org/players/9083296,597103.0,2025,Dallas,835.0,SCAC,3.0,16779.0,1044.0,9083296
 Nomar Duran,So.,INF,2.0,0.0,29.0,5-11,RIGHT,RIGHT,"Little Elm, TX",Ore City H.S.,https://stats.ncaa.org/players/9083297,597103.0,2025,Dallas,835.0,SCAC,3.0,16779.0,1044.0,9083297
 Dylan Roscopf,Fr.,INF,5.0,5.0,3.0,5-8,RIGHT,RIGHT,,Mission Vista H.S,https://stats.ncaa.org/players/9083284,597103.0,2025,Dallas,835.0,SCAC,3.0,16779.0,1044.0,d3d-9083284
@@ -3177,7 +3177,7 @@ Connor Remley,So.,P,0.0,0.0,39.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/player
 Max Fishbein,Jr.,UT,0.0,0.0,3.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897763,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,d3d-7975432
 Kuyper Lashutka,Jr.,UT,0.0,0.0,20.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8892028,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,d3d-7975459
 Kade Keown,So.,OF,0.0,0.0,2.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8902747,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,8902747
-Nick Falter,Sr.,P,0.0,0.0,29.0,6-4,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8901626,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,8901626
+Nick Falter,Sr.,P,0.0,0.0,29.0,6-4,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8901626,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,d3d-7555566
 Cade Nowik,Jr.,INF,0.0,0.0,13.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8899133,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,d3d-7975477
 Jack Rollo,So.,UT,0.0,0.0,7.0,5-11,BOTH,RIGHT,,,https://stats.ncaa.org/players/8900383,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,8900383
 Evan Cerretani,So.,P,0.0,0.0,26.0,6-4,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8901843,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,8901843
@@ -3185,7 +3185,7 @@ Manny Nager,Sr.,P,0.0,0.0,16.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players
 Robbie Lee,Jr.,P,0.0,0.0,44.0,6-4,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8901948,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,8901948
 Ryan Paganelis,Jr.,P,0.0,0.0,40.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8899459,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,8899459
 Liam Eliot,Jr.,P,0.0,0.0,45.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8902650,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,8902650
-Eron Vega,Fr.,UT,0.0,0.0,9.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9090815,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,9090815
+Eron Vega,Fr.,UT,0.0,0.0,9.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9090815,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,d3d-9090815
 Cooper Marrs,Fr.,P,0.0,0.0,21.0,6-4,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9090816,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,9090816
 Andrew Fazio,So.,C,0.0,0.0,24.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9090818,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,9090818
 Noah Shapo,Fr.,P,0.0,0.0,32.0,5-11,LEFT,LEFT,,,https://stats.ncaa.org/players/9090820,597265.0,2025,Denison,897.0,NCAC,3.0,16779.0,182.0,9090820
@@ -3225,7 +3225,7 @@ Evan Connery,Jr.,P,0.0,0.0,32.0,6-2,RIGHT,LEFT,"Mc Lean, VA",Langley,https://sta
 Luke Nemeth,Jr.,P,0.0,0.0,25.0,6-2,LEFT,LEFT,"Malvern, PA",Great Valley,https://stats.ncaa.org/players/8884657,597266.0,2025,Dickinson,9683.0,Centennial,3.0,16779.0,185.0,8884657
 Will Ferris,Jr.,OF,0.0,0.0,21.0,5-10,RIGHT,RIGHT,"Bryn Mawr, PA",The Haverford School,https://stats.ncaa.org/players/8877433,597266.0,2025,Dickinson,9683.0,Centennial,3.0,16779.0,185.0,8877433
 Chase Weller,Sr.,C,0.0,0.0,6.0,5-11,RIGHT,RIGHT,"Middletown, MD",Middletown,https://stats.ncaa.org/players/8887612,597266.0,2025,Dickinson,9683.0,Centennial,3.0,16779.0,185.0,d3d-7564074
-Luke Gartland,So.,INF,0.0,0.0,23.0,5-10,RIGHT,RIGHT,"Lafayette Hill, PA",Plymouth Whitemarsh,https://stats.ncaa.org/players/8878554,597266.0,2025,Dickinson,9683.0,Centennial,3.0,16779.0,185.0,8878554
+Luke Gartland,So.,INF,0.0,0.0,23.0,5-10,RIGHT,RIGHT,"Lafayette Hill, PA",Plymouth Whitemarsh,https://stats.ncaa.org/players/8878554,597266.0,2025,Dickinson,9683.0,Centennial,3.0,16779.0,185.0,d3d-8428454
 Johnny Bruno,Jr.,OF,0.0,0.0,7.0,6-0,RIGHT,RIGHT,"Rumson, NJ",Rumson-Fair Haven,https://stats.ncaa.org/players/8889903,597266.0,2025,Dickinson,9683.0,Centennial,3.0,16779.0,185.0,8889903
 Matteo George,So.,P,0.0,0.0,20.0,6-0,LEFT,LEFT,"Del Mar, CA",Saint Joseph Notre Dame,https://stats.ncaa.org/players/8896757,597266.0,2025,Dickinson,9683.0,Centennial,3.0,16779.0,185.0,8896757
 Koll Peichel,Sr.,P,0.0,0.0,33.0,5-10,LEFT,RIGHT,"Swarthmore, PA",Strath Haven,https://stats.ncaa.org/players/8892269,597266.0,2025,Dickinson,9683.0,Centennial,3.0,16779.0,185.0,8892269
@@ -3243,7 +3243,7 @@ Langdon Downing,So.,INF,0.0,0.0,9.0,5-11,RIGHT,RIGHT,"Streamwood, IL",Elgin,http
 Travis Tiernan,So.,P,0.0,0.0,23.0,6-0,RIGHT,RIGHT,"Danville, IL",Oakwood,https://stats.ncaa.org/players/8885235,597131.0,2025,Dominican (IL),30097.0,NACC,3.0,16779.0,1332.0,8885235
 Aidan Groberski,So.,INF,0.0,0.0,30.0,6-1,RIGHT,RIGHT,"Arlington Heights, IL",John Hersey,https://stats.ncaa.org/players/8885250,597131.0,2025,Dominican (IL),30097.0,NACC,3.0,16779.0,1332.0,8885250
 Max Kruth,So.,P,0.0,0.0,24.0,6-0,RIGHT,RIGHT,"Evansville, WI",Evansville,https://stats.ncaa.org/players/8887227,597131.0,2025,Dominican (IL),30097.0,NACC,3.0,16779.0,1332.0,8887227
-Ryan Schmidt,Sr.,C,0.0,0.0,19.0,6-2,RIGHT,RIGHT,"West Chicago, IL",West Chicago,https://stats.ncaa.org/players/8889478,597131.0,2025,Dominican (IL),30097.0,NACC,3.0,16779.0,1332.0,8889478
+Ryan Schmidt,Sr.,C,0.0,0.0,19.0,6-2,RIGHT,RIGHT,"West Chicago, IL",West Chicago,https://stats.ncaa.org/players/8889478,597131.0,2025,Dominican (IL),30097.0,NACC,3.0,16779.0,1332.0,d3d-7557265
 Kian Ikeda Flynn,So.,INF,0.0,0.0,13.0,5-11,RIGHT,RIGHT,"Las Vegas, NV",Spring Valley,https://stats.ncaa.org/players/8885268,597131.0,2025,Dominican (IL),30097.0,NACC,3.0,16779.0,1332.0,8885268
 Michael Christopher,Sr.,OF,0.0,0.0,38.0,6-0,LEFT,LEFT,"Bloomingdale, IL",Lake Park,https://stats.ncaa.org/players/8887363,597131.0,2025,Dominican (IL),30097.0,NACC,3.0,16779.0,1332.0,8887363
 AJ Davies,Sr.,INF,0.0,0.0,1.0,5-11,RIGHT,LEFT,"Carlsbad, CA",Carlsbad High School,https://stats.ncaa.org/players/8878255,597131.0,2025,Dominican (IL),30097.0,NACC,3.0,16779.0,1332.0,8878255
@@ -3289,7 +3289,7 @@ Alex Feeney,So.,P,0.0,0.0,27.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/
 Justin Bonito,So.,P,0.0,0.0,35.0,6-2,LEFT,RIGHT,,,https://stats.ncaa.org/players/8888170,597267.0,2025,Drew,30101.0,Landmark,3.0,16779.0,190.0,8888170
 Jack Mocik,So.,UT,1.0,1.0,9.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8883114,597267.0,2025,Drew,30101.0,Landmark,3.0,16779.0,190.0,8883114
 Nic Curcio,Sr.,P,1.0,0.0,5.0,6-1,LEFT,LEFT,,,https://stats.ncaa.org/players/8874138,597267.0,2025,Drew,30101.0,Landmark,3.0,16779.0,190.0,d3d-7577869
-Zachary Chhabria,So.,1B,0.0,0.0,36.0,6-3,LEFT,LEFT,,,https://stats.ncaa.org/players/8877172,597267.0,2025,Drew,30101.0,Landmark,3.0,16779.0,190.0,8877172
+Zachary Chhabria,So.,1B,0.0,0.0,36.0,6-3,LEFT,LEFT,,,https://stats.ncaa.org/players/8877172,597267.0,2025,Drew,30101.0,Landmark,3.0,16779.0,190.0,d3d-8591305
 Matt Colucci,Sr.,P,1.0,1.0,40.0,6-1,RIGHT,RIGHT,"Brick, NJ",Monsignor Donovan,https://stats.ncaa.org/players/8880086,597267.0,2025,Drew,30101.0,Landmark,3.0,16779.0,190.0,d3d-7565363
 Graham Ross,So.,P,0.0,0.0,23.0,6-0,RIGHT,LEFT,,,https://stats.ncaa.org/players/8874172,597267.0,2025,Drew,30101.0,Landmark,3.0,16779.0,190.0,8874172
 Aidan Bauer,So.,P,0.0,0.0,14.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8878119,597267.0,2025,Drew,30101.0,Landmark,3.0,16779.0,190.0,8878119
@@ -3437,7 +3437,7 @@ Ryan Harrison,Fr.,C,0.0,0.0,35.0,-,,,,,https://stats.ncaa.org/players/9111264,59
 Ben Florkowski,Fr.,INF,0.0,0.0,38.0,-,,,,,https://stats.ncaa.org/players/9111265,597271.0,2025,East. Mennonite,903.0,ODAC,3.0,16779.0,203.0,9111265
 Andrew Ritterskamp,Fr.,P,1.0,0.0,49.0,-,,,,,https://stats.ncaa.org/players/9111273,597271.0,2025,East. Mennonite,903.0,ODAC,3.0,16779.0,203.0,9111273
 Colby Eidson,Jr.,P,0.0,0.0,29.0,-,,,,,https://stats.ncaa.org/players/8886694,597271.0,2025,East. Mennonite,903.0,ODAC,3.0,16779.0,203.0,8886694
-Erik Wilkinson,Jr.,1B,1.0,1.0,5.0,5-10,LEFT,RIGHT,,,https://stats.ncaa.org/players/8882609,597271.0,2025,East. Mennonite,903.0,ODAC,3.0,16779.0,203.0,8882609
+Erik Wilkinson,Jr.,1B,1.0,1.0,5.0,5-10,LEFT,RIGHT,,,https://stats.ncaa.org/players/8882609,597271.0,2025,East. Mennonite,903.0,ODAC,3.0,16779.0,203.0,d3d-8009415
 Hayden Winston,Sr.,P,1.0,0.0,12.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8874677,597271.0,2025,East. Mennonite,903.0,ODAC,3.0,16779.0,203.0,d3d-7585407
 Dalton Rocke,Jr.,OF,1.0,1.0,11.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8882710,597271.0,2025,East. Mennonite,903.0,ODAC,3.0,16779.0,203.0,d3d-8012243
 Damen Tapscott,So.,P,0.0,0.0,42.0,-,,RIGHT,,,https://stats.ncaa.org/players/8877689,597271.0,2025,East. Mennonite,903.0,ODAC,3.0,16779.0,203.0,8877689
@@ -3491,7 +3491,7 @@ Trent MacDougall,So.,OF,0.0,0.0,5.0,5-9,RIGHT,RIGHT,"Boynton Beach, FL",Park Vis
 Will Carroll,Jr.,INF,0.0,0.0,24.0,6-1,RIGHT,RIGHT,"Fairfield, CT",Fairfield Ludlowe,https://stats.ncaa.org/players/8889700,597156.0,2025,Eastern,28744.0,MAC Commonwealth,3.0,16779.0,8968.0,8889700
 John Westfield,Jr.,P,0.0,0.0,27.0,6-2,RIGHT,RIGHT,"Philadelphia, PA",Father Judge,https://stats.ncaa.org/players/8881599,597156.0,2025,Eastern,28744.0,MAC Commonwealth,3.0,16779.0,8968.0,8881599
 Trevor Harris,Jr.,OF,0.0,0.0,7.0,5-11,RIGHT,RIGHT,"Knoxville, TN",Abeka Academy,https://stats.ncaa.org/players/8876633,597156.0,2025,Eastern,28744.0,MAC Commonwealth,3.0,16779.0,8968.0,d3d-8449522
-Connor Viola,Jr.,P,0.0,0.0,28.0,6-2,RIGHT,RIGHT,"Mendham, NJ",West Morris Mendham,https://stats.ncaa.org/players/8898633,597156.0,2025,Eastern,28744.0,MAC Commonwealth,3.0,16779.0,8968.0,8898633
+Connor Viola,Jr.,P,0.0,0.0,28.0,6-2,RIGHT,RIGHT,"Mendham, NJ",West Morris Mendham,https://stats.ncaa.org/players/8898633,597156.0,2025,Eastern,28744.0,MAC Commonwealth,3.0,16779.0,8968.0,d3d-7977370
 Brennan Moloughney,So.,P,0.0,0.0,25.0,6-1,LEFT,LEFT,"Neptune, NJ",Neptune,https://stats.ncaa.org/players/8892540,597156.0,2025,Eastern,28744.0,MAC Commonwealth,3.0,16779.0,8968.0,8892540
 Brian Lang,Sr.,OF,0.0,0.0,6.0,5-9,RIGHT,RIGHT,"New Castle, DE",Salesianum,https://stats.ncaa.org/players/8890606,597156.0,2025,Eastern,28744.0,MAC Commonwealth,3.0,16779.0,8968.0,8890606
 Owen DeLong,So.,P,0.0,0.0,45.0,5-9,RIGHT,RIGHT,"Allentown, PA",Parkland,https://stats.ncaa.org/players/8894013,597156.0,2025,Eastern,28744.0,MAC Commonwealth,3.0,16779.0,8968.0,8894013
@@ -3799,7 +3799,7 @@ Cam Newell,Jr.,INF,2.0,0.0,16.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players
 Aidan Conley,So.,INF,6.0,6.0,31.0,6-0,LEFT,RIGHT,,,https://stats.ncaa.org/players/8876607,597276.0,2025,Emory,1471.0,UAA,3.0,16779.0,217.0,d3d-8404945
 Samuel Wronski,So.,P,0.0,0.0,38.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8895524,597276.0,2025,Emory,1471.0,UAA,3.0,16779.0,217.0,8895524
 Mihir Patel,So.,P,1.0,0.0,12.0,6-4,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8895652,597276.0,2025,Emory,1471.0,UAA,3.0,16779.0,217.0,8895652
-Jonah Wronski,Sr.,C,2.0,2.0,26.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8890285,597276.0,2025,Emory,1471.0,UAA,3.0,16779.0,217.0,8890285
+Jonah Wronski,Sr.,C,2.0,2.0,26.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8890285,597276.0,2025,Emory,1471.0,UAA,3.0,16779.0,217.0,d3d-7545169
 Jonathan Lang,So.,OF,2.0,1.0,25.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8895917,597276.0,2025,Emory,1471.0,UAA,3.0,16779.0,217.0,d3d-8404941
 JT Rattigan,So.,P,1.0,0.0,30.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8891491,597276.0,2025,Emory,1471.0,UAA,3.0,16779.0,217.0,d3d-8404944
 Corey Goldstick,So.,C,0.0,0.0,9.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897531,597276.0,2025,Emory,1471.0,UAA,3.0,16779.0,217.0,8897531
@@ -3849,7 +3849,7 @@ John Mulready,Sr.,C,0.0,0.0,27.0,-,,,,,https://stats.ncaa.org/players/9108141,59
 Paul Armstrong,Fr.,OF,0.0,0.0,32.0,-,,,,,https://stats.ncaa.org/players/9108145,597157.0,2025,Endicott,839.0,CNE,3.0,16779.0,8981.0,9108145
 Hayden Regan,Fr.,OF,0.0,0.0,38.0,-,,,,,https://stats.ncaa.org/players/9108160,597157.0,2025,Endicott,839.0,CNE,3.0,16779.0,8981.0,9108160
 Cam Cabral,Fr.,3B,0.0,0.0,43.0,-,,,,,https://stats.ncaa.org/players/9108165,597157.0,2025,Endicott,839.0,CNE,3.0,16779.0,8981.0,9108165
-Richard Foresteire,Sr.,UT,0.0,0.0,8.0,-,,,,,https://stats.ncaa.org/players/9108130,597157.0,2025,Endicott,839.0,CNE,3.0,16779.0,8981.0,9108130
+Richard Foresteire,Sr.,UT,0.0,0.0,8.0,-,,,,,https://stats.ncaa.org/players/9108130,597157.0,2025,Endicott,839.0,CNE,3.0,16779.0,8981.0,d3d-7583582
 Colton Trisch,So.,P,0.0,0.0,37.0,6-1,LEFT,LEFT,"Bangor, ME",Bangor High School,https://stats.ncaa.org/players/9108150,597157.0,2025,Endicott,839.0,CNE,3.0,16779.0,8981.0,9108150
 Nick Pepitone,Fr.,P,0.0,0.0,52.0,-,,,,,https://stats.ncaa.org/players/9108188,597157.0,2025,Endicott,839.0,CNE,3.0,16779.0,8981.0,9108188
 Ben Gill,Fr.,P,0.0,0.0,16.0,-,,,,,https://stats.ncaa.org/players/9108138,597157.0,2025,Endicott,839.0,CNE,3.0,16779.0,8981.0,9108138
@@ -3931,7 +3931,7 @@ Nick Rizos,Jr.,P,0.0,0.0,35.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8
 Chris Kaponis,Jr.,P,0.0,0.0,23.0,6-3,LEFT,LEFT,,,https://stats.ncaa.org/players/8885444,597278.0,2025,FDU-Florham,28745.0,MAC Freedom,3.0,16779.0,221.0,d3d-8010055
 Alex DeSimone,Sr.,P,0.0,0.0,34.0,6-1,RIGHT,RIGHT,"Long Valley, NJ",West Morris Central,https://stats.ncaa.org/players/8880312,597278.0,2025,FDU-Florham,28745.0,MAC Freedom,3.0,16779.0,221.0,8880312
 Christopher Leon,Sr.,OF,0.0,0.0,19.0,6-0,RIGHT,RIGHT,"Union, NJ",Union Catholic,https://stats.ncaa.org/players/8877365,597278.0,2025,FDU-Florham,28745.0,MAC Freedom,3.0,16779.0,221.0,8877365
-Jack Giovenco,Sr.,C,0.0,0.0,3.0,6-0,RIGHT,RIGHT,"Allentown, PA",Parkland,https://stats.ncaa.org/players/8881511,597278.0,2025,FDU-Florham,28745.0,MAC Freedom,3.0,16779.0,221.0,8881511
+Jack Giovenco,Sr.,C,0.0,0.0,3.0,6-0,RIGHT,RIGHT,"Allentown, PA",Parkland,https://stats.ncaa.org/players/8881511,597278.0,2025,FDU-Florham,28745.0,MAC Freedom,3.0,16779.0,221.0,d3d-7572468
 Trenon Stanard,So.,P,0.0,0.0,12.0,6-0,LEFT,LEFT,"Millington, NJ",Watchung Hills Regional,https://stats.ncaa.org/players/8883665,597278.0,2025,FDU-Florham,28745.0,MAC Freedom,3.0,16779.0,221.0,d3d-8452372
 Christian Weippert,Sr.,P,0.0,0.0,44.0,6-0,RIGHT,RIGHT,"Long Valley, NJ",West Morris,https://stats.ncaa.org/players/8885694,597278.0,2025,FDU-Florham,28745.0,MAC Freedom,3.0,16779.0,221.0,8885694
 Liam Stemmler,So.,P,0.0,0.0,25.0,6-2,RIGHT,RIGHT,"Bayport, NY",Bayport-Blue Point,https://stats.ncaa.org/players/8890367,597278.0,2025,FDU-Florham,28745.0,MAC Freedom,3.0,16779.0,221.0,8890367
@@ -4336,7 +4336,7 @@ Jackson Bucholz,So.,INF,1.0,0.0,36.0,6-0,RIGHT,RIGHT,"Phoenix, AZ",Pinnacle,http
 Austin Nissen,Sr.,UT,0.0,0.0,33.0,5-8,RIGHT,RIGHT,"Elk Grove, CA",Sheldon,https://stats.ncaa.org/players/8889875,597108.0,2025,George Fox,25300.0,NWC,3.0,16779.0,1094.0,8889875
 Declan Corrigan,Jr.,C,0.0,0.0,89.0,5-11,RIGHT,RIGHT,"Bend, OR",Mountain View,https://stats.ncaa.org/players/8874638,597108.0,2025,George Fox,25300.0,NWC,3.0,16779.0,1094.0,8874638
 Caleb Debban,Sr.,P,1.0,1.0,9.0,6-0,LEFT,LEFT,"Tigard, OR",Tigard,https://stats.ncaa.org/players/8891309,597108.0,2025,George Fox,25300.0,NWC,3.0,16779.0,1094.0,8891309
-Spencer Johnson,Sr.,P,0.0,0.0,16.0,6-1,RIGHT,RIGHT,"Coto De Caza, CA",Santa Margarita,https://stats.ncaa.org/players/8895450,597108.0,2025,George Fox,25300.0,NWC,3.0,16779.0,1094.0,8895450
+Spencer Johnson,Sr.,P,0.0,0.0,16.0,6-1,RIGHT,RIGHT,"Coto De Caza, CA",Santa Margarita,https://stats.ncaa.org/players/8895450,597108.0,2025,George Fox,25300.0,NWC,3.0,16779.0,1094.0,d3d-7558982
 Grant Baskin,So.,P,0.0,0.0,21.0,6-0,LEFT,LEFT,"Eagle, ID",Eagle,https://stats.ncaa.org/players/8898021,597108.0,2025,George Fox,25300.0,NWC,3.0,16779.0,1094.0,8898021
 Michael Singleton,Jr.,P,1.0,1.0,4.0,6-3,RIGHT,RIGHT,"San Jose, CA",Valley Christian,https://stats.ncaa.org/players/8898056,597108.0,2025,George Fox,25300.0,NWC,3.0,16779.0,1094.0,d3d-8281980
 Paul Moeggenberg,Jr.,P,0.0,0.0,73.0,5-11,RIGHT,RIGHT,"Tigard, OR",Tualatin,https://stats.ncaa.org/players/8894679,597108.0,2025,George Fox,25300.0,NWC,3.0,16779.0,1094.0,8894679
@@ -4364,7 +4364,7 @@ Luke Petryszak,Fr.,P,0.0,0.0,49.0,6-2,RIGHT,RIGHT,"Portville, NY",Portville,http
 Luke Filliben,Fr.,INF,0.0,0.0,55.0,6-3,LEFT,RIGHT,"Newark, DE",Sanford School,https://stats.ncaa.org/players/9296971,597284.0,2025,Gettysburg,9683.0,Centennial,3.0,16779.0,258.0,9296971
 JD Alster,Fr.,P,0.0,0.0,18.0,6-1,LEFT,LEFT,"Millstone Township, NJ",Allentown,https://stats.ncaa.org/players/9297189,597284.0,2025,Gettysburg,9683.0,Centennial,3.0,16779.0,258.0,9297189
 Jack Rossi,Fr.,INF,0.0,0.0,19.0,6-0,RIGHT,RIGHT,"Wilmington, DE",Salesianum School,https://stats.ncaa.org/players/9297190,597284.0,2025,Gettysburg,9683.0,Centennial,3.0,16779.0,258.0,9297190
-Will Roche,So.,INF,0.0,0.0,20.0,6-0,RIGHT,RIGHT,"Milton, MA",Boston College,https://stats.ncaa.org/players/9296956,597284.0,2025,Gettysburg,9683.0,Centennial,3.0,16779.0,258.0,9296956
+Will Roche,So.,INF,0.0,0.0,20.0,6-0,RIGHT,RIGHT,"Milton, MA",Boston College,https://stats.ncaa.org/players/9296956,597284.0,2025,Gettysburg,9683.0,Centennial,3.0,16779.0,258.0,d3d-8683832
 David Ruckman,Fr.,OF,0.0,0.0,30.0,5-9,RIGHT,LEFT,"Collegeville, PA",Spring-Ford,https://stats.ncaa.org/players/9296964,597284.0,2025,Gettysburg,9683.0,Centennial,3.0,16779.0,258.0,9296964
 Tommy Farrell,Fr.,P,0.0,0.0,50.0,6-2,RIGHT,RIGHT,"Fairfield, CT",Fairfield Prep,https://stats.ncaa.org/players/9296970,597284.0,2025,Gettysburg,9683.0,Centennial,3.0,16779.0,258.0,9296970
 Ethan Mitnick,Fr.,P,0.0,0.0,10.0,5-10,RIGHT,RIGHT,"Collinwood, TN",Mainland Regional,https://stats.ncaa.org/players/9296954,597284.0,2025,Gettysburg,9683.0,Centennial,3.0,16779.0,258.0,9296954
@@ -4435,7 +4435,7 @@ Jonathan McIntyre,Sr.,INF,0.0,0.0,4.0,5-10,RIGHT,RIGHT,"Carmel, NY",Carmel,https
 Evan Clark,Sr.,OF,0.0,0.0,28.0,5-10,RIGHT,RIGHT,"Tariffville, CT",Northwest Catholic,https://stats.ncaa.org/players/8900576,597109.0,2025,Gordon,839.0,CNE,3.0,16779.0,1099.0,8900576
 CJ Demers,Sr.,INF,0.0,0.0,8.0,6-0,RIGHT,RIGHT,"Sandy Hook, CT",Newtown,https://stats.ncaa.org/players/8899947,597109.0,2025,Gordon,839.0,CNE,3.0,16779.0,1099.0,8899947
 Robert Dunkle,Sr.,INF,0.0,0.0,12.0,5-10,RIGHT,LEFT,"Trumbull, CT",Trumbull,https://stats.ncaa.org/players/8902665,597109.0,2025,Gordon,839.0,CNE,3.0,16779.0,1099.0,8902665
-Myles Vacharasin,Sr.,C,1.0,1.0,28.0,-,,,,,https://stats.ncaa.org/players/8882768,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,8882768
+Myles Vacharasin,Sr.,C,1.0,1.0,28.0,-,,,,,https://stats.ncaa.org/players/8882768,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,d3d-7583418
 Grayson Curtis,Jr.,P,0.0,0.0,38.0,-,,,,,https://stats.ncaa.org/players/8883987,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,8883987
 Hunter Anderson,Sr.,P,1.0,0.0,15.0,-,,,,,https://stats.ncaa.org/players/8876892,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,d3d-8424748
 Louis Berini,Jr.,INF,2.0,2.0,3.0,-,,,,,https://stats.ncaa.org/players/8876898,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,8876898
@@ -4455,7 +4455,7 @@ Nick Stegura,Sr.,P,0.0,0.0,33.0,-,,,,,https://stats.ncaa.org/players/8887641,597
 Dalton Fryar,Jr.,C,0.0,0.0,27.0,-,,,,,https://stats.ncaa.org/players/8886611,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,8886611
 Liam Pfrommer-Pease,So.,UT,2.0,0.0,41.0,-,,,,,https://stats.ncaa.org/players/8893893,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,8893893
 Kai Hayen,Sr.,OF,2.0,2.0,23.0,-,,,,,https://stats.ncaa.org/players/8890581,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,d3d-7583394
-Gage Parsons,So.,OF,1.0,0.0,31.0,-,,,,,https://stats.ncaa.org/players/8896014,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,8896014
+Gage Parsons,So.,OF,1.0,0.0,31.0,-,,,,,https://stats.ncaa.org/players/8896014,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,d3d-8424768
 Scotty Diekman,Sr.,OF,0.0,0.0,46.0,-,,,,,https://stats.ncaa.org/players/8897397,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,8897397
 Brandon Benoit,So.,P,0.0,0.0,90.0,-,,,,,https://stats.ncaa.org/players/8894273,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,8894273
 Shane Garrett,Jr.,INF,1.0,0.0,11.0,-,,,,,https://stats.ncaa.org/players/8895024,597286.0,2025,Greensboro,842.0,USA South,3.0,16779.0,263.0,8895024
@@ -4499,7 +4499,7 @@ Carson Gates,So.,INF,0.0,0.0,9.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/playe
 Ty Kueper,So.,P,1.0,0.0,16.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8889150,597110.0,2025,Greenville,12974.0,SLIAC,3.0,16779.0,1111.0,d3d-8679260
 Luke McBee,So.,P,1.0,0.0,1.0,5-8,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8887099,597110.0,2025,Greenville,12974.0,SLIAC,3.0,16779.0,1111.0,8887099
 Michael Gibson,So.,C,3.0,3.0,36.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8875975,597110.0,2025,Greenville,12974.0,SLIAC,3.0,16779.0,1111.0,d3d-8593639
-Stephen Hardwick,So.,P,1.0,0.0,44.0,6-5,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8889477,597110.0,2025,Greenville,12974.0,SLIAC,3.0,16779.0,1111.0,8889477
+Stephen Hardwick,So.,P,1.0,0.0,44.0,6-5,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8889477,597110.0,2025,Greenville,12974.0,SLIAC,3.0,16779.0,1111.0,d3d-8593202
 Miggy Villalobos,Sr.,INF,2.0,2.0,26.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8888369,597110.0,2025,Greenville,12974.0,SLIAC,3.0,16779.0,1111.0,8888369
 Cade Buehnerkemper,Jr.,INF,0.0,0.0,33.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8885405,597110.0,2025,Greenville,12974.0,SLIAC,3.0,16779.0,1111.0,8885405
 Markus Isaiah,So.,OF,3.0,3.0,14.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8881373,597110.0,2025,Greenville,12974.0,SLIAC,3.0,16779.0,1111.0,d3d-8684992
@@ -4625,7 +4625,7 @@ Connor Sinclair,Jr.,P,0.0,0.0,32.0,6-5,RIGHT,RIGHT,"North Augusta, SC",Fox Creek
 Marcello Ricigliano,Jr.,P,0.0,0.0,38.0,6-3,RIGHT,RIGHT,"Kernersville, NC",Atkins Academic and Tech,https://stats.ncaa.org/players/8895920,597111.0,2025,Guilford,903.0,ODAC,3.0,16779.0,1112.0,d3d-8007822
 Reese Baker,Jr.,P,0.0,0.0,17.0,5-9,RIGHT,RIGHT,"Ashland, VA",Hanover,https://stats.ncaa.org/players/8892652,597111.0,2025,Guilford,903.0,ODAC,3.0,16779.0,1112.0,d3d-8007793
 Malakie Harris,So.,INF,0.0,0.0,42.0,6-0,RIGHT,RIGHT,"Spencer, NC",North Rowan,https://stats.ncaa.org/players/8893965,597111.0,2025,Guilford,903.0,ODAC,3.0,16779.0,1112.0,8893965
-Carter Blum,Sr.,INF,0.0,0.0,12.0,5-8,RIGHT,RIGHT,"Greensboro, NC",Cornerstone Charter,https://stats.ncaa.org/players/8898237,597111.0,2025,Guilford,903.0,ODAC,3.0,16779.0,1112.0,8898237
+Carter Blum,Sr.,INF,0.0,0.0,12.0,5-8,RIGHT,RIGHT,"Greensboro, NC",Cornerstone Charter,https://stats.ncaa.org/players/8898237,597111.0,2025,Guilford,903.0,ODAC,3.0,16779.0,1112.0,d3d-7567978
 Jackson Shaner,So.,INF,0.0,0.0,1.0,5-9,RIGHT,RIGHT,"Moncure, NC",Northwood,https://stats.ncaa.org/players/8891844,597111.0,2025,Guilford,903.0,ODAC,3.0,16779.0,1112.0,8891844
 Tanner Royals,So.,P,0.0,0.0,20.0,5-11,RIGHT,RIGHT,"High Point, NC",Southwest Guilford,https://stats.ncaa.org/players/8901804,597111.0,2025,Guilford,903.0,ODAC,3.0,16779.0,1112.0,d3d-8425286
 Stratton Barwick,So.,P,0.0,0.0,35.0,6-1,RIGHT,LEFT,"Siler City, NC",Eastern Randolph,https://stats.ncaa.org/players/8899713,597111.0,2025,Guilford,903.0,ODAC,3.0,16779.0,1112.0,8899713
@@ -4689,7 +4689,7 @@ Jackson Thielen,Jr.,P,0.0,0.0,23.0,-,,,,,https://stats.ncaa.org/players/8901944,
 Joe Burns,Jr.,,0.0,0.0,18.0,-,,,,,https://stats.ncaa.org/players/8900848,597289.0,2025,Gustavus Adolphus,882.0,MIAC,3.0,16779.0,266.0,8900848
 Jay Perez,Fr.,OF,0.0,0.0,30.0,6-3,RIGHT,RIGHT,"Philadelphia, PA",Swenson Arts & Tech.,https://stats.ncaa.org/players/9298809,597162.0,2025,Gwynedd Mercy,30233.0,Atlantic East,3.0,16779.0,12399.0,9298809
 Colin Stocklin,Jr.,INF,0.0,0.0,32.0,6-1,RIGHT,RIGHT,"Philadelphia, PA",Father Judge,https://stats.ncaa.org/players/9298813,597162.0,2025,Gwynedd Mercy,30233.0,Atlantic East,3.0,16779.0,12399.0,9298813
-Quin Dye,Sr.,OF,0.0,0.0,23.0,5-7,LEFT,LEFT,"Plymouth Meeting, PA",Plymouth-Whitemarsh,https://stats.ncaa.org/players/9298777,597162.0,2025,Gwynedd Mercy,30233.0,Atlantic East,3.0,16779.0,12399.0,9298777
+Quin Dye,Sr.,OF,0.0,0.0,23.0,5-7,LEFT,LEFT,"Plymouth Meeting, PA",Plymouth-Whitemarsh,https://stats.ncaa.org/players/9298777,597162.0,2025,Gwynedd Mercy,30233.0,Atlantic East,3.0,16779.0,12399.0,d3d-7137699
 Jon Cimino,Jr.,OF,0.0,0.0,6.0,6-2,RIGHT,RIGHT,"Egg Harbor Township, NJ",Egg Harbor Township,https://stats.ncaa.org/players/9298787,597162.0,2025,Gwynedd Mercy,30233.0,Atlantic East,3.0,16779.0,12399.0,9298787
 Peter Burnley,Fr.,C,0.0,0.0,16.0,5-10,RIGHT,RIGHT,"Sicklerville, NJ",St. Augustine Prep,https://stats.ncaa.org/players/9298793,597162.0,2025,Gwynedd Mercy,30233.0,Atlantic East,3.0,16779.0,12399.0,9298793
 Tyler Johnston,Fr.,OF,0.0,0.0,19.0,6-3,RIGHT,RIGHT,"Haddon Township, NJ",Haddon Township,https://stats.ncaa.org/players/9298797,597162.0,2025,Gwynedd Mercy,30233.0,Atlantic East,3.0,16779.0,12399.0,9298797
@@ -4920,7 +4920,7 @@ Justin Blancaflor,So.,OF,3.0,3.0,27.0,5-9,RIGHT,RIGHT,"Allen, TX",John Paul II,h
 Quincy McGraw Jr.,Sr.,INF,3.0,3.0,3.0,6-2,RIGHT,RIGHT,"Dallas, TX",Frisco Lone Star,https://stats.ncaa.org/players/9297759,597293.0,2025,Hardin-Simmons,14825.0,ASC,3.0,16779.0,271.0,9297759
 Evan Giles,Jr.,INF,0.0,0.0,14.0,5-7,RIGHT,RIGHT,"N Richland Hills, TX",FW Christian,https://stats.ncaa.org/players/9297762,597293.0,2025,Hardin-Simmons,14825.0,ASC,3.0,16779.0,271.0,9297762
 Drake White,Fr.,OF,0.0,0.0,44.0,6-2,RIGHT,RIGHT,"N Richland Hills, TX",Birdville,https://stats.ncaa.org/players/9297781,597293.0,2025,Hardin-Simmons,14825.0,ASC,3.0,16779.0,271.0,9297781
-Bryson Baer,So.,OF,3.0,3.0,6.0,5-8,RIGHT,RIGHT,"Odessa, TX",Permian,https://stats.ncaa.org/players/8877572,597293.0,2025,Hardin-Simmons,14825.0,ASC,3.0,16779.0,271.0,8877572
+Bryson Baer,So.,OF,3.0,3.0,6.0,5-8,RIGHT,RIGHT,"Odessa, TX",Permian,https://stats.ncaa.org/players/8877572,597293.0,2025,Hardin-Simmons,14825.0,ASC,3.0,16779.0,271.0,d3d-8688561
 Alex Carte,Sr.,P,1.0,1.0,13.0,6-3,RIGHT,RIGHT,"Prosper, TX",Prosper,https://stats.ncaa.org/players/8875717,597293.0,2025,Hardin-Simmons,14825.0,ASC,3.0,16779.0,271.0,d3d-7570759
 Karson Leatherwood,Jr.,OF,1.0,0.0,18.0,5-11,RIGHT,RIGHT,"Lubbock, TX",Christian,https://stats.ncaa.org/players/8890085,597293.0,2025,Hardin-Simmons,14825.0,ASC,3.0,16779.0,271.0,8890085
 Jacob Hollingsworth,So.,3B,3.0,3.0,9.0,6-0,RIGHT,RIGHT,"Wylie, TX",East,https://stats.ncaa.org/players/8883917,597293.0,2025,Hardin-Simmons,14825.0,ASC,3.0,16779.0,271.0,8883917
@@ -4948,7 +4948,7 @@ Luke Rier,Sr.,P,0.0,0.0,16.0,6-0,LEFT,LEFT,,,https://stats.ncaa.org/players/8874
 Cole Daignault,So.,INF,0.0,0.0,50.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8875969,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,8875969
 Thaire Stansfield,Sr.,OF,0.0,0.0,46.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8878063,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,8878063
 Tyler Blumetti,So.,P,0.0,0.0,12.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8883146,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,d3d-8588668
-Cameron Boardman,Jr.,C,0.0,0.0,1.0,5-10,LEFT,RIGHT,,,https://stats.ncaa.org/players/8883235,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,8883235
+Cameron Boardman,Jr.,C,0.0,0.0,1.0,5-10,LEFT,RIGHT,,,https://stats.ncaa.org/players/8883235,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,d3d-7984004
 Jon Melarzcik,So.,C,0.0,0.0,13.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8882206,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,d3d-8588672
 Teague Mulachy,Sr.,P,0.0,0.0,15.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8886361,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,8886361
 Michael Featherstone,Jr.,P,0.0,0.0,23.0,6-5,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8883329,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,d3d-7984047
@@ -4989,7 +4989,7 @@ Andrew Wallace,Fr.,P,0.0,0.0,52.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/playe
 Justin Pandolfi,So.,C,0.0,0.0,56.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9214516,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,9214516
 Ariel Miranda,Fr.,INF,0.0,0.0,55.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9214514,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,9214514
 Ben Schulz,Jr.,OF,0.0,0.0,28.0,5-10,LEFT,RIGHT,,,https://stats.ncaa.org/players/9214465,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,9214465
-Michael Greco,Fr.,P,0.0,0.0,32.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9214471,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,9214471
+Michael Greco,Fr.,P,0.0,0.0,32.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9214471,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,d3d-9214471
 Nico DiGioia,Fr.,UT,0.0,0.0,42.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9214491,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,9214491
 Patrick Joseph,Jr.,INF,0.0,0.0,31.0,6-3,BOTH,RIGHT,,,https://stats.ncaa.org/players/9214469,596977.0,2025,Hartford,839.0,CNE,3.0,16779.0,272.0,d3d-9214469
 Colin Lewis,Jr.,P,0.0,0.0,23.0,6-0,LEFT,LEFT,,,https://stats.ncaa.org/players/8899027,597294.0,2025,Haverford,9683.0,Centennial,3.0,16779.0,276.0,8899027
@@ -5253,7 +5253,7 @@ Blaine Smith,Jr.,INF,3.0,2.0,34.0,6-4,RIGHT,RIGHT,"Hume, VA",Fauquier,https://st
 Jack Patterson,Sr.,OF,3.0,3.0,19.0,5-10,LEFT,LEFT,"Boyds, MD",Northwest,https://stats.ncaa.org/players/8892506,597148.0,2025,Hood,28744.0,MAC Commonwealth,3.0,16779.0,8404.0,d3d-7594271
 Amrit Brown,Jr.,INF,2.0,1.0,15.0,6-0,LEFT,RIGHT,"Asheville, NC",Asheville,https://stats.ncaa.org/players/8890585,597148.0,2025,Hood,28744.0,MAC Commonwealth,3.0,16779.0,8404.0,d3d-8001022
 Quade Gannon,Jr.,OF,2.0,2.0,9.0,5-10,LEFT,LEFT,"Felton, DE",Lake Forest,https://stats.ncaa.org/players/8897329,597148.0,2025,Hood,28744.0,MAC Commonwealth,3.0,16779.0,8404.0,8897329
-Frank Spaide,Sr.,P,0.0,0.0,18.0,5-10,RIGHT,RIGHT,"Bensalem, PA",Conwell-Egan Catholic,https://stats.ncaa.org/players/8894832,597148.0,2025,Hood,28744.0,MAC Commonwealth,3.0,16779.0,8404.0,8894832
+Frank Spaide,Sr.,P,0.0,0.0,18.0,5-10,RIGHT,RIGHT,"Bensalem, PA",Conwell-Egan Catholic,https://stats.ncaa.org/players/8894832,597148.0,2025,Hood,28744.0,MAC Commonwealth,3.0,16779.0,8404.0,d3d-7575568
 James Gruenfelder,Sr.,C,2.0,2.0,21.0,6-3,RIGHT,RIGHT,"Port Jefferson, NY",Port Jefferson,https://stats.ncaa.org/players/8893423,597148.0,2025,Hood,28744.0,MAC Commonwealth,3.0,16779.0,8404.0,d3d-7575555
 Easton Kite,So.,UT,1.0,1.0,14.0,6-1,RIGHT,RIGHT,"Catharpin, VA",Battlefield,https://stats.ncaa.org/players/8900991,597148.0,2025,Hood,28744.0,MAC Commonwealth,3.0,16779.0,8404.0,d3d-8424855
 Ty Broughton,Jr.,C,3.0,2.0,44.0,6-0,RIGHT,RIGHT,"Charles Town, WV",Washington,https://stats.ncaa.org/players/8902638,597148.0,2025,Hood,28744.0,MAC Commonwealth,3.0,16779.0,8404.0,d3d-8001020
@@ -5394,7 +5394,7 @@ Trevor Rudd,So.,C,0.0,0.0,16.0,-,,,"Valley, AL",Valley HS,https://stats.ncaa.org
 Ethan Duhon,Jr.,UT,3.0,1.0,4.0,-,RIGHT,RIGHT,"Trussville, AL",Hewitt-Trussville,https://stats.ncaa.org/players/8887091,597114.0,2025,Huntingdon,30251.0,CCS,3.0,16779.0,1130.0,d3d-8281541
 Mikael Bryant,So.,INF,0.0,0.0,8.0,-,RIGHT,RIGHT,"Elberta, AL",Bayshore Christian Academy,https://stats.ncaa.org/players/8880064,597114.0,2025,Huntingdon,30251.0,CCS,3.0,16779.0,1130.0,8880064
 Alex Fleet,So.,INF,0.0,0.0,40.0,-,,,"Montgomery, AL",Montgomery Catholic,https://stats.ncaa.org/players/8876187,597114.0,2025,Huntingdon,30251.0,CCS,3.0,16779.0,1130.0,8876187
-Dylan Hyder,Jr.,UT,0.0,0.0,11.0,-,RIGHT,RIGHT,,Bob Jones HS,https://stats.ncaa.org/players/8887479,597114.0,2025,Huntingdon,30251.0,CCS,3.0,16779.0,1130.0,8887479
+Dylan Hyder,Jr.,UT,0.0,0.0,11.0,-,RIGHT,RIGHT,,Bob Jones HS,https://stats.ncaa.org/players/8887479,597114.0,2025,Huntingdon,30251.0,CCS,3.0,16779.0,1130.0,d3d-7979455
 Eayn Thomas,So.,OF,0.0,0.0,39.0,-,,,"Trussville, AL",Hewitt Trussville HS,https://stats.ncaa.org/players/8889653,597114.0,2025,Huntingdon,30251.0,CCS,3.0,16779.0,1130.0,8889653
 W. Farr,Fr.,p,1.0,0.0,31.0,-,,,,,https://stats.ncaa.org/players/8879365,597114.0,2025,Huntingdon,30251.0,CCS,3.0,16779.0,1130.0,8879365
 Caleb Griffis,Jr.,P,0.0,0.0,24.0,-,LEFT,RIGHT,"Newnan, GA",Central HS,https://stats.ncaa.org/players/8879366,597114.0,2025,Huntingdon,30251.0,CCS,3.0,16779.0,1130.0,8879366
@@ -5551,7 +5551,7 @@ Brad Crawford,Fr.,P,0.0,0.0,35.0,6-7,RIGHT,RIGHT,"Glenview, IL",Glenbrook South,
 Cole Benson,Fr.,P,0.0,0.0,31.0,6-5,RIGHT,RIGHT,"Oak Park, IL",Oak Park River Forest,https://stats.ncaa.org/players/9098619,597301.0,2025,Ill. Wesleyan,836.0,CCIW,3.0,16779.0,300.0,9098619
 Charlie Lardi,So.,UT,0.0,0.0,12.0,-,,,,,https://stats.ncaa.org/players/8874692,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,8874692
 Andrew Magnus,So.,INF,0.0,0.0,32.0,6-3,,,,South Central,https://stats.ncaa.org/players/8876782,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,8876782
-Nolan Decker,Jr.,INF,0.0,0.0,9.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8887859,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,8887859
+Nolan Decker,Jr.,INF,0.0,0.0,9.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8887859,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,d3d-7994244
 Jacob Smith,Sr.,P,0.0,0.0,21.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8882808,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,8882808
 Andrew Wieneke,Sr.,P,0.0,0.0,4.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8881876,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,8881876
 Ryan Kuchar,So.,P,0.0,0.0,33.0,-,,,,,https://stats.ncaa.org/players/8878901,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,d3d-8878901
@@ -5580,7 +5580,7 @@ Sam Hulvey,Jr.,INF,0.0,0.0,28.0,-,,,,,https://stats.ncaa.org/players/8890577,597
 Tyler Chamness,Jr.,INF,0.0,0.0,41.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8890598,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,8890598
 Hunter Cooley,Jr.,INF,0.0,0.0,19.0,-,,,,,https://stats.ncaa.org/players/8894723,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,8894723
 Cameron Knapik,So.,C,0.0,0.0,26.0,-,,,,,https://stats.ncaa.org/players/8894978,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,8894978
-Connor Akstulewicz,So.,P,0.0,0.0,44.0,-,,,,,https://stats.ncaa.org/players/8890898,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,8890898
+Connor Akstulewicz,So.,P,0.0,0.0,44.0,-,,,,,https://stats.ncaa.org/players/8890898,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,d3d-8416540
 Parker Phillis,So.,UT,0.0,0.0,7.0,-,,,,,https://stats.ncaa.org/players/8891985,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,8891985
 Dylan Eaton,Sr.,P,0.0,0.0,35.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8892091,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,8892091
 Brandon Smith,Sr.,OF,0.0,0.0,11.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8900208,597300.0,2025,Illinois Col.,23119.0,MWC,3.0,16779.0,297.0,8900208
@@ -5802,7 +5802,7 @@ Jackson Roloff,Sr.,OF,0.0,0.0,25.0,6-2,RIGHT,RIGHT,"Boston, MA",Buckingham Brown
 Damian Brown,Jr.,INF,0.0,0.0,10.0,5-11,RIGHT,RIGHT,"Natick, MA",Boston College,https://stats.ncaa.org/players/8884776,597307.0,2025,Johns Hopkins,9683.0,Centennial,3.0,16779.0,322.0,d3d-8014916
 Thomas Cancian,Jr.,P,0.0,0.0,36.0,6-4,LEFT,RIGHT,"Bloomfield, CT",Loomis Chaffee,https://stats.ncaa.org/players/8885753,597307.0,2025,Johns Hopkins,9683.0,Centennial,3.0,16779.0,322.0,d3d-8014949
 Cole Jefferson,Jr.,P,0.0,0.0,7.0,6-0,,RIGHT,"Liberty Hill, TX",Liberty Hill,https://stats.ncaa.org/players/8898937,597307.0,2025,Johns Hopkins,9683.0,Centennial,3.0,16779.0,322.0,8898937
-Grant Meert,So.,P,0.0,0.0,41.0,6-0,,LEFT,"Ballwin, MO",Parkway West,https://stats.ncaa.org/players/8893730,597307.0,2025,Johns Hopkins,9683.0,Centennial,3.0,16779.0,322.0,8893730
+Grant Meert,So.,P,0.0,0.0,41.0,6-0,,LEFT,"Ballwin, MO",Parkway West,https://stats.ncaa.org/players/8893730,597307.0,2025,Johns Hopkins,9683.0,Centennial,3.0,16779.0,322.0,d3d-8591424
 Matt Savedoff,Sr.,P,0.0,0.0,23.0,6-0,RIGHT,RIGHT,"New City, NY",Clarkstown North,https://stats.ncaa.org/players/8890457,597307.0,2025,Johns Hopkins,9683.0,Centennial,3.0,16779.0,322.0,8890457
 Alex Shane,Jr.,OF,0.0,0.0,8.0,6-0,LEFT,RIGHT,"Los Angeles, CA",Harvard-Westlake School,https://stats.ncaa.org/players/8896032,597307.0,2025,Johns Hopkins,9683.0,Centennial,3.0,16779.0,322.0,8896032
 Dillon Souvignier,Sr.,OF,0.0,0.0,22.0,6-1,LEFT,LEFT,"Boulder, CO",Fairview High,https://stats.ncaa.org/players/8897414,597307.0,2025,Johns Hopkins,9683.0,Centennial,3.0,16779.0,322.0,d3d-7560446
@@ -5893,14 +5893,14 @@ Steven Shelton,Sr.,P,0.0,0.0,21.0,6-3,RIGHT,RIGHT,"South Lyon, MI",South Lyon,ht
 Clay Cook,Fr.,INF,0.0,0.0,25.0,5-6,LEFT,RIGHT,"Fenton, MI",Lake Fenton,https://stats.ncaa.org/players/9215242,597309.0,2025,Kalamazoo,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,326.0,9215242
 Cole Grupenhoff,Fr.,P,0.0,0.0,34.0,6-1,LEFT,LEFT,"Bloomington, IN",Bloomington North,https://stats.ncaa.org/players/9215263,597309.0,2025,Kalamazoo,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,326.0,9215263
 Cooper Mills,Sr.,SS,0.0,0.0,3.0,5-10,RIGHT,RIGHT,"Commerce Twp, MI",Orchard Lake St. Mary's,https://stats.ncaa.org/players/9215193,597309.0,2025,Kalamazoo,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,326.0,d3d-7132792
-Blake Parpart,Sr.,P,0.0,0.0,27.0,5-10,RIGHT,RIGHT,"Farmington Hills, MI",Southfield Christian,https://stats.ncaa.org/players/9215245,597309.0,2025,Kalamazoo,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,326.0,9215245
+Blake Parpart,Sr.,P,0.0,0.0,27.0,5-10,RIGHT,RIGHT,"Farmington Hills, MI",Southfield Christian,https://stats.ncaa.org/players/9215245,597309.0,2025,Kalamazoo,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,326.0,d3d-7132796
 Cole Bronoel-Cuthrell,Fr.,P,0.0,0.0,51.0,6-0,LEFT,LEFT,"Southfield, MI",Groves,https://stats.ncaa.org/players/9215267,597309.0,2025,Kalamazoo,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,326.0,9215267
 Alexi Simecek,Fr.,P,0.0,0.0,55.0,6-3,RIGHT,RIGHT,"Waterford, MI",Roeper,https://stats.ncaa.org/players/9215269,597309.0,2025,Kalamazoo,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,326.0,9215269
 JT Meyer,Fr.,P,0.0,0.0,33.0,6-3,LEFT,RIGHT,"Old Bridge, NJ",Old Bridge,https://stats.ncaa.org/players/9114688,597310.0,2025,Kean,891.0,NJAC,3.0,16779.0,329.0,9114688
 Lucas White,Fr.,P,1.0,0.0,39.0,5-9,RIGHT,RIGHT,"Monroe Township, NJ",Monroe Twp.,https://stats.ncaa.org/players/9114713,597310.0,2025,Kean,891.0,NJAC,3.0,16779.0,329.0,9114713
 Matthew Del Sol,Sr.,INF,1.0,1.0,7.0,5-10,RIGHT,RIGHT,"Elizabeth, NJ",Roselle Catholic,https://stats.ncaa.org/players/9114581,597310.0,2025,Kean,891.0,NJAC,3.0,16779.0,329.0,9114581
-Brett Hilsheimer,Sr.,INF,2.0,2.0,2.0,5-10,RIGHT,RIGHT,"Holmdel, NJ",Holmdel,https://stats.ncaa.org/players/8874700,597310.0,2025,Kean,891.0,NJAC,3.0,16779.0,329.0,8874700
-Steve Petrosh,Sr.,INF,0.0,0.0,6.0,5-9,RIGHT,RIGHT,"Egg Harbor City, NJ",Holy Spirit,https://stats.ncaa.org/players/8874701,597310.0,2025,Kean,891.0,NJAC,3.0,16779.0,329.0,8874701
+Brett Hilsheimer,Sr.,INF,2.0,2.0,2.0,5-10,RIGHT,RIGHT,"Holmdel, NJ",Holmdel,https://stats.ncaa.org/players/8874700,597310.0,2025,Kean,891.0,NJAC,3.0,16779.0,329.0,d3d-7560082
+Steve Petrosh,Sr.,INF,0.0,0.0,6.0,5-9,RIGHT,RIGHT,"Egg Harbor City, NJ",Holy Spirit,https://stats.ncaa.org/players/8874701,597310.0,2025,Kean,891.0,NJAC,3.0,16779.0,329.0,d3d-7560119
 Christian Pareja,Jr.,P,0.0,0.0,43.0,5-11,RIGHT,RIGHT,"Clifton, NJ",Passaic County Tech,https://stats.ncaa.org/players/9114664,597310.0,2025,Kean,891.0,NJAC,3.0,16779.0,329.0,9114664
 Ayden Aguiar,Fr.,P,0.0,0.0,42.0,6-0,RIGHT,RIGHT,"Hamburg, NJ",Pope John XXIII Regional,https://stats.ncaa.org/players/9114681,597310.0,2025,Kean,891.0,NJAC,3.0,16779.0,329.0,9114681
 Aldo Pigna,Fr.,P,0.0,0.0,32.0,5-7,RIGHT,LEFT,"South Plainfield, NJ",South Plainfield,https://stats.ncaa.org/players/9114685,597310.0,2025,Kean,891.0,NJAC,3.0,16779.0,329.0,9114685
@@ -6142,7 +6142,7 @@ Etienne Thomas,Sr.,C,0.0,0.0,19.0,5-11,RIGHT,RIGHT,"Tunis, Tunisia",American Coo
 Ethan Rompala-Matthews,Jr.,1B,0.0,0.0,32.0,6-1,RIGHT,LEFT,"Chicago, IL",Mt. Carmel,https://stats.ncaa.org/players/8883228,597314.0,2025,Knox,23119.0,MWC,3.0,16779.0,337.0,8883228
 Tre Chatman III,Sr.,INF,0.0,0.0,17.0,5-8,RIGHT,RIGHT,"Villa Park, CA",Tustin,https://stats.ncaa.org/players/8876111,597314.0,2025,Knox,23119.0,MWC,3.0,16779.0,337.0,8876111
 JD Ruhs,Sr.,C,0.0,0.0,27.0,6-0,RIGHT,RIGHT,"Aurora, IL",West Aurora Senior,https://stats.ncaa.org/players/8876116,597314.0,2025,Knox,23119.0,MWC,3.0,16779.0,337.0,8876116
-Aidan McMurtrie,So.,INF,0.0,0.0,26.0,6-2,RIGHT,RIGHT,"Seattle, WA",Bishop Blanchet,https://stats.ncaa.org/players/8879100,597314.0,2025,Knox,23119.0,MWC,3.0,16779.0,337.0,8879100
+Aidan McMurtrie,So.,INF,0.0,0.0,26.0,6-2,RIGHT,RIGHT,"Seattle, WA",Bishop Blanchet,https://stats.ncaa.org/players/8879100,597314.0,2025,Knox,23119.0,MWC,3.0,16779.0,337.0,d3d-8658144
 Leo Dircks,So.,P,0.0,0.0,38.0,5-11,RIGHT,RIGHT,"Wayzata, MN",Minnetonka,https://stats.ncaa.org/players/8879236,597314.0,2025,Knox,23119.0,MWC,3.0,16779.0,337.0,8879236
 Ben Frericks,So.,OF,0.0,0.0,91.0,6-0,RIGHT,LEFT,"Chillicothe, IL",Illinois Valley Central,https://stats.ncaa.org/players/8879249,597314.0,2025,Knox,23119.0,MWC,3.0,16779.0,337.0,8879249
 Alonzo Rodriguez,So.,P,0.0,0.0,96.0,5-7,RIGHT,RIGHT,"Chicago, IL",Morton West,https://stats.ncaa.org/players/8888508,597314.0,2025,Knox,23119.0,MWC,3.0,16779.0,337.0,8888508
@@ -6203,7 +6203,7 @@ Bryson Bubb,So.,,0.0,0.0,37.0,-,,,,,https://stats.ncaa.org/players/8890722,59711
 CJ Predmore,So.,,0.0,0.0,47.0,-,,,,,https://stats.ncaa.org/players/8894856,597118.0,2025,La Roche,30022.0,AMCC,3.0,16779.0,1163.0,8894856
 Zach Gift,Sr.,,0.0,0.0,10.0,-,,,,,https://stats.ncaa.org/players/8897446,597118.0,2025,La Roche,30022.0,AMCC,3.0,16779.0,1163.0,8897446
 Larry Bielawski,Sr.,,0.0,0.0,9.0,-,,,,,https://stats.ncaa.org/players/8897546,597118.0,2025,La Roche,30022.0,AMCC,3.0,16779.0,1163.0,d3d-8592683
-Damon Foster,Sr.,INF,0.0,0.0,2.0,5-9,RIGHT,RIGHT,"Dubois, PA",Dubois Central Catholic,https://stats.ncaa.org/players/8892066,597118.0,2025,La Roche,30022.0,AMCC,3.0,16779.0,1163.0,8892066
+Damon Foster,Sr.,INF,0.0,0.0,2.0,5-9,RIGHT,RIGHT,"Dubois, PA",Dubois Central Catholic,https://stats.ncaa.org/players/8892066,597118.0,2025,La Roche,30022.0,AMCC,3.0,16779.0,1163.0,d3d-7987198
 Zach Jackson,So.,,0.0,0.0,35.0,-,,,,,https://stats.ncaa.org/players/8899407,597118.0,2025,La Roche,30022.0,AMCC,3.0,16779.0,1163.0,8899407
 Brandon Snyder,Sr.,,0.0,0.0,3.0,-,,,,,https://stats.ncaa.org/players/8900613,597118.0,2025,La Roche,30022.0,AMCC,3.0,16779.0,1163.0,8900613
 Jaden Guzman,Jr.,UT,0.0,0.0,51.0,5-11,RIGHT,RIGHT,"Arcadia, CA",La Salle,https://stats.ncaa.org/players/9297255,597315.0,2025,La Verne,910.0,SCIAC,3.0,16779.0,341.0,9297255
@@ -6285,7 +6285,7 @@ Dylan LeMorta,Fr.,,0.0,0.0,53.0,-,,,"Oviedo, FL",Winter Springs,https://stats.nc
 Cooper Wright,Fr.,P,0.0,0.0,11.0,-,,,"Lakeland, FL",Mulberry Sr,https://stats.ncaa.org/players/9090077,597117.0,2025,LaGrange,30251.0,CCS,3.0,16779.0,1162.0,9090077
 Nicholas Ford,So.,,0.0,0.0,24.0,-,,,"Canton, GA","Blessed Trinity, GSCC",https://stats.ncaa.org/players/9090109,597117.0,2025,LaGrange,30251.0,CCS,3.0,16779.0,1162.0,9090109
 Ben Hollenbeck,So.,OF,0.0,0.0,32.0,-,,,,,https://stats.ncaa.org/players/9219354,597117.0,2025,LaGrange,30251.0,CCS,3.0,16779.0,1162.0,9219354
-Chandler Walker,So.,P,1.0,0.0,28.0,-,,,,,https://stats.ncaa.org/players/9219357,597117.0,2025,LaGrange,30251.0,CCS,3.0,16779.0,1162.0,9219357
+Chandler Walker,So.,P,1.0,0.0,28.0,-,,,,,https://stats.ncaa.org/players/9219357,597117.0,2025,LaGrange,30251.0,CCS,3.0,16779.0,1162.0,d3d-7988132
 Jackson Harwell,Fr.,,0.0,0.0,44.0,-,,,"Cartersville, GA",Cartersville,https://stats.ncaa.org/players/9090145,597117.0,2025,LaGrange,30251.0,CCS,3.0,16779.0,1162.0,9090145
 Matthew Bilbo,Jr.,INF,0.0,0.0,15.0,-,,,"Bremen, GA","Bremen, Wallace Selma CC",https://stats.ncaa.org/players/9090083,597117.0,2025,LaGrange,30251.0,CCS,3.0,16779.0,1162.0,9090083
 Bryce Stephens,Jr.,,2.0,0.0,29.0,-,,,"Tifton, GA","Tift County, ESCC",https://stats.ncaa.org/players/9090116,597117.0,2025,LaGrange,30251.0,CCS,3.0,16779.0,1162.0,9090116
@@ -6361,7 +6361,7 @@ Nate Rosenzweig,So.,INF,0.0,0.0,45.0,-,,,,,https://stats.ncaa.org/players/889932
 Joey Stein,Fr.,SS,0.0,0.0,23.0,-,,,,,https://stats.ncaa.org/players/9101939,597198.0,2025,Lancaster Bible,30071.0,United East,3.0,16779.0,30085.0,9101939
 Cedric Clicqué,Fr.,P,0.0,0.0,29.0,-,,,,,https://stats.ncaa.org/players/9101945,597198.0,2025,Lancaster Bible,30071.0,United East,3.0,16779.0,30085.0,9101945
 Landon Johnson,So.,P,0.0,0.0,14.0,-,,,,,https://stats.ncaa.org/players/9101924,597198.0,2025,Lancaster Bible,30071.0,United East,3.0,16779.0,30085.0,9101924
-Noah Robinette,So.,P,0.0,0.0,20.0,6-2,RIGHT,RIGHT,"Keyser, WV",Calvary Christian Academy,https://stats.ncaa.org/players/9101932,597198.0,2025,Lancaster Bible,30071.0,United East,3.0,16779.0,30085.0,9101932
+Noah Robinette,So.,P,0.0,0.0,20.0,6-2,RIGHT,RIGHT,"Keyser, WV",Calvary Christian Academy,https://stats.ncaa.org/players/9101932,597198.0,2025,Lancaster Bible,30071.0,United East,3.0,16779.0,30085.0,d3d-8419906
 Everett Bell,Fr.,OF,0.0,0.0,15.0,-,,,,,https://stats.ncaa.org/players/9101926,597198.0,2025,Lancaster Bible,30071.0,United East,3.0,16779.0,30085.0,9101926
 Paulie Brosious,Jr.,P,0.0,0.0,17.0,6-3,RIGHT,RIGHT,"Schenectady, NY",Schalmont,https://stats.ncaa.org/players/9101929,597198.0,2025,Lancaster Bible,30071.0,United East,3.0,16779.0,30085.0,d3d-8276467
 Will Howell,Jr.,C,0.0,0.0,24.0,5-10,RIGHT,RIGHT,"Cary, NC",Cary Christian School,https://stats.ncaa.org/players/9101942,597198.0,2025,Lancaster Bible,30071.0,United East,3.0,16779.0,30085.0,9101942
@@ -6430,7 +6430,7 @@ Will Zatkowski,Jr.,C,0.0,0.0,38.0,-,LEFT,RIGHT,,,https://stats.ncaa.org/players/
 Jake Watkins,Jr.,P,0.0,0.0,1.0,-,LEFT,LEFT,,,https://stats.ncaa.org/players/8901122,597316.0,2025,Lawrence,23119.0,MWC,3.0,16779.0,348.0,8901122
 Richie LaCien,Sr.,P,0.0,0.0,18.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8900077,597316.0,2025,Lawrence,23119.0,MWC,3.0,16779.0,348.0,8900077
 Trent Shipman,Sr.,1B,0.0,0.0,32.0,6-0,RIGHT,RIGHT,"Keller, TX",Timber Creek,https://stats.ncaa.org/players/8890226,597150.0,2025,LeTourneau,14825.0,ASC,3.0,16779.0,8490.0,8890226
-Braden Woods,So.,P,0.0,0.0,41.0,5-11,RIGHT,RIGHT,"Franklin, TN",Franklin,https://stats.ncaa.org/players/8880678,597150.0,2025,LeTourneau,14825.0,ASC,3.0,16779.0,8490.0,8880678
+Braden Woods,So.,P,0.0,0.0,41.0,5-11,RIGHT,RIGHT,"Franklin, TN",Franklin,https://stats.ncaa.org/players/8880678,597150.0,2025,LeTourneau,14825.0,ASC,3.0,16779.0,8490.0,d3d-8880678
 Kevin Soto,Jr.,UT,0.0,0.0,25.0,6-0,RIGHT,RIGHT,"Kaufman, TX",Kaufman,https://stats.ncaa.org/players/8877801,597150.0,2025,LeTourneau,14825.0,ASC,3.0,16779.0,8490.0,8877801
 Antretz McDowell,So.,P,0.0,0.0,40.0,6-0,RIGHT,RIGHT,"Decatur, GA",Redan,https://stats.ncaa.org/players/8876993,597150.0,2025,LeTourneau,14825.0,ASC,3.0,16779.0,8490.0,8876993
 Landon Stocks,Sr.,P,0.0,0.0,16.0,6-1,RIGHT,RIGHT,"Kaufman, TX",Kaufman,https://stats.ncaa.org/players/8884145,597150.0,2025,LeTourneau,14825.0,ASC,3.0,16779.0,8490.0,d3d-7558281
@@ -6482,7 +6482,7 @@ Hayden Fravel,Jr.,P,0.0,0.0,31.0,6-0,LEFT,LEFT,,,https://stats.ncaa.org/players/
 Andrew Spaan,Sr.,P,0.0,0.0,22.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8876651,597317.0,2025,Lebanon Valley,28745.0,MAC Freedom,3.0,16779.0,351.0,8876651
 Dakota Brodzina,So.,P,0.0,0.0,99.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8898058,597317.0,2025,Lebanon Valley,28745.0,MAC Freedom,3.0,16779.0,351.0,8898058
 Ryan Schulman,So.,OF,0.0,0.0,49.0,5-9,LEFT,RIGHT,,,https://stats.ncaa.org/players/8896853,597317.0,2025,Lebanon Valley,28745.0,MAC Freedom,3.0,16779.0,351.0,8896853
-Logan Brewer,Sr.,1B,0.0,0.0,32.0,6-2,LEFT,RIGHT,"Biglerville, PA",,https://stats.ncaa.org/players/8892262,597317.0,2025,Lebanon Valley,28745.0,MAC Freedom,3.0,16779.0,351.0,8892262
+Logan Brewer,Sr.,1B,0.0,0.0,32.0,6-2,LEFT,RIGHT,"Biglerville, PA",,https://stats.ncaa.org/players/8892262,597317.0,2025,Lebanon Valley,28745.0,MAC Freedom,3.0,16779.0,351.0,d3d-7569282
 Brian Hammond,Jr.,OF,0.0,0.0,1.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8893692,597317.0,2025,Lebanon Valley,28745.0,MAC Freedom,3.0,16779.0,351.0,8893692
 Justin Ranker,Sr.,INF,0.0,0.0,24.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8893931,597317.0,2025,Lebanon Valley,28745.0,MAC Freedom,3.0,16779.0,351.0,8893931
 Nathan Clarke,So.,P,0.0,0.0,15.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897408,597317.0,2025,Lebanon Valley,28745.0,MAC Freedom,3.0,16779.0,351.0,8897408
@@ -6541,7 +6541,7 @@ Kyle Wilsie,Sr.,P,0.0,0.0,32.0,6-1,RIGHT,RIGHT,"San Diego, CA",Patrick Henry,htt
 Felix Gibeault,So.,P,0.0,0.0,33.0,6-0,RIGHT,RIGHT,"Taipei, Taiwan",Taipei European School,https://stats.ncaa.org/players/8874764,597170.0,2025,Lewis & Clark,25300.0,NWC,3.0,16779.0,22235.0,d3d-8418723
 Brandon Gonzaga,Jr.,INF,0.0,0.0,8.0,5-10,RIGHT,RIGHT,"Porter Ranch, CA",Notre Dame (SO),https://stats.ncaa.org/players/8884917,597170.0,2025,Lewis & Clark,25300.0,NWC,3.0,16779.0,22235.0,8884917
 Brennen Davis,Sr.,OF,0.0,0.0,21.0,6-0,RIGHT,RIGHT,"Encinitas, CA",La Costa Canyon,https://stats.ncaa.org/players/8879791,597170.0,2025,Lewis & Clark,25300.0,NWC,3.0,16779.0,22235.0,d3d-7562539
-Luke Ritter,Sr.,P,0.0,0.0,6.0,6-3,LEFT,LEFT,"San Diego, CA",Westview,https://stats.ncaa.org/players/8887934,597170.0,2025,Lewis & Clark,25300.0,NWC,3.0,16779.0,22235.0,8887934
+Luke Ritter,Sr.,P,0.0,0.0,6.0,6-3,LEFT,LEFT,"San Diego, CA",Westview,https://stats.ncaa.org/players/8887934,597170.0,2025,Lewis & Clark,25300.0,NWC,3.0,16779.0,22235.0,d3d-7562521
 Gavin Mangano,So.,OF,0.0,0.0,10.0,5-11,RIGHT,RIGHT,"Encinitas, CA",Santa Fe Christian,https://stats.ncaa.org/players/8882846,597170.0,2025,Lewis & Clark,25300.0,NWC,3.0,16779.0,22235.0,d3d-8418692
 Joaquin Sandoval,Jr.,C,0.0,0.0,15.0,5-9,RIGHT,RIGHT,"Santa Barbara, CA",San Marcos,https://stats.ncaa.org/players/8881936,597170.0,2025,Lewis & Clark,25300.0,NWC,3.0,16779.0,22235.0,d3d-7975200
 Justin Cavagnaro,Sr.,C,0.0,0.0,5.0,6-0,RIGHT,RIGHT,"Foster City, CA",Saint Francis,https://stats.ncaa.org/players/8876005,597170.0,2025,Lewis & Clark,25300.0,NWC,3.0,16779.0,22235.0,d3d-7562537
@@ -6612,7 +6612,7 @@ Austin Sheldon,Sr.,P,0.0,0.0,22.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/playe
 Cody Sunny,Jr.,UT,0.0,0.0,23.0,5-11,LEFT,RIGHT,,,https://stats.ncaa.org/players/8890056,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,8890056
 Robert Heim,So.,P,0.0,0.0,96.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8879823,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,8879823
 Aidan Herrick,Sr.,C,0.0,0.0,9.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8882913,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,8882913
-Vince McDowell,So.,C,0.0,0.0,20.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8877912,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,8877912
+Vince McDowell,So.,C,0.0,0.0,20.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8877912,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,d3d-8453825
 Max McCallum,Sr.,OF,0.0,0.0,7.0,6-0,LEFT,LEFT,,,https://stats.ncaa.org/players/8889264,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,d3d-7558820
 Jake Zeal,So.,OF,0.0,0.0,14.0,5-11,LEFT,LEFT,,,https://stats.ncaa.org/players/8881130,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,d3d-8453820
 Daniel Giusto,So.,P,0.0,0.0,19.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8889423,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,8889423
@@ -6639,8 +6639,8 @@ Peter Coakley,Jr.,P,0.0,0.0,12.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/player
 Kayden Shivers,So.,P,0.0,0.0,15.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897743,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,8897743
 Cameron Marson,So.,C,0.0,0.0,97.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8896710,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,8896710
 Jake Olszewski,So.,C,0.0,0.0,18.0,5-10,LEFT,RIGHT,,,https://stats.ncaa.org/players/8897962,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,8897962
-Vincent Costantino,So.,P,0.0,0.0,32.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8893408,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,8893408
-Colin Kissane,So.,OF,0.0,0.0,30.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8901495,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,8901495
+Vincent Costantino,So.,P,0.0,0.0,32.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8893408,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,d3d-8453831
+Colin Kissane,So.,OF,0.0,0.0,30.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8901495,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,d3d-8453829
 Jackson Cullen,Jr.,OF,0.0,0.0,33.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8900644,597318.0,2025,Loras,864.0,American Rivers,3.0,16779.0,364.0,8900644
 Charles Running,Jr.,P,1.0,0.0,44.0,6-1,RIGHT,RIGHT,"Prior Lake, MN",Prior Lake,https://stats.ncaa.org/players/8887810,597319.0,2025,Luther,864.0,American Rivers,3.0,16779.0,372.0,d3d-8019215
 Tyrus Werner,So.,INF,1.0,1.0,12.0,5-10,RIGHT,RIGHT,"Manchester, IA",West Delaware,https://stats.ncaa.org/players/8875727,597319.0,2025,Luther,864.0,American Rivers,3.0,16779.0,372.0,d3d-8420774
@@ -6912,7 +6912,7 @@ Jackson Etzel,Fr.,P,0.0,0.0,21.0,6-0,,LEFT,"Slinger, WI",Slinger,https://stats.n
 Elias Lopez,Fr.,UT,0.0,0.0,28.0,6-4,,RIGHT,"Poplar Grove, IL",North Boone,https://stats.ncaa.org/players/9096993,597167.0,2025,MSOE,30097.0,NACC,3.0,16779.0,20220.0,9096993
 Nicolas Nyasende,Fr.,OF,0.0,0.0,9.0,5-10,,,"Bloomington, MN",Jefferson Senior,https://stats.ncaa.org/players/9096974,597167.0,2025,MSOE,30097.0,NACC,3.0,16779.0,20220.0,9096974
 Zach Johnsoin,Jr.,OF,4.0,4.0,9.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9217475,597344.0,2025,MUW,12974.0,SLIAC,3.0,16779.0,431.0,9217475
-Walker Smith,Sr.,P,2.0,0.0,21.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9217485,597344.0,2025,MUW,12974.0,SLIAC,3.0,16779.0,431.0,9217485
+Walker Smith,Sr.,P,2.0,0.0,21.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9217485,597344.0,2025,MUW,12974.0,SLIAC,3.0,16779.0,431.0,d3d-9217485
 Tyler Estabrook,Sr.,SS,4.0,4.0,3.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8888922,597344.0,2025,MUW,12974.0,SLIAC,3.0,16779.0,431.0,d3d-7989799
 Jack Sledge,So.,INF,0.0,0.0,17.0,6-0,RIGHT,RIGHT,"Petal, MS",,https://stats.ncaa.org/players/8883967,597344.0,2025,MUW,12974.0,SLIAC,3.0,16779.0,431.0,8883967
 Swayze Rikard,Fr.,SS,2.0,1.0,4.0,-,LEFT,RIGHT,,,https://stats.ncaa.org/players/9217467,597344.0,2025,MUW,12974.0,SLIAC,3.0,16779.0,431.0,d3d-9217467
@@ -7206,17 +7206,17 @@ Sam St. Clair,So.,P,0.0,0.0,33.0,-,,,,,https://stats.ncaa.org/players/8880508,59
 Matthew Charles,Sr.,P,0.0,0.0,36.0,-,,,,,https://stats.ncaa.org/players/8882453,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,d3d-8011804
 Tyler Smith,Sr.,OF,0.0,0.0,15.0,-,,,,,https://stats.ncaa.org/players/8885691,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,d3d-7584465
 Hunter Zaun,Sr.,P,0.0,0.0,37.0,-,,,,,https://stats.ncaa.org/players/8878490,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,d3d-7593178
-Kelly Hackley,Sr.,OF,0.0,0.0,29.0,-,,,,,https://stats.ncaa.org/players/8898128,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,8898128
+Kelly Hackley,Sr.,OF,0.0,0.0,29.0,-,,,,,https://stats.ncaa.org/players/8898128,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,d3d-7596657
 Brannoc Odlum,Sr.,C,0.0,0.0,38.0,-,,,,,https://stats.ncaa.org/players/8898657,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,8898657
 Cody Hoffer,So.,P,0.0,0.0,16.0,-,,,,,https://stats.ncaa.org/players/8892958,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,8892958
 Blake Argenbright,Jr.,P,0.0,0.0,30.0,-,,,,,https://stats.ncaa.org/players/8896335,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,8896335
 Wesley Strychoski,So.,OF,0.0,0.0,20.0,-,,,,,https://stats.ncaa.org/players/8898418,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,8898418
 Lance Gowans,So.,P,0.0,0.0,12.0,-,,,,,https://stats.ncaa.org/players/8897957,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,8897957
 Blake French,Sr.,INF,0.0,0.0,23.0,-,,,,,https://stats.ncaa.org/players/8901715,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,8901715
-Tyler Morley,Sr.,INF,0.0,0.0,31.0,-,,,,,https://stats.ncaa.org/players/8901842,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,8901842
+Tyler Morley,Sr.,INF,0.0,0.0,31.0,-,,,,,https://stats.ncaa.org/players/8901842,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,d3d-7595515
 Carter Attard,So.,INF,0.0,0.0,25.0,-,,,,,https://stats.ncaa.org/players/8902353,597346.0,2025,Mary Baldwin,842.0,USA South,3.0,16779.0,389.0,8902353
 Tyler Betts,Jr.,OF,0.0,0.0,51.0,-,,,,,https://stats.ncaa.org/players/8880724,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,8880724
-Bryce Farlander,Jr.,P,1.0,1.0,26.0,-,,,,,https://stats.ncaa.org/players/8886682,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,8886682
+Bryce Farlander,Jr.,P,1.0,1.0,26.0,-,,,,,https://stats.ncaa.org/players/8886682,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,d3d-7983771
 Nicklas Fenner,Sr.,P,1.0,0.0,19.0,-,,,,,https://stats.ncaa.org/players/8889081,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,8889081
 James McGlumphy,Sr.,P,1.0,1.0,25.0,-,,,,,https://stats.ncaa.org/players/8884009,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,8884009
 Mason Semmelman,So.,P,0.0,0.0,77.0,-,,,,,https://stats.ncaa.org/players/8873868,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,8873868
@@ -7230,7 +7230,7 @@ Cameron Talburt,Sr.,OF,3.0,3.0,18.0,-,,,,,https://stats.ncaa.org/players/8887350
 Jordan Fernandez,So.,OF,2.0,1.0,10.0,-,,,,,https://stats.ncaa.org/players/8889619,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,d3d-8408436
 Riley Bender,Sr.,INF,3.0,3.0,16.0,-,,,,,https://stats.ncaa.org/players/8874359,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,d3d-8408448
 Isaac Brann,Sr.,P,0.0,0.0,6.0,-,,,,,https://stats.ncaa.org/players/8889728,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,8889728
-Easton Cline,So.,INF,2.0,1.0,34.0,-,,,,,https://stats.ncaa.org/players/8888624,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,8888624
+Easton Cline,So.,INF,2.0,1.0,34.0,-,,,,,https://stats.ncaa.org/players/8888624,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,d3d-8408439
 Chris Perez,Sr.,INF,0.0,0.0,5.0,-,,,,,https://stats.ncaa.org/players/8878453,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,8878453
 Shane Melick,Jr.,INF,2.0,0.0,17.0,-,,,,,https://stats.ncaa.org/players/8898936,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,8898936
 Quint Mullen,So.,P,0.0,0.0,14.0,-,,,,,https://stats.ncaa.org/players/8894571,597124.0,2025,Mary Hardin-Baylor,14825.0,ASC,3.0,16779.0,1203.0,8894571
@@ -7271,7 +7271,7 @@ Nate Vasquez,Sr.,INF,0.0,0.0,19.0,-,,,,,https://stats.ncaa.org/players/9218698,5
 Eric McDaniel,Jr.,P,0.0,0.0,28.0,-,,,,,https://stats.ncaa.org/players/8890225,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,8890225
 Oliver Martin,So.,C,1.0,1.0,24.0,-,,,,,https://stats.ncaa.org/players/8882593,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,d3d-8418261
 Tommy Martinez,Sr.,INF,1.0,1.0,1.0,-,,,,,https://stats.ncaa.org/players/8879620,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,d3d-7569238
-Ryan Northup,Jr.,P,0.0,0.0,8.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8874821,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,8874821
+Ryan Northup,Jr.,P,0.0,0.0,8.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8874821,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,d3d-8002081
 Burke Steifman,Sr.,INF,1.0,0.0,7.0,-,,,,,https://stats.ncaa.org/players/8886056,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,8886056
 Ryan Schwarz,Sr.,INF,1.0,1.0,3.0,-,,,,,https://stats.ncaa.org/players/8881858,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,d3d-7569281
 Hank Leighty,Jr.,C,0.0,0.0,13.0,-,,,,,https://stats.ncaa.org/players/8873994,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,8873994
@@ -7285,7 +7285,7 @@ Mike Dennis,Jr.,C,0.0,0.0,6.0,-,,,,,https://stats.ncaa.org/players/8882544,59732
 Jacob Christenbury,Sr.,INF,1.0,1.0,10.0,-,,,,,https://stats.ncaa.org/players/8892273,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,d3d-7569252
 Andrew Poon,Jr.,P,0.0,0.0,18.0,-,,,,,https://stats.ncaa.org/players/8892430,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,d3d-8002031
 Griffin Graham,Sr.,UT,1.0,0.0,19.0,-,,,,,https://stats.ncaa.org/players/8892500,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,d3d-7569236
-Connor Hassan,So.,P,1.0,0.0,2.0,-,,,,,https://stats.ncaa.org/players/8895143,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,8895143
+Connor Hassan,So.,P,1.0,0.0,2.0,-,,,,,https://stats.ncaa.org/players/8895143,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,d3d-8418257
 Fisher Canaday,So.,P,0.0,0.0,33.0,-,,,,,https://stats.ncaa.org/players/8901540,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,8901540
 George Rizzo,So.,OF,1.0,1.0,4.0,-,,,,,https://stats.ncaa.org/players/8902371,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,8902371
 Peyton Chavis,Jr.,P,0.0,0.0,21.0,-,,,,,https://stats.ncaa.org/players/8900040,597325.0,2025,Mary Washington,15810.0,C2C,3.0,16779.0,390.0,8900040
@@ -7344,13 +7344,13 @@ Dylan Heil,Sr.,P,0.0,0.0,16.0,6-2,RIGHT,RIGHT,"Manassas, VA",Potomac,https://sta
 Sam Tisler,So.,P,0.0,0.0,53.0,6-0,RIGHT,RIGHT,"Fairfax, VA",James W. Robinson,https://stats.ncaa.org/players/8895148,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,8895148
 Kyle Smith,Jr.,P,0.0,0.0,26.0,6-0,RIGHT,LEFT,"Springfield, VA",West Springfield,https://stats.ncaa.org/players/8897701,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,8897701
 Matt Jones,Jr.,P,0.0,0.0,41.0,6-2,RIGHT,RIGHT,"Arlington, VA",South County,https://stats.ncaa.org/players/8895325,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,8895325
-Evan Schick,So.,INF,0.0,0.0,6.0,5-10,RIGHT,RIGHT,"Burke, VA",Lake Braddock,https://stats.ncaa.org/players/8896627,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,8896627
+Evan Schick,So.,INF,0.0,0.0,6.0,5-10,RIGHT,RIGHT,"Burke, VA",Lake Braddock,https://stats.ncaa.org/players/8896627,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,d3d-8896627
 Daniel Fernandez,Sr.,INF,1.0,0.0,2.0,5-9,RIGHT,RIGHT,"Manassas, VA",Osbourn Park,https://stats.ncaa.org/players/8896638,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,d3d-8528623
 Jonathan McMath,Sr.,UT,1.0,1.0,45.0,6-3,LEFT,LEFT,"Brooksville, FL",Nature Coast Technical,https://stats.ncaa.org/players/8900243,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,8900243
 Sean Quinn,So.,P,0.0,0.0,51.0,6-1,RIGHT,RIGHT,"Springfield, VA",Bishop Ireton,https://stats.ncaa.org/players/8899083,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,8899083
 Joseph Kramp,Sr.,C,0.0,0.0,52.0,6-2,RIGHT,RIGHT,"Fairfax, VA",Chantilly,https://stats.ncaa.org/players/8901884,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,d3d-7578194
 Colby Cunningham,Jr.,OF,1.0,0.0,30.0,6-2,RIGHT,RIGHT,"Martinsville, VA",Carlisle,https://stats.ncaa.org/players/8901063,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,d3d-8009619
-Ryan Wright,Sr.,OF,1.0,0.0,29.0,5-8,RIGHT,RIGHT,"Lutherville, MD",Loyola Blakefield,https://stats.ncaa.org/players/8899846,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,8899846
+Ryan Wright,Sr.,OF,1.0,0.0,29.0,5-8,RIGHT,RIGHT,"Lutherville, MD",Loyola Blakefield,https://stats.ncaa.org/players/8899846,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,d3d-7578175
 Thomas Orihuela,Jr.,C,0.0,0.0,24.0,5-10,RIGHT,RIGHT,"Weston, FL",Archbishop Mccarthy,https://stats.ncaa.org/players/8902541,597326.0,2025,Marymount (VA),30233.0,Atlantic East,3.0,16779.0,394.0,8902541
 Cody Meier,Fr.,OF,2.0,0.0,15.0,6-0,RIGHT,RIGHT,"Newtown, CT",Immaculate,https://stats.ncaa.org/players/9299486,597327.0,2025,Maryville (TN),30251.0,CCS,3.0,16779.0,396.0,9299486
 Lantz Shirk,So.,P,1.0,0.0,19.0,6-1,RIGHT,RIGHT,"Clarksville, TN",Rossview,https://stats.ncaa.org/players/8888866,597327.0,2025,Maryville (TN),30251.0,CCS,3.0,16779.0,396.0,8888866
@@ -7403,7 +7403,7 @@ Joel Ayers,So.,C,0.0,0.0,7.0,5-10,RIGHT,LEFT,"Severn, MD",DeMatha Catholic,https
 Joe Yannelli,Sr.,2B,0.0,0.0,19.0,5-8,RIGHT,RIGHT,"Thornton, PA",Garnet Valley,https://stats.ncaa.org/players/8880955,597328.0,2025,Marywood,30233.0,Atlantic East,3.0,16779.0,397.0,8880955
 Owen Reilly,So.,P,0.0,0.0,52.0,5-11,LEFT,LEFT,"Port Jervis, NY",Port Jervis,https://stats.ncaa.org/players/8881877,597328.0,2025,Marywood,30233.0,Atlantic East,3.0,16779.0,397.0,8881877
 Aidan Cassidy,Sr.,P,0.0,0.0,37.0,5-11,RIGHT,RIGHT,"Brooklyn, NY",Bayridge Prep,https://stats.ncaa.org/players/8884051,597328.0,2025,Marywood,30233.0,Atlantic East,3.0,16779.0,397.0,8884051
-AJ Kuzior,Jr.,C,0.0,0.0,33.0,6-0,RIGHT,RIGHT,"Bulger, PA",Burgettstown,https://stats.ncaa.org/players/8875916,597328.0,2025,Marywood,30233.0,Atlantic East,3.0,16779.0,397.0,8875916
+AJ Kuzior,Jr.,C,0.0,0.0,33.0,6-0,RIGHT,RIGHT,"Bulger, PA",Burgettstown,https://stats.ncaa.org/players/8875916,597328.0,2025,Marywood,30233.0,Atlantic East,3.0,16779.0,397.0,d3d-8018732
 Connor Watkins,Jr.,P,0.0,0.0,42.0,6-7,RIGHT,RIGHT,"Montrose, PA",Montrose,https://stats.ncaa.org/players/8885160,597328.0,2025,Marywood,30233.0,Atlantic East,3.0,16779.0,397.0,8885160
 Ethan Levine,Jr.,2B,0.0,0.0,2.0,5-9,RIGHT,RIGHT,"York, PA",Central York,https://stats.ncaa.org/players/8889348,597328.0,2025,Marywood,30233.0,Atlantic East,3.0,16779.0,397.0,d3d-8276308
 Danny Tiedemann,Jr.,P,0.0,0.0,44.0,6-2,RIGHT,RIGHT,"Manorville, NY",Eastport South Manor,https://stats.ncaa.org/players/8887277,597328.0,2025,Marywood,30233.0,Atlantic East,3.0,16779.0,397.0,8887277
@@ -7621,7 +7621,7 @@ Tommy Chiapetti,So.,OF,0.0,0.0,10.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/pl
 Frank Ruepp,So.,OF,0.0,0.0,17.0,5-9,RIGHT,LEFT,,,https://stats.ncaa.org/players/8883596,597052.0,2025,Merchant Marine,13054.0,Skyline,3.0,16779.0,724.0,8883596
 Edward Lippert,Jr.,P,0.0,0.0,20.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8876465,597052.0,2025,Merchant Marine,13054.0,Skyline,3.0,16779.0,724.0,8876465
 Danny Heck,Sr.,C,0.0,0.0,19.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8884750,597052.0,2025,Merchant Marine,13054.0,Skyline,3.0,16779.0,724.0,8884750
-Samuel Kim,So.,INF,0.0,0.0,51.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8895458,597052.0,2025,Merchant Marine,13054.0,Skyline,3.0,16779.0,724.0,8895458
+Samuel Kim,So.,INF,0.0,0.0,51.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8895458,597052.0,2025,Merchant Marine,13054.0,Skyline,3.0,16779.0,724.0,d3d-8009264
 Ricardo Olivares,So.,OF,0.0,0.0,45.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8890507,597052.0,2025,Merchant Marine,13054.0,Skyline,3.0,16779.0,724.0,8890507
 Ben Bridges,So.,INF,0.0,0.0,27.0,5-8,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897366,597052.0,2025,Merchant Marine,13054.0,Skyline,3.0,16779.0,724.0,8897366
 Christian Gamez,So.,UT,0.0,0.0,18.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897413,597052.0,2025,Merchant Marine,13054.0,Skyline,3.0,16779.0,724.0,8897413
@@ -7638,7 +7638,7 @@ Nick Moyer,So.,INF,3.0,3.0,11.0,-,,,,,https://stats.ncaa.org/players/8875896,597
 Drew Dellinger,Sr.,P,1.0,0.0,25.0,-,,,,,https://stats.ncaa.org/players/8887038,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,d3d-7574238
 Dustin Isanogle,Sr.,UT,3.0,2.0,4.0,-,,,,,https://stats.ncaa.org/players/8880094,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,d3d-7574195
 Carter Reid,So.,C,0.0,0.0,27.0,-,,,,,https://stats.ncaa.org/players/8881204,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,d3d-8590541
-Noah Barrall,Sr.,P,1.0,0.0,24.0,-,,,,,https://stats.ncaa.org/players/8883187,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,8883187
+Noah Barrall,Sr.,P,1.0,0.0,24.0,-,,,,,https://stats.ncaa.org/players/8883187,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,d3d-7574236
 Evan Wagaman,Sr.,OF,3.0,3.0,7.0,-,,,,,https://stats.ncaa.org/players/8889624,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,8889624
 Roman Mastramico,Jr.,P,0.0,0.0,3.0,-,,,,,https://stats.ncaa.org/players/8882371,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,8882371
 Jarrett Gordon,Sr.,INF,3.0,3.0,17.0,-,,,,,https://stats.ncaa.org/players/8879484,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,d3d-7574231
@@ -7673,7 +7673,7 @@ Joshua Boll,Fr.,OF,0.0,0.0,48.0,-,,,,,https://stats.ncaa.org/players/9110442,597
 Walker Cloudt,Fr.,P,0.0,0.0,21.0,-,,,,,https://stats.ncaa.org/players/9110398,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,d3d-9110398
 Kolten Martin,Fr.,P,0.0,0.0,47.0,-,,,,,https://stats.ncaa.org/players/9110441,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,9110441
 Trey Harper,Fr.,P,1.0,0.0,12.0,-,,,,,https://stats.ncaa.org/players/9110393,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,9110393
-Sawyer Shepherd,Fr.,P,0.0,0.0,39.0,-,,,,,https://stats.ncaa.org/players/9110427,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,9110427
+Sawyer Shepherd,Fr.,P,0.0,0.0,39.0,-,,,,,https://stats.ncaa.org/players/9110427,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,d3d-9110427
 Owen Hannevig,Fr.,P,1.0,0.0,41.0,-,,,,,https://stats.ncaa.org/players/9110429,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,d3d-9110429
 Brayden Burkholder,Fr.,INF,0.0,0.0,14.0,-,,,,,https://stats.ncaa.org/players/9110395,597332.0,2025,Messiah,28744.0,MAC Commonwealth,3.0,16779.0,411.0,9110395
 Banks Hartman,So.,OF,5.0,5.0,5.0,5-10,LEFT,LEFT,,,https://stats.ncaa.org/players/8884831,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,8884831
@@ -7688,7 +7688,7 @@ Anthony Miale,Sr.,P,0.0,0.0,26.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/player
 Chase Carroll,Sr.,P,3.0,0.0,33.0,6-4,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8884375,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,d3d-7574149
 Austin Williams,Sr.,1B,0.0,0.0,23.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8882233,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,8882233
 Austin Rinzel,So.,INF,5.0,5.0,17.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8884434,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,d3d-8529247
-Josh Plisko,Sr.,P,2.0,0.0,28.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8876479,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,8876479
+Josh Plisko,Sr.,P,2.0,0.0,28.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8876479,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,d3d-7546908
 Jackson Deal,Sr.,OF,5.0,5.0,8.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8898546,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,d3d-7574151
 Tanner Simpson,Sr.,P,0.0,0.0,20.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8893841,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,d3d-8006936
 Jackson Kuhn,Jr.,C,3.0,2.0,4.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8898677,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,d3d-8006959
@@ -7697,7 +7697,7 @@ Caleb Rogers,Sr.,INF,5.0,5.0,11.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/playe
 Andrew Baur,Sr.,P,2.0,0.0,37.0,5-11,BOTH,RIGHT,,,https://stats.ncaa.org/players/8890804,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,d3d-7574143
 Caleb Greene,Sr.,OF,5.0,5.0,1.0,5-8,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8898238,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,d3d-7574139
 Presley Patterson,So.,P,2.0,2.0,9.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8891658,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,8891658
-Banks Engle,Sr.,INF,0.0,0.0,6.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8900585,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,8900585
+Banks Engle,Sr.,INF,0.0,0.0,6.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8900585,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,d3d-7705384
 Justin Blunt,Sr.,OF,4.0,0.0,22.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9216326,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,d3d-6719326
 Israel Ortiz,Jr.,P,4.0,2.0,27.0,6-3,BOTH,RIGHT,,,https://stats.ncaa.org/players/9216330,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,9216330
 Ian Swanson,Fr.,P,3.0,1.0,25.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9216329,597333.0,2025,Methodist,842.0,USA South,3.0,16779.0,412.0,9216329
@@ -7783,7 +7783,7 @@ Kobly Koslofski,Jr.,OF,0.0,0.0,18.0,5-8,LEFT,LEFT,,,https://stats.ncaa.org/playe
 Ben Comes,Sr.,1B,0.0,0.0,10.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8899443,597335.0,2025,Millikin,836.0,CCIW,3.0,16779.0,424.0,8899443
 Austin Maubach,So.,P,0.0,0.0,38.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8900724,597335.0,2025,Millikin,836.0,CCIW,3.0,16779.0,424.0,8900724
 Danny Lack,Sr.,OF,0.0,0.0,7.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8899595,597335.0,2025,Millikin,836.0,CCIW,3.0,16779.0,424.0,d3d-7569900
-Hayden Stork,Sr.,C,0.0,0.0,3.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8901100,597335.0,2025,Millikin,836.0,CCIW,3.0,16779.0,424.0,8901100
+Hayden Stork,Sr.,C,0.0,0.0,3.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8901100,597335.0,2025,Millikin,836.0,CCIW,3.0,16779.0,424.0,d3d-8455855
 Jack Harris,So.,P,0.0,0.0,35.0,6-3,,LEFT,"Hendersonville, TN",,https://stats.ncaa.org/players/9218728,597335.0,2025,Millikin,836.0,CCIW,3.0,16779.0,424.0,9218728
 David Abbadessa,Sr.,INF,3.0,3.0,21.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9034282,597336.0,2025,Millsaps,30169.0,SAA,3.0,16779.0,426.0,d3d-7111277
 Wil Wood,Sr.,P,1.0,1.0,32.0,-,LEFT,LEFT,,,https://stats.ncaa.org/players/9034283,597336.0,2025,Millsaps,30169.0,SAA,3.0,16779.0,426.0,d3d-6639327
@@ -7912,7 +7912,7 @@ Andrew Haussman,So.,1B,0.0,0.0,18.0,6-3,RIGHT,RIGHT,,,https://stats.ncaa.org/pla
 Matt Yarborough,Jr.,C,0.0,0.0,24.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8874536,597164.0,2025,Misericordia,28745.0,MAC Freedom,3.0,16779.0,16142.0,8874536
 Dante Viola,Sr.,P,1.0,0.0,12.0,6-1,LEFT,LEFT,,,https://stats.ncaa.org/players/8876567,597164.0,2025,Misericordia,28745.0,MAC Freedom,3.0,16779.0,16142.0,d3d-7572910
 Josh Burger,Sr.,INF,1.0,0.0,2.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8884748,597164.0,2025,Misericordia,28745.0,MAC Freedom,3.0,16779.0,16142.0,8884748
-Jack Regenye,Sr.,OF,2.0,2.0,1.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897075,597164.0,2025,Misericordia,28745.0,MAC Freedom,3.0,16779.0,16142.0,8897075
+Jack Regenye,Sr.,OF,2.0,2.0,1.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897075,597164.0,2025,Misericordia,28745.0,MAC Freedom,3.0,16779.0,16142.0,d3d-7572920
 Bryan Henry,So.,P,1.0,0.0,28.0,6-7,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8892460,597164.0,2025,Misericordia,28745.0,MAC Freedom,3.0,16779.0,16142.0,d3d-8429272
 Max Oliver,Sr.,P,1.0,1.0,6.0,5-10,LEFT,LEFT,,,https://stats.ncaa.org/players/8894262,597164.0,2025,Misericordia,28745.0,MAC Freedom,3.0,16779.0,16142.0,8894262
 Michael Duda,So.,C,0.0,0.0,8.0,5-9,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8890988,597164.0,2025,Misericordia,28745.0,MAC Freedom,3.0,16779.0,16142.0,d3d-8429288
@@ -7970,7 +7970,7 @@ Jon-Marc Torrez,Fr.,C,0.0,0.0,39.0,-,,,,,https://stats.ncaa.org/players/9298804,
 Tyler Sears,Jr.,P,0.0,0.0,32.0,-,,,,,https://stats.ncaa.org/players/8886903,597337.0,2025,Monmouth (IL),23119.0,MWC,3.0,16779.0,438.0,8886903
 Gianni Gallichio,So.,P,0.0,0.0,30.0,-,,,,,https://stats.ncaa.org/players/8874829,597337.0,2025,Monmouth (IL),23119.0,MWC,3.0,16779.0,438.0,8874829
 Owen Wolfe,Sr.,P,0.0,0.0,21.0,-,,,,,https://stats.ncaa.org/players/8886145,597337.0,2025,Monmouth (IL),23119.0,MWC,3.0,16779.0,438.0,d3d-7580311
-Jonas Buckles,Sr.,INF,0.0,0.0,3.0,-,,,,,https://stats.ncaa.org/players/8878008,597337.0,2025,Monmouth (IL),23119.0,MWC,3.0,16779.0,438.0,8878008
+Jonas Buckles,Sr.,INF,0.0,0.0,3.0,-,,,,,https://stats.ncaa.org/players/8878008,597337.0,2025,Monmouth (IL),23119.0,MWC,3.0,16779.0,438.0,d3d-7580303
 Heath Hornke,So.,P,0.0,0.0,25.0,-,,,,,https://stats.ncaa.org/players/8883215,597337.0,2025,Monmouth (IL),23119.0,MWC,3.0,16779.0,438.0,8883215
 Reid Stufflebeem,Sr.,INF,0.0,0.0,23.0,-,,,,,https://stats.ncaa.org/players/8882200,597337.0,2025,Monmouth (IL),23119.0,MWC,3.0,16779.0,438.0,d3d-7985267
 Nathan Reed,Sr.,INF,0.0,0.0,24.0,-,,,,,https://stats.ncaa.org/players/8876197,597337.0,2025,Monmouth (IL),23119.0,MWC,3.0,16779.0,438.0,d3d-7580317
@@ -8025,7 +8025,7 @@ Sebastian Ecker,So.,P,0.0,0.0,31.0,5-9,LEFT,LEFT,,,https://stats.ncaa.org/player
 Jake Smith,Sr.,OF,0.0,0.0,37.0,-,LEFT,LEFT,,,https://stats.ncaa.org/players/9115769,597338.0,2025,Montclair St.,891.0,NJAC,3.0,16779.0,442.0,9115769
 Christian Addotta,So.,P,0.0,0.0,33.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8891283,597338.0,2025,Montclair St.,891.0,NJAC,3.0,16779.0,442.0,8891283
 Evan Wood,So.,P,0.0,0.0,21.0,5-10,RIGHT,LEFT,"Atlantic Highlands, NJ",Middletown South,https://stats.ncaa.org/players/8900403,597338.0,2025,Montclair St.,891.0,NJAC,3.0,16779.0,442.0,d3d-8008798
-Marcus Johnson,Sr.,OF,0.0,0.0,8.0,5-9,LEFT,LEFT,,,https://stats.ncaa.org/players/8900601,597338.0,2025,Montclair St.,891.0,NJAC,3.0,16779.0,442.0,8900601
+Marcus Johnson,Sr.,OF,0.0,0.0,8.0,5-9,LEFT,LEFT,,,https://stats.ncaa.org/players/8900601,597338.0,2025,Montclair St.,891.0,NJAC,3.0,16779.0,442.0,d3d-8585936
 Matt Kaliske,Sr.,1B,0.0,0.0,42.0,-,,,,,https://stats.ncaa.org/players/8901201,597338.0,2025,Montclair St.,891.0,NJAC,3.0,16779.0,442.0,8901201
 Lukas Egenhauser,Jr.,INF,0.0,0.0,10.0,5-7,RIGHT,RIGHT,"Suffern, NY",Suffern,https://stats.ncaa.org/players/9218744,597338.0,2025,Montclair St.,891.0,NJAC,3.0,16779.0,442.0,d3d-7996905
 Ryan Kessler,So.,C,0.0,0.0,50.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8886706,597353.0,2025,Moravian,30101.0,Landmark,3.0,16779.0,443.0,8886706
@@ -8047,7 +8047,7 @@ Andrew Benvenuto,So.,P,0.0,0.0,41.0,6-1,LEFT,LEFT,,,https://stats.ncaa.org/playe
 Wes Griffith,So.,OF,0.0,0.0,8.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8883612,597353.0,2025,Moravian,30101.0,Landmark,3.0,16779.0,443.0,8883612
 Ben Cogar,So.,P,0.0,0.0,3.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8884682,597353.0,2025,Moravian,30101.0,Landmark,3.0,16779.0,443.0,8884682
 Johnovan Rodriguez,So.,INF,0.0,0.0,4.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8893460,597353.0,2025,Moravian,30101.0,Landmark,3.0,16779.0,443.0,8893460
-Ross Huffman,Jr.,UT,0.0,0.0,11.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8898459,597353.0,2025,Moravian,30101.0,Landmark,3.0,16779.0,443.0,8898459
+Ross Huffman,Jr.,UT,0.0,0.0,11.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8898459,597353.0,2025,Moravian,30101.0,Landmark,3.0,16779.0,443.0,d3d-8003647
 Ryan Hoffman,So.,P,0.0,0.0,16.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8893636,597353.0,2025,Moravian,30101.0,Landmark,3.0,16779.0,443.0,8893636
 Max Sponheimer,Jr.,P,0.0,0.0,20.0,6-1,LEFT,RIGHT,,,https://stats.ncaa.org/players/8890647,597353.0,2025,Moravian,30101.0,Landmark,3.0,16779.0,443.0,8890647
 Kiernan Kenintz,So.,3B,0.0,0.0,12.0,5-8,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897487,597353.0,2025,Moravian,30101.0,Landmark,3.0,16779.0,443.0,8897487
@@ -8210,7 +8210,7 @@ Ricard Lamping,So.,C,1.0,1.0,10.0,6-0,RIGHT,RIGHT,"Stanfordville, NY",Stissing M
 Aidan Marshall,Jr.,OF,3.0,3.0,24.0,6-3,RIGHT,RIGHT,"Poughkeepsie, NY",Roy C. Ketcham,https://stats.ncaa.org/players/8875553,597140.0,2025,Mt. St. Mary (NY),13054.0,Skyline,3.0,16779.0,1468.0,d3d-7996160
 Shane Finch,Sr.,C,1.0,1.0,15.0,6-3,RIGHT,RIGHT,"Cortlandt Manor, NY",Walter Panas,https://stats.ncaa.org/players/8890441,597140.0,2025,Mt. St. Mary (NY),13054.0,Skyline,3.0,16779.0,1468.0,d3d-7574034
 Gregory Malerba,So.,P,1.0,0.0,32.0,5-10,RIGHT,RIGHT,"Hicksville, NY",Kellenberg Memorial,https://stats.ncaa.org/players/8897345,597140.0,2025,Mt. St. Mary (NY),13054.0,Skyline,3.0,16779.0,1468.0,8897345
-Peter Pappalardo,Jr.,P,2.0,0.0,88.0,6-0,LEFT,LEFT,"Kaneohe, HI",Damien Memorial School,https://stats.ncaa.org/players/8892763,597140.0,2025,Mt. St. Mary (NY),13054.0,Skyline,3.0,16779.0,1468.0,8892763
+Peter Pappalardo,Jr.,P,2.0,0.0,88.0,6-0,LEFT,LEFT,"Kaneohe, HI",Damien Memorial School,https://stats.ncaa.org/players/8892763,597140.0,2025,Mt. St. Mary (NY),13054.0,Skyline,3.0,16779.0,1468.0,d3d-7996149
 Daniel Mack,Jr.,OF,2.0,1.0,4.0,6-0,RIGHT,RIGHT,"Ramsey, NJ",Ramsey,https://stats.ncaa.org/players/8898891,597140.0,2025,Mt. St. Mary (NY),13054.0,Skyline,3.0,16779.0,1468.0,d3d-7996150
 John Morehead,Sr.,P,2.0,0.0,6.0,5-9,RIGHT,RIGHT,"Highland Mills, NY",Monroe Woodbury,https://stats.ncaa.org/players/8896213,597140.0,2025,Mt. St. Mary (NY),13054.0,Skyline,3.0,16779.0,1468.0,d3d-7574059
 Elijah Duprey,So.,OF,2.0,0.0,50.0,6-1,RIGHT,RIGHT,"Vergennes, VT",Vergennes Union,https://stats.ncaa.org/players/8897518,597140.0,2025,Mt. St. Mary (NY),13054.0,Skyline,3.0,16779.0,1468.0,d3d-8455793
@@ -8525,7 +8525,7 @@ Derek Bauernschmidt,So.,P,0.0,0.0,11.0,5-4,RIGHT,RIGHT,"Little Ferry, NJ",Ridgef
 Marco Cundari,So.,C,0.0,0.0,31.0,5-10,RIGHT,RIGHT,"Staten Island, NY",St. Peter's Boys,https://stats.ncaa.org/players/8902763,597304.0,2025,New Jersey City,891.0,NJAC,3.0,16779.0,319.0,8902763
 Yannid Narvaez,So.,P,0.0,0.0,37.0,6-0,RIGHT,RIGHT,"Cartago, Costa Rica",International Christian Academy,https://stats.ncaa.org/players/8900313,597304.0,2025,New Jersey City,891.0,NJAC,3.0,16779.0,319.0,8900313
 Nick Vaughn,Sr.,C,0.0,0.0,16.0,6-3,RIGHT,RIGHT,"Ocean Townshp, NJ",Ocean Township,https://stats.ncaa.org/players/8901561,597304.0,2025,New Jersey City,891.0,NJAC,3.0,16779.0,319.0,8901561
-Dom Yarson,Jr.,UT,0.0,0.0,15.0,6-2,RIGHT,RIGHT,"Ewing, NJ",Ewing,https://stats.ncaa.org/players/8899327,597304.0,2025,New Jersey City,891.0,NJAC,3.0,16779.0,319.0,8899327
+Dom Yarson,Jr.,UT,0.0,0.0,15.0,6-2,RIGHT,RIGHT,"Ewing, NJ",Ewing,https://stats.ncaa.org/players/8899327,597304.0,2025,New Jersey City,891.0,NJAC,3.0,16779.0,319.0,d3d-8010525
 Jeffrey Osborne,Jr.,P,0.0,0.0,20.0,5-10,LEFT,LEFT,"Spotswood, NJ",Spotswood,https://stats.ncaa.org/players/8901903,597304.0,2025,New Jersey City,891.0,NJAC,3.0,16779.0,319.0,8901903
 Ricky Del Rio,So.,P,0.0,0.0,21.0,5-11,RIGHT,RIGHT,"Edison, NJ",St. Thomas Aquinas,https://stats.ncaa.org/players/8899512,597304.0,2025,New Jersey City,891.0,NJAC,3.0,16779.0,319.0,8899512
 Julian Galvan,Jr.,INF,0.0,0.0,8.0,5-9,,,,,https://stats.ncaa.org/players/9102887,596984.0,2025,Nichols,839.0,CNE,3.0,16779.0,484.0,9102887
@@ -8663,8 +8663,8 @@ Kevin Ayeski,Jr.,P,0.0,0.0,44.0,-,,,,,https://stats.ncaa.org/players/8897060,596
 Jake Nawrocki,So.,pr/3b,0.0,0.0,27.0,-,,,,,https://stats.ncaa.org/players/8894593,596988.0,2025,North Park,836.0,CCIW,3.0,16779.0,496.0,8894593
 Charlie Cmiel,So.,p,0.0,0.0,28.0,-,,,,,https://stats.ncaa.org/players/8892699,596988.0,2025,North Park,836.0,CCIW,3.0,16779.0,496.0,8892699
 Luke Glaser,Fr.,p,0.0,0.0,35.0,-,,,,,https://stats.ncaa.org/players/8897382,596988.0,2025,North Park,836.0,CCIW,3.0,16779.0,496.0,8897382
-Sam Jackson,Jr.,P,0.0,0.0,20.0,-,,,,,https://stats.ncaa.org/players/8898894,596988.0,2025,North Park,836.0,CCIW,3.0,16779.0,496.0,8898894
-Garon Maxon,Jr.,P,0.0,0.0,46.0,-,,,,,https://stats.ncaa.org/players/8891552,596988.0,2025,North Park,836.0,CCIW,3.0,16779.0,496.0,8891552
+Sam Jackson,Jr.,P,0.0,0.0,20.0,-,,,,,https://stats.ncaa.org/players/8898894,596988.0,2025,North Park,836.0,CCIW,3.0,16779.0,496.0,d3d-8009299
+Garon Maxon,Jr.,P,0.0,0.0,46.0,-,,,,,https://stats.ncaa.org/players/8891552,596988.0,2025,North Park,836.0,CCIW,3.0,16779.0,496.0,d3d-8273114
 Ishaan Patel,Jr.,1B,0.0,0.0,51.0,-,,,,,https://stats.ncaa.org/players/8894892,596988.0,2025,North Park,836.0,CCIW,3.0,16779.0,496.0,8894892
 Brett Ravitz,Sr.,P,0.0,0.0,25.0,-,,,,,https://stats.ncaa.org/players/8894190,596988.0,2025,North Park,836.0,CCIW,3.0,16779.0,496.0,8894190
 Reyn Matsuzaki,So.,ph/1b,0.0,0.0,48.0,-,,,,,https://stats.ncaa.org/players/8897824,596988.0,2025,North Park,836.0,CCIW,3.0,16779.0,496.0,d3d-8658153
@@ -8852,12 +8852,12 @@ JT Schoessel,So.,OF,0.0,0.0,29.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/player
 Brady Groves,So.,OF,0.0,0.0,5.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8892089,596990.0,2025,Oberlin,897.0,NCAC,3.0,16779.0,515.0,d3d-8464764
 Calvin Burkholder,So.,P,0.0,0.0,31.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8901243,596990.0,2025,Oberlin,897.0,NCAC,3.0,16779.0,515.0,d3d-8464751
 Riley Holcomb,Jr.,1B,0.0,0.0,45.0,6-3,LEFT,LEFT,"Lutherville, MD",Gilman School,https://stats.ncaa.org/players/8883818,596991.0,2025,Occidental,910.0,SCIAC,3.0,16779.0,516.0,d3d-7987799
-Jeffery Cambra,Sr.,OF,3.0,3.0,24.0,6-2,RIGHT,RIGHT,"Danville, CA",San Ramon Valley HS,https://stats.ncaa.org/players/8874795,596991.0,2025,Occidental,910.0,SCIAC,3.0,16779.0,516.0,8874795
+Jeffery Cambra,Sr.,OF,3.0,3.0,24.0,6-2,RIGHT,RIGHT,"Danville, CA",San Ramon Valley HS,https://stats.ncaa.org/players/8874795,596991.0,2025,Occidental,910.0,SCIAC,3.0,16779.0,516.0,d3d-7587663
 Wyatt Zadoorian,Sr.,P,1.0,0.0,36.0,-,LEFT,LEFT,"Tustin, CA",,https://stats.ncaa.org/players/8874838,596991.0,2025,Occidental,910.0,SCIAC,3.0,16779.0,516.0,8874838
 Ryan Cacatian,Sr.,OF,1.0,0.0,4.0,5-10,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8885045,596991.0,2025,Occidental,910.0,SCIAC,3.0,16779.0,516.0,8885045
 Tommy Woods,So.,INF,1.0,0.0,6.0,-,RIGHT,RIGHT,"Rancho Santa Margarita, CA",Capistrano Valley Christian HS,https://stats.ncaa.org/players/8885120,596991.0,2025,Occidental,910.0,SCIAC,3.0,16779.0,516.0,8885120
 Elias Oster,So.,P,0.0,0.0,34.0,-,RIGHT,RIGHT,"Seattle, WA",Liberty HS,https://stats.ncaa.org/players/8885169,596991.0,2025,Occidental,910.0,SCIAC,3.0,16779.0,516.0,8885169
-Miles Capobianco,Sr.,OF,1.0,0.0,9.0,5-8,RIGHT,RIGHT,"South Salem, NY",John Jay HS,https://stats.ncaa.org/players/8880054,596991.0,2025,Occidental,910.0,SCIAC,3.0,16779.0,516.0,8880054
+Miles Capobianco,Sr.,OF,1.0,0.0,9.0,5-8,RIGHT,RIGHT,"South Salem, NY",John Jay HS,https://stats.ncaa.org/players/8880054,596991.0,2025,Occidental,910.0,SCIAC,3.0,16779.0,516.0,d3d-7568862
 Dante Tardino,Sr.,P,0.0,0.0,32.0,5-10,RIGHT,RIGHT,"Sherman Oaks, CA",Crespi Carmelite HS,https://stats.ncaa.org/players/8880076,596991.0,2025,Occidental,910.0,SCIAC,3.0,16779.0,516.0,8880076
 Christian Martinez,So.,P,1.0,1.0,23.0,-,RIGHT,RIGHT,"Corpus Christi, TX",W.B. Ray HS,https://stats.ncaa.org/players/8880153,596991.0,2025,Occidental,910.0,SCIAC,3.0,16779.0,516.0,d3d-8447934
 Matthew Uytioco,Jr.,P,1.0,0.0,11.0,5-10,LEFT,LEFT,"Porter Ranch, CA",Notre Dame HS,https://stats.ncaa.org/players/8884559,596991.0,2025,Occidental,910.0,SCIAC,3.0,16779.0,516.0,d3d-7987665
@@ -8900,7 +8900,7 @@ Hunter Spence,Sr.,OF,0.0,0.0,23.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players
 Brennan Boone,Sr.,P,0.0,0.0,37.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8882751,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,d3d-7574554
 Maddox Husband,Jr.,OF,0.0,0.0,15.0,-,LEFT,LEFT,,,https://stats.ncaa.org/players/8876956,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,8876956
 Parker Spring,Jr.,P,0.0,0.0,55.0,-,LEFT,LEFT,,,https://stats.ncaa.org/players/8882927,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,d3d-8007057
-Nathan Murray,So.,INF,0.0,0.0,19.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8884062,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,8884062
+Nathan Murray,So.,INF,0.0,0.0,19.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8884062,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,d3d-8407880
 Paul Gaeta,So.,P,0.0,0.0,22.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8878924,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,d3d-8407882
 Cooper Krause,Sr.,C,0.0,0.0,21.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8886137,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,d3d-7351243
 Shane Newsome,Sr.,INF,0.0,0.0,44.0,6-1,RIGHT,RIGHT,"Atlanta, GA",,https://stats.ncaa.org/players/8874216,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,d3d-7584454
@@ -8908,7 +8908,7 @@ Dylan Quintilio,Jr.,P,0.0,0.0,33.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/player
 Mason Pearcy,Sr.,INF,0.0,0.0,3.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8878148,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,8878148
 Blair Barnes,Jr.,OF,0.0,0.0,25.0,-,BOTH,RIGHT,,,https://stats.ncaa.org/players/8881285,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,8881285
 Jack Groh,Sr.,P,0.0,0.0,45.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8887368,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,8887368
-Drew Jabaley,Jr.,OF,0.0,0.0,18.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8887457,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,8887457
+Drew Jabaley,Jr.,OF,0.0,0.0,18.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8887457,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,d3d-8006953
 Charlie Boyce,Sr.,P,0.0,0.0,26.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8879312,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,8879312
 Tate Henderson,Jr.,P,0.0,0.0,40.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8884562,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,d3d-8007065
 Greg Johnson,Sr.,INF,0.0,0.0,32.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8880584,597142.0,2025,Oglethorpe,30169.0,SAA,3.0,16779.0,2713.0,8880584
@@ -9069,7 +9069,7 @@ Ryan Lee,Fr.,P,0.0,0.0,66.0,6-0,LEFT,LEFT,"Hazel Park, MI",Hazel Park,https://st
 Will Myrick,Jr.,UT,0.0,0.0,19.0,6-1,RIGHT,RIGHT,"Dorr, MI",Wes Michigan Aviation Academy,https://stats.ncaa.org/players/8880734,596995.0,2025,Olivet,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,525.0,8880734
 Isaac Moore,Jr.,INF,0.0,0.0,27.0,5-11,RIGHT,RIGHT,"Carrollton, OH",Carrollton,https://stats.ncaa.org/players/8878734,596995.0,2025,Olivet,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,525.0,8878734
 Nick Stokan,Jr.,INF,0.0,0.0,13.0,6-3,RIGHT,RIGHT,"Rochester Hills, MI",Adams,https://stats.ncaa.org/players/8886962,596995.0,2025,Olivet,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,525.0,d3d-8418823
-Blake Hawkins,Sr.,INF,0.0,0.0,22.0,6-0,RIGHT,RIGHT,"Hamilton, OH",Hamilton,https://stats.ncaa.org/players/8884108,596995.0,2025,Olivet,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,525.0,8884108
+Blake Hawkins,Sr.,INF,0.0,0.0,22.0,6-0,RIGHT,RIGHT,"Hamilton, OH",Hamilton,https://stats.ncaa.org/players/8884108,596995.0,2025,Olivet,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,525.0,d3d-7561161
 Logan Lewis,So.,P,0.0,0.0,15.0,6-2,RIGHT,RIGHT,"Benzonia, MI",Frankfort,https://stats.ncaa.org/players/8873993,596995.0,2025,Olivet,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,525.0,8873993
 Austin Wittrock,So.,OF,0.0,0.0,33.0,6-1,RIGHT,RIGHT,"South Bend, IN",James W. Riley,https://stats.ncaa.org/players/8887171,596995.0,2025,Olivet,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,525.0,8887171
 Tyler Rupp,Sr.,INF,0.0,0.0,7.0,5-8,RIGHT,RIGHT,"Marshall, MI",Marshall,https://stats.ncaa.org/players/8881253,596995.0,2025,Olivet,873.0,Michigan Intercol. Ath. Assn.,3.0,16779.0,525.0,8881253
@@ -9301,7 +9301,7 @@ Kamryn Swartz,Sr.,P,0.0,0.0,21.0,6-1,RIGHT,RIGHT,"Everett, WA",Cascade,https://s
 Charlie Olson,Sr.,P,0.0,0.0,51.0,6-3,RIGHT,RIGHT,"Seattle, WA",Kennedy Catholic,https://stats.ncaa.org/players/8886596,597128.0,2025,Pacific Lutheran,25300.0,NWC,3.0,16779.0,1297.0,d3d-7566370
 Brody Phinney,Jr.,INF,0.0,0.0,6.0,6-0,RIGHT,RIGHT,"Olympia, WA",Olympia,https://stats.ncaa.org/players/8888803,597128.0,2025,Pacific Lutheran,25300.0,NWC,3.0,16779.0,1297.0,d3d-7995114
 Prestin Reed,Sr.,INF,0.0,0.0,13.0,5-8,RIGHT,RIGHT,"Gig Harbor, WA",Gig Harbor,https://stats.ncaa.org/players/8892208,597128.0,2025,Pacific Lutheran,25300.0,NWC,3.0,16779.0,1297.0,8892208
-Peter King,So.,OF,0.0,0.0,11.0,5-9,LEFT,RIGHT,"Gig Harbor, WA",Peninsula,https://stats.ncaa.org/players/8895587,597128.0,2025,Pacific Lutheran,25300.0,NWC,3.0,16779.0,1297.0,8895587
+Peter King,So.,OF,0.0,0.0,11.0,5-9,LEFT,RIGHT,"Gig Harbor, WA",Peninsula,https://stats.ncaa.org/players/8895587,597128.0,2025,Pacific Lutheran,25300.0,NWC,3.0,16779.0,1297.0,d3d-8587181
 Logan Ready,Jr.,P,0.0,0.0,18.0,6-3,RIGHT,RIGHT,"Keizer, OR",McNary,https://stats.ncaa.org/players/8895789,597128.0,2025,Pacific Lutheran,25300.0,NWC,3.0,16779.0,1297.0,8895789
 Jaden Pieper,Sr.,OF,0.0,0.0,12.0,6-2,RIGHT,RIGHT,"Kaneohe, HI",St. Louis,https://stats.ncaa.org/players/8897280,597128.0,2025,Pacific Lutheran,25300.0,NWC,3.0,16779.0,1297.0,d3d-7566364
 Jon Crawley,So.,OF,0.0,0.0,5.0,5-8,LEFT,LEFT,"Puyallup, WA",Rogers,https://stats.ncaa.org/players/8898739,597128.0,2025,Pacific Lutheran,25300.0,NWC,3.0,16779.0,1297.0,8898739
@@ -9313,7 +9313,7 @@ Gus Livermore,Sr.,P,0.0,0.0,39.0,6-5,RIGHT,RIGHT,"Portland, OR",Ida B Wells,http
 Weston Cruz,Jr.,OF,0.0,0.0,30.0,5-9,RIGHT,RIGHT,"San Antonio, TX",Cornerstone Christian,https://stats.ncaa.org/players/8899828,597128.0,2025,Pacific Lutheran,25300.0,NWC,3.0,16779.0,1297.0,8899828
 Chris Moreno,Jr.,P,0.0,0.0,7.0,6-3,RIGHT,RIGHT,"Newhall, CA",Hart,https://stats.ncaa.org/players/8899972,597128.0,2025,Pacific Lutheran,25300.0,NWC,3.0,16779.0,1297.0,8899972
 Dennis Prestash,So.,P,0.0,0.0,5.0,5-10,,,"Sandy Ridge, PA",Phillipsburg-Osceola,https://stats.ncaa.org/players/8899011,597208.0,2025,Penn College,30071.0,United East,3.0,16779.0,30190.0,8899011
-Matt Munoz,So.,OF,0.0,0.0,11.0,5-9,,,"Tobyhanna, PA",Pocono Mountain West,https://stats.ncaa.org/players/8878568,597208.0,2025,Penn College,30071.0,United East,3.0,16779.0,30190.0,8878568
+Matt Munoz,So.,OF,0.0,0.0,11.0,5-9,,,"Tobyhanna, PA",Pocono Mountain West,https://stats.ncaa.org/players/8878568,597208.0,2025,Penn College,30071.0,United East,3.0,16779.0,30190.0,d3d-8680007
 Parker White,Jr.,INF,0.0,0.0,14.0,6-1,,,"West Decatur, PA",Phillipsburg-Osceola,https://stats.ncaa.org/players/8875668,597208.0,2025,Penn College,30071.0,United East,3.0,16779.0,30190.0,8875668
 Jaydon Goebel,So.,INF,0.0,0.0,43.0,6-2,,,"Honey Brook, PA",Twin Valley,https://stats.ncaa.org/players/8879779,597208.0,2025,Penn College,30071.0,United East,3.0,16779.0,30190.0,d3d-8680005
 David Wagner,Jr.,OF,0.0,0.0,31.0,5-10,,,"Perkiomenville, PA",Pope John Paul II,https://stats.ncaa.org/players/8875848,597208.0,2025,Penn College,30071.0,United East,3.0,16779.0,30190.0,8875848
@@ -9358,7 +9358,7 @@ Daniel Horowitz,Jr.,INF,0.0,0.0,11.0,5-6,RIGHT,RIGHT,"Mechanicsville, VA",Atlee,
 Ty Coccia,Sr.,P,0.0,0.0,16.0,5-6,LEFT,LEFT,"West Chester, PA",West Chester East,https://stats.ncaa.org/players/9106262,597547.0,2025,Penn St. Brandywine,30071.0,United East,3.0,16779.0,30189.0,9106262
 Owen Lawton,Sr.,OF,0.0,0.0,17.0,5-8,RIGHT,RIGHT,"Glenmoore, PA",Downingtown East,https://stats.ncaa.org/players/9106264,597547.0,2025,Penn St. Brandywine,30071.0,United East,3.0,16779.0,30189.0,9106264
 Evan Shade,Sr.,INF,0.0,0.0,19.0,5-10,LEFT,RIGHT,"Green Lane, PA",Upper Perkiomen,https://stats.ncaa.org/players/9106269,597547.0,2025,Penn St. Brandywine,30071.0,United East,3.0,16779.0,30189.0,9106269
-Liam Nugent,Jr.,P,0.0,0.0,32.0,5-9,RIGHT,RIGHT,"Stafford, VA",Mountain View,https://stats.ncaa.org/players/9106303,597547.0,2025,Penn St. Brandywine,30071.0,United East,3.0,16779.0,30189.0,9106303
+Liam Nugent,Jr.,P,0.0,0.0,32.0,5-9,RIGHT,RIGHT,"Stafford, VA",Mountain View,https://stats.ncaa.org/players/9106303,597547.0,2025,Penn St. Brandywine,30071.0,United East,3.0,16779.0,30189.0,d3d-9106303
 Derek Wenskoski,So.,C,0.0,0.0,27.0,5-9,RIGHT,RIGHT,"Roselle Park, NJ",Roselle Park,https://stats.ncaa.org/players/9106284,597547.0,2025,Penn St. Brandywine,30071.0,United East,3.0,16779.0,30189.0,9106284
 Tommy Zotollo,So.,C,0.0,0.0,33.0,6-0,RIGHT,RIGHT,"Washington Twps, NJ",St. Joseph's Regional,https://stats.ncaa.org/players/9106309,597547.0,2025,Penn St. Brandywine,30071.0,United East,3.0,16779.0,30189.0,d3d-9106309
 Daniel Rohlsen,Fr.,OF,0.0,0.0,35.0,5-10,RIGHT,RIGHT,"Macungie, PA",Emmaus,https://stats.ncaa.org/players/9106312,597547.0,2025,Penn St. Brandywine,30071.0,United East,3.0,16779.0,30189.0,9106312
@@ -9397,7 +9397,7 @@ Kaden Pasternak,So.,INF,0.0,0.0,26.0,-,,,,,https://stats.ncaa.org/players/888012
 Sam Thompson,Jr.,P,0.0,0.0,28.0,-,,,,,https://stats.ncaa.org/players/8882113,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,d3d-8020470
 Christian Lubic II,Jr.,P,0.0,0.0,15.0,-,,,,,https://stats.ncaa.org/players/8877212,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,8877212
 Kyle Serine,Sr.,OF,0.0,0.0,24.0,-,,,,,https://stats.ncaa.org/players/8876162,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,8876162
-Aidan Bergholc,So.,P,0.0,0.0,22.0,-,,,,,https://stats.ncaa.org/players/8876349,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,8876349
+Aidan Bergholc,So.,P,0.0,0.0,22.0,-,,,,,https://stats.ncaa.org/players/8876349,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,d3d-8596830
 Caiden Erter,Jr.,P,0.0,0.0,6.0,-,,,,,https://stats.ncaa.org/players/8877419,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,8877419
 Danny Eden,Sr.,P,0.0,0.0,34.0,-,,,,,https://stats.ncaa.org/players/8888634,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,d3d-7586121
 Tim Haftl,Jr.,INF,0.0,0.0,5.0,-,,,,,https://stats.ncaa.org/players/8882427,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,d3d-8015713
@@ -9413,7 +9413,7 @@ Brendan Henn,Sr.,INF,0.0,0.0,12.0,-,,,,,https://stats.ncaa.org/players/8891191,5
 Jack Maguire,So.,P,0.0,0.0,29.0,-,,,,,https://stats.ncaa.org/players/8893303,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,8893303
 Adam Bova,Jr.,C,0.0,0.0,30.0,-,,,,,https://stats.ncaa.org/players/8901773,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,d3d-8020490
 Carlos Irizarry,Jr.,INF,0.0,0.0,9.0,-,,,,,https://stats.ncaa.org/players/8899774,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,d3d-8015942
-Drew Sassaman,Sr.,INF,0.0,0.0,2.0,-,,,,,https://stats.ncaa.org/players/8899998,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,8899998
+Drew Sassaman,Sr.,INF,0.0,0.0,2.0,-,,,,,https://stats.ncaa.org/players/8899998,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,d3d-7586124
 Sam DelCollo,Sr.,OF,0.0,0.0,3.0,-,,,,,https://stats.ncaa.org/players/8900081,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,d3d-8688147
 Ben Burkey,So.,P,0.0,0.0,39.0,-,,,,,https://stats.ncaa.org/players/9111984,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,9111984
 Alex Ruiz,Jr.,INF,0.0,0.0,4.0,5-8,RIGHT,RIGHT,"Lancaster, PA",,https://stats.ncaa.org/players/9111995,597195.0,2025,Penn St. Harrisburg,30071.0,United East,3.0,16779.0,30081.0,d3d-8006433
@@ -9455,7 +9455,7 @@ Ian Horner,So.,P,0.0,0.0,1.0,5-7,RIGHT,RIGHT,"East Greenwich, NY",,https://stats
 Nate DeCristofaro,So.,P,0.0,0.0,10.0,6-0,RIGHT,RIGHT,"Haddon Township, NJ",Haddon Township,https://stats.ncaa.org/players/8893996,597200.0,2025,Penn St.-Abington,30071.0,United East,3.0,16779.0,30114.0,8893996
 Jake Fallers,Sr.,C,0.0,0.0,30.0,5-10,RIGHT,RIGHT,"Wilmington, DE",Archmere Academy,https://stats.ncaa.org/players/8897478,597200.0,2025,Penn St.-Abington,30071.0,United East,3.0,16779.0,30114.0,8897478
 Ben Mitchell,So.,P,0.0,0.0,32.0,5-9,LEFT,LEFT,"Newtown Sq, PA",Marple Newtown,https://stats.ncaa.org/players/8894168,597200.0,2025,Penn St.-Abington,30071.0,United East,3.0,16779.0,30114.0,8894168
-Josh Henderson,Sr.,OF,0.0,0.0,33.0,5-11,RIGHT,RIGHT,"Huntingdon Valley, PA",Upper Moreland,https://stats.ncaa.org/players/8897560,597200.0,2025,Penn St.-Abington,30071.0,United East,3.0,16779.0,30114.0,8897560
+Josh Henderson,Sr.,OF,0.0,0.0,33.0,5-11,RIGHT,RIGHT,"Huntingdon Valley, PA",Upper Moreland,https://stats.ncaa.org/players/8897560,597200.0,2025,Penn St.-Abington,30071.0,United East,3.0,16779.0,30114.0,d3d-7570785
 Anthony Scuiba,So.,P,0.0,0.0,23.0,6-0,RIGHT,LEFT,"Williamstown, NJ",Gloucester Catholic,https://stats.ncaa.org/players/8901762,597200.0,2025,Penn St.-Abington,30071.0,United East,3.0,16779.0,30114.0,8901762
 Ethan Hahn,So.,P,0.0,0.0,14.0,6-0,RIGHT,RIGHT,"Mullica Hill, NJ",Clearview Regional,https://stats.ncaa.org/players/8901869,597200.0,2025,Penn St.-Abington,30071.0,United East,3.0,16779.0,30114.0,8901869
 Coleby Lopatic,Sr.,P,0.0,0.0,0.0,6-1,RIGHT,RIGHT,"Lancaster, PA",Lancaster Catholic,https://stats.ncaa.org/players/8899354,597200.0,2025,Penn St.-Abington,30071.0,United East,3.0,16779.0,30114.0,8899354
@@ -9469,7 +9469,7 @@ Sam Homan,Sr.,P,0.0,0.0,4.0,6-2,RIGHT,LEFT,"Altoona, PA",Bishop Guilfoyle,https:
 Alex Hlivia,Sr.,INF,0.0,0.0,11.0,5-7,RIGHT,RIGHT,"State College, PA",State College,https://stats.ncaa.org/players/8883072,597177.0,2025,Penn St.-Altoona,30022.0,AMCC,3.0,16779.0,25719.0,d3d-7560019
 Fred Guarino IV,Sr.,1B,0.0,0.0,27.0,6-1,RIGHT,RIGHT,"Waynesboro, PA",Waynesboro,https://stats.ncaa.org/players/8889416,597177.0,2025,Penn St.-Altoona,30022.0,AMCC,3.0,16779.0,25719.0,d3d-7560135
 Brian Chelli,Jr.,OF,0.0,0.0,12.0,6-0,LEFT,LEFT,"West Hartford, CT",Hall,https://stats.ncaa.org/players/8880215,597177.0,2025,Penn St.-Altoona,30022.0,AMCC,3.0,16779.0,25719.0,8880215
-Harrison Knaupe,Sr.,INF,0.0,0.0,88.0,5-10,RIGHT,RIGHT,"Smyrna, DE",Smyrna,https://stats.ncaa.org/players/8887415,597177.0,2025,Penn St.-Altoona,30022.0,AMCC,3.0,16779.0,25719.0,8887415
+Harrison Knaupe,Sr.,INF,0.0,0.0,88.0,5-10,RIGHT,RIGHT,"Smyrna, DE",Smyrna,https://stats.ncaa.org/players/8887415,597177.0,2025,Penn St.-Altoona,30022.0,AMCC,3.0,16779.0,25719.0,d3d-7143074
 Aidan Donovan,Jr.,C,0.0,0.0,0.0,6-0,RIGHT,RIGHT,"Staten Island, NY",St. Peter's,https://stats.ncaa.org/players/8889699,597177.0,2025,Penn St.-Altoona,30022.0,AMCC,3.0,16779.0,25719.0,8889699
 Jake Hillard,Sr.,UT,0.0,0.0,8.0,6-2,RIGHT,RIGHT,"State College, PA",State College,https://stats.ncaa.org/players/8883494,597177.0,2025,Penn St.-Altoona,30022.0,AMCC,3.0,16779.0,25719.0,d3d-7135304
 Brycen Flinton,So.,P,0.0,0.0,13.0,5-9,LEFT,LEFT,"Denver, PA",Cocalico,https://stats.ncaa.org/players/8874613,597177.0,2025,Penn St.-Altoona,30022.0,AMCC,3.0,16779.0,25719.0,8874613
@@ -9606,7 +9606,7 @@ Harris Bryson,So.,P,1.0,0.0,44.0,6-1,RIGHT,RIGHT,"Marietta, GA",Lassiter,https:/
 Jack Gilsenan,Sr.,INF,2.0,2.0,4.0,5-10,RIGHT,RIGHT,"Powder Spgs, GA",Hillgrove,https://stats.ncaa.org/players/9114827,597168.0,2025,Piedmont,30251.0,CCS,3.0,16779.0,21830.0,d3d-7088373
 Adam Metivier,Sr.,P,0.0,0.0,16.0,5-11,LEFT,LEFT,"Woodstock, GA",Etowah,https://stats.ncaa.org/players/9114834,597168.0,2025,Piedmont,30251.0,CCS,3.0,16779.0,21830.0,d3d-7983241
 Connor Carlson,Fr.,OF,0.0,0.0,30.0,6-0,RIGHT,LEFT,"Marietta, GA",Lassiter,https://stats.ncaa.org/players/9114846,597168.0,2025,Piedmont,30251.0,CCS,3.0,16779.0,21830.0,9114846
-Layne Ayers,Fr.,P,0.0,0.0,31.0,5-11,RIGHT,RIGHT,"Covington, GA",Loganville,https://stats.ncaa.org/players/9114849,597168.0,2025,Piedmont,30251.0,CCS,3.0,16779.0,21830.0,9114849
+Layne Ayers,Fr.,P,0.0,0.0,31.0,5-11,RIGHT,RIGHT,"Covington, GA",Loganville,https://stats.ncaa.org/players/9114849,597168.0,2025,Piedmont,30251.0,CCS,3.0,16779.0,21830.0,d3d-9114849
 Anderson Deaderick,Fr.,OF,0.0,0.0,41.0,5-9,RIGHT,RIGHT,"Marietta, GA",Blessed Trinity,https://stats.ncaa.org/players/9114864,597168.0,2025,Piedmont,30251.0,CCS,3.0,16779.0,21830.0,9114864
 Garrett Burton,Jr.,P,0.0,0.0,20.0,6-3,RIGHT,RIGHT,"Jacksonville Beach, FL",Fletcher,https://stats.ncaa.org/players/8881792,597168.0,2025,Piedmont,30251.0,CCS,3.0,16779.0,21830.0,8881792
 Zeke Swartz,Sr.,P,1.0,1.0,9.0,6-2,RIGHT,LEFT,"Blairsville, GA",Union County,https://stats.ncaa.org/players/8882667,597168.0,2025,Piedmont,30251.0,CCS,3.0,16779.0,21830.0,d3d-7552171
@@ -9665,7 +9665,7 @@ Riley Derenzo,So.,INF,0.0,0.0,12.0,-,LEFT,RIGHT,"Niskayuna, NY",Niskayuna,https:
 Blake Prestash,Jr.,INF,0.0,0.0,2.0,-,RIGHT,RIGHT,"Philipsburg, PA",Clearfield,https://stats.ncaa.org/players/8895817,597130.0,2025,Pitt.-Bradford,30022.0,AMCC,3.0,16779.0,1315.0,8895817
 Maddox Stadler,Jr.,UT,0.0,0.0,43.0,-,RIGHT,RIGHT,"Harborcreek, PA",Cathedral Prep,https://stats.ncaa.org/players/8898510,597130.0,2025,Pitt.-Bradford,30022.0,AMCC,3.0,16779.0,1315.0,8898510
 Aden Hafer,Sr.,UT,0.0,0.0,9.0,-,RIGHT,RIGHT,"Hanover, PA",Hanover,https://stats.ncaa.org/players/8898527,597130.0,2025,Pitt.-Bradford,30022.0,AMCC,3.0,16779.0,1315.0,8898527
-Shawn Mannering,Sr.,P,0.0,0.0,6.0,-,RIGHT,RIGHT,"Smyrna, DE",Smyrna,https://stats.ncaa.org/players/8898577,597130.0,2025,Pitt.-Bradford,30022.0,AMCC,3.0,16779.0,1315.0,8898577
+Shawn Mannering,Sr.,P,0.0,0.0,6.0,-,RIGHT,RIGHT,"Smyrna, DE",Smyrna,https://stats.ncaa.org/players/8898577,597130.0,2025,Pitt.-Bradford,30022.0,AMCC,3.0,16779.0,1315.0,d3d-7579683
 Justin Peterson,So.,INF,0.0,0.0,25.0,-,RIGHT,RIGHT,"Kane, PA",Kane,https://stats.ncaa.org/players/8894783,597130.0,2025,Pitt.-Bradford,30022.0,AMCC,3.0,16779.0,1315.0,8894783
 Matthew Hassaj,Jr.,C,0.0,0.0,23.0,-,RIGHT,RIGHT,"Archbald, PA",Holy Cross,https://stats.ncaa.org/players/8894786,597130.0,2025,Pitt.-Bradford,30022.0,AMCC,3.0,16779.0,1315.0,8894786
 Kyle Kimoto,Sr.,INF,0.0,0.0,18.0,-,RIGHT,RIGHT,"Mars, PA",Pine-Richland,https://stats.ncaa.org/players/8892840,597130.0,2025,Pitt.-Bradford,30022.0,AMCC,3.0,16779.0,1315.0,d3d-7579733
@@ -9828,7 +9828,7 @@ Stephan Kwak,Sr.,P,2.0,0.0,17.0,-,,,,,https://stats.ncaa.org/players/8898225,597
 William Wallace,So.,P,1.0,1.0,22.0,6-4,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8896354,597003.0,2025,Pomona-Pitzer,910.0,SCIAC,3.0,16779.0,549.0,8896354
 Max Brunngraber,So.,P,1.0,1.0,31.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897632,597003.0,2025,Pomona-Pitzer,910.0,SCIAC,3.0,16779.0,549.0,d3d-8526862
 Jack Gold,So.,UT,3.0,3.0,15.0,5-8,LEFT,RIGHT,,,https://stats.ncaa.org/players/8891009,597003.0,2025,Pomona-Pitzer,910.0,SCIAC,3.0,16779.0,549.0,8891009
-JC Ng,Sr.,OF,3.0,3.0,5.0,-,,,,,https://stats.ncaa.org/players/8891106,597003.0,2025,Pomona-Pitzer,910.0,SCIAC,3.0,16779.0,549.0,8891106
+JC Ng,Sr.,OF,3.0,3.0,5.0,-,,,,,https://stats.ncaa.org/players/8891106,597003.0,2025,Pomona-Pitzer,910.0,SCIAC,3.0,16779.0,549.0,d3d-7567485
 Ethan Collins,Sr.,P,0.0,0.0,11.0,-,,,,,https://stats.ncaa.org/players/8900260,597003.0,2025,Pomona-Pitzer,910.0,SCIAC,3.0,16779.0,549.0,d3d-7567412
 Caleb Cassidy,So.,UT,0.0,0.0,27.0,6-4,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8901467,597003.0,2025,Pomona-Pitzer,910.0,SCIAC,3.0,16779.0,549.0,8901467
 Greg Pierantoni,So.,UT,3.0,3.0,16.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8900777,597003.0,2025,Pomona-Pitzer,910.0,SCIAC,3.0,16779.0,549.0,d3d-8526859
@@ -9885,7 +9885,7 @@ Jonah Velasco,Jr.,INF,1.0,0.0,44.0,-,,,,,https://stats.ncaa.org/players/8891518,
 Sean Murphy,Sr.,C,1.0,1.0,12.0,-,,,,,https://stats.ncaa.org/players/8894090,597005.0,2025,Puget Sound,25300.0,NWC,3.0,16779.0,557.0,d3d-7556261
 Lucas Brennan,Jr.,INF,1.0,0.0,1.0,-,,,,,https://stats.ncaa.org/players/8890897,597005.0,2025,Puget Sound,25300.0,NWC,3.0,16779.0,557.0,d3d-7985644
 Kellen Krebs,Jr.,INF,2.0,1.0,22.0,-,,,,,https://stats.ncaa.org/players/8895323,597005.0,2025,Puget Sound,25300.0,NWC,3.0,16779.0,557.0,d3d-7985683
-Nathan Blocher,Sr.,OF,2.0,2.0,27.0,-,,,,,https://stats.ncaa.org/players/9299265,597005.0,2025,Puget Sound,25300.0,NWC,3.0,16779.0,557.0,9299265
+Nathan Blocher,Sr.,OF,2.0,2.0,27.0,-,,,,,https://stats.ncaa.org/players/9299265,597005.0,2025,Puget Sound,25300.0,NWC,3.0,16779.0,557.0,d3d-7127292
 George Gatsinaris,Fr.,P,0.0,0.0,13.0,-,,,,,https://stats.ncaa.org/players/9299268,597005.0,2025,Puget Sound,25300.0,NWC,3.0,16779.0,557.0,9299268
 Gavin George,Fr.,OF,1.0,0.0,42.0,-,,,,,https://stats.ncaa.org/players/9299269,597005.0,2025,Puget Sound,25300.0,NWC,3.0,16779.0,557.0,9299269
 Cody Hirano,Sr.,OF,2.0,2.0,31.0,-,,,,,https://stats.ncaa.org/players/9299270,597005.0,2025,Puget Sound,25300.0,NWC,3.0,16779.0,557.0,d3d-7128140
@@ -10066,7 +10066,7 @@ Karlsen Drake,Fr.,INF,0.0,0.0,17.0,5-11,,,"San Diego, CA",Maranatha Christian Sc
 Phillip Economos,Fr.,P,2.0,0.0,18.0,6-5,RIGHT,RIGHT,"Huntington Beach, CA",Edison,https://stats.ncaa.org/players/9105567,597008.0,2025,Redlands,910.0,SCIAC,3.0,16779.0,567.0,9105567
 Aziz Bishop,Fr.,P,2.0,0.0,23.0,6-1,RIGHT,RIGHT,"Baltimore, MD",Towson,https://stats.ncaa.org/players/9105568,597008.0,2025,Redlands,910.0,SCIAC,3.0,16779.0,567.0,9105568
 Neal Baron,Fr.,C,0.0,0.0,36.0,6-0,,,"Mercer Island, WA",Mercer Island,https://stats.ncaa.org/players/9105579,597008.0,2025,Redlands,910.0,SCIAC,3.0,16779.0,567.0,d3d-9105579
-tyler Barsness,Fr.,INF,2.0,0.0,10.0,5-6,,,"Palm Desert, CA",Palm Desert,https://stats.ncaa.org/players/9105564,597008.0,2025,Redlands,910.0,SCIAC,3.0,16779.0,567.0,9105564
+tyler Barsness,Fr.,INF,2.0,0.0,10.0,5-6,,,"Palm Desert, CA",Palm Desert,https://stats.ncaa.org/players/9105564,597008.0,2025,Redlands,910.0,SCIAC,3.0,16779.0,567.0,d3d-9105564
 Rylan Morris,Fr.,P,5.0,3.0,28.0,6-0,RIGHT,RIGHT,"Fullerton, CA",Sunny Hills,https://stats.ncaa.org/players/9105570,597008.0,2025,Redlands,910.0,SCIAC,3.0,16779.0,567.0,9105570
 Tanner Currier,Fr.,P,3.0,1.0,7.0,5-10,RIGHT,RIGHT,"Brawley, CA",Brawley Union,https://stats.ncaa.org/players/9105561,597008.0,2025,Redlands,910.0,SCIAC,3.0,16779.0,567.0,d3d-9105561
 Owen Burnsworth,Fr.,UT,0.0,0.0,11.0,-,,,,,https://stats.ncaa.org/players/8890212,597009.0,2025,Rensselaer,24197.0,Liberty League,3.0,16779.0,570.0,8890212
@@ -10171,7 +10171,7 @@ Will May,Jr.,P,2.0,2.0,7.0,6-2,RIGHT,RIGHT,"Atlanta, GA",Westminster,https://sta
 Ethan Crump,So.,P,0.0,0.0,12.0,6-3,RIGHT,RIGHT,"Lexington, KY",McCallie School,https://stats.ncaa.org/players/8902265,597011.0,2025,Rhodes,30169.0,SAA,3.0,16779.0,573.0,8902265
 Keith Adams,Sr.,OF,1.0,0.0,29.0,5-9,,,"Atlanta, GA",Paideia School,https://stats.ncaa.org/players/8899800,597011.0,2025,Rhodes,30169.0,SAA,3.0,16779.0,573.0,d3d-7562182
 Cooper Angilly,So.,C,3.0,3.0,42.0,6-1,RIGHT,RIGHT,"Virginia Beach, VA",Cape Henry,https://stats.ncaa.org/players/8902483,597011.0,2025,Rhodes,30169.0,SAA,3.0,16779.0,573.0,d3d-8408125
-Mick Arney,Sr.,INF,3.0,0.0,3.0,5-9,RIGHT,RIGHT,"Collierville, TN",Briarcrest,https://stats.ncaa.org/players/8900132,597011.0,2025,Rhodes,30169.0,SAA,3.0,16779.0,573.0,8900132
+Mick Arney,Sr.,INF,3.0,0.0,3.0,5-9,RIGHT,RIGHT,"Collierville, TN",Briarcrest,https://stats.ncaa.org/players/8900132,597011.0,2025,Rhodes,30169.0,SAA,3.0,16779.0,573.0,d3d-7999988
 Finn Patrick,Fr.,P,0.0,0.0,39.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9098347,597011.0,2025,Rhodes,30169.0,SAA,3.0,16779.0,573.0,9098347
 Brian Stephens,Fr.,,0.0,0.0,47.0,-,RIGHT,RIGHT,"Atlanta, GA",,https://stats.ncaa.org/players/9098356,597011.0,2025,Rhodes,30169.0,SAA,3.0,16779.0,573.0,9098356
 Peyton Phillips,Jr.,C,0.0,0.0,50.0,-,,,,,https://stats.ncaa.org/players/9098385,597011.0,2025,Rhodes,30169.0,SAA,3.0,16779.0,573.0,9098385
@@ -10300,7 +10300,7 @@ Andrew Perks,Fr.,OF,0.0,0.0,21.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/
 Danny Ferguson,Fr.,C,0.0,0.0,23.0,-,LEFT,RIGHT,,,https://stats.ncaa.org/players/9107008,597013.0,2025,Roanoke,903.0,ODAC,3.0,16779.0,578.0,9107008
 Cody Petrauskas,Fr.,P,0.0,0.0,26.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9107010,597013.0,2025,Roanoke,903.0,ODAC,3.0,16779.0,578.0,9107010
 Ray Kano,Fr.,P,0.0,0.0,28.0,-,LEFT,LEFT,,,https://stats.ncaa.org/players/9107011,597013.0,2025,Roanoke,903.0,ODAC,3.0,16779.0,578.0,9107011
-Ethan Sargent,Fr.,INF,0.0,0.0,29.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9107013,597013.0,2025,Roanoke,903.0,ODAC,3.0,16779.0,578.0,9107013
+Ethan Sargent,Fr.,INF,0.0,0.0,29.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9107013,597013.0,2025,Roanoke,903.0,ODAC,3.0,16779.0,578.0,d3d-9107013
 Ryder Swanson,Fr.,C,0.0,0.0,34.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9107014,597013.0,2025,Roanoke,903.0,ODAC,3.0,16779.0,578.0,9107014
 Alec Jones,Fr.,INF,0.0,0.0,35.0,-,LEFT,RIGHT,,,https://stats.ncaa.org/players/9107015,597013.0,2025,Roanoke,903.0,ODAC,3.0,16779.0,578.0,9107015
 Hunter Dobson,Fr.,P,0.0,0.0,43.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9107019,597013.0,2025,Roanoke,903.0,ODAC,3.0,16779.0,578.0,9107019
@@ -10427,7 +10427,7 @@ Tyler Otroszko,Sr.,OF,0.0,0.0,34.0,6-4,RIGHT,RIGHT,"Olathe, KS",Olathe South,htt
 Caleb Frakes,Jr.,INF,0.0,0.0,9.0,5-7,RIGHT,RIGHT,"Middletown, IN",Pendleton Heights,https://stats.ncaa.org/players/8897395,597018.0,2025,Rose-Hulman,9174.0,HCAC,3.0,16779.0,585.0,d3d-8013302
 Brad Nardi,So.,OF,0.0,0.0,11.0,5-9,RIGHT,LEFT,"Avon, IN",Covenant Christian,https://stats.ncaa.org/players/8892859,597018.0,2025,Rose-Hulman,9174.0,HCAC,3.0,16779.0,585.0,d3d-8446905
 Warren Goik,Jr.,P,0.0,0.0,26.0,5-10,LEFT,LEFT,"Ottawa Hills, OH",Ottawa Hills,https://stats.ncaa.org/players/8897580,597018.0,2025,Rose-Hulman,9174.0,HCAC,3.0,16779.0,585.0,8897580
-Mason Rasmussen,Jr.,C,0.0,0.0,41.0,6-1,RIGHT,RIGHT,"Barrington, IL",Barrington,https://stats.ncaa.org/players/8897708,597018.0,2025,Rose-Hulman,9174.0,HCAC,3.0,16779.0,585.0,8897708
+Mason Rasmussen,Jr.,C,0.0,0.0,41.0,6-1,RIGHT,RIGHT,"Barrington, IL",Barrington,https://stats.ncaa.org/players/8897708,597018.0,2025,Rose-Hulman,9174.0,HCAC,3.0,16779.0,585.0,d3d-8013254
 Kade Kline,Sr.,OF,0.0,0.0,30.0,6-0,LEFT,RIGHT,"Terre Haute, IN",South Vigo,https://stats.ncaa.org/players/8895271,597018.0,2025,Rose-Hulman,9174.0,HCAC,3.0,16779.0,585.0,d3d-7547602
 Antonio Barnes,So.,INF,0.0,0.0,33.0,5-11,RIGHT,RIGHT,"Highland, IN",Andrean,https://stats.ncaa.org/players/8897867,597018.0,2025,Rose-Hulman,9174.0,HCAC,3.0,16779.0,585.0,8897867
 Tyler Orr,Jr.,P,0.0,0.0,2.0,6-2,RIGHT,RIGHT,"Newburgh, IN",Castle,https://stats.ncaa.org/players/8901683,597018.0,2025,Rose-Hulman,9174.0,HCAC,3.0,16779.0,585.0,8901683
@@ -10483,7 +10483,7 @@ Dom Younger,Sr.,INF,0.0,0.0,12.0,-,,,,,https://stats.ncaa.org/players/8891444,59
 Ryan McDonough,Sr.,P,0.0,0.0,34.0,-,,,,,https://stats.ncaa.org/players/8896808,597347.0,2025,Rosemont,30071.0,United East,3.0,16779.0,15882.0,8896808
 Brett Angelillo,Sr.,P,0.0,0.0,21.0,-,,,,,https://stats.ncaa.org/players/8896959,597347.0,2025,Rosemont,30071.0,United East,3.0,16779.0,15882.0,d3d-7586549
 Nick Skoufalos,Jr.,P,0.0,0.0,51.0,-,,,,,https://stats.ncaa.org/players/8892412,597347.0,2025,Rosemont,30071.0,United East,3.0,16779.0,15882.0,d3d-8015766
-Larson Greenlee,Jr.,P,0.0,0.0,25.0,-,,,,,https://stats.ncaa.org/players/8890485,597347.0,2025,Rosemont,30071.0,United East,3.0,16779.0,15882.0,8890485
+Larson Greenlee,Jr.,P,0.0,0.0,25.0,-,,,,,https://stats.ncaa.org/players/8890485,597347.0,2025,Rosemont,30071.0,United East,3.0,16779.0,15882.0,d3d-8015765
 Jack Woods,Sr.,C,0.0,0.0,15.0,-,,,,,https://stats.ncaa.org/players/8893919,597347.0,2025,Rosemont,30071.0,United East,3.0,16779.0,15882.0,8893919
 Jamen Palladino,Sr.,INF,0.0,0.0,17.0,-,,,,,https://stats.ncaa.org/players/8893932,597347.0,2025,Rosemont,30071.0,United East,3.0,16779.0,15882.0,d3d-7585492
 Brandon Peake,Jr.,OF,0.0,0.0,49.0,-,,,,,https://stats.ncaa.org/players/8898802,597347.0,2025,Rosemont,30071.0,United East,3.0,16779.0,15882.0,d3d-8015743
@@ -10583,7 +10583,7 @@ Ryan Joseph,So.,OF,0.0,0.0,23.0,6-0,RIGHT,RIGHT,"Winslow, NJ",Camden County Tech
 Ryan Rumsey,Sr.,P,0.0,0.0,34.0,6-1,RIGHT,RIGHT,"Cherry Hill, NJ",Paul VI,https://stats.ncaa.org/players/8902468,597019.0,2025,Rutgers-Camden,891.0,NJAC,3.0,16779.0,588.0,8902468
 Daniel Robeson,Sr.,P,0.0,0.0,32.0,5-9,RIGHT,LEFT,"Blackwood, NJ",Highland Regional,https://stats.ncaa.org/players/8902630,597019.0,2025,Rutgers-Camden,891.0,NJAC,3.0,16779.0,588.0,d3d-8004127
 Ryan Nutley,Sr.,INF,0.0,0.0,3.0,6-0,RIGHT,RIGHT,"Logan Township, NJ",Glouester Catholic,https://stats.ncaa.org/players/9216551,597019.0,2025,Rutgers-Camden,891.0,NJAC,3.0,16779.0,588.0,d3d-7582259
-Jack Murphy,Sr.,1B,0.0,0.0,12.0,5-11,RIGHT,RIGHT,"West Deptford, NJ",West Deptford,https://stats.ncaa.org/players/9216564,597019.0,2025,Rutgers-Camden,891.0,NJAC,3.0,16779.0,588.0,9216564
+Jack Murphy,Sr.,1B,0.0,0.0,12.0,5-11,RIGHT,RIGHT,"West Deptford, NJ",West Deptford,https://stats.ncaa.org/players/9216564,597019.0,2025,Rutgers-Camden,891.0,NJAC,3.0,16779.0,588.0,d3d-6636741
 Chase Cooper,Sr.,P,0.0,0.0,26.0,5-11,LEFT,LEFT,"Southampton, NJ",The King's Christian School,https://stats.ncaa.org/players/9216567,597019.0,2025,Rutgers-Camden,891.0,NJAC,3.0,16779.0,588.0,d3d-7130543
 Joey Rappaport,Sr.,P,0.0,0.0,25.0,6-0,RIGHT,RIGHT,"Somerdale, NJ",Highland Regional,https://stats.ncaa.org/players/9216569,597019.0,2025,Rutgers-Camden,891.0,NJAC,3.0,16779.0,588.0,9216569
 John Marcucci,Fr.,INF,0.0,0.0,14.0,5-9,LEFT,RIGHT,"Gibbsboro, NJ",Paulsboro,https://stats.ncaa.org/players/9216572,597019.0,2025,Rutgers-Camden,891.0,NJAC,3.0,16779.0,588.0,9216572
@@ -10729,7 +10729,7 @@ Dylan Schwam,Jr.,UT,0.0,0.0,18.0,6-1,RIGHT,RIGHT,"West Boylston, MA",West Boylst
 Jack Laughlin,Sr.,P,0.0,0.0,29.0,5-10,LEFT,RIGHT,"Cortlandt Manor, NY",Walter Panas,https://stats.ncaa.org/players/8899890,597196.0,2025,SUNY Cobleskill ,30026.0,North Atlantic,3.0,16779.0,30083.0,8899890
 Jared Ainsworth,So.,C,0.0,0.0,41.0,6-1,RIGHT,RIGHT,"Troupsburg, NY",Jasper-Troupsburg,https://stats.ncaa.org/players/8902365,597196.0,2025,SUNY Cobleskill ,30026.0,North Atlantic,3.0,16779.0,30083.0,8902365
 Joe Sorge,Jr.,P,0.0,0.0,39.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8880710,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,d3d-8003871
-Alex Bardi,Jr.,INF,0.0,0.0,31.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8880725,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,8880725
+Alex Bardi,Jr.,INF,0.0,0.0,31.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8880725,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,d3d-8526697
 Owen Weber,So.,INF,0.0,0.0,12.0,6-0,RIGHT,RIGHT,"Kings Park, NY",,https://stats.ncaa.org/players/9113960,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,9113960
 Joey Goodman,Fr.,OF,0.0,0.0,27.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9113975,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,d3d-9113975
 Randy Ventura,Jr.,INF,0.0,0.0,2.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8886817,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,d3d-8003868
@@ -10740,7 +10740,7 @@ Logan Martinson,Sr.,OF,0.0,0.0,15.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/playe
 Evan Block,Jr.,P,0.0,0.0,44.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8873917,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,8873917
 John Spallin,Jr.,OF,0.0,0.0,10.0,6-4,RIGHT,RIGHT,"Holmdel, NJ",,https://stats.ncaa.org/players/9113944,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,9113944
 Alex Guzman,Fr.,INF,0.0,0.0,34.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9113978,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,9113978
-Jaxon Sevilla,Fr.,OF,0.0,0.0,35.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9113982,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,9113982
+Jaxon Sevilla,Fr.,OF,0.0,0.0,35.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9113982,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,d3d-9113982
 Kayleb Wray,Fr.,P,0.0,0.0,36.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9113984,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,9113984
 Nick Capone,Sr.,P,0.0,0.0,14.0,-,LEFT,LEFT,,,https://stats.ncaa.org/players/8883014,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,8883014
 Matt Demme,Sr.,P,0.0,0.0,11.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8887098,596981.0,2025,SUNY Maritime,13054.0,Skyline,3.0,16779.0,478.0,d3d-7569586
@@ -10814,7 +10814,7 @@ Dominic Colarusso,Jr.,P,0.0,0.0,46.0,5-10,BOTH,LEFT,,,https://stats.ncaa.org/pla
 Matt Sandoval,Jr.,C,0.0,0.0,33.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8890007,596996.0,2025,SUNY Oneonta,917.0,SUNYAC,3.0,16779.0,526.0,8890007
 James Torres,Sr.,P,0.0,0.0,23.0,6-1,LEFT,LEFT,,,https://stats.ncaa.org/players/8874760,596996.0,2025,SUNY Oneonta,917.0,SUNYAC,3.0,16779.0,526.0,d3d-7576948
 Joshua Martin,Sr.,P,0.0,0.0,13.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8879914,596996.0,2025,SUNY Oneonta,917.0,SUNYAC,3.0,16779.0,526.0,8879914
-Nick Jacoby,Jr.,INF,0.0,0.0,8.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8879994,596996.0,2025,SUNY Oneonta,917.0,SUNYAC,3.0,16779.0,526.0,8879994
+Nick Jacoby,Jr.,INF,0.0,0.0,8.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8879994,596996.0,2025,SUNY Oneonta,917.0,SUNYAC,3.0,16779.0,526.0,d3d-7995018
 Kyle Roper,Sr.,P,0.0,0.0,21.0,6-2,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8881301,596996.0,2025,SUNY Oneonta,917.0,SUNYAC,3.0,16779.0,526.0,8881301
 Logan Kaufman,Sr.,P,0.0,0.0,1.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8889581,596996.0,2025,SUNY Oneonta,917.0,SUNYAC,3.0,16779.0,526.0,d3d-8429226
 Brendan Duffy,Jr.,OF,0.0,0.0,5.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8882443,596996.0,2025,SUNY Oneonta,917.0,SUNYAC,3.0,16779.0,526.0,d3d-7994995
@@ -10894,7 +10894,7 @@ Taj Muhammad,Sr.,INF,0.0,0.0,10.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/playe
 Joe Galati,So.,OF,0.0,0.0,23.0,5-11,,,,,https://stats.ncaa.org/players/8896966,597342.0,2025,Saint Elizabeth,30071.0,United East,3.0,16779.0,9684.0,8896966
 Alexia Jorge,Sr.,C,0.0,0.0,26.0,5-5,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897059,597342.0,2025,Saint Elizabeth,30071.0,United East,3.0,16779.0,9684.0,8897059
 Jeffrey Guillen,Jr.,P,0.0,0.0,45.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897066,597342.0,2025,Saint Elizabeth,30071.0,United East,3.0,16779.0,9684.0,8897066
-Chris Povemba,So.,INF,0.0,0.0,3.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8890660,597342.0,2025,Saint Elizabeth,30071.0,United East,3.0,16779.0,9684.0,8890660
+Chris Povemba,So.,INF,0.0,0.0,3.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8890660,597342.0,2025,Saint Elizabeth,30071.0,United East,3.0,16779.0,9684.0,d3d-8448224
 Randy Polanco,Sr.,P,0.0,0.0,9.0,6-1,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8898854,597342.0,2025,Saint Elizabeth,30071.0,United East,3.0,16779.0,9684.0,8898854
 Kevin Conway,Jr.,P,0.0,0.0,41.0,6-0,LEFT,LEFT,,,https://stats.ncaa.org/players/8896168,597342.0,2025,Saint Elizabeth,30071.0,United East,3.0,16779.0,9684.0,8896168
 Malcolm Solomon,So.,UT,0.0,0.0,22.0,6-0,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8890904,597342.0,2025,Saint Elizabeth,30071.0,United East,3.0,16779.0,9684.0,8890904
@@ -11187,7 +11187,7 @@ Harry Tavella,So.,P,0.0,0.0,28.0,6-3,RIGHT,RIGHT,"Fairfield, CT",Fairfield Ludlo
 Jake Mitchell,Sr.,1B,0.0,0.0,33.0,5-10,LEFT,RIGHT,"Merrimack, NH",Bishop Guertin,https://stats.ncaa.org/players/8877946,597032.0,2025,Salve Regina,890.0,NEWMAC,3.0,16779.0,623.0,8877946
 James Keating,Jr.,OF,0.0,0.0,22.0,6-4,RIGHT,RIGHT,"Norwood, NJ",Northern Valley Regional,https://stats.ncaa.org/players/8877956,597032.0,2025,Salve Regina,890.0,NEWMAC,3.0,16779.0,623.0,8877956
 Nate Ruehs,Jr.,INF,0.0,0.0,21.0,6-2,RIGHT,RIGHT,"Plymouth, MA",Plymouth South,https://stats.ncaa.org/players/8883054,597032.0,2025,Salve Regina,890.0,NEWMAC,3.0,16779.0,623.0,d3d-8154714
-Nick Callano,Sr.,P,0.0,0.0,30.0,6-0,RIGHT,RIGHT,"Ocean, NJ",Ocean Township,https://stats.ncaa.org/players/8875156,597032.0,2025,Salve Regina,890.0,NEWMAC,3.0,16779.0,623.0,8875156
+Nick Callano,Sr.,P,0.0,0.0,30.0,6-0,RIGHT,RIGHT,"Ocean, NJ",Ocean Township,https://stats.ncaa.org/players/8875156,597032.0,2025,Salve Regina,890.0,NEWMAC,3.0,16779.0,623.0,d3d-7586488
 Matthew Neal,Sr.,OF,0.0,0.0,6.0,5-10,RIGHT,RIGHT,"Ashland, MA",Ashland,https://stats.ncaa.org/players/8878199,597032.0,2025,Salve Regina,890.0,NEWMAC,3.0,16779.0,623.0,d3d-7586513
 Shane Williams,Jr.,OF,0.0,0.0,25.0,6-0,LEFT,RIGHT,"Georgetown, MA",St. John's Prep,https://stats.ncaa.org/players/8881400,597032.0,2025,Salve Regina,890.0,NEWMAC,3.0,16779.0,623.0,d3d-8011528
 Jason Arrigo,Sr.,P,0.0,0.0,36.0,5-9,RIGHT,RIGHT,"Basking Ridge, NJ",Ridge,https://stats.ncaa.org/players/8885451,597032.0,2025,Salve Regina,890.0,NEWMAC,3.0,16779.0,623.0,d3d-7586483
@@ -11494,7 +11494,7 @@ McKay Bryant,Fr.,UT,0.0,0.0,10.0,-,,,,,https://stats.ncaa.org/players/9298342,59
 Javari Christopher,Jr.,OF,0.0,0.0,30.0,-,,,,,https://stats.ncaa.org/players/9298353,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,9298353
 Gabe Moore,So.,P,0.0,0.0,5.0,-,,,,,https://stats.ncaa.org/players/9298335,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,9298335
 Jaxon Jones,Fr.,OF,0.0,0.0,33.0,-,,,,,https://stats.ncaa.org/players/9298352,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,9298352
-Harrison Moore,Sr.,P,0.0,0.0,16.0,-,,,,,https://stats.ncaa.org/players/9298358,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,9298358
+Harrison Moore,Sr.,P,0.0,0.0,16.0,-,,,,,https://stats.ncaa.org/players/9298358,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,d3d-8423378
 Clance Wiltbank,Fr.,P,0.0,0.0,19.0,-,,,,,https://stats.ncaa.org/players/9298364,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,9298364
 Tyson Smith,Fr.,OF,0.0,0.0,26.0,-,,,,,https://stats.ncaa.org/players/9298355,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,9298355
 Benjamin Agnew,Jr.,1B,0.0,0.0,4.0,-,,,,,https://stats.ncaa.org/players/8878601,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,d3d-8019493
@@ -11502,7 +11502,7 @@ Carson Bybee,Jr.,P,0.0,0.0,41.0,-,,,,,https://stats.ncaa.org/players/8876772,597
 Brady Steelman,So.,P,0.0,0.0,21.0,-,,,,,https://stats.ncaa.org/players/8889141,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,8889141
 Ta'Quan Moon,So.,OF,0.0,0.0,1.0,-,,,,,https://stats.ncaa.org/players/8889161,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,d3d-8423371
 Brooks Burdette,So.,2B,0.0,0.0,7.0,-,,,,,https://stats.ncaa.org/players/8882985,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,8882985
-Marcelino Leonardo Jr.,Jr.,3B,0.0,0.0,28.0,-,,,,,https://stats.ncaa.org/players/8877064,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,8877064
+Marcelino Leonardo Jr.,Jr.,3B,0.0,0.0,28.0,-,,,,,https://stats.ncaa.org/players/8877064,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,d3d-8013137
 Rock Giles,Jr.,P,0.0,0.0,2.0,-,,,,,https://stats.ncaa.org/players/8879075,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,8879075
 Nathan Karnes,Jr.,1B,0.0,0.0,11.0,-,,,,,https://stats.ncaa.org/players/8888488,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,8888488
 Kobe Blackwell,So.,3B,0.0,0.0,45.0,-,,,,,https://stats.ncaa.org/players/8884523,597202.0,2025,Southern Va.,842.0,USA South,3.0,16779.0,30164.0,8884523
@@ -11942,7 +11942,7 @@ Zach Matson,Jr.,P,0.0,0.0,46.0,6-5,RIGHT,RIGHT,"Lynnwood, WA",Meadowdale,https:/
 Zeke Walton,Sr.,UT,0.0,0.0,54.0,6-2,RIGHT,RIGHT,"Olivia, MN",BOLD,https://stats.ncaa.org/players/8877862,597029.0,2025,St. Scholastica,882.0,MIAC,3.0,16779.0,618.0,8877862
 Andrew Barich,So.,INF,0.0,0.0,32.0,6-1,RIGHT,RIGHT,"Crystal, MN",Armstrong,https://stats.ncaa.org/players/8877865,597029.0,2025,St. Scholastica,882.0,MIAC,3.0,16779.0,618.0,8877865
 Matt Forrest,Sr.,P,0.0,0.0,21.0,6-0,LEFT,LEFT,"Oakdale, MN",Hill-Murray,https://stats.ncaa.org/players/8889255,597029.0,2025,St. Scholastica,882.0,MIAC,3.0,16779.0,618.0,d3d-7585088
-Levi Stubbles,Sr.,INF,0.0,0.0,12.0,6-2,RIGHT,RIGHT,"San Bruno, CA",El Camino HS,https://stats.ncaa.org/players/8887069,597029.0,2025,St. Scholastica,882.0,MIAC,3.0,16779.0,618.0,8887069
+Levi Stubbles,Sr.,INF,0.0,0.0,12.0,6-2,RIGHT,RIGHT,"San Bruno, CA",El Camino HS,https://stats.ncaa.org/players/8887069,597029.0,2025,St. Scholastica,882.0,MIAC,3.0,16779.0,618.0,d3d-8015649
 Evan Chalich,Sr.,P,0.0,0.0,43.0,6-3,RIGHT,LEFT,"Fosston, MN",Fosston,https://stats.ncaa.org/players/8879018,597029.0,2025,St. Scholastica,882.0,MIAC,3.0,16779.0,618.0,8879018
 Finley Spicer,Jr.,UT,0.0,0.0,22.0,6-2,RIGHT,RIGHT,"Aberdeen, NC",Union Pines,https://stats.ncaa.org/players/8888247,597029.0,2025,St. Scholastica,882.0,MIAC,3.0,16779.0,618.0,8888247
 Eilas Jouppi,So.,OF,0.0,0.0,51.0,6-0,RIGHT,RIGHT,"Duluth, MN",Duluth East,https://stats.ncaa.org/players/8888328,597029.0,2025,St. Scholastica,882.0,MIAC,3.0,16779.0,618.0,8888328
@@ -11977,7 +11977,7 @@ Ryan Ratajczak,Fr.,c,2.0,2.0,19.0,-,,,,,https://stats.ncaa.org/players/9299769,5
 Joel Mukasa,Jr.,,0.0,0.0,41.0,-,,,,,https://stats.ncaa.org/players/8887713,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,8887713
 Stefano Demeris,Fr.,,0.0,0.0,48.0,-,,,,,https://stats.ncaa.org/players/8887741,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,8887741
 Chris Thinh,Fr.,INF,0.0,0.0,52.0,-,,,,,https://stats.ncaa.org/players/8883761,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,8883761
-Dominick Garza,Sr.,,1.0,0.0,47.0,-,,,,,https://stats.ncaa.org/players/8886805,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,8886805
+Dominick Garza,Sr.,,1.0,0.0,47.0,-,,,,,https://stats.ncaa.org/players/8886805,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,d3d-7563832
 Sebastian Soliz,Sr.,,0.0,0.0,22.0,-,,,,,https://stats.ncaa.org/players/8888934,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,8888934
 Gilberto Arrozola,Jr.,P,1.0,0.0,65.0,-,,,,,https://stats.ncaa.org/players/8888970,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,d3d-8273668
 Armando Rocha,So.,,3.0,1.0,7.0,-,,,,,https://stats.ncaa.org/players/8885924,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,8885924
@@ -11989,7 +11989,7 @@ Aryan Chopra,So.,,1.0,0.0,50.0,-,,,,,https://stats.ncaa.org/players/8889472,5973
 Alex Trinh,Jr.,UT,3.0,3.0,10.0,-,,,,,https://stats.ncaa.org/players/8887318,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,d3d-7980037
 Augie Anderson,So.,,2.0,0.0,9.0,-,,,,,https://stats.ncaa.org/players/8887450,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,d3d-8428257
 Sanuel Lampson,Sr.,INF,1.0,0.0,8.0,5-5,RIGHT,RIGHT,"Taylor Lake Village, TX",,https://stats.ncaa.org/players/8885507,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,d3d-7552069
-Rey Izaguirre,Jr.,OF,3.0,1.0,3.0,-,,,,,https://stats.ncaa.org/players/8888590,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,8888590
+Rey Izaguirre,Jr.,OF,3.0,1.0,3.0,-,,,,,https://stats.ncaa.org/players/8888590,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,d3d-7979970
 Kaden Bertrand,So.,,1.0,1.0,1.0,-,,,,,https://stats.ncaa.org/players/8874473,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,8874473
 AJ Gonzalez,Jr.,UT,2.0,2.0,20.0,-,,,,,https://stats.ncaa.org/players/8879547,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,8879547
 Luke Johnson,Sr.,P,0.0,0.0,51.0,6-5,LEFT,LEFT,,,https://stats.ncaa.org/players/8893450,597345.0,2025,St. Thomas (TX),835.0,SCAC,3.0,16779.0,2810.0,8893450
@@ -12061,7 +12061,7 @@ Justin Doyle,Sr.,P,0.0,0.0,18.0,6-4,LEFT,RIGHT,"Louisville, KY",North Oldham,htt
 E.J. Balewitz Jr.,Fr.,1B,0.0,0.0,49.0,-,LEFT,RIGHT,,,https://stats.ncaa.org/players/9108940,597041.0,2025,Stevens,28745.0,MAC Freedom,3.0,16779.0,679.0,9108940
 Amresh Balakrishnan,Fr.,P,0.0,0.0,36.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9108927,597041.0,2025,Stevens,28745.0,MAC Freedom,3.0,16779.0,679.0,9108927
 Henry Parson,Fr.,,0.0,0.0,39.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9108929,597041.0,2025,Stevens,28745.0,MAC Freedom,3.0,16779.0,679.0,9108929
-Jacob Buurman,Sr.,P,0.0,0.0,40.0,6-6,RIGHT,RIGHT,"Sussex, NJ",Vernon Township,https://stats.ncaa.org/players/9108930,597041.0,2025,Stevens,28745.0,MAC Freedom,3.0,16779.0,679.0,9108930
+Jacob Buurman,Sr.,P,0.0,0.0,40.0,6-6,RIGHT,RIGHT,"Sussex, NJ",Vernon Township,https://stats.ncaa.org/players/9108930,597041.0,2025,Stevens,28745.0,MAC Freedom,3.0,16779.0,679.0,d3d-7142438
 Raphael Schneider,Fr.,P,0.0,0.0,41.0,-,RIGHT,LEFT,,,https://stats.ncaa.org/players/9108932,597041.0,2025,Stevens,28745.0,MAC Freedom,3.0,16779.0,679.0,9108932
 Drew DiSanto,Fr.,UT,0.0,0.0,45.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9108970,597041.0,2025,Stevens,28745.0,MAC Freedom,3.0,16779.0,679.0,9108970
 Marc Rivera,Sr.,P,0.0,0.0,10.0,6-0,RIGHT,RIGHT,"Englishtown, NJ",Manalapan,https://stats.ncaa.org/players/9108905,597041.0,2025,Stevens,28745.0,MAC Freedom,3.0,16779.0,679.0,9108905
@@ -12090,7 +12090,7 @@ Jake Treasure,So.,P,0.0,0.0,14.0,5-11,,,"Springfield, VA",West Springfield,https
 Connor Wilkerson,So.,INF,0.0,0.0,44.0,5-11,,,"Huntingtown, MD",Huntingtown,https://stats.ncaa.org/players/8879204,597169.0,2025,Stevenson,28744.0,MAC Commonwealth,3.0,16779.0,21852.0,d3d-8588926
 Graham Sears,Jr.,OF,0.0,0.0,10.0,6-2,,,"Herndon, VA",Herndon,https://stats.ncaa.org/players/8880229,597169.0,2025,Stevenson,28744.0,MAC Commonwealth,3.0,16779.0,21852.0,d3d-7984475
 John Delgado,So.,P,0.0,0.0,21.0,5-10,,,"Westminster, MD",Gerstell Academy,https://stats.ncaa.org/players/8889615,597169.0,2025,Stevenson,28744.0,MAC Commonwealth,3.0,16779.0,21852.0,d3d-8588837
-Carl Sansbury,Sr.,P,0.0,0.0,23.0,6-4,LEFT,LEFT,"Ponte Vedra, FL",Walter Johnson,https://stats.ncaa.org/players/8877407,597169.0,2025,Stevenson,28744.0,MAC Commonwealth,3.0,16779.0,21852.0,8877407
+Carl Sansbury,Sr.,P,0.0,0.0,23.0,6-4,LEFT,LEFT,"Ponte Vedra, FL",Walter Johnson,https://stats.ncaa.org/players/8877407,597169.0,2025,Stevenson,28744.0,MAC Commonwealth,3.0,16779.0,21852.0,d3d-7559279
 Matt Perri,Sr.,C,0.0,0.0,22.0,5-10,,,"East Rockaway, NY",East Rockaway,https://stats.ncaa.org/players/8875522,597169.0,2025,Stevenson,28744.0,MAC Commonwealth,3.0,16779.0,21852.0,8875522
 Caden Dail,Sr.,P,0.0,0.0,41.0,6-2,,,"Sumter, SC",Crestwood,https://stats.ncaa.org/players/8895552,597169.0,2025,Stevenson,28744.0,MAC Commonwealth,3.0,16779.0,21852.0,8895552
 EJ Lowry,So.,P,0.0,0.0,24.0,5-10,,,"Emmitsburg, MD",Saint John's Catholic Prep,https://stats.ncaa.org/players/8898142,597169.0,2025,Stevenson,28744.0,MAC Commonwealth,3.0,16779.0,21852.0,8898142
@@ -12122,7 +12122,7 @@ Justin Prekop,Fr.,OF,0.0,0.0,45.0,-,,,,,https://stats.ncaa.org/players/9296477,5
 Joe Giori,Jr.,C,0.0,0.0,46.0,-,,,,,https://stats.ncaa.org/players/9296479,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,9296479
 Ryan Zimmer,Fr.,C,0.0,0.0,50.0,-,,,,,https://stats.ncaa.org/players/9296482,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,9296482
 Nick Avagnano,Jr.,INF,0.0,0.0,56.0,-,,,,,https://stats.ncaa.org/players/8887763,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,8887763
-Zach McCabe,Jr.,P,0.0,0.0,25.0,-,,,,,https://stats.ncaa.org/players/8878621,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,8878621
+Zach McCabe,Jr.,P,0.0,0.0,25.0,-,,,,,https://stats.ncaa.org/players/8878621,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,d3d-7995901
 Robbie Ford,Sr.,INF,0.0,0.0,8.0,-,,,,,https://stats.ncaa.org/players/8878655,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,d3d-7580213
 Chris Gonzalez,Sr.,P,0.0,0.0,1.0,-,,,,,https://stats.ncaa.org/players/8880870,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,8880870
 Evan Bresnen,Jr.,INF,0.0,0.0,2.0,5-11,RIGHT,RIGHT,"Allentown, NJ",Steinert,https://stats.ncaa.org/players/8880872,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,8880872
@@ -12139,7 +12139,7 @@ Reece Miller,Sr.,P,0.0,0.0,24.0,-,,,,,https://stats.ncaa.org/players/8890348,597
 Kyle Cipolla,Sr.,P,0.0,0.0,10.0,-,,,,,https://stats.ncaa.org/players/8890400,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,8890400
 Cooper Fiore,Jr.,C,0.0,0.0,33.0,5-11,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8897089,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,8897089
 Tony Gatti,Jr.,OF,0.0,0.0,21.0,-,,,,,https://stats.ncaa.org/players/8895892,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,d3d-7580220
-Tucker Elder,Sr.,OF,0.0,0.0,44.0,-,,,,,https://stats.ncaa.org/players/8894030,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,8894030
+Tucker Elder,Sr.,OF,0.0,0.0,44.0,-,,,,,https://stats.ncaa.org/players/8894030,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,d3d-7580242
 Austin Beard,Sr.,UT,0.0,0.0,23.0,-,,,,,https://stats.ncaa.org/players/8894057,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,8894057
 Russell Halvorsen,So.,OF,0.0,0.0,22.0,-,,,,,https://stats.ncaa.org/players/8894084,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,8894084
 Conner Praschil,So.,OF,0.0,0.0,27.0,-,,,,,https://stats.ncaa.org/players/8894899,597042.0,2025,Stockton,891.0,NJAC,3.0,16779.0,681.0,8894899
@@ -12178,7 +12178,7 @@ Rocco Scarpitti,So.,OF,0.0,0.0,30.0,6-3,LEFT,RIGHT,"Bayville, NJ",Donovan Cathol
 Evan Applegate,So.,P,0.0,0.0,8.0,6-0,LEFT,LEFT,"Bethlehem, PA",Liberty,https://stats.ncaa.org/players/8881472,597044.0,2025,Susquehanna,30101.0,Landmark,3.0,16779.0,685.0,d3d-8448533
 Joseph Healy,Sr.,INF,0.0,0.0,23.0,6-0,RIGHT,RIGHT,"Bronx, NY",Regis,https://stats.ncaa.org/players/8882322,597044.0,2025,Susquehanna,30101.0,Landmark,3.0,16779.0,685.0,d3d-7573914
 Griffin Shenman,So.,INF,0.0,0.0,5.0,5-9,RIGHT,RIGHT,"Rumson, NJ",Rumson Fair-Haven,https://stats.ncaa.org/players/8878359,597044.0,2025,Susquehanna,30101.0,Landmark,3.0,16779.0,685.0,d3d-8448558
-Jack Greco,Sr.,P,0.0,0.0,27.0,6-2,RIGHT,RIGHT,"Berkeley Heights, NJ",Oratory Preparatory,https://stats.ncaa.org/players/8880461,597044.0,2025,Susquehanna,30101.0,Landmark,3.0,16779.0,685.0,8880461
+Jack Greco,Sr.,P,0.0,0.0,27.0,6-2,RIGHT,RIGHT,"Berkeley Heights, NJ",Oratory Preparatory,https://stats.ncaa.org/players/8880461,597044.0,2025,Susquehanna,30101.0,Landmark,3.0,16779.0,685.0,d3d-7573912
 Sam Martucci,Sr.,UT,0.0,0.0,13.0,6-1,RIGHT,RIGHT,"Oceanport, NJ",Shore Regional,https://stats.ncaa.org/players/8882379,597044.0,2025,Susquehanna,30101.0,Landmark,3.0,16779.0,685.0,d3d-7099818
 Christian Biuso,Jr.,UT,0.0,0.0,24.0,5-9,RIGHT,RIGHT,"Staten Island, NY",Tottenville,https://stats.ncaa.org/players/8887603,597044.0,2025,Susquehanna,30101.0,Landmark,3.0,16779.0,685.0,8887603
 Robert Cangelosi,Jr.,C,0.0,0.0,77.0,5-11,RIGHT,RIGHT,"Middletown, NJ",Middletown South,https://stats.ncaa.org/players/8882522,597044.0,2025,Susquehanna,30101.0,Landmark,3.0,16779.0,685.0,d3d-7997101
@@ -12221,7 +12221,7 @@ Nick DiPalma,Fr.,C,0.0,0.0,22.0,5-10,RIGHT,RIGHT,"Yardley, PA",Notre Dame NJ,htt
 Gavin D'Aponte,Fr.,INF,0.0,0.0,12.0,5-10,LEFT,RIGHT,"Highlands, NJ",Ramson Fair Haven,https://stats.ncaa.org/players/9110195,597044.0,2025,Susquehanna,30101.0,Landmark,3.0,16779.0,685.0,9110195
 Jake Klotz,So.,P,0.0,0.0,15.0,6-3,RIGHT,RIGHT,"Hellertown, PA",Saucon Valley,https://stats.ncaa.org/players/9110204,597044.0,2025,Susquehanna,30101.0,Landmark,3.0,16779.0,685.0,9110204
 Paul Daly,Fr.,INF,0.0,0.0,54.0,-,,,,,https://stats.ncaa.org/players/9218908,597044.0,2025,Susquehanna,30101.0,Landmark,3.0,16779.0,685.0,9218908
-Max Roffwarg,Sr.,INF,0.0,0.0,18.0,5-11,RIGHT,RIGHT,"Houston, TX",Emery Weiner,https://stats.ncaa.org/players/8881800,597045.0,2025,Swarthmore,9683.0,Centennial,3.0,16779.0,686.0,8881800
+Max Roffwarg,Sr.,INF,0.0,0.0,18.0,5-11,RIGHT,RIGHT,"Houston, TX",Emery Weiner,https://stats.ncaa.org/players/8881800,597045.0,2025,Swarthmore,9683.0,Centennial,3.0,16779.0,686.0,d3d-7582678
 Jeremy Jensen,Sr.,P,0.0,0.0,44.0,6-2,RIGHT,RIGHT,"Washington, DC",Georgetown Day,https://stats.ncaa.org/players/8874785,597045.0,2025,Swarthmore,9683.0,Centennial,3.0,16779.0,686.0,d3d-7585944
 Jaiden Shuchman,So.,UT,0.0,0.0,8.0,5-11,RIGHT,RIGHT,"Philadelphia, PA",Haverford School,https://stats.ncaa.org/players/8877924,597045.0,2025,Swarthmore,9683.0,Centennial,3.0,16779.0,686.0,8877924
 Jack Bowling,Sr.,P,0.0,0.0,4.0,6-2,RIGHT,RIGHT,"Cornelius, NC",Charlotte Country Day,https://stats.ncaa.org/players/8883147,597045.0,2025,Swarthmore,9683.0,Centennial,3.0,16779.0,686.0,8883147
@@ -12618,11 +12618,11 @@ AJ Horkan,Sr.,P,0.0,0.0,47.0,-,,,,,https://stats.ncaa.org/players/8880343,597250
 Devan Johnson,Jr.,OF,1.0,1.0,15.0,-,,,,,https://stats.ncaa.org/players/8876446,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,8876446
 Charlie Hahn,So.,P,2.0,0.0,22.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/8883663,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,8883663
 Jack Sharp,Jr.,INF,3.0,2.0,2.0,-,,,,,https://stats.ncaa.org/players/8898925,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,8898925
-John Butka,Jr.,P,0.0,0.0,14.0,-,,,,,https://stats.ncaa.org/players/8890368,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,8890368
+John Butka,Jr.,P,0.0,0.0,14.0,-,,,,,https://stats.ncaa.org/players/8890368,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,d3d-8013593
 Buck Olson,Sr.,OF,1.0,1.0,41.0,-,,,,,https://stats.ncaa.org/players/8897150,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,d3d-7582837
 Matthew Wills,Sr.,INF,1.0,1.0,16.0,-,,,,,https://stats.ncaa.org/players/8898639,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,8898639
 Jack Goldstein,Sr.,INF,2.0,1.0,13.0,-,,,,,https://stats.ncaa.org/players/8898812,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,8898812
-Kirk Waller,Sr.,P,0.0,0.0,8.0,-,,,,,https://stats.ncaa.org/players/8894908,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,8894908
+Kirk Waller,Sr.,P,0.0,0.0,8.0,-,,,,,https://stats.ncaa.org/players/8894908,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,d3d-7582841
 Michael Gladden,Jr.,UT,1.0,1.0,11.0,-,,,,,https://stats.ncaa.org/players/8891708,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,8891708
 Nick Avalos,Sr.,INF,0.0,0.0,5.0,-,,,,,https://stats.ncaa.org/players/8898349,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,8898349
 Erik Rindner,Jr.,C,3.0,3.0,31.0,-,,,,,https://stats.ncaa.org/players/8893044,597250.0,2025,UChicago,1471.0,UAA,3.0,16779.0,137.0,d3d-8013603
@@ -12730,7 +12730,7 @@ Kyle McNeff,Sr.,C,0.0,0.0,38.0,-,,,,,https://stats.ncaa.org/players/8874585,5970
 Jacob Rosati,So.,INF,0.0,0.0,20.0,-,,,,,https://stats.ncaa.org/players/8882568,597038.0,2025,UMass Dartmouth,867.0,Little East,3.0,16779.0,656.0,8882568
 Cooper Wixon,So.,INF,0.0,0.0,16.0,-,,,,,https://stats.ncaa.org/players/8895717,597038.0,2025,UMass Dartmouth,867.0,Little East,3.0,16779.0,656.0,8895717
 Aiden Newhall,So.,P,0.0,0.0,48.0,-,,,,,https://stats.ncaa.org/players/8897039,597038.0,2025,UMass Dartmouth,867.0,Little East,3.0,16779.0,656.0,8897039
-Dillon Harding,So.,INF,0.0,0.0,14.0,-,,,,,https://stats.ncaa.org/players/8894461,597038.0,2025,UMass Dartmouth,867.0,Little East,3.0,16779.0,656.0,8894461
+Dillon Harding,So.,INF,0.0,0.0,14.0,-,,,,,https://stats.ncaa.org/players/8894461,597038.0,2025,UMass Dartmouth,867.0,Little East,3.0,16779.0,656.0,d3d-8597077
 Aidan O'Donnell,Jr.,P,0.0,0.0,24.0,-,,,,,https://stats.ncaa.org/players/8892613,597038.0,2025,UMass Dartmouth,867.0,Little East,3.0,16779.0,656.0,8892613
 Nathan Potter,Sr.,P,0.0,0.0,12.0,-,,,,,https://stats.ncaa.org/players/8896037,597038.0,2025,UMass Dartmouth,867.0,Little East,3.0,16779.0,656.0,8896037
 Sam Laurie,Sr.,OF,0.0,0.0,42.0,-,,,,,https://stats.ncaa.org/players/8890813,597038.0,2025,UMass Dartmouth,867.0,Little East,3.0,16779.0,656.0,8890813
@@ -12831,7 +12831,7 @@ David Morgan,Sr.,P,0.0,0.0,22.0,-,,,,,https://stats.ncaa.org/players/8885145,597
 Jakob Cantor,Sr.,INF,0.0,0.0,5.0,-,,,,,https://stats.ncaa.org/players/8875028,597054.0,2025,Ursinus,9683.0,Centennial,3.0,16779.0,730.0,8875028
 Jude Gilhool,Sr.,1B,0.0,0.0,32.0,-,,,,,https://stats.ncaa.org/players/8875972,597054.0,2025,Ursinus,9683.0,Centennial,3.0,16779.0,730.0,d3d-8587931
 Max Shilstone,Jr.,P,0.0,0.0,27.0,6-2,,RIGHT,,,https://stats.ncaa.org/players/8885214,597054.0,2025,Ursinus,9683.0,Centennial,3.0,16779.0,730.0,d3d-8006484
-Shane Beaver,Jr.,1B,0.0,0.0,12.0,-,,,,,https://stats.ncaa.org/players/8883190,597054.0,2025,Ursinus,9683.0,Centennial,3.0,16779.0,730.0,8883190
+Shane Beaver,Jr.,1B,0.0,0.0,12.0,-,,,,,https://stats.ncaa.org/players/8883190,597054.0,2025,Ursinus,9683.0,Centennial,3.0,16779.0,730.0,d3d-8006528
 Kieran Hollander,Sr.,P,0.0,0.0,44.0,-,,,,,https://stats.ncaa.org/players/8881328,597054.0,2025,Ursinus,9683.0,Centennial,3.0,16779.0,730.0,d3d-7588553
 Brandon Sullivan,So.,INF,0.0,0.0,4.0,-,,,,,https://stats.ncaa.org/players/8887336,597054.0,2025,Ursinus,9683.0,Centennial,3.0,16779.0,730.0,d3d-8587738
 Kyle Rosenfeld,Jr.,INF,0.0,0.0,8.0,-,,,,,https://stats.ncaa.org/players/8877262,597054.0,2025,Ursinus,9683.0,Centennial,3.0,16779.0,730.0,8877262
@@ -13343,7 +13343,7 @@ Luke Girillo,Fr.,P,1.0,0.0,44.0,-,,,,,https://stats.ncaa.org/players/9216475,597
 Ty Corino,Fr.,P,0.0,0.0,42.0,-,RIGHT,RIGHT,,,https://stats.ncaa.org/players/9216473,597062.0,2025,Washington Col.,9683.0,Centennial,3.0,16779.0,753.0,9216473
 Brandon Messer,Fr.,C,0.0,0.0,39.0,-,,,,,https://stats.ncaa.org/players/9216478,597062.0,2025,Washington Col.,9683.0,Centennial,3.0,16779.0,753.0,9216478
 Matt O'Connor,Fr.,INF,1.0,0.0,4.0,-,,,,,https://stats.ncaa.org/players/9216479,597062.0,2025,Washington Col.,9683.0,Centennial,3.0,16779.0,753.0,9216479
-Logan Ruga,Fr.,INF,1.0,0.0,12.0,-,,,,,https://stats.ncaa.org/players/9216480,597062.0,2025,Washington Col.,9683.0,Centennial,3.0,16779.0,753.0,9216480
+Logan Ruga,Fr.,INF,1.0,0.0,12.0,-,,,,,https://stats.ncaa.org/players/9216480,597062.0,2025,Washington Col.,9683.0,Centennial,3.0,16779.0,753.0,d3d-9216480
 Mark Schwartz,Fr.,OF,1.0,0.0,24.0,-,,,,,https://stats.ncaa.org/players/9216481,597062.0,2025,Washington Col.,9683.0,Centennial,3.0,16779.0,753.0,9216481
 Hunter Mamie,So.,C,0.0,0.0,31.0,5-11,RIGHT,RIGHT,"Eighty Four, PA",Ringgold,https://stats.ncaa.org/players/8884822,597135.0,2025,Waynesburg,907.0,PAC,3.0,16779.0,1434.0,8884822
 Benjamin Heaps,Jr.,UT,0.0,0.0,37.0,6-0,RIGHT,RIGHT,"Sykesville, MD",Chapelgate,https://stats.ncaa.org/players/8878619,597135.0,2025,Waynesburg,907.0,PAC,3.0,16779.0,1434.0,8878619
@@ -13611,8 +13611,8 @@ Kaleb Hinkle-Pruett,Sr.,P,1.0,0.0,24.0,-,,,,,https://stats.ncaa.org/players/8898
 William Ashmore,So.,OF,0.0,0.0,6.0,-,,,,,https://stats.ncaa.org/players/8892415,597136.0,2025,Westminster (MO),12974.0,SLIAC,3.0,16779.0,1450.0,8892415
 Elijah Miller,So.,UT,0.0,0.0,15.0,-,,,,,https://stats.ncaa.org/players/8893729,597136.0,2025,Westminster (MO),12974.0,SLIAC,3.0,16779.0,1450.0,8893729
 Dawson Willard,Jr.,1B,0.0,0.0,17.0,-,,,,,https://stats.ncaa.org/players/8894488,597136.0,2025,Westminster (MO),12974.0,SLIAC,3.0,16779.0,1450.0,d3d-8021185
-Aidan Bryowsky,So.,UT,0.0,0.0,25.0,-,,,,,https://stats.ncaa.org/players/8892842,597136.0,2025,Westminster (MO),12974.0,SLIAC,3.0,16779.0,1450.0,8892842
-Brayden Knittel,Jr.,C,1.0,0.0,31.0,-,,,,,https://stats.ncaa.org/players/8890838,597136.0,2025,Westminster (MO),12974.0,SLIAC,3.0,16779.0,1450.0,8890838
+Aidan Bryowsky,So.,UT,0.0,0.0,25.0,-,,,,,https://stats.ncaa.org/players/8892842,597136.0,2025,Westminster (MO),12974.0,SLIAC,3.0,16779.0,1450.0,d3d-8458417
+Brayden Knittel,Jr.,C,1.0,0.0,31.0,-,,,,,https://stats.ncaa.org/players/8890838,597136.0,2025,Westminster (MO),12974.0,SLIAC,3.0,16779.0,1450.0,d3d-7984554
 Domenic Nordmann,So.,UT,2.0,2.0,1.0,-,,,,,https://stats.ncaa.org/players/8890874,597136.0,2025,Westminster (MO),12974.0,SLIAC,3.0,16779.0,1450.0,d3d-8458414
 Donovan Bohler,Jr.,UT,1.0,1.0,16.0,-,,,,,https://stats.ncaa.org/players/8895205,597136.0,2025,Westminster (MO),12974.0,SLIAC,3.0,16779.0,1450.0,8895205
 Aydn Bradke,So.,P,0.0,0.0,45.0,-,,,,,https://stats.ncaa.org/players/8896491,597136.0,2025,Westminster (MO),12974.0,SLIAC,3.0,16779.0,1450.0,d3d-8458431
@@ -13691,7 +13691,7 @@ Rutledge Feltel,Sr.,C,0.0,0.0,19.0,5-11,RIGHT,RIGHT,"Jacksonville, FL",Providenc
 JD Van Hook,Sr.,P,0.0,0.0,33.0,6-0,RIGHT,RIGHT,"Brentwood, TN",Brentwood High School,https://stats.ncaa.org/players/8885461,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,d3d-7584375
 Will McCluskey,Jr.,P,0.0,0.0,37.0,5-11,LEFT,LEFT,"Owens Cross Roads, AL",Huntsville,https://stats.ncaa.org/players/8888589,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,8888589
 Donovan Williams,Jr.,OF,0.0,0.0,18.0,5-7,LEFT,LEFT,"Sandy Hook, VA",Collegiate School,https://stats.ncaa.org/players/8877425,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,8877425
-Noah Husted,Jr.,INF,0.0,0.0,25.0,5-9,RIGHT,RIGHT,"Winfield, IL",Wheaton Academy,https://stats.ncaa.org/players/8874542,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,8874542
+Noah Husted,Jr.,INF,0.0,0.0,25.0,5-9,RIGHT,RIGHT,"Winfield, IL",Wheaton Academy,https://stats.ncaa.org/players/8874542,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,d3d-7995370
 Jared Kloth,Sr.,P,0.0,0.0,29.0,6-2,RIGHT,RIGHT,"Cincinnati, OH",Walnut Hills High School,https://stats.ncaa.org/players/8877530,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,d3d-7584368
 David Levengood,So.,P,0.0,0.0,15.0,6-0,RIGHT,RIGHT,"Pottstown, PA",Owen J. Roberts,https://stats.ncaa.org/players/8888817,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,d3d-8418991
 Tim Whitfield,Sr.,OF,0.0,0.0,3.0,6-1,RIGHT,RIGHT,"Tinley Park, IL",Home School,https://stats.ncaa.org/players/8896732,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,8896732
@@ -13723,7 +13723,7 @@ Noah Yi,Sr.,INF,0.0,0.0,8.0,5-6,RIGHT,RIGHT,"Torrance, CA",West,https://stats.nc
 Caleb Kelley,Fr.,C,0.0,0.0,24.0,6-2,RIGHT,RIGHT,"Fort Worth, TX",Southwest Christian Academy,https://stats.ncaa.org/players/9103857,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,d3d-9103857
 Sean Dmytrowicz,Fr.,OF,0.0,0.0,25.0,5-10,LEFT,RIGHT,"Rancho Santa Margarita, CA",Trabuco Hills,https://stats.ncaa.org/players/9103859,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,9103859
 Braden Engel,Fr.,OF,0.0,0.0,14.0,6-2,LEFT,RIGHT,"Byron, IL",Stillman Valley,https://stats.ncaa.org/players/9103853,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,9103853
-Will Clegg,Fr.,INF,0.0,0.0,31.0,5-10,RIGHT,RIGHT,"Wheaton, IL",Wheaton Academy,https://stats.ncaa.org/players/9103860,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,9103860
+Will Clegg,Fr.,INF,0.0,0.0,31.0,5-10,RIGHT,RIGHT,"Wheaton, IL",Wheaton Academy,https://stats.ncaa.org/players/9103860,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,d3d-9103860
 Harrison Bailey,Fr.,C,0.0,0.0,46.0,5-10,RIGHT,RIGHT,"Chesterfield, MO",Westminster Christian Academy,https://stats.ncaa.org/players/9103886,597072.0,2025,Wheaton (IL),836.0,CCIW,3.0,16779.0,778.0,9103886
 Jack Kelleher-Mochak,So.,P,0.0,0.0,17.0,5-10,RIGHT,LEFT,"Northampton, MA",Northampton,https://stats.ncaa.org/players/8887799,597073.0,2025,Wheaton (MA),890.0,NEWMAC,3.0,16779.0,779.0,8887799
 Greg Strite,So.,P,0.0,0.0,39.0,6-1,RIGHT,RIGHT,"San Jose, CA",Evergreen Valley,https://stats.ncaa.org/players/8888954,597073.0,2025,Wheaton (MA),890.0,NEWMAC,3.0,16779.0,779.0,8888954
@@ -13847,7 +13847,7 @@ Walker Richardson,Fr.,3B,0.0,0.0,19.0,-,,,,,https://stats.ncaa.org/players/92149
 Cash McCrory,Jr.,P,0.0,0.0,40.0,-,,,,,https://stats.ncaa.org/players/9214949,597075.0,2025,Whittier,910.0,SCIAC,3.0,16779.0,781.0,9214949
 Parker Eastwood Lilles,Fr.,3B,2.0,0.0,43.0,-,,,,,https://stats.ncaa.org/players/9214950,597075.0,2025,Whittier,910.0,SCIAC,3.0,16779.0,781.0,9214950
 Thomas Pighin,Fr.,P,0.0,0.0,61.0,-,,,,,https://stats.ncaa.org/players/9214995,597075.0,2025,Whittier,910.0,SCIAC,3.0,16779.0,781.0,9214995
-Dylan Huntsman,So.,UT,0.0,0.0,6.0,6-0,RIGHT,RIGHT,"Denver, CO",Thomas Jefferson,https://stats.ncaa.org/players/8881803,597138.0,2025,Whitworth,25300.0,NWC,3.0,16779.0,1454.0,8881803
+Dylan Huntsman,So.,UT,0.0,0.0,6.0,6-0,RIGHT,RIGHT,"Denver, CO",Thomas Jefferson,https://stats.ncaa.org/players/8881803,597138.0,2025,Whitworth,25300.0,NWC,3.0,16779.0,1454.0,d3d-8458615
 Cole Weiland,So.,OF,0.0,0.0,18.0,6-2,RIGHT,RIGHT,"Salem, OR",South Salem,https://stats.ncaa.org/players/8889098,597138.0,2025,Whitworth,25300.0,NWC,3.0,16779.0,1454.0,d3d-8458619
 Mason Greene,Sr.,P,0.0,0.0,40.0,6-5,RIGHT,RIGHT,"Beaux Arts, WA",Bellevue Christian,https://stats.ncaa.org/players/8879956,597138.0,2025,Whitworth,25300.0,NWC,3.0,16779.0,1454.0,8879956
 Conner Ashworth,Sr.,P,0.0,0.0,39.0,6-5,RIGHT,RIGHT,"Brewster, WA",Brewster,https://stats.ncaa.org/players/8879984,597138.0,2025,Whitworth,25300.0,NWC,3.0,16779.0,1454.0,d3d-8458630
@@ -13955,7 +13955,7 @@ Jack Mathis,So.,INF,0.0,0.0,4.0,-,RIGHT,RIGHT,"Exeter, PA",Wyoming Area,https://
 PJ Pisano,Sr.,OF,0.0,0.0,7.0,-,LEFT,RIGHT,"Pittston, PA",Pittston Area,https://stats.ncaa.org/players/9211269,597077.0,2025,Wilkes,30101.0,Landmark,3.0,16779.0,784.0,9211269
 Ethan Jezewski,So.,P,0.0,0.0,21.0,-,RIGHT,RIGHT,"Millerstown, PA",Greenwood,https://stats.ncaa.org/players/8902780,597077.0,2025,Wilkes,30101.0,Landmark,3.0,16779.0,784.0,d3d-8428435
 Hunter Lawall,Jr.,P,0.0,0.0,20.0,-,RIGHT,RIGHT,"West Wyoming, PA",Wyoming Area,https://stats.ncaa.org/players/8899228,597077.0,2025,Wilkes,30101.0,Landmark,3.0,16779.0,784.0,8899228
-Wilton Abreu,So.,INF,0.0,0.0,15.0,-,BOTH,RIGHT,"Santo Domingo, Dominican Republic",Liceo Americo Pérez Tolentino,https://stats.ncaa.org/players/8901069,597077.0,2025,Wilkes,30101.0,Landmark,3.0,16779.0,784.0,8901069
+Wilton Abreu,So.,INF,0.0,0.0,15.0,-,BOTH,RIGHT,"Santo Domingo, Dominican Republic",Liceo Americo Pérez Tolentino,https://stats.ncaa.org/players/8901069,597077.0,2025,Wilkes,30101.0,Landmark,3.0,16779.0,784.0,d3d-8428414
 Bobby Croneberger,Fr.,INF,0.0,0.0,11.0,-,RIGHT,RIGHT,"New Tripoli, PA",Northwestern Lehigh,https://stats.ncaa.org/players/9211274,597077.0,2025,Wilkes,30101.0,Landmark,3.0,16779.0,784.0,9211274
 Ethan Grodack,Fr.,P,0.0,0.0,37.0,-,RIGHT,RIGHT,"Lake Ariel, PA",Western Wayne,https://stats.ncaa.org/players/9211315,597077.0,2025,Wilkes,30101.0,Landmark,3.0,16779.0,784.0,9211315
 Shaun O'Donnell,Fr.,P,0.0,0.0,40.0,-,LEFT,LEFT,"New Tripoli, PA",Northwestern Lehigh,https://stats.ncaa.org/players/9211321,597077.0,2025,Wilkes,30101.0,Landmark,3.0,16779.0,784.0,9211321
@@ -14008,7 +14008,7 @@ Jacob Boyles,So.,P,0.0,0.0,46.0,6-0,,RIGHT,"East Bend, NC",,https://stats.ncaa.o
 Ian Turner,Sr.,1B,0.0,0.0,22.0,6-5,,,"Cary, NC",,https://stats.ncaa.org/players/8875713,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,d3d-7554968
 Dalton Frasier,Jr.,UT,0.0,0.0,39.0,5-11,,,"Bradenton, FL",,https://stats.ncaa.org/players/8883980,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,d3d-7991120
 Justin Long,So.,P,0.0,0.0,42.0,6-1,,RIGHT,"Rocky Mount, NC",,https://stats.ncaa.org/players/8885949,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,8885949
-Jacob Herzberg,So.,INF,0.0,0.0,23.0,5-10,,,"Parkland, FL",,https://stats.ncaa.org/players/8877753,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,8877753
+Jacob Herzberg,So.,INF,0.0,0.0,23.0,5-10,,,"Parkland, FL",,https://stats.ncaa.org/players/8877753,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,d3d-8528836
 Leland Barrow,So.,OF,0.0,0.0,9.0,6-0,,,"Snow Hill, NC",,https://stats.ncaa.org/players/8874859,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,d3d-8874859
 Jack McIntosh,Sr.,P,0.0,0.0,6.0,6-0,,RIGHT,"Clayton, NC",,https://stats.ncaa.org/players/8882906,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,d3d-7991126
 Connor McCluney,So.,C,0.0,0.0,59.0,6-2,,,"Va Beach, VA",,https://stats.ncaa.org/players/8884083,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,8884083
@@ -14018,7 +14018,7 @@ Adam Joseph,Sr.,INF,0.0,0.0,1.0,6-0,,,"Fuquay Varina, NC",,https://stats.ncaa.or
 Nicholas Weisner,So.,INF,0.0,0.0,24.0,6-4,,,"Yadkinville, NC",,https://stats.ncaa.org/players/8881306,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,d3d-8528874
 Ethan Mieldezis,So.,P,0.0,0.0,43.0,6-0,,RIGHT,"Suwanee, GA",,https://stats.ncaa.org/players/8885385,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,d3d-8528856
 Ethan Hummel,So.,P,0.0,0.0,16.0,5-11,,LEFT,"Casselberry, FL",,https://stats.ncaa.org/players/8882262,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,8882262
-Aaron Kimbel,Jr.,1B,0.0,0.0,53.0,6-4,,,"Apex, NC",,https://stats.ncaa.org/players/8874278,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,8874278
+Aaron Kimbel,Jr.,1B,0.0,0.0,53.0,6-4,,,"Apex, NC",,https://stats.ncaa.org/players/8874278,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,d3d-7991129
 Joshua Fitch,Jr.,P,0.0,0.0,40.0,5-10,,RIGHT,"N Fort Myers, FL",,https://stats.ncaa.org/players/8878257,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,8878257
 Jacob Essick,So.,OF,0.0,0.0,55.0,6-0,,,"Houston, TX",,https://stats.ncaa.org/players/8880375,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,8880375
 Joshua Gooch,Jr.,P,0.0,0.0,33.0,6-0,,RIGHT,"Cary, NC",,https://stats.ncaa.org/players/8885484,597165.0,2025,William Peace,842.0,USA South,3.0,16779.0,17094.0,d3d-8274085
@@ -14528,7 +14528,7 @@ Eliot Germanson,Sr.,C,0.0,0.0,35.0,5-10,RIGHT,RIGHT,"New York, NY",LaGuardia,htt
 Chase Geisler,Sr.,P,0.0,0.0,30.0,6-4,RIGHT,RIGHT,"Lodi, NJ",Lodi,https://stats.ncaa.org/players/8898640,597079.0,2025,Wm. Paterson,891.0,NJAC,3.0,16779.0,787.0,8898640
 Pat Pantoliano,Sr.,P,0.0,0.0,20.0,6-4,RIGHT,RIGHT,"Secaucus, NJ",Secaucus,https://stats.ncaa.org/players/8892645,597079.0,2025,Wm. Paterson,891.0,NJAC,3.0,16779.0,787.0,8892645
 Neel Telidevara,Sr.,P,0.0,0.0,26.0,5-10,RIGHT,RIGHT,"Dayton, NJ",South Brunswick,https://stats.ncaa.org/players/8894085,597079.0,2025,Wm. Paterson,891.0,NJAC,3.0,16779.0,787.0,8894085
-Austin Jack,Sr.,C,0.0,0.0,4.0,5-11,RIGHT,RIGHT,"Oak Ridge, NJ",Jefferson Twp.,https://stats.ncaa.org/players/8897720,597079.0,2025,Wm. Paterson,891.0,NJAC,3.0,16779.0,787.0,8897720
+Austin Jack,Sr.,C,0.0,0.0,4.0,5-11,RIGHT,RIGHT,"Oak Ridge, NJ",Jefferson Twp.,https://stats.ncaa.org/players/8897720,597079.0,2025,Wm. Paterson,891.0,NJAC,3.0,16779.0,787.0,d3d-8004715
 Connor Luckie,Sr.,C,0.0,0.0,34.0,6-1,RIGHT,RIGHT,"Hamilton, NJ",Hamilton High West,https://stats.ncaa.org/players/8893110,597079.0,2025,Wm. Paterson,891.0,NJAC,3.0,16779.0,787.0,8893110
 Julian Pinto,Jr.,INF,0.0,0.0,28.0,6-1,RIGHT,RIGHT,"Bergenfield, NJ",Bergenfield,https://stats.ncaa.org/players/9218667,597079.0,2025,Wm. Paterson,891.0,NJAC,3.0,16779.0,787.0,9218667
 Jose Marte,Jr.,P,0.0,0.0,15.0,5-10,RIGHT,RIGHT,"Bogota, NJ",Bogota,https://stats.ncaa.org/players/8900281,597079.0,2025,Wm. Paterson,891.0,NJAC,3.0,16779.0,787.0,8900281
