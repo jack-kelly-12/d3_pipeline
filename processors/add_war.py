@@ -22,7 +22,7 @@ batting_columns = [
 ]
 
 pitching_columns = [
-    'Player', 'player_id', 'B/T', 'Team', 'Conference', 'App', 'GS', 'ERA', 'IP', 'H', 'R', 'ER',
+    'Player', 'player_id', 'B/T', 'Team', 'Conference', 'App', 'GS', 'ERA', 'IP', 'IP_float', 'H', 'R', 'ER',
     'BB', 'SO', 'HR-A', '2B-A', '3B-A', 'HB', 'BF', 'FO', 'GO', 'Pitches',
     'gmLI', 'K9', 'BB9', 'HR9', 'RA9', 'H9', 'IR-A%', 'K%', 'BB%', 'K-BB%', 'HR/FB', 'FIP',
     'xFIP', 'ERA+', 'WAR', 'Yr', 'Inh Run', 'Inh Run Score',
@@ -111,44 +111,58 @@ def calculate_war(data_dir, year):
 
 def calculate_pitching_team_war(pitching_df, park_factors_df, team_clutch):
     df = pitching_df.copy()
-    df = df.groupby('Team').agg({'App': 'sum', 'Conference': 'first', 'IP': 'sum', 'H': 'sum',
+    df = df.groupby('Team').agg({'App': 'sum', 'Conference': 'first', 'IP_float': 'sum', 'H': 'sum',
                                  '2B-A': 'sum', '3B-A': 'sum', 'Inh Run': 'sum', 'Inh Run Score': 'sum',
                                  'HR-A': 'sum', 'R': 'sum', 'ER': 'sum', 'WAR': 'sum',
                                  'FO': 'sum', 'BB': 'sum', 'HB': 'sum', 'SO': 'sum',
                                  'BF': 'sum', 'Pitches': 'sum', 'Season': 'first', 'Division': 'first'}).reset_index()
 
-    def convert_to_baseball_notation(innings):
-        whole_innings = int(innings)
-        outs = round((innings - whole_innings) * 3)
+    def convert_to_baseball_ip(decimal_ip):
+        whole_innings = int(decimal_ip)
 
-        if outs == 3:
-            whole_innings += 1
-            outs = 0
+        fractional_part = decimal_ip - whole_innings
 
-        return f"{whole_innings}.{outs}"
+        if fractional_part < 0.001:  # Close to 0
+            partial_inning = 0
+        elif abs(fractional_part - 1/3) < 0.001:  # Close to 1/3
+            partial_inning = 1
+        elif abs(fractional_part - 2/3) < 0.001:  # Close to 2/3
+            partial_inning = 2
+        else:
+            if fractional_part < 1/6:  # Closer to 0
+                partial_inning = 0
+            elif fractional_part < 0.5:  # Closer to 1/3
+                partial_inning = 1
+            elif fractional_part < 5/6:  # Closer to 2/3
+                partial_inning = 2
+            else:
+                whole_innings += 1
+                partial_inning = 0
 
-    df['IP'] = df['IP'].apply(convert_to_baseball_notation)
-    df['ERA'] = (df['ER'] * 9) / df['IP']
+        return float(f"{whole_innings}.{partial_inning}")
+
+    df['IP'] = df.IP_float.apply(convert_to_baseball_ip)
+    df['ERA'] = (df['ER'] * 9) / df['IP_float']
     df['IR-A%'] = ((df['Inh Run Score'] / df['Inh Run']) * 100).fillna(0)
-    df['RA9'] = (df['R'] / df['IP']) * 9
-    df['K9'] = (df['SO'] / df['IP']) * 9
-    df['H9'] = (df['H'] / df['IP']) * 9
-    df['BB9'] = (df['BB'] / df['IP']) * 9
-    df['HR9'] = (df['HR-A'] / df['IP']) * 9
+    df['RA9'] = (df['R'] / df['IP_float']) * 9
+    df['K9'] = (df['SO'] / df['IP_float']) * 9
+    df['H9'] = (df['H'] / df['IP_float']) * 9
+    df['BB9'] = (df['BB'] / df['IP_float']) * 9
+    df['HR9'] = (df['HR-A'] / df['IP_float']) * 9
     df['BB%'] = (df['BB'] / df['BF']) * 100
     df['K%'] = (df['SO'] / df['BF']) * 100
     df['K-BB%'] = df['K%'] - df['BB%']
     df['HR/FB'] = (df['HR-A'] / (df['HR-A'] + df['FO'])) * 100
 
-    lg_era = (df['ER'].sum() * 9) / df['IP'].sum()
+    lg_era = (df['ER'].sum() * 9) / df['IP_float'].sum()
     fip_components = ((13 * df['HR-A'].sum() + 3 * (df['BB'].sum() + df['HB'].sum()) -
-                       2 * df['SO'].sum()) / df['IP'].sum())
+                       2 * df['SO'].sum()) / df['IP_float'].sum())
     f_constant = lg_era - fip_components
     fip = f_constant + ((13 * df['HR-A'] + 3 * (df['BB'] + df['HB']) -
-                        2 * df['SO']) / df['IP'])
+                        2 * df['SO']) / df['IP_float'])
     lg_hr_fb_rate = df['HR-A'].sum() / (df['HR-A'].sum() + df['FO'].sum())
     xfip = f_constant + ((13 * ((df['FO'] + df['HR-A']) * lg_hr_fb_rate) +
-                          3 * (df['BB'] + df['HB']) - 2 * df['SO']) / df['IP'])
+                          3 * (df['BB'] + df['HB']) - 2 * df['SO']) / df['IP_float'])
 
     df['FIP'] = fip
     df['xFIP'] = xfip
@@ -239,11 +253,34 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
     def safe_percentage(numerator, denominator):
         return np.where(denominator > 0, (numerator / denominator) * 100, 0)
 
-    df['RA9'] = safe_per_nine(df['R'], df['IP'])
-    df['K9'] = safe_per_nine(df['SO'], df['IP'])
-    df['H9'] = safe_per_nine(df['H'], df['IP'])
-    df['BB9'] = safe_per_nine(df['BB'], df['IP'])
-    df['HR9'] = safe_per_nine(df['HR-A'], df['IP'])
+    def ip_to_real(innings):
+        ip_str = str(innings)
+        if '.' in ip_str:
+            whole_innings, partial = ip_str.split('.')
+            whole_innings = int(whole_innings)
+            partial = int(partial)
+        else:
+            return float(ip_str)
+
+        if partial == 0:
+            decimal_part = 0
+        elif partial == 1:
+            decimal_part = 1/3
+        elif partial == 2:
+            decimal_part = 2/3
+        else:
+            raise ValueError(
+                "Invalid partial inning value. Should be 0, 1, or 2.")
+
+        return whole_innings + decimal_part
+
+    df['IP_float'] = df.IP.apply(ip_to_real)
+
+    df['RA9'] = safe_per_nine(df['R'], df['IP_float'])
+    df['K9'] = safe_per_nine(df['SO'], df['IP_float'])
+    df['H9'] = safe_per_nine(df['H'], df['IP_float'])
+    df['BB9'] = safe_per_nine(df['BB'], df['IP_float'])
+    df['HR9'] = safe_per_nine(df['HR-A'], df['IP_float'])
 
     df['BB%'] = safe_percentage(df['BB'], df['BF'])
     df['K%'] = safe_percentage(df['SO'], df['BF'])
@@ -261,7 +298,7 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
         park_factors_df.set_index('team_name')['PF'])
 
     lg_era = (df.loc[valid_ip_mask, 'ER'].sum() /
-              df.loc[valid_ip_mask, 'IP'].sum()) * 9
+              df.loc[valid_ip_mask, 'IP_float'].sum()) * 9
     df.loc[valid_ip_mask, 'ERA+'] = 100 * \
         (2 - (df.loc[valid_ip_mask, 'ERA'] / lg_era)
             * (1 / (df.loc[valid_ip_mask, 'PF'] / 100)))
@@ -270,16 +307,16 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
     lg_era = (df['ER'].sum() * 9) / df['IP'].sum()
 
     fip_components = ((13 * df['HR-A'].sum() + 3 * (df['BB'].sum() + df['HB'].sum()) -
-                       2 * df['SO'].sum()) / df['IP'].sum())
+                       2 * df['SO'].sum()) / df['IP_float'].sum())
     f_constant = lg_era - fip_components
 
     fip = f_constant + ((13 * df['HR-A'] + 3 * (df['BB'] + df['HB']) -
-                        2 * df['SO']) / df['IP'])
+                        2 * df['SO']) / df['IP_float'])
 
     lg_hr_fb_rate = df['HR-A'].sum() / (df['HR-A'].sum() + df['FO'].sum())
 
     xfip = f_constant + ((13 * ((df['FO'] + df['HR-A']) * lg_hr_fb_rate) +
-                          3 * (df['BB'] + df['HB']) - 2 * df['SO']) / df['IP'])
+                          3 * (df['BB'] + df['HB']) - 2 * df['SO']) / df['IP_float'])
 
     df['FIP'] = fip
     df['xFIP'] = xfip
@@ -305,7 +342,7 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
         if len(group_df) == 0:
             return np.nan
 
-        lg_ip = group_df['IP'].sum()
+        lg_ip = group_df['IP_float'].sum()
         lg_hr = group_df['HR-A'].sum()
         lg_bb = group_df['BB'].sum()
         lg_hbp = group_df['HB'].sum()
@@ -320,7 +357,7 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
             return np.nan
         numerator = ((13 * row['HR-A']) + (3 *
                                            (row['BB'] + row['HB'])) - (2 * row['SO']))
-        return (numerator / row['IP']) + constant
+        return (numerator / row['IP_float']) + constant
 
     if_fip_constants = df[valid_ip_mask].groupby('conference').apply(
         calculate_if_fip_constant).reset_index()
@@ -332,8 +369,8 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
 
     valid_df = df[valid_ip_mask]
     if len(valid_df) > 0:
-        lgRA9 = (valid_df['R'].sum() / valid_df['IP'].sum()) * 9
-        lgERA = (valid_df['ER'].sum() / valid_df['IP'].sum()) * 9
+        lgRA9 = (valid_df['R'].sum() / valid_df['IP_float'].sum()) * 9
+        lgERA = (valid_df['ER'].sum() / valid_df['IP_float'].sum()) * 9
         adjustment = lgRA9 - lgERA
     else:
         adjustment = 0
@@ -348,7 +385,7 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
         if len(valid_group) == 0:
             return np.nan
 
-        lg_ip = valid_group['IP'].sum()
+        lg_ip = valid_group['IP_float'].sum()
         lg_hr = valid_group['HR-A'].sum()
         lg_bb = valid_group['BB'].sum()
         lg_hbp = valid_group['HB'].sum()
@@ -370,7 +407,7 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
 
     df['RAAP9'] = np.where(
         valid_ip_mask, df['conf_fipr9'] - df['pFIPR9'], 0)
-    df['IP/G'] = np.where(df['App'] > 0, df['IP'] / df['App'], 0)
+    df['IP/G'] = np.where(df['App'] > 0, df['IP_float'] / df['App'], 0)
     df['dRPW'] = np.where(valid_ip_mask,
                           (((18 - df['IP/G']) * df['conf_fipr9'] +
                               df['IP/G'] * df['pFIPR9']) / 18 + 2) * 1.5,
@@ -382,7 +419,7 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
         0.03 * (1 - df['gs/g'])) + (0.12 * df['gs/g'])
     df['WPGAR'] = np.where(
         valid_ip_mask, df['WPGAA'] + df['replacement_level'], 0)
-    df['WAR'] = np.where(valid_ip_mask, df['WPGAR'] * (df['IP'] / 9), 0)
+    df['WAR'] = np.where(valid_ip_mask, df['WPGAR'] * (df['IP_float'] / 9), 0)
 
     # Apply relief pitcher adjustment
     relief_mask = df['GS'] < 3
@@ -392,10 +429,10 @@ def calculate_pitching_war(pitching_df, pbp_df, park_factors_df, bat_war_total, 
     total_pitching_war = df['WAR'].sum()
     target_pitching_war = (bat_war_total * 0.43) / 0.57  # 43% of total WAR
     war_adjustment = (target_pitching_war - total_pitching_war) / \
-        df.loc[valid_ip_mask, 'IP'].sum()
+        df.loc[valid_ip_mask, 'IP_float'].sum()
 
     df.loc[valid_ip_mask, 'WAR'] += war_adjustment * \
-        df.loc[valid_ip_mask, 'IP']
+        df.loc[valid_ip_mask, 'IP_float']
 
     df = df.rename(columns={
         'player_name': 'Player',

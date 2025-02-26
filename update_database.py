@@ -189,6 +189,8 @@ def update_war(conn, data_dir, year):
                         else:
                             df = pd.read_csv(
                                 Path(data_dir) / 'war' / file_name)
+                        if 'IP_float' in df.columns:
+                            df = df.drop(columns='IP_float')
                         df.to_sql(table_name, conn,
                                   if_exists='append', index=False)
                         print(
