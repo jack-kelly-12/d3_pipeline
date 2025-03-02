@@ -9451,3 +9451,260 @@
 2025-03-01 22:50:13,788 - INFO - Progress saved: 91970 URLs scraped, 242009 players found
 2025-03-01 22:51:42,040 - INFO - Progress saved: 91980 URLs scraped, 242031 players found
 2025-03-01 22:53:12,570 - INFO - Progress saved: 91990 URLs scraped, 242059 players found
+2025-03-02 00:20:17,377 - INFO - Combined 15 files into DataFrame with 185124 rows
+2025-03-02 00:20:17,549 - INFO - Loaded progress from scraper_progress.bak: 91990 URLs scraped
+2025-03-02 00:20:49,346 - ERROR - Error processing https://stats.ncaa.org/players/8892782: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:21:20,827 - ERROR - Error processing https://stats.ncaa.org/players/8897281: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:22:05,698 - ERROR - Error processing https://stats.ncaa.org/players/9103051: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:23:25,864 - INFO - Progress saved: 92000 URLs scraped, 242094 players found
+2025-03-02 00:24:45,398 - ERROR - Error processing https://stats.ncaa.org/players/8901596: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:25:25,890 - ERROR - Error processing https://stats.ncaa.org/players/8874236: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:26:24,063 - ERROR - Error processing https://stats.ncaa.org/players/9108114: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:26:55,051 - INFO - Progress saved: 92010 URLs scraped, 242128 players found
+2025-03-02 00:28:37,163 - ERROR - Error processing https://stats.ncaa.org/players/8890416: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:29:08,546 - ERROR - Error processing https://stats.ncaa.org/players/8897539: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:29:40,528 - ERROR - Error processing https://stats.ncaa.org/players/8885852: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:30:21,104 - ERROR - Error processing https://stats.ncaa.org/players/7338431: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:30:46,183 - INFO - Progress saved: 92020 URLs scraped, 242161 players found
+2025-03-02 00:31:24,157 - ERROR - Error processing https://stats.ncaa.org/players/9098954: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:31:55,418 - ERROR - Error processing https://stats.ncaa.org/players/8901850: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:32:26,552 - ERROR - Error processing https://stats.ncaa.org/players/6908126: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:33:04,429 - ERROR - Error processing https://stats.ncaa.org/players/7814436: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:33:35,682 - ERROR - Error processing https://stats.ncaa.org/players/8889580: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:34:43,630 - INFO - Progress saved: 92030 URLs scraped, 242192 players found
+2025-03-02 00:35:15,101 - ERROR - Error processing https://stats.ncaa.org/players/8893219: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:36:32,899 - INFO - Progress saved: 92040 URLs scraped, 242217 players found
+2025-03-02 00:37:16,330 - ERROR - Error processing https://stats.ncaa.org/players/8874996: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:37:54,602 - ERROR - Error processing https://stats.ncaa.org/players/8008142: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:38:37,207 - INFO - Progress saved: 92050 URLs scraped, 242249 players found
+2025-03-02 00:39:35,785 - ERROR - Error processing https://stats.ncaa.org/players/9214196: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:40:13,538 - ERROR - Error processing https://stats.ncaa.org/players/9102546: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:40:44,673 - ERROR - Error processing https://stats.ncaa.org/players/8899406: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:41:21,568 - ERROR - Error processing https://stats.ncaa.org/players/8880293: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:41:44,439 - INFO - Progress saved: 92060 URLs scraped, 242272 players found
+2025-03-02 00:42:15,539 - ERROR - Error processing https://stats.ncaa.org/players/8900939: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:43:46,940 - INFO - Progress saved: 92070 URLs scraped, 242304 players found
+2025-03-02 00:45:37,004 - INFO - Progress saved: 92080 URLs scraped, 242338 players found
+2025-03-02 00:47:36,914 - ERROR - Error processing https://stats.ncaa.org/players/9114127: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:47:42,567 - INFO - Progress saved: 92090 URLs scraped, 242352 players found
+2025-03-02 00:49:15,403 - INFO - Progress saved: 92100 URLs scraped, 242381 players found
+2025-03-02 00:50:16,097 - ERROR - Error processing https://stats.ncaa.org/players/8884146: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:51:31,043 - ERROR - Error processing https://stats.ncaa.org/players/8887586: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:52:05,828 - ERROR - Error processing https://stats.ncaa.org/players/9105944: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:52:12,177 - INFO - Progress saved: 92110 URLs scraped, 242418 players found
+2025-03-02 00:53:39,488 - ERROR - Error processing https://stats.ncaa.org/players/9112090: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:54:13,649 - INFO - Progress saved: 92120 URLs scraped, 242452 players found
+2025-03-02 00:55:15,876 - ERROR - Error processing https://stats.ncaa.org/players/9109368: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:56:29,383 - INFO - Progress saved: 92130 URLs scraped, 242479 players found
+2025-03-02 00:57:48,667 - ERROR - Error processing https://stats.ncaa.org/players/8893601: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:58:20,602 - ERROR - Error processing https://stats.ncaa.org/players/8892091: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 00:59:16,141 - INFO - Progress saved: 92140 URLs scraped, 242503 players found
+2025-03-02 01:00:51,328 - INFO - Progress saved: 92150 URLs scraped, 242534 players found
+2025-03-02 01:01:54,569 - INFO - Progress saved: 92160 URLs scraped, 242563 players found
+2025-03-02 01:03:17,361 - INFO - Progress saved: 92170 URLs scraped, 242603 players found
+2025-03-02 01:04:10,061 - INFO - Progress saved: 92180 URLs scraped, 242628 players found
+2025-03-02 01:05:39,143 - INFO - Progress saved: 92190 URLs scraped, 242662 players found
+2025-03-02 01:07:43,601 - ERROR - Error processing https://stats.ncaa.org/players/9089750: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 01:08:01,669 - INFO - Progress saved: 92200 URLs scraped, 242690 players found
+2025-03-02 01:09:34,636 - INFO - Progress saved: 92210 URLs scraped, 242717 players found
+2025-03-02 01:10:40,450 - ERROR - Error processing https://stats.ncaa.org/players/9097451: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 01:11:37,188 - ERROR - Error processing https://stats.ncaa.org/players/8895043: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 01:11:54,830 - INFO - Progress saved: 92220 URLs scraped, 242744 players found
+2025-03-02 01:13:09,501 - INFO - Progress saved: 92230 URLs scraped, 242775 players found
+2025-03-02 01:14:42,393 - INFO - Progress saved: 92240 URLs scraped, 242810 players found
+2025-03-02 01:16:41,792 - INFO - Progress saved: 92250 URLs scraped, 242838 players found
+2025-03-02 01:19:14,349 - INFO - Progress saved: 92260 URLs scraped, 242863 players found
+2025-03-02 01:19:48,950 - ERROR - Error processing https://stats.ncaa.org/players/8893744: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 01:21:00,844 - INFO - Progress saved: 92270 URLs scraped, 242888 players found
+2025-03-02 01:22:48,562 - INFO - Progress saved: 92280 URLs scraped, 242905 players found
+2025-03-02 01:23:36,006 - INFO - Progress saved: 92290 URLs scraped, 242935 players found
+2025-03-02 01:24:56,091 - INFO - Progress saved: 92300 URLs scraped, 242966 players found
+2025-03-02 01:26:39,954 - INFO - Progress saved: 92310 URLs scraped, 242990 players found
+2025-03-02 01:28:35,600 - INFO - Progress saved: 92320 URLs scraped, 243021 players found
+2025-03-02 01:30:07,761 - INFO - Progress saved: 92330 URLs scraped, 243051 players found
+2025-03-02 01:31:17,084 - INFO - Progress saved: 92340 URLs scraped, 243082 players found
+2025-03-02 01:32:28,384 - INFO - Progress saved: 92350 URLs scraped, 243107 players found
+2025-03-02 01:34:19,735 - INFO - Progress saved: 92360 URLs scraped, 243141 players found
+2025-03-02 01:35:35,910 - INFO - Progress saved: 92370 URLs scraped, 243166 players found
+2025-03-02 01:36:53,858 - INFO - Progress saved: 92380 URLs scraped, 243193 players found
+2025-03-02 01:38:13,861 - INFO - Progress saved: 92390 URLs scraped, 243224 players found
+2025-03-02 01:39:55,146 - INFO - Progress saved: 92400 URLs scraped, 243248 players found
+2025-03-02 01:41:26,499 - INFO - Progress saved: 92410 URLs scraped, 243272 players found
+2025-03-02 01:43:00,460 - INFO - Progress saved: 92420 URLs scraped, 243308 players found
+2025-03-02 01:44:11,888 - INFO - Progress saved: 92430 URLs scraped, 243343 players found
+2025-03-02 01:45:10,297 - INFO - Progress saved: 92440 URLs scraped, 243370 players found
+2025-03-02 01:46:22,013 - INFO - Progress saved: 92450 URLs scraped, 243389 players found
+2025-03-02 01:48:18,898 - INFO - Progress saved: 92460 URLs scraped, 243416 players found
+2025-03-02 01:49:22,360 - INFO - Progress saved: 92470 URLs scraped, 243439 players found
+2025-03-02 01:50:30,526 - INFO - Progress saved: 92480 URLs scraped, 243466 players found
+2025-03-02 01:51:49,428 - INFO - Progress saved: 92490 URLs scraped, 243497 players found
+2025-03-02 01:53:19,905 - INFO - Progress saved: 92500 URLs scraped, 243525 players found
+2025-03-02 01:54:42,321 - INFO - Progress saved: 92510 URLs scraped, 243551 players found
+2025-03-02 01:55:58,277 - INFO - Progress saved: 92520 URLs scraped, 243578 players found
+2025-03-02 01:57:45,612 - INFO - Progress saved: 92530 URLs scraped, 243600 players found
+2025-03-02 01:58:50,785 - INFO - Progress saved: 92540 URLs scraped, 243623 players found
+2025-03-02 02:00:40,983 - INFO - Progress saved: 92550 URLs scraped, 243653 players found
+2025-03-02 02:01:54,304 - INFO - Progress saved: 92560 URLs scraped, 243677 players found
+2025-03-02 02:03:13,993 - INFO - Progress saved: 92570 URLs scraped, 243698 players found
+2025-03-02 02:04:34,443 - INFO - Progress saved: 92580 URLs scraped, 243724 players found
+2025-03-02 02:05:53,913 - INFO - Progress saved: 92590 URLs scraped, 243741 players found
+2025-03-02 02:07:23,080 - INFO - Progress saved: 92600 URLs scraped, 243770 players found
+2025-03-02 02:08:31,867 - INFO - Progress saved: 92610 URLs scraped, 243798 players found
+2025-03-02 02:10:16,810 - INFO - Progress saved: 92620 URLs scraped, 243832 players found
+2025-03-02 02:11:33,367 - INFO - Progress saved: 92630 URLs scraped, 243851 players found
+2025-03-02 02:13:14,934 - INFO - Progress saved: 92640 URLs scraped, 243873 players found
+2025-03-02 02:14:24,762 - INFO - Progress saved: 92650 URLs scraped, 243896 players found
+2025-03-02 02:15:59,922 - INFO - Progress saved: 92660 URLs scraped, 243921 players found
+2025-03-02 02:17:39,317 - INFO - Progress saved: 92670 URLs scraped, 243942 players found
+2025-03-02 02:18:50,171 - INFO - Progress saved: 92680 URLs scraped, 243972 players found
+2025-03-02 02:20:02,562 - INFO - Progress saved: 92690 URLs scraped, 243996 players found
+2025-03-02 02:21:53,207 - INFO - Progress saved: 92700 URLs scraped, 244019 players found
+2025-03-02 02:23:13,728 - INFO - Progress saved: 92710 URLs scraped, 244049 players found
+2025-03-02 02:24:19,394 - INFO - Progress saved: 92720 URLs scraped, 244069 players found
+2025-03-02 02:26:41,619 - ERROR - Error processing https://stats.ncaa.org/players/9093779: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 02:27:16,572 - INFO - Progress saved: 92730 URLs scraped, 244097 players found
+2025-03-02 02:28:52,501 - INFO - Progress saved: 92740 URLs scraped, 244120 players found
+2025-03-02 02:29:59,482 - INFO - Progress saved: 92750 URLs scraped, 244138 players found
+2025-03-02 02:31:31,632 - INFO - Progress saved: 92760 URLs scraped, 244163 players found
+2025-03-02 02:33:10,176 - INFO - Progress saved: 92770 URLs scraped, 244184 players found
+2025-03-02 02:34:12,695 - INFO - Progress saved: 92780 URLs scraped, 244210 players found
+2025-03-02 02:35:33,559 - INFO - Progress saved: 92790 URLs scraped, 244241 players found
+2025-03-02 02:37:18,358 - INFO - Progress saved: 92800 URLs scraped, 244260 players found
+2025-03-02 02:38:51,566 - INFO - Progress saved: 92810 URLs scraped, 244292 players found
+2025-03-02 02:40:03,887 - INFO - Progress saved: 92820 URLs scraped, 244316 players found
+2025-03-02 02:41:07,930 - INFO - Progress saved: 92830 URLs scraped, 244335 players found
+2025-03-02 02:42:11,889 - INFO - Progress saved: 92840 URLs scraped, 244366 players found
+2025-03-02 02:43:24,927 - INFO - Progress saved: 92850 URLs scraped, 244396 players found
+2025-03-02 02:44:38,757 - INFO - Progress saved: 92860 URLs scraped, 244421 players found
+2025-03-02 02:45:29,139 - INFO - Progress saved: 92870 URLs scraped, 244439 players found
+2025-03-02 02:47:25,240 - INFO - Progress saved: 92880 URLs scraped, 244470 players found
+2025-03-02 02:48:59,865 - INFO - Progress saved: 92890 URLs scraped, 244492 players found
+2025-03-02 02:49:56,976 - INFO - Progress saved: 92900 URLs scraped, 244525 players found
+2025-03-02 02:51:11,570 - INFO - Progress saved: 92910 URLs scraped, 244556 players found
+2025-03-02 02:52:24,017 - INFO - Progress saved: 92920 URLs scraped, 244584 players found
+2025-03-02 02:53:37,861 - ERROR - Error processing https://stats.ncaa.org/players/8887583: HTTPSConnectionPool(host='stats.ncaa.org', port=443): Read timed out. (read timeout=30)
+2025-03-02 02:54:10,176 - INFO - Progress saved: 92930 URLs scraped, 244616 players found
+2025-03-02 02:55:15,751 - INFO - Progress saved: 92940 URLs scraped, 244643 players found
+2025-03-02 02:56:22,152 - INFO - Progress saved: 92950 URLs scraped, 244675 players found
+2025-03-02 02:57:57,112 - INFO - Progress saved: 92960 URLs scraped, 244714 players found
+2025-03-02 02:59:01,010 - INFO - Progress saved: 92970 URLs scraped, 244743 players found
+2025-03-02 02:59:55,903 - INFO - Progress saved: 92980 URLs scraped, 244770 players found
+2025-03-02 03:01:12,417 - INFO - Progress saved: 92990 URLs scraped, 244797 players found
+2025-03-02 03:02:32,691 - INFO - Progress saved: 93000 URLs scraped, 244822 players found
+2025-03-02 03:04:03,391 - INFO - Progress saved: 93010 URLs scraped, 244841 players found
+2025-03-02 03:05:35,374 - INFO - Progress saved: 93020 URLs scraped, 244870 players found
+2025-03-02 03:07:10,835 - INFO - Progress saved: 93030 URLs scraped, 244901 players found
+2025-03-02 03:08:48,754 - INFO - Progress saved: 93040 URLs scraped, 244923 players found
+2025-03-02 03:10:18,353 - INFO - Progress saved: 93050 URLs scraped, 244944 players found
+2025-03-02 03:11:31,176 - INFO - Progress saved: 93060 URLs scraped, 244975 players found
+2025-03-02 03:12:48,198 - INFO - Progress saved: 93070 URLs scraped, 244996 players found
+2025-03-02 03:14:07,949 - INFO - Progress saved: 93080 URLs scraped, 245013 players found
+2025-03-02 03:15:27,635 - INFO - Progress saved: 93090 URLs scraped, 245039 players found
+2025-03-02 03:16:37,229 - INFO - Progress saved: 93100 URLs scraped, 245069 players found
+2025-03-02 03:18:07,263 - INFO - Progress saved: 93110 URLs scraped, 245101 players found
+2025-03-02 03:20:00,984 - INFO - Progress saved: 93120 URLs scraped, 245127 players found
+2025-03-02 03:21:33,098 - INFO - Progress saved: 93130 URLs scraped, 245164 players found
+2025-03-02 03:23:01,191 - INFO - Progress saved: 93140 URLs scraped, 245190 players found
+2025-03-02 03:24:02,048 - INFO - Progress saved: 93150 URLs scraped, 245212 players found
+2025-03-02 03:25:08,242 - INFO - Progress saved: 93160 URLs scraped, 245240 players found
+2025-03-02 03:26:00,610 - INFO - Progress saved: 93170 URLs scraped, 245268 players found
+2025-03-02 03:27:23,171 - INFO - Progress saved: 93180 URLs scraped, 245295 players found
+2025-03-02 03:28:57,708 - INFO - Progress saved: 93190 URLs scraped, 245321 players found
+2025-03-02 03:30:11,430 - INFO - Progress saved: 93200 URLs scraped, 245350 players found
+2025-03-02 03:31:41,144 - INFO - Progress saved: 93210 URLs scraped, 245381 players found
+2025-03-02 03:32:54,923 - INFO - Progress saved: 93220 URLs scraped, 245402 players found
+2025-03-02 03:34:20,398 - INFO - Progress saved: 93230 URLs scraped, 245428 players found
+2025-03-02 03:35:29,813 - INFO - Progress saved: 93240 URLs scraped, 245452 players found
+2025-03-02 03:36:55,939 - INFO - Progress saved: 93250 URLs scraped, 245475 players found
+2025-03-02 03:38:37,023 - INFO - Progress saved: 93260 URLs scraped, 245502 players found
+2025-03-02 03:39:33,757 - INFO - Progress saved: 93270 URLs scraped, 245535 players found
+2025-03-02 03:40:29,803 - INFO - Progress saved: 93280 URLs scraped, 245555 players found
+2025-03-02 03:41:41,614 - INFO - Progress saved: 93290 URLs scraped, 245583 players found
+2025-03-02 03:42:38,665 - INFO - Progress saved: 93300 URLs scraped, 245616 players found
+2025-03-02 03:43:30,840 - INFO - Progress saved: 93310 URLs scraped, 245648 players found
+2025-03-02 03:44:21,842 - INFO - Progress saved: 93320 URLs scraped, 245670 players found
+2025-03-02 03:45:19,028 - INFO - Progress saved: 93330 URLs scraped, 245700 players found
+2025-03-02 03:46:22,414 - INFO - Progress saved: 93340 URLs scraped, 245728 players found
+2025-03-02 03:47:14,571 - INFO - Progress saved: 93350 URLs scraped, 245759 players found
+2025-03-02 03:48:13,034 - INFO - Progress saved: 93360 URLs scraped, 245783 players found
+2025-03-02 03:49:05,325 - INFO - Progress saved: 93370 URLs scraped, 245814 players found
+2025-03-02 03:49:55,598 - INFO - Progress saved: 93380 URLs scraped, 245838 players found
+2025-03-02 03:50:54,262 - INFO - Progress saved: 93390 URLs scraped, 245876 players found
+2025-03-02 03:51:46,294 - INFO - Progress saved: 93400 URLs scraped, 245907 players found
+2025-03-02 03:52:39,777 - INFO - Progress saved: 93410 URLs scraped, 245935 players found
+2025-03-02 03:53:43,475 - INFO - Progress saved: 93420 URLs scraped, 245962 players found
+2025-03-02 03:54:38,574 - INFO - Progress saved: 93430 URLs scraped, 245987 players found
+2025-03-02 03:55:35,968 - INFO - Progress saved: 93440 URLs scraped, 246008 players found
+2025-03-02 03:56:43,183 - INFO - Progress saved: 93450 URLs scraped, 246037 players found
+2025-03-02 03:57:36,395 - INFO - Progress saved: 93460 URLs scraped, 246060 players found
+2025-03-02 03:58:35,751 - INFO - Progress saved: 93470 URLs scraped, 246086 players found
+2025-03-02 03:59:34,211 - INFO - Progress saved: 93480 URLs scraped, 246107 players found
+2025-03-02 04:00:28,835 - INFO - Progress saved: 93490 URLs scraped, 246143 players found
+2025-03-02 04:01:19,206 - INFO - Progress saved: 93500 URLs scraped, 246180 players found
+2025-03-02 04:02:22,826 - INFO - Progress saved: 93510 URLs scraped, 246203 players found
+2025-03-02 04:03:17,506 - INFO - Progress saved: 93520 URLs scraped, 246233 players found
+2025-03-02 04:04:11,081 - INFO - Progress saved: 93530 URLs scraped, 246260 players found
+2025-03-02 04:05:20,367 - INFO - Progress saved: 93540 URLs scraped, 246291 players found
+2025-03-02 04:06:19,515 - INFO - Progress saved: 93550 URLs scraped, 246318 players found
+2025-03-02 04:07:12,994 - INFO - Progress saved: 93560 URLs scraped, 246344 players found
+2025-03-02 04:08:17,769 - INFO - Progress saved: 93570 URLs scraped, 246372 players found
+2025-03-02 04:09:08,280 - INFO - Progress saved: 93580 URLs scraped, 246396 players found
+2025-03-02 04:10:11,347 - INFO - Progress saved: 93590 URLs scraped, 246423 players found
+2025-03-02 04:11:04,231 - INFO - Progress saved: 93600 URLs scraped, 246441 players found
+2025-03-02 04:11:47,220 - INFO - Progress saved: 93610 URLs scraped, 246473 players found
+2025-03-02 04:12:46,677 - INFO - Progress saved: 93620 URLs scraped, 246505 players found
+2025-03-02 04:13:47,403 - INFO - Progress saved: 93630 URLs scraped, 246536 players found
+2025-03-02 04:14:45,175 - INFO - Progress saved: 93640 URLs scraped, 246557 players found
+2025-03-02 04:15:36,701 - INFO - Progress saved: 93650 URLs scraped, 246588 players found
+2025-03-02 04:16:38,440 - INFO - Progress saved: 93660 URLs scraped, 246613 players found
+2025-03-02 04:17:27,949 - INFO - Progress saved: 93670 URLs scraped, 246642 players found
+2025-03-02 04:18:20,421 - INFO - Progress saved: 93680 URLs scraped, 246667 players found
+2025-03-02 04:19:11,603 - INFO - Progress saved: 93690 URLs scraped, 246705 players found
+2025-03-02 04:20:11,108 - INFO - Progress saved: 93700 URLs scraped, 246739 players found
+2025-03-02 04:21:05,806 - INFO - Progress saved: 93710 URLs scraped, 246764 players found
+2025-03-02 04:21:54,931 - INFO - Progress saved: 93720 URLs scraped, 246792 players found
+2025-03-02 04:22:48,010 - INFO - Progress saved: 93730 URLs scraped, 246818 players found
+2025-03-02 04:23:45,239 - INFO - Progress saved: 93740 URLs scraped, 246839 players found
+2025-03-02 04:24:46,088 - INFO - Progress saved: 93750 URLs scraped, 246867 players found
+2025-03-02 04:25:40,102 - INFO - Progress saved: 93760 URLs scraped, 246883 players found
+2025-03-02 04:26:39,289 - INFO - Progress saved: 93770 URLs scraped, 246909 players found
+2025-03-02 04:27:55,496 - INFO - Progress saved: 93780 URLs scraped, 246937 players found
+2025-03-02 04:28:56,435 - INFO - Progress saved: 93790 URLs scraped, 246963 players found
+2025-03-02 04:29:48,828 - INFO - Progress saved: 93800 URLs scraped, 246989 players found
+2025-03-02 04:30:48,797 - INFO - Progress saved: 93810 URLs scraped, 247015 players found
+2025-03-02 04:31:44,470 - INFO - Progress saved: 93820 URLs scraped, 247045 players found
+2025-03-02 04:32:43,414 - INFO - Progress saved: 93830 URLs scraped, 247076 players found
+2025-03-02 04:33:29,432 - INFO - Progress saved: 93840 URLs scraped, 247109 players found
+2025-03-02 04:34:24,721 - INFO - Progress saved: 93850 URLs scraped, 247140 players found
+2025-03-02 04:35:12,570 - INFO - Progress saved: 93860 URLs scraped, 247169 players found
+2025-03-02 04:36:08,789 - INFO - Progress saved: 93870 URLs scraped, 247192 players found
+2025-03-02 04:37:02,241 - INFO - Progress saved: 93880 URLs scraped, 247225 players found
+2025-03-02 04:38:05,868 - INFO - Progress saved: 93890 URLs scraped, 247259 players found
+2025-03-02 04:39:01,660 - INFO - Progress saved: 93900 URLs scraped, 247288 players found
+2025-03-02 04:40:00,732 - INFO - Progress saved: 93910 URLs scraped, 247314 players found
+2025-03-02 04:41:10,164 - INFO - Progress saved: 93920 URLs scraped, 247343 players found
+2025-03-02 04:42:22,123 - INFO - Progress saved: 93930 URLs scraped, 247372 players found
+2025-03-02 04:44:00,158 - INFO - Progress saved: 93940 URLs scraped, 247401 players found
+2025-03-02 04:46:08,166 - INFO - Progress saved: 93950 URLs scraped, 247426 players found
+2025-03-02 04:47:12,286 - INFO - Progress saved: 93960 URLs scraped, 247454 players found
+2025-03-02 04:48:13,905 - INFO - Progress saved: 93970 URLs scraped, 247488 players found
+2025-03-02 04:49:22,265 - INFO - Progress saved: 93980 URLs scraped, 247521 players found
+2025-03-02 04:50:20,275 - INFO - Progress saved: 93990 URLs scraped, 247551 players found
+2025-03-02 04:51:19,201 - INFO - Progress saved: 94000 URLs scraped, 247586 players found
+2025-03-02 04:52:47,168 - INFO - Progress saved: 94010 URLs scraped, 247607 players found
+2025-03-02 04:53:47,985 - INFO - Progress saved: 94020 URLs scraped, 247641 players found
+2025-03-02 04:54:50,337 - INFO - Progress saved: 94030 URLs scraped, 247668 players found
+2025-03-02 04:56:00,284 - INFO - Progress saved: 94040 URLs scraped, 247699 players found
+2025-03-02 04:56:49,799 - INFO - Progress saved: 94050 URLs scraped, 247716 players found
+2025-03-02 04:57:55,253 - INFO - Progress saved: 94060 URLs scraped, 247746 players found
+2025-03-02 04:59:57,128 - INFO - Progress saved: 94070 URLs scraped, 247770 players found
+2025-03-02 05:00:51,493 - INFO - Progress saved: 94080 URLs scraped, 247791 players found
+2025-03-02 05:01:52,360 - INFO - Progress saved: 94090 URLs scraped, 247812 players found
+2025-03-02 05:02:40,445 - INFO - Progress saved: 94100 URLs scraped, 247834 players found
+2025-03-02 05:03:47,360 - INFO - Progress saved: 94110 URLs scraped, 247855 players found
+2025-03-02 05:04:44,673 - INFO - Progress saved: 94120 URLs scraped, 247883 players found
+2025-03-02 05:05:39,685 - INFO - Progress saved: 94130 URLs scraped, 247906 players found
+2025-03-02 05:06:34,524 - INFO - Progress saved: 94140 URLs scraped, 247925 players found
+2025-03-02 05:07:35,646 - INFO - Progress saved: 94150 URLs scraped, 247957 players found
+2025-03-02 05:08:42,698 - INFO - Progress saved: 94160 URLs scraped, 247989 players found
+2025-03-02 05:09:43,274 - INFO - Progress saved: 94170 URLs scraped, 248017 players found
