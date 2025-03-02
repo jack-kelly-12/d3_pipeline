@@ -88,6 +88,27 @@ def update_rosters(conn, data_dir, year):
         conn.rollback()
 
 
+def update_pf(conn, data_dir):
+    """Update rosters table."""
+    try:
+        for division in ['d1', 'd2', 'd3']:
+            file_name = f'{division}_park_factors.csv'
+            try:
+                df = pd.read_csv(Path(data_dir) / 'park_factors' /
+                                 file_name)
+                df.to_sql(f'd{division}_park factors', conn,
+                          if_exists='replace', index=False)
+                print(f"Successfully updated park factors with {file_name}")
+            except Exception as e:
+                print(f"Error updating park factors with {file_name}: {e}")
+
+        conn.commit()
+        print("Successfully completed park factors update")
+    except Exception as e:
+        print(f"Error in rosters update process: {e}")
+        conn.rollback()
+
+
 def update_expected_runs(conn, data_dir, year):
     """Update expected runs table."""
     try:
@@ -218,6 +239,7 @@ def main():
     try:
         update_expected_runs(conn, args.data_dir, args.year)
         update_guts_constants(conn, args.data_dir, args.year)
+        update_pf(conn, args.data_dir)
         update_war(conn, args.data_dir, args.year)
         update_pbp(conn, args.data_dir, args.year)
         update_leaderboards(conn, args.data_dir, args.year)
