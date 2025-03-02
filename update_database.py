@@ -96,7 +96,7 @@ def update_pf(conn, data_dir):
             try:
                 df = pd.read_csv(Path(data_dir) / 'park_factors' /
                                  file_name)
-                df.to_sql(f'd{division}_park factors', conn,
+                df.to_sql(f'{division}_park_factors', conn,
                           if_exists='replace', index=False)
                 print(f"Successfully updated park factors with {file_name}")
             except Exception as e:
